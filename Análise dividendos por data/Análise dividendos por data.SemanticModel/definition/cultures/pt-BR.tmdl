@@ -1,0 +1,6102 @@
+cultureInfo pt-BR
+
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "dividendos_pagos_por_data_20212025": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dividendos pagos por data (2021-2025)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dividendos pagos por data (2021-2025)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dividendo pago por data (2021-2025)": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "dividendos pagos por data (2021 2025)": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "dividendo pago por data (2021 2025)": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.7566
+			          }
+			        }
+			      ]
+			    },
+			    "dividendos_pagos_por_data_20212025.ativo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dividendos pagos por data (2021-2025)",
+			          "ConceptualProperty": "ATIVO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "ativo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ATIVOS": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dividendos_pagos_por_data_20212025.valor": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dividendos pagos por data (2021-2025)",
+			          "ConceptualProperty": "VALOR"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "valor": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "courage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "bravery": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "heroism": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "fearlessness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "boldness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "gallantry": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "lionheartedness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "pluck": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "spirit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "nerve": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "dividendos_pagos_por_data_20212025.data_com": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dividendos pagos por data (2021-2025)",
+			          "ConceptualProperty": "DATA COM"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "data com": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "com": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "information com": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "fact com": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "info com": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "statistic com": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "document com": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "figure com": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "record com": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "dividendos_pagos_por_data_20212025.data_com.hierarquia_de_data": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dividendos pagos por data (2021-2025)",
+			          "VariationSource": "DATA COM",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "hierarquia de data": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hierarquia de information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "dividendos_pagos_por_data_20212025.data_com.ano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dividendos pagos por data (2021-2025)",
+			          "VariationSource": "DATA COM",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Ano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data com ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information com ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "fact com ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "info com ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "statistic com ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "document com ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "figure com ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "record com ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "dividendos_pagos_por_data_20212025.data_com.trimestre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dividendos pagos por data (2021-2025)",
+			          "VariationSource": "DATA COM",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Trimestre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data com trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information com trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "fact com trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "info com trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "statistic com trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "document com trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "figure com trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "record com trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "dividendos_pagos_por_data_20212025.data_com.mê": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dividendos pagos por data (2021-2025)",
+			          "VariationSource": "DATA COM",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Mês"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data com mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information com mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "fact com mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "info com mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "statistic com mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "document com mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "figure com mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "record com mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "dividendos_pagos_por_data_20212025.data_com.dia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dividendos pagos por data (2021-2025)",
+			          "VariationSource": "DATA COM",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Dia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data com dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information com dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "fact com dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "info com dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "statistic com dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "document com dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "figure com dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "record com dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "dividendos_pagos_por_data_20212025.data_pagamento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dividendos pagos por data (2021-2025)",
+			          "ConceptualProperty": "DATA PAGAMENTO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "data pagamento": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "information pagamento": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "fact pagamento": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "info pagamento": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "statistic pagamento": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "document pagamento": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "figure pagamento": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "record pagamento": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "dividendos_pagos_por_data_20212025.data_pagamento.hierarquia_de_data": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dividendos pagos por data (2021-2025)",
+			          "VariationSource": "DATA PAGAMENTO",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "hierarquia de data": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hierarquia de information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "dividendos_pagos_por_data_20212025.data_pagamento.ano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dividendos pagos por data (2021-2025)",
+			          "VariationSource": "DATA PAGAMENTO",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Ano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data pagamento ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information pagamento ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "fact pagamento ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "info pagamento ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "statistic pagamento ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "document pagamento ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "figure pagamento ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "record pagamento ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "dividendos_pagos_por_data_20212025.data_pagamento.trimestre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dividendos pagos por data (2021-2025)",
+			          "VariationSource": "DATA PAGAMENTO",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Trimestre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data pagamento trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information pagamento trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "fact pagamento trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "info pagamento trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "statistic pagamento trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "document pagamento trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "figure pagamento trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "record pagamento trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "dividendos_pagos_por_data_20212025.data_pagamento.mê": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dividendos pagos por data (2021-2025)",
+			          "VariationSource": "DATA PAGAMENTO",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Mês"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data pagamento mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information pagamento mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "fact pagamento mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "info pagamento mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "statistic pagamento mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "document pagamento mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "figure pagamento mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "record pagamento mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "dividendos_pagos_por_data_20212025.data_pagamento.dia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dividendos pagos por data (2021-2025)",
+			          "VariationSource": "DATA PAGAMENTO",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Dia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data pagamento dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information pagamento dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "fact pagamento dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "info pagamento dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "statistic pagamento dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "document pagamento dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "figure pagamento dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "record pagamento dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "dividendos_pagos_por_data_20212025.tipo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dividendos pagos por data (2021-2025)",
+			          "ConceptualProperty": "TIPO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tipo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dividendos_pagos_por_data_20212025.dy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dividendos pagos por data (2021-2025)",
+			          "ConceptualProperty": "DY"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dy": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "medida": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.value": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Value"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "value": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "assessment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "worth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "price": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "cost": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "charge": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "rate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "importance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "significance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "usefulness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "consequence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        }
+			      ]
+			    },
+			    "medida.quantidade_de_meses_pagos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Quantidade de Meses Pagos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "quantidade de meses pagos": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.média_de_pagamento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Média de pagamento"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "média de pagamento": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.valor_multiplicado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "VALOR MULTIPLICADO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "valor multiplicado": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.média_de_dividendos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Média de Dividendos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "média de dividendos": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Total de Dividendos": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "medida.média_de_DY": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Média de DY"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "média de DY": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "ativo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Ativos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ativo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "ativo.setor": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Ativos",
+			          "ConceptualProperty": "SETOR"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "setor": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "ativo.industria": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Ativos",
+			          "ConceptualProperty": "INDUSTRIA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "industria": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Indústria": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "medida.DY_médio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "DY Médio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "DY médio": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.renda_média": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Renda Média"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "renda média": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.média_de_preço_de_fechamento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Média de Preço de Fechamento"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "média de preço de fechamento": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Média de Fechamento": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Média de Preço": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "historico_ativo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "historico_ativos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "historico ativo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "historico_ativos": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "historico_ativo.open": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "historico_ativos",
+			          "ConceptualProperty": "open"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "open": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "sweeping": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "historico_ativo.high": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "historico_ativos",
+			          "ConceptualProperty": "high"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "high": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "great": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "extreme": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "historico_ativo.low": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "historico_ativos",
+			          "ConceptualProperty": "low"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "low": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "little": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "squat": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "low-slung": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "short": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "small": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "soothing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "quiet": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "gentle": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "faint": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "historico_ativo.close": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "historico_ativos",
+			          "ConceptualProperty": "close"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "close": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "local": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "neighboring": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "intimate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "familiar": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "dear": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "loving": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "friendly": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "warm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "historico_ativo.volume": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "historico_ativos",
+			          "ConceptualProperty": "volume"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "volume": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "capacity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "size": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "bulk": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "tome": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "book": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "work": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "historico_ativo.adjclose": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "historico_ativos",
+			          "ConceptualProperty": "adjclose"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "adjclose": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "historico_ativo.dividend": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "historico_ativos",
+			          "ConceptualProperty": "dividends"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dividend": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "payment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "disbursement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "bonus": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "extra": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "share": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "surplus": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "historico_ativo.split": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "historico_ativos",
+			          "ConceptualProperty": "splits"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "split": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "separation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "splitting": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "ripping": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "tearing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "cracking": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "rupture": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "historico_ativo.ativo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "historico_ativos",
+			          "ConceptualProperty": "Ativo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "ativo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "historico_ativo.data": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "historico_ativos",
+			          "ConceptualProperty": "Data"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "data": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "historico_ativo.data.hierarquia_de_data": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "historico_ativos",
+			          "VariationSource": "Data",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "hierarquia de data": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hierarquia de information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "historico_ativo.data.ano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "historico_ativos",
+			          "VariationSource": "Data",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Ano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "fact ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "info ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "statistic ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "document ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "figure ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "record ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "historico_ativo.data.trimestre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "historico_ativos",
+			          "VariationSource": "Data",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Trimestre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "fact trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "info trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "statistic trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "document trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "figure trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "record trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "historico_ativo.data.mê": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "historico_ativos",
+			          "VariationSource": "Data",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Mês"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "fact mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "info mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "statistic mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "document mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "figure mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "record mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "historico_ativo.data.dia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "historico_ativos",
+			          "VariationSource": "Data",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Dia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "fact dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "info dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "statistic dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "document dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "figure dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "record dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "dividendos_pagos_por_data_20212025.ano_me": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dividendos pagos por data (2021-2025)",
+			          "ConceptualProperty": "AnoMes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano me": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "AnoMes": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "medida.valor_abaixo_da_média_de_preço": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Valor Abaixo da Média de Preço"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "valor abaixo da média de preço": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Desconto de Preço": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "medida.preço_atual": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Preço Atual"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "preço atual": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "ativo.ativo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Ativos",
+			          "ConceptualProperty": "ATIVO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ativo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ativo name": {
+			            "State": "Generated"
+			          }
+			        }
+			      ],
+			      "NameType": "Name"
+			    },
+			    "ativo.data": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Ativos",
+			          "ConceptualProperty": "DATA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "data": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "ativo.data.hierarquia_de_data": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Ativos",
+			          "VariationSource": "DATA",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "hierarquia de data": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hierarquia de information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "ativo.data.ano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Ativos",
+			          "VariationSource": "DATA",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Ano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "fact ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "info ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "statistic ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "document ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "figure ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "record ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "ativo.data.trimestre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Ativos",
+			          "VariationSource": "DATA",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Trimestre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "fact trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "info trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "statistic trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "document trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "figure trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "record trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "ativo.data.mê": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Ativos",
+			          "VariationSource": "DATA",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Mês"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "fact mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "info mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "statistic mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "document mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "figure mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "record mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "ativo.data.dia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Ativos",
+			          "VariationSource": "DATA",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Dia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "fact dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "info dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "statistic dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "document dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "figure dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "record dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "ativo.recomendacao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Ativos",
+			          "ConceptualProperty": "RECOMENDACAO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "recomendacao": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "ativo_data_ano_has_ativo_data_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "Ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "ativo.data.ano": {
+			          "Target": {
+			            "Entity": "ativo.data.ano"
+			          }
+			        },
+			        "ativo.data.trimestre": {
+			          "Target": {
+			            "Entity": "ativo.data.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ativo.data.ano"
+			            },
+			            "Object": {
+			              "Role": "ativo.data.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "anos_have_trimestres"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ativo.data.trimestre"
+			            },
+			            "Object": {
+			              "Role": "ativo.data.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_anos"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "ativo.data.trimestre"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "ativo.data.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_are_in_anos3"
+			        }
+			      ]
+			    },
+			    "ativo_data_hierarquia_de_data_has_ativo_data_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "Ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "ativo.data.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "ativo.data.hierarquia_de_data"
+			          }
+			        },
+			        "ativo.data.dia": {
+			          "Target": {
+			            "Entity": "ativo.data.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ativo.data.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "ativo.data.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_dias"
+			        }
+			      ]
+			    },
+			    "ativo_data_hierarquia_de_data_has_ativo_data_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "Ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "ativo.data.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "ativo.data.hierarquia_de_data"
+			          }
+			        },
+			        "ativo.data.mê": {
+			          "Target": {
+			            "Entity": "ativo.data.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ativo.data.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "ativo.data.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_mê"
+			        }
+			      ]
+			    },
+			    "ativo_data_hierarquia_de_data_has_ativo_data_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "Ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "ativo.data.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "ativo.data.hierarquia_de_data"
+			          }
+			        },
+			        "ativo.data.trimestre": {
+			          "Target": {
+			            "Entity": "ativo.data.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ativo.data.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "ativo.data.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_trimestres"
+			        }
+			      ]
+			    },
+			    "ativo_data_hierarquia_de_data_has_ativo_data_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "Ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "ativo.data.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "ativo.data.hierarquia_de_data"
+			          }
+			        },
+			        "ativo.data.ano": {
+			          "Target": {
+			            "Entity": "ativo.data.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ativo.data.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "ativo.data.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_anos"
+			        }
+			      ]
+			    },
+			    "ativo_data_has_hierarquia_de_data": {
+			      "Binding": {
+			        "ConceptualEntity": "Ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "ativo.data": {
+			          "Target": {
+			            "Entity": "ativo.data"
+			          }
+			        },
+			        "ativo.data.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "ativo.data.hierarquia_de_data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ativo.data"
+			            },
+			            "Object": {
+			              "Role": "ativo.data.hierarquia_de_data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "data_have_hierarquia_de_data"
+			        }
+			      ]
+			    },
+			    "historico_ativo_data_mê_has_historico_ativo_data_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "historico_ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "historico_ativo.data.mê": {
+			          "Target": {
+			            "Entity": "historico_ativo.data.mê"
+			          }
+			        },
+			        "historico_ativo.data.dia": {
+			          "Target": {
+			            "Entity": "historico_ativo.data.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "historico_ativo.data.mê"
+			            },
+			            "Object": {
+			              "Role": "historico_ativo.data.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_dias"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "historico_ativo.data.dia"
+			            },
+			            "Object": {
+			              "Role": "historico_ativo.data.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_have_mê"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "historico_ativo.data.dia"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "historico_ativo.data.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_are_in_mê2"
+			        }
+			      ]
+			    },
+			    "historico_ativo_data_trimestre_has_historico_ativo_data_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "historico_ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "historico_ativo.data.trimestre": {
+			          "Target": {
+			            "Entity": "historico_ativo.data.trimestre"
+			          }
+			        },
+			        "historico_ativo.data.mê": {
+			          "Target": {
+			            "Entity": "historico_ativo.data.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "historico_ativo.data.trimestre"
+			            },
+			            "Object": {
+			              "Role": "historico_ativo.data.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_mê"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "historico_ativo.data.mê"
+			            },
+			            "Object": {
+			              "Role": "historico_ativo.data.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_trimestres"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "historico_ativo.data.mê"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "historico_ativo.data.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_are_in_trimestres2"
+			        }
+			      ]
+			    },
+			    "historico_ativo_data_ano_has_historico_ativo_data_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "historico_ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "historico_ativo.data.ano": {
+			          "Target": {
+			            "Entity": "historico_ativo.data.ano"
+			          }
+			        },
+			        "historico_ativo.data.trimestre": {
+			          "Target": {
+			            "Entity": "historico_ativo.data.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "historico_ativo.data.ano"
+			            },
+			            "Object": {
+			              "Role": "historico_ativo.data.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "anos_have_trimestres1"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "historico_ativo.data.trimestre"
+			            },
+			            "Object": {
+			              "Role": "historico_ativo.data.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_anos1"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "historico_ativo.data.trimestre"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "historico_ativo.data.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_are_in_anos2"
+			        }
+			      ]
+			    },
+			    "historico_ativo_data_hierarquia_de_data_has_historico_ativo_data_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "historico_ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "historico_ativo.data.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "historico_ativo.data.hierarquia_de_data"
+			          }
+			        },
+			        "historico_ativo.data.dia": {
+			          "Target": {
+			            "Entity": "historico_ativo.data.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "historico_ativo.data.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "historico_ativo.data.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_dias1"
+			        }
+			      ]
+			    },
+			    "historico_ativo_data_hierarquia_de_data_has_historico_ativo_data_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "historico_ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "historico_ativo.data.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "historico_ativo.data.hierarquia_de_data"
+			          }
+			        },
+			        "historico_ativo.data.mê": {
+			          "Target": {
+			            "Entity": "historico_ativo.data.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "historico_ativo.data.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "historico_ativo.data.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_mê1"
+			        }
+			      ]
+			    },
+			    "historico_ativo_data_hierarquia_de_data_has_historico_ativo_data_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "historico_ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "historico_ativo.data.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "historico_ativo.data.hierarquia_de_data"
+			          }
+			        },
+			        "historico_ativo.data.trimestre": {
+			          "Target": {
+			            "Entity": "historico_ativo.data.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "historico_ativo.data.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "historico_ativo.data.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_trimestres1"
+			        }
+			      ]
+			    },
+			    "historico_ativo_data_hierarquia_de_data_has_historico_ativo_data_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "historico_ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "historico_ativo.data.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "historico_ativo.data.hierarquia_de_data"
+			          }
+			        },
+			        "historico_ativo.data.ano": {
+			          "Target": {
+			            "Entity": "historico_ativo.data.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "historico_ativo.data.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "historico_ativo.data.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_anos1"
+			        }
+			      ]
+			    },
+			    "historico_ativo_data_has_hierarquia_de_data": {
+			      "Binding": {
+			        "ConceptualEntity": "historico_ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "historico_ativo.data": {
+			          "Target": {
+			            "Entity": "historico_ativo.data"
+			          }
+			        },
+			        "historico_ativo.data.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "historico_ativo.data.hierarquia_de_data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "historico_ativo.data"
+			            },
+			            "Object": {
+			              "Role": "historico_ativo.data.hierarquia_de_data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "data_have_hierarquia_de_data1"
+			        }
+			      ]
+			    },
+			    "dividendos_pagos_por_data_20212025_data_pagamento_mê_has_dividendos_pagos_por_data_20212025_data_pagamento_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos pagos por data (2021-2025)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_pagos_por_data_20212025.data_pagamento.mê": {
+			          "Target": {
+			            "Entity": "dividendos_pagos_por_data_20212025.data_pagamento.mê"
+			          }
+			        },
+			        "dividendos_pagos_por_data_20212025.data_pagamento.dia": {
+			          "Target": {
+			            "Entity": "dividendos_pagos_por_data_20212025.data_pagamento.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_pagos_por_data_20212025.data_pagamento.mê"
+			            },
+			            "Object": {
+			              "Role": "dividendos_pagos_por_data_20212025.data_pagamento.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_dias1"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_pagos_por_data_20212025.data_pagamento.dia"
+			            },
+			            "Object": {
+			              "Role": "dividendos_pagos_por_data_20212025.data_pagamento.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_have_mê1"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "dividendos_pagos_por_data_20212025.data_pagamento.dia"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "dividendos_pagos_por_data_20212025.data_pagamento.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_are_in_mê1"
+			        }
+			      ]
+			    },
+			    "dividendos_pagos_por_data_20212025_data_pagamento_trimestre_has_dividendos_pagos_por_data_20212025_data_pagamento_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos pagos por data (2021-2025)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_pagos_por_data_20212025.data_pagamento.trimestre": {
+			          "Target": {
+			            "Entity": "dividendos_pagos_por_data_20212025.data_pagamento.trimestre"
+			          }
+			        },
+			        "dividendos_pagos_por_data_20212025.data_pagamento.mê": {
+			          "Target": {
+			            "Entity": "dividendos_pagos_por_data_20212025.data_pagamento.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_pagos_por_data_20212025.data_pagamento.trimestre"
+			            },
+			            "Object": {
+			              "Role": "dividendos_pagos_por_data_20212025.data_pagamento.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_mê1"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_pagos_por_data_20212025.data_pagamento.mê"
+			            },
+			            "Object": {
+			              "Role": "dividendos_pagos_por_data_20212025.data_pagamento.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_trimestres1"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "dividendos_pagos_por_data_20212025.data_pagamento.mê"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "dividendos_pagos_por_data_20212025.data_pagamento.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_are_in_trimestres1"
+			        }
+			      ]
+			    },
+			    "dividendos_pagos_por_data_20212025_data_pagamento_ano_has_dividendos_pagos_por_data_20212025_data_pagamento_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos pagos por data (2021-2025)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_pagos_por_data_20212025.data_pagamento.ano": {
+			          "Target": {
+			            "Entity": "dividendos_pagos_por_data_20212025.data_pagamento.ano"
+			          }
+			        },
+			        "dividendos_pagos_por_data_20212025.data_pagamento.trimestre": {
+			          "Target": {
+			            "Entity": "dividendos_pagos_por_data_20212025.data_pagamento.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_pagos_por_data_20212025.data_pagamento.ano"
+			            },
+			            "Object": {
+			              "Role": "dividendos_pagos_por_data_20212025.data_pagamento.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "anos_have_trimestres2"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_pagos_por_data_20212025.data_pagamento.trimestre"
+			            },
+			            "Object": {
+			              "Role": "dividendos_pagos_por_data_20212025.data_pagamento.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_anos2"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "dividendos_pagos_por_data_20212025.data_pagamento.trimestre"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "dividendos_pagos_por_data_20212025.data_pagamento.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_are_in_anos1"
+			        }
+			      ]
+			    },
+			    "dividendos_pagos_por_data_20212025_data_pagamento_hierarquia_de_data_has_dividendos_pagos_por_data_20212025_data_pagamento_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos pagos por data (2021-2025)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_pagos_por_data_20212025.data_pagamento.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "dividendos_pagos_por_data_20212025.data_pagamento.hierarquia_de_data"
+			          }
+			        },
+			        "dividendos_pagos_por_data_20212025.data_pagamento.dia": {
+			          "Target": {
+			            "Entity": "dividendos_pagos_por_data_20212025.data_pagamento.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_pagos_por_data_20212025.data_pagamento.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "dividendos_pagos_por_data_20212025.data_pagamento.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_dias2"
+			        }
+			      ]
+			    },
+			    "dividendos_pagos_por_data_20212025_data_pagamento_hierarquia_de_data_has_dividendos_pagos_por_data_20212025_data_pagamento_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos pagos por data (2021-2025)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_pagos_por_data_20212025.data_pagamento.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "dividendos_pagos_por_data_20212025.data_pagamento.hierarquia_de_data"
+			          }
+			        },
+			        "dividendos_pagos_por_data_20212025.data_pagamento.mê": {
+			          "Target": {
+			            "Entity": "dividendos_pagos_por_data_20212025.data_pagamento.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_pagos_por_data_20212025.data_pagamento.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "dividendos_pagos_por_data_20212025.data_pagamento.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_mê2"
+			        }
+			      ]
+			    },
+			    "dividendos_pagos_por_data_20212025_data_pagamento_hierarquia_de_data_has_dividendos_pagos_por_data_20212025_data_pagamento_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos pagos por data (2021-2025)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_pagos_por_data_20212025.data_pagamento.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "dividendos_pagos_por_data_20212025.data_pagamento.hierarquia_de_data"
+			          }
+			        },
+			        "dividendos_pagos_por_data_20212025.data_pagamento.trimestre": {
+			          "Target": {
+			            "Entity": "dividendos_pagos_por_data_20212025.data_pagamento.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_pagos_por_data_20212025.data_pagamento.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "dividendos_pagos_por_data_20212025.data_pagamento.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_trimestres2"
+			        }
+			      ]
+			    },
+			    "dividendos_pagos_por_data_20212025_data_pagamento_hierarquia_de_data_has_dividendos_pagos_por_data_20212025_data_pagamento_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos pagos por data (2021-2025)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_pagos_por_data_20212025.data_pagamento.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "dividendos_pagos_por_data_20212025.data_pagamento.hierarquia_de_data"
+			          }
+			        },
+			        "dividendos_pagos_por_data_20212025.data_pagamento.ano": {
+			          "Target": {
+			            "Entity": "dividendos_pagos_por_data_20212025.data_pagamento.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_pagos_por_data_20212025.data_pagamento.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "dividendos_pagos_por_data_20212025.data_pagamento.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_anos2"
+			        }
+			      ]
+			    },
+			    "dividendos_pagos_por_data_20212025_data_pagamento_has_hierarquia_de_data": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos pagos por data (2021-2025)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_pagos_por_data_20212025.data_pagamento": {
+			          "Target": {
+			            "Entity": "dividendos_pagos_por_data_20212025.data_pagamento"
+			          }
+			        },
+			        "dividendos_pagos_por_data_20212025.data_pagamento.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "dividendos_pagos_por_data_20212025.data_pagamento.hierarquia_de_data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_pagos_por_data_20212025.data_pagamento"
+			            },
+			            "Object": {
+			              "Role": "dividendos_pagos_por_data_20212025.data_pagamento.hierarquia_de_data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "data_pagamentos_have_hierarquia_de_data"
+			        }
+			      ]
+			    },
+			    "dividendos_pagos_por_data_20212025_data_com_mê_has_dividendos_pagos_por_data_20212025_data_com_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos pagos por data (2021-2025)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_pagos_por_data_20212025.data_com.mê": {
+			          "Target": {
+			            "Entity": "dividendos_pagos_por_data_20212025.data_com.mê"
+			          }
+			        },
+			        "dividendos_pagos_por_data_20212025.data_com.dia": {
+			          "Target": {
+			            "Entity": "dividendos_pagos_por_data_20212025.data_com.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_pagos_por_data_20212025.data_com.mê"
+			            },
+			            "Object": {
+			              "Role": "dividendos_pagos_por_data_20212025.data_com.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_dias2"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_pagos_por_data_20212025.data_com.dia"
+			            },
+			            "Object": {
+			              "Role": "dividendos_pagos_por_data_20212025.data_com.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_have_mê2"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "dividendos_pagos_por_data_20212025.data_com.dia"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "dividendos_pagos_por_data_20212025.data_com.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_are_in_mê"
+			        }
+			      ]
+			    },
+			    "dividendos_pagos_por_data_20212025_data_com_trimestre_has_dividendos_pagos_por_data_20212025_data_com_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos pagos por data (2021-2025)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_pagos_por_data_20212025.data_com.trimestre": {
+			          "Target": {
+			            "Entity": "dividendos_pagos_por_data_20212025.data_com.trimestre"
+			          }
+			        },
+			        "dividendos_pagos_por_data_20212025.data_com.mê": {
+			          "Target": {
+			            "Entity": "dividendos_pagos_por_data_20212025.data_com.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_pagos_por_data_20212025.data_com.trimestre"
+			            },
+			            "Object": {
+			              "Role": "dividendos_pagos_por_data_20212025.data_com.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_mê2"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_pagos_por_data_20212025.data_com.mê"
+			            },
+			            "Object": {
+			              "Role": "dividendos_pagos_por_data_20212025.data_com.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_trimestres2"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "dividendos_pagos_por_data_20212025.data_com.mê"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "dividendos_pagos_por_data_20212025.data_com.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_are_in_trimestres"
+			        }
+			      ]
+			    },
+			    "dividendos_pagos_por_data_20212025_data_com_ano_has_dividendos_pagos_por_data_20212025_data_com_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos pagos por data (2021-2025)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_pagos_por_data_20212025.data_com.ano": {
+			          "Target": {
+			            "Entity": "dividendos_pagos_por_data_20212025.data_com.ano"
+			          }
+			        },
+			        "dividendos_pagos_por_data_20212025.data_com.trimestre": {
+			          "Target": {
+			            "Entity": "dividendos_pagos_por_data_20212025.data_com.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_pagos_por_data_20212025.data_com.ano"
+			            },
+			            "Object": {
+			              "Role": "dividendos_pagos_por_data_20212025.data_com.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "anos_have_trimestres3"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_pagos_por_data_20212025.data_com.trimestre"
+			            },
+			            "Object": {
+			              "Role": "dividendos_pagos_por_data_20212025.data_com.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_anos3"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "dividendos_pagos_por_data_20212025.data_com.trimestre"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "dividendos_pagos_por_data_20212025.data_com.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_are_in_anos"
+			        }
+			      ]
+			    },
+			    "dividendos_pagos_por_data_20212025_data_com_hierarquia_de_data_has_dividendos_pagos_por_data_20212025_data_com_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos pagos por data (2021-2025)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_pagos_por_data_20212025.data_com.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "dividendos_pagos_por_data_20212025.data_com.hierarquia_de_data"
+			          }
+			        },
+			        "dividendos_pagos_por_data_20212025.data_com.dia": {
+			          "Target": {
+			            "Entity": "dividendos_pagos_por_data_20212025.data_com.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_pagos_por_data_20212025.data_com.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "dividendos_pagos_por_data_20212025.data_com.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_dias3"
+			        }
+			      ]
+			    },
+			    "dividendos_pagos_por_data_20212025_data_com_hierarquia_de_data_has_dividendos_pagos_por_data_20212025_data_com_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos pagos por data (2021-2025)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_pagos_por_data_20212025.data_com.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "dividendos_pagos_por_data_20212025.data_com.hierarquia_de_data"
+			          }
+			        },
+			        "dividendos_pagos_por_data_20212025.data_com.mê": {
+			          "Target": {
+			            "Entity": "dividendos_pagos_por_data_20212025.data_com.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_pagos_por_data_20212025.data_com.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "dividendos_pagos_por_data_20212025.data_com.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_mê3"
+			        }
+			      ]
+			    },
+			    "dividendos_pagos_por_data_20212025_data_com_hierarquia_de_data_has_dividendos_pagos_por_data_20212025_data_com_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos pagos por data (2021-2025)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_pagos_por_data_20212025.data_com.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "dividendos_pagos_por_data_20212025.data_com.hierarquia_de_data"
+			          }
+			        },
+			        "dividendos_pagos_por_data_20212025.data_com.trimestre": {
+			          "Target": {
+			            "Entity": "dividendos_pagos_por_data_20212025.data_com.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_pagos_por_data_20212025.data_com.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "dividendos_pagos_por_data_20212025.data_com.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_trimestres3"
+			        }
+			      ]
+			    },
+			    "dividendos_pagos_por_data_20212025_data_com_hierarquia_de_data_has_dividendos_pagos_por_data_20212025_data_com_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos pagos por data (2021-2025)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_pagos_por_data_20212025.data_com.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "dividendos_pagos_por_data_20212025.data_com.hierarquia_de_data"
+			          }
+			        },
+			        "dividendos_pagos_por_data_20212025.data_com.ano": {
+			          "Target": {
+			            "Entity": "dividendos_pagos_por_data_20212025.data_com.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_pagos_por_data_20212025.data_com.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "dividendos_pagos_por_data_20212025.data_com.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_anos3"
+			        }
+			      ]
+			    },
+			    "dividendos_pagos_por_data_20212025_data_com_has_hierarquia_de_data": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos pagos por data (2021-2025)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_pagos_por_data_20212025.data_com": {
+			          "Target": {
+			            "Entity": "dividendos_pagos_por_data_20212025.data_com"
+			          }
+			        },
+			        "dividendos_pagos_por_data_20212025.data_com.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "dividendos_pagos_por_data_20212025.data_com.hierarquia_de_data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_pagos_por_data_20212025.data_com"
+			            },
+			            "Object": {
+			              "Role": "dividendos_pagos_por_data_20212025.data_com.hierarquia_de_data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "data_com_have_hierarquia_de_data"
+			        }
+			      ]
+			    },
+			    "historico_ativo_has_ativo": {
+			      "Binding": {
+			        "ConceptualEntity": "historico_ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "historico_ativo": {
+			          "Target": {
+			            "Entity": "historico_ativo"
+			          }
+			        },
+			        "ativo": {
+			          "Target": {
+			            "Entity": "ativo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "historico_ativo"
+			            },
+			            "Object": {
+			              "Role": "ativo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "historico_ativos_have_ativos"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ativo"
+			            },
+			            "Object": {
+			              "Role": "historico_ativo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ativos_have_historico_ativos"
+			        }
+			      ]
+			    },
+			    "dividendos_pagos_por_data_20212025_has_ativo": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos pagos por data (2021-2025)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_pagos_por_data_20212025": {
+			          "Target": {
+			            "Entity": "dividendos_pagos_por_data_20212025"
+			          }
+			        },
+			        "ativo": {
+			          "Target": {
+			            "Entity": "ativo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_pagos_por_data_20212025"
+			            },
+			            "Object": {
+			              "Role": "ativo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dividendos_pagos_por_data_20212025_have_ativos"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ativo"
+			            },
+			            "Object": {
+			              "Role": "dividendos_pagos_por_data_20212025"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ativos_have_dividendos_pagos_por_data_20212025"
+			        }
+			      ]
+			    },
+			    "ativo_has_recomendacao": {
+			      "Binding": {
+			        "ConceptualEntity": "Ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "ativo": {
+			          "Target": {
+			            "Entity": "ativo"
+			          }
+			        },
+			        "ativo.recomendacao": {
+			          "Target": {
+			            "Entity": "ativo.recomendacao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ativo"
+			            },
+			            "Object": {
+			              "Role": "ativo.recomendacao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ativos_have_recomendacaos"
+			        }
+			      ]
+			    },
+			    "ativo_has_data": {
+			      "Binding": {
+			        "ConceptualEntity": "Ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "ativo": {
+			          "Target": {
+			            "Entity": "ativo"
+			          }
+			        },
+			        "ativo.data": {
+			          "Target": {
+			            "Entity": "ativo.data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ativo"
+			            },
+			            "Object": {
+			              "Role": "ativo.data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ativos_have_data"
+			        }
+			      ]
+			    },
+			    "ativo_has_ativo": {
+			      "Binding": {
+			        "ConceptualEntity": "Ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "ativo": {
+			          "Target": {
+			            "Entity": "ativo"
+			          }
+			        },
+			        "ativo.ativo": {
+			          "Target": {
+			            "Entity": "ativo.ativo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ativo"
+			            },
+			            "Object": {
+			              "Role": "ativo.ativo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ativos_have_ativos"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "ativo"
+			            },
+			            "Name": {
+			              "Role": "ativo.ativo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ativos_are_names_IDs_of_ativos"
+			        }
+			      ]
+			    },
+			    "historico_ativo_has_medida_preço_atual": {
+			      "Binding": {
+			        "ConceptualEntity": "historico_ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "historico_ativo": {
+			          "Target": {
+			            "Entity": "historico_ativo"
+			          }
+			        },
+			        "medida.preço_atual": {
+			          "Target": {
+			            "Entity": "medida.preço_atual"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "historico_ativo"
+			            },
+			            "Object": {
+			              "Role": "medida.preço_atual"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "historico_ativos_have_preço_atual"
+			        }
+			      ]
+			    },
+			    "historico_ativo_has_medida_valor_abaixo_da_média_de_preço": {
+			      "Binding": {
+			        "ConceptualEntity": "historico_ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "historico_ativo": {
+			          "Target": {
+			            "Entity": "historico_ativo"
+			          }
+			        },
+			        "medida.valor_abaixo_da_média_de_preço": {
+			          "Target": {
+			            "Entity": "medida.valor_abaixo_da_média_de_preço"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "historico_ativo"
+			            },
+			            "Object": {
+			              "Role": "medida.valor_abaixo_da_média_de_preço"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "historico_ativos_have_valor_abaixo_da_média_de_preço"
+			        }
+			      ]
+			    },
+			    "dividendos_pagos_por_data_20212025_has_ano_me": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos pagos por data (2021-2025)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_pagos_por_data_20212025": {
+			          "Target": {
+			            "Entity": "dividendos_pagos_por_data_20212025"
+			          }
+			        },
+			        "dividendos_pagos_por_data_20212025.ano_me": {
+			          "Target": {
+			            "Entity": "dividendos_pagos_por_data_20212025.ano_me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_pagos_por_data_20212025"
+			            },
+			            "Object": {
+			              "Role": "dividendos_pagos_por_data_20212025.ano_me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dividendos_pagos_por_data_20212025_have_ano_me"
+			        }
+			      ]
+			    },
+			    "historico_ativo_has_data": {
+			      "Binding": {
+			        "ConceptualEntity": "historico_ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "historico_ativo": {
+			          "Target": {
+			            "Entity": "historico_ativo"
+			          }
+			        },
+			        "historico_ativo.data": {
+			          "Target": {
+			            "Entity": "historico_ativo.data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "historico_ativo"
+			            },
+			            "Object": {
+			              "Role": "historico_ativo.data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "historico_ativos_have_data"
+			        }
+			      ]
+			    },
+			    "historico_ativo_has_split": {
+			      "Binding": {
+			        "ConceptualEntity": "historico_ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "historico_ativo": {
+			          "Target": {
+			            "Entity": "historico_ativo"
+			          }
+			        },
+			        "historico_ativo.split": {
+			          "Target": {
+			            "Entity": "historico_ativo.split"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "historico_ativo"
+			            },
+			            "Object": {
+			              "Role": "historico_ativo.split"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "historico_ativos_have_splits"
+			        }
+			      ]
+			    },
+			    "historico_ativo_has_dividend": {
+			      "Binding": {
+			        "ConceptualEntity": "historico_ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "historico_ativo": {
+			          "Target": {
+			            "Entity": "historico_ativo"
+			          }
+			        },
+			        "historico_ativo.dividend": {
+			          "Target": {
+			            "Entity": "historico_ativo.dividend"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "historico_ativo"
+			            },
+			            "Object": {
+			              "Role": "historico_ativo.dividend"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "historico_ativos_have_dividends"
+			        }
+			      ]
+			    },
+			    "historico_ativo_has_adjclose": {
+			      "Binding": {
+			        "ConceptualEntity": "historico_ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "historico_ativo": {
+			          "Target": {
+			            "Entity": "historico_ativo"
+			          }
+			        },
+			        "historico_ativo.adjclose": {
+			          "Target": {
+			            "Entity": "historico_ativo.adjclose"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "historico_ativo"
+			            },
+			            "Object": {
+			              "Role": "historico_ativo.adjclose"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "historico_ativos_have_adjcloses"
+			        }
+			      ]
+			    },
+			    "historico_ativo_has_volume": {
+			      "Binding": {
+			        "ConceptualEntity": "historico_ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "historico_ativo": {
+			          "Target": {
+			            "Entity": "historico_ativo"
+			          }
+			        },
+			        "historico_ativo.volume": {
+			          "Target": {
+			            "Entity": "historico_ativo.volume"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "historico_ativo"
+			            },
+			            "Object": {
+			              "Role": "historico_ativo.volume"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "historico_ativos_have_volumes"
+			        }
+			      ]
+			    },
+			    "historico_ativo_has_close": {
+			      "Binding": {
+			        "ConceptualEntity": "historico_ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "historico_ativo": {
+			          "Target": {
+			            "Entity": "historico_ativo"
+			          }
+			        },
+			        "historico_ativo.close": {
+			          "Target": {
+			            "Entity": "historico_ativo.close"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "historico_ativo"
+			            },
+			            "Object": {
+			              "Role": "historico_ativo.close"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "historico_ativos_have_closes"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "historico_ativo"
+			            },
+			            "Adjectives": [
+			              {
+			                "expensive": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "cheap": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "historico_ativo.close"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "close_indicates_how_expensive_historico_ativos_are"
+			        }
+			      ]
+			    },
+			    "historico_ativo_has_low": {
+			      "Binding": {
+			        "ConceptualEntity": "historico_ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "historico_ativo": {
+			          "Target": {
+			            "Entity": "historico_ativo"
+			          }
+			        },
+			        "historico_ativo.low": {
+			          "Target": {
+			            "Entity": "historico_ativo.low"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "historico_ativo"
+			            },
+			            "Object": {
+			              "Role": "historico_ativo.low"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "historico_ativos_have_lows"
+			        }
+			      ]
+			    },
+			    "historico_ativo_has_high": {
+			      "Binding": {
+			        "ConceptualEntity": "historico_ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "historico_ativo": {
+			          "Target": {
+			            "Entity": "historico_ativo"
+			          }
+			        },
+			        "historico_ativo.high": {
+			          "Target": {
+			            "Entity": "historico_ativo.high"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "historico_ativo"
+			            },
+			            "Object": {
+			              "Role": "historico_ativo.high"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "historico_ativos_have_highs"
+			        }
+			      ]
+			    },
+			    "historico_ativo_has_open": {
+			      "Binding": {
+			        "ConceptualEntity": "historico_ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "historico_ativo": {
+			          "Target": {
+			            "Entity": "historico_ativo"
+			          }
+			        },
+			        "historico_ativo.open": {
+			          "Target": {
+			            "Entity": "historico_ativo.open"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "historico_ativo"
+			            },
+			            "Object": {
+			              "Role": "historico_ativo.open"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "historico_ativos_have_opens"
+			        }
+			      ]
+			    },
+			    "historico_ativo_has_medida_média_de_preço_de_fechamento": {
+			      "Binding": {
+			        "ConceptualEntity": "historico_ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "historico_ativo": {
+			          "Target": {
+			            "Entity": "historico_ativo"
+			          }
+			        },
+			        "medida.média_de_preço_de_fechamento": {
+			          "Target": {
+			            "Entity": "medida.média_de_preço_de_fechamento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "historico_ativo"
+			            },
+			            "Object": {
+			              "Role": "medida.média_de_preço_de_fechamento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "historico_ativos_have_média_de_preço_de_fechamento"
+			        }
+			      ]
+			    },
+			    "dividendos_pagos_por_data_20212025_has_medida_renda_média": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos pagos por data (2021-2025)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_pagos_por_data_20212025": {
+			          "Target": {
+			            "Entity": "dividendos_pagos_por_data_20212025"
+			          }
+			        },
+			        "medida.renda_média": {
+			          "Target": {
+			            "Entity": "medida.renda_média"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_pagos_por_data_20212025"
+			            },
+			            "Object": {
+			              "Role": "medida.renda_média"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dividendos_pagos_por_data_20212025_have_renda_média"
+			        }
+			      ]
+			    },
+			    "dividendos_pagos_por_data_20212025_has_medida_DY_médio": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos pagos por data (2021-2025)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_pagos_por_data_20212025": {
+			          "Target": {
+			            "Entity": "dividendos_pagos_por_data_20212025"
+			          }
+			        },
+			        "medida.DY_médio": {
+			          "Target": {
+			            "Entity": "medida.DY_médio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_pagos_por_data_20212025"
+			            },
+			            "Object": {
+			              "Role": "medida.DY_médio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dividendos_pagos_por_data_20212025_have_DY_médio"
+			        }
+			      ]
+			    },
+			    "ativo_has_medida_DY_médio": {
+			      "Binding": {
+			        "ConceptualEntity": "Ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "ativo": {
+			          "Target": {
+			            "Entity": "ativo"
+			          }
+			        },
+			        "medida.DY_médio": {
+			          "Target": {
+			            "Entity": "medida.DY_médio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ativo"
+			            },
+			            "Object": {
+			              "Role": "medida.DY_médio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ativos_have_DY_médio"
+			        }
+			      ]
+			    },
+			    "ativo_has_industria": {
+			      "Binding": {
+			        "ConceptualEntity": "Ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "ativo": {
+			          "Target": {
+			            "Entity": "ativo"
+			          }
+			        },
+			        "ativo.industria": {
+			          "Target": {
+			            "Entity": "ativo.industria"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ativo"
+			            },
+			            "Object": {
+			              "Role": "ativo.industria"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ativos_have_industrias"
+			        }
+			      ]
+			    },
+			    "ativo_has_setor": {
+			      "Binding": {
+			        "ConceptualEntity": "Ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "ativo": {
+			          "Target": {
+			            "Entity": "ativo"
+			          }
+			        },
+			        "ativo.setor": {
+			          "Target": {
+			            "Entity": "ativo.setor"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ativo"
+			            },
+			            "Object": {
+			              "Role": "ativo.setor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ativos_have_setors"
+			        }
+			      ]
+			    },
+			    "dividendos_pagos_por_data_20212025_has_medida_média_de_DY": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos pagos por data (2021-2025)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_pagos_por_data_20212025": {
+			          "Target": {
+			            "Entity": "dividendos_pagos_por_data_20212025"
+			          }
+			        },
+			        "medida.média_de_DY": {
+			          "Target": {
+			            "Entity": "medida.média_de_DY"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_pagos_por_data_20212025"
+			            },
+			            "Object": {
+			              "Role": "medida.média_de_DY"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dividendos_pagos_por_data_20212025_have_média_de_DY"
+			        }
+			      ]
+			    },
+			    "dividendos_pagos_por_data_20212025_has_medida_média_de_dividendos": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos pagos por data (2021-2025)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_pagos_por_data_20212025": {
+			          "Target": {
+			            "Entity": "dividendos_pagos_por_data_20212025"
+			          }
+			        },
+			        "medida.média_de_dividendos": {
+			          "Target": {
+			            "Entity": "medida.média_de_dividendos"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_pagos_por_data_20212025"
+			            },
+			            "Object": {
+			              "Role": "medida.média_de_dividendos"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dividendos_pagos_por_data_20212025_have_média_de_dividendos"
+			        }
+			      ]
+			    },
+			    "medida_has_valor_multiplicado": {
+			      "Binding": {
+			        "ConceptualEntity": "Medidas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "medida": {
+			          "Target": {
+			            "Entity": "medida"
+			          }
+			        },
+			        "medida.valor_multiplicado": {
+			          "Target": {
+			            "Entity": "medida.valor_multiplicado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "medida"
+			            },
+			            "Object": {
+			              "Role": "medida.valor_multiplicado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "medidas_have_valor_multiplicado"
+			        }
+			      ]
+			    },
+			    "dividendos_pagos_por_data_20212025_has_medida_média_de_pagamento": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos pagos por data (2021-2025)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_pagos_por_data_20212025": {
+			          "Target": {
+			            "Entity": "dividendos_pagos_por_data_20212025"
+			          }
+			        },
+			        "medida.média_de_pagamento": {
+			          "Target": {
+			            "Entity": "medida.média_de_pagamento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_pagos_por_data_20212025"
+			            },
+			            "Object": {
+			              "Role": "medida.média_de_pagamento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dividendos_pagos_por_data_20212025_have_média_de_pagamento"
+			        }
+			      ]
+			    },
+			    "dividendos_pagos_por_data_20212025_has_medida_quantidade_de_meses_pagos": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos pagos por data (2021-2025)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_pagos_por_data_20212025": {
+			          "Target": {
+			            "Entity": "dividendos_pagos_por_data_20212025"
+			          }
+			        },
+			        "medida.quantidade_de_meses_pagos": {
+			          "Target": {
+			            "Entity": "medida.quantidade_de_meses_pagos"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_pagos_por_data_20212025"
+			            },
+			            "Object": {
+			              "Role": "medida.quantidade_de_meses_pagos"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dividendos_pagos_por_data_20212025_have_quantidade_de_meses_pagos"
+			        }
+			      ]
+			    },
+			    "medida_has_value": {
+			      "Binding": {
+			        "ConceptualEntity": "Medidas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "medida": {
+			          "Target": {
+			            "Entity": "medida"
+			          }
+			        },
+			        "medida.value": {
+			          "Target": {
+			            "Entity": "medida.value"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "medida"
+			            },
+			            "Object": {
+			              "Role": "medida.value"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "medidas_have_values"
+			        }
+			      ]
+			    },
+			    "dividendos_pagos_por_data_20212025_has_dy": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos pagos por data (2021-2025)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_pagos_por_data_20212025": {
+			          "Target": {
+			            "Entity": "dividendos_pagos_por_data_20212025"
+			          }
+			        },
+			        "dividendos_pagos_por_data_20212025.dy": {
+			          "Target": {
+			            "Entity": "dividendos_pagos_por_data_20212025.dy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_pagos_por_data_20212025"
+			            },
+			            "Object": {
+			              "Role": "dividendos_pagos_por_data_20212025.dy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dividendos_pagos_por_data_20212025_have_dies"
+			        }
+			      ]
+			    },
+			    "dividendos_pagos_por_data_20212025_has_tipo": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos pagos por data (2021-2025)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_pagos_por_data_20212025": {
+			          "Target": {
+			            "Entity": "dividendos_pagos_por_data_20212025"
+			          }
+			        },
+			        "dividendos_pagos_por_data_20212025.tipo": {
+			          "Target": {
+			            "Entity": "dividendos_pagos_por_data_20212025.tipo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_pagos_por_data_20212025"
+			            },
+			            "Object": {
+			              "Role": "dividendos_pagos_por_data_20212025.tipo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dividendos_pagos_por_data_20212025_have_tipos"
+			        }
+			      ]
+			    },
+			    "dividendos_pagos_por_data_20212025_has_data_pagamento": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos pagos por data (2021-2025)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_pagos_por_data_20212025": {
+			          "Target": {
+			            "Entity": "dividendos_pagos_por_data_20212025"
+			          }
+			        },
+			        "dividendos_pagos_por_data_20212025.data_pagamento": {
+			          "Target": {
+			            "Entity": "dividendos_pagos_por_data_20212025.data_pagamento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_pagos_por_data_20212025"
+			            },
+			            "Object": {
+			              "Role": "dividendos_pagos_por_data_20212025.data_pagamento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dividendos_pagos_por_data_20212025_have_data_pagamentos"
+			        }
+			      ]
+			    },
+			    "dividendos_pagos_por_data_20212025_has_data_com": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos pagos por data (2021-2025)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_pagos_por_data_20212025": {
+			          "Target": {
+			            "Entity": "dividendos_pagos_por_data_20212025"
+			          }
+			        },
+			        "dividendos_pagos_por_data_20212025.data_com": {
+			          "Target": {
+			            "Entity": "dividendos_pagos_por_data_20212025.data_com"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_pagos_por_data_20212025"
+			            },
+			            "Object": {
+			              "Role": "dividendos_pagos_por_data_20212025.data_com"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dividendos_pagos_por_data_20212025_have_data_com"
+			        }
+			      ]
+			    },
+			    "dividendos_pagos_por_data_20212025_has_valor": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos pagos por data (2021-2025)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_pagos_por_data_20212025": {
+			          "Target": {
+			            "Entity": "dividendos_pagos_por_data_20212025"
+			          }
+			        },
+			        "dividendos_pagos_por_data_20212025.valor": {
+			          "Target": {
+			            "Entity": "dividendos_pagos_por_data_20212025.valor"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_pagos_por_data_20212025"
+			            },
+			            "Object": {
+			              "Role": "dividendos_pagos_por_data_20212025.valor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dividendos_pagos_por_data_20212025_have_valor"
+			        }
+			      ]
+			    },
+			    "ativo_data_trimestre_has_ativo_data_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "Ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "ativo.data.trimestre": {
+			          "Target": {
+			            "Entity": "ativo.data.trimestre"
+			          }
+			        },
+			        "ativo.data.mê": {
+			          "Target": {
+			            "Entity": "ativo.data.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ativo.data.trimestre"
+			            },
+			            "Object": {
+			              "Role": "ativo.data.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_mê3"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ativo.data.mê"
+			            },
+			            "Object": {
+			              "Role": "ativo.data.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_trimestres3"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "ativo.data.mê"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "ativo.data.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_are_in_trimestres3"
+			        }
+			      ]
+			    },
+			    "ativo_data_mê_has_ativo_data_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "Ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "ativo.data.mê": {
+			          "Target": {
+			            "Entity": "ativo.data.mê"
+			          }
+			        },
+			        "ativo.data.dia": {
+			          "Target": {
+			            "Entity": "ativo.data.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ativo.data.mê"
+			            },
+			            "Object": {
+			              "Role": "ativo.data.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_dias3"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ativo.data.dia"
+			            },
+			            "Object": {
+			              "Role": "ativo.data.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_have_mê3"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "ativo.data.dia"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "ativo.data.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_are_in_mê3"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+

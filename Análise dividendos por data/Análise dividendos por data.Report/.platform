@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Análise dividendos por data"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "06e539b3-b3bc-4b33-be5b-55425dd60f65"
+  }
+}

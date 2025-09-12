@@ -1,0 +1,122 @@
+table historico_ativos
+	lineageTag: 0796ce6b-ad60-4227-a63b-6959e1c21903
+
+	column open
+		dataType: double
+		lineageTag: a089a06b-6baa-48d7-bfe9-5307c197070e
+		summarizeBy: sum
+		sourceColumn: open
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column high
+		dataType: double
+		lineageTag: db4db6a2-d070-426d-80ca-9a79ca3b85e6
+		summarizeBy: sum
+		sourceColumn: high
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column low
+		dataType: double
+		lineageTag: 6e0c9a1f-288a-47e0-89d9-08062f379919
+		summarizeBy: sum
+		sourceColumn: low
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column close
+		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 0e7309b9-9b3c-43bb-ad33-5869ddc47f7f
+		summarizeBy: sum
+		sourceColumn: close
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column volume
+		dataType: string
+		lineageTag: a619a9dd-03a2-478b-ab48-dde8a2790fa1
+		summarizeBy: none
+		sourceColumn: volume
+
+		annotation SummarizationSetBy = Automatic
+
+	column adjclose
+		dataType: double
+		lineageTag: 9a3c60ac-3077-4ef0-852f-23fa8e760586
+		summarizeBy: sum
+		sourceColumn: adjclose
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column dividends
+		dataType: double
+		lineageTag: 6531e389-4623-4cdd-a356-993d86b1cc58
+		summarizeBy: sum
+		sourceColumn: dividends
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column splits
+		dataType: double
+		lineageTag: 8b6110c8-1fe2-43e8-9549-89079aee46f1
+		summarizeBy: sum
+		sourceColumn: splits
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Ativo
+		dataType: string
+		lineageTag: b4dbf6ea-4b1f-4d3d-84cb-ac5f7ec8adf7
+		summarizeBy: none
+		sourceColumn: Ativo
+
+		annotation SummarizationSetBy = Automatic
+
+	column Data
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 6924b5ee-b8c6-48b0-907d-0ec3df514158
+		summarizeBy: none
+		sourceColumn: Data
+
+		variation Variation
+			isDefault
+			relationship: b6f5e4d5-79c3-4b7e-a2dd-099e1690fd1f
+			defaultHierarchy: LocalDateTable_28d81a7b-c8e2-4ce2-bd32-cbf28956b76f.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	partition historico_ativos = m
+		mode: import
+		queryGroup: 'Tabelas Dimensão'
+		source =
+				let
+				    Fonte = Csv.Document(File.Contents("C:\Users\luis.nascimento\Documents\Análises Financeiras\Dados Modelados\historico_ativos.csv"),[Delimiter=",", Columns=10, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
+				    #"Valor Substituído" = Table.ReplaceValue(#"Cabeçalhos Promovidos",".",",",Replacer.ReplaceText,{"open", "high", "low", "close", "adjclose", "dividends", "splits"}),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Valor Substituído",{{"open", type number}, {"high", type number}, {"low", type number}, {"close", type number}, {"adjclose", type number}, {"dividends", type number}, {"splits", type number}, {"Data", type date}})
+				in
+				    #"Tipo Alterado"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

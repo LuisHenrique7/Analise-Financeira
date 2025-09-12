@@ -1,0 +1,67 @@
+table Ativos
+	lineageTag: e4bd41b3-76ca-453f-821d-e64c1ac9bfe4
+
+	column SETOR
+		dataType: string
+		lineageTag: 77681974-23ee-4032-9bea-bd1946756b9d
+		summarizeBy: none
+		sourceColumn: SETOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column INDUSTRIA
+		dataType: string
+		lineageTag: 8120786e-06b8-440d-8428-11e186ba2d57
+		summarizeBy: none
+		sourceColumn: INDUSTRIA
+
+		annotation SummarizationSetBy = Automatic
+
+	column ATIVO
+		dataType: string
+		lineageTag: 58202fe3-d731-4fc2-a55f-4cc2dd463bbe
+		summarizeBy: none
+		sourceColumn: ATIVO
+
+		annotation SummarizationSetBy = Automatic
+
+	column DATA
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: c95a78b5-eb14-471f-865b-404c981397f9
+		summarizeBy: none
+		sourceColumn: DATA
+
+		variation Variation
+			isDefault
+			relationship: ca3ad330-93a2-4684-a430-d63c779f350d
+			defaultHierarchy: LocalDateTable_d7d993d8-7766-47dc-8ddd-149eead441b1.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column RECOMENDACAO
+		dataType: string
+		lineageTag: cbc33cd2-f114-4100-a9e1-7e42f1dab0fe
+		summarizeBy: none
+		sourceColumn: RECOMENDACAO
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Ativos = m
+		mode: import
+		queryGroup: 'Tabelas Fato'
+		source =
+				let
+				    Fonte = Csv.Document(File.Contents("C:\Users\luis.nascimento\Documents\Análises Financeiras\Dados Modelados\Ativos.csv"),[Delimiter=",", Columns=10, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Colunas Removidas" = Table.RemoveColumns(Fonte,{"Column6", "Column7", "Column8", "Column9", "Column10"}),
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(#"Colunas Removidas", [PromoteAllScalars=true]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"DATA", type date}})
+				in
+				    #"Tipo Alterado"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

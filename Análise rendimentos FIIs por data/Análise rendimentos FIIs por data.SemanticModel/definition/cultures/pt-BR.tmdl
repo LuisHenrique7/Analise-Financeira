@@ -1,0 +1,2877 @@
+cultureInfo pt-BR
+
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "FIIs_rendimentos_por_data_20212025": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FIIs rendimentos por data (2021-2025)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "FIIs rendimentos por data (2021-2025)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "FIIs rendimento por data (2021-2025)": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "FIIs rendimentos por data (2021 2025)": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "FIIs rendimento por data (2021 2025)": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.7566
+			          }
+			        }
+			      ]
+			    },
+			    "FIIs_rendimentos_por_data_20212025.ativo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FIIs rendimentos por data (2021-2025)",
+			          "ConceptualProperty": "ATIVO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "ativo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "FIIs_rendimentos_por_data_20212025.valor": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FIIs rendimentos por data (2021-2025)",
+			          "ConceptualProperty": "VALOR"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "valor": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "courage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "bravery": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "heroism": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "fearlessness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "boldness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "gallantry": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "lionheartedness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "pluck": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "spirit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "nerve": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "FIIs_rendimentos_por_data_20212025.data_com": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FIIs rendimentos por data (2021-2025)",
+			          "ConceptualProperty": "DATA COM"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "data com": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "com": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "information com": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "fact com": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "info com": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "statistic com": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "document com": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "figure com": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "record com": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "FIIs_rendimentos_por_data_20212025.data_com.hierarquia_de_data": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FIIs rendimentos por data (2021-2025)",
+			          "VariationSource": "DATA COM",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "hierarquia de data": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hierarquia de information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "FIIs_rendimentos_por_data_20212025.data_com.ano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FIIs rendimentos por data (2021-2025)",
+			          "VariationSource": "DATA COM",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Ano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data com ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information com ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "fact com ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "info com ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "statistic com ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "document com ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "figure com ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "record com ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "FIIs_rendimentos_por_data_20212025.data_com.trimestre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FIIs rendimentos por data (2021-2025)",
+			          "VariationSource": "DATA COM",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Trimestre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data com trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information com trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "fact com trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "info com trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "statistic com trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "document com trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "figure com trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "record com trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "FIIs_rendimentos_por_data_20212025.data_com.mê": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FIIs rendimentos por data (2021-2025)",
+			          "VariationSource": "DATA COM",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Mês"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data com mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information com mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "fact com mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "info com mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "statistic com mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "document com mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "figure com mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "record com mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "FIIs_rendimentos_por_data_20212025.data_com.dia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FIIs rendimentos por data (2021-2025)",
+			          "VariationSource": "DATA COM",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Dia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data com dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information com dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "fact com dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "info com dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "statistic com dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "document com dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "figure com dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "record com dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "FIIs_rendimentos_por_data_20212025.data_pagamento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FIIs rendimentos por data (2021-2025)",
+			          "ConceptualProperty": "DATA PAGAMENTO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "data pagamento": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "information pagamento": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "fact pagamento": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "info pagamento": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "statistic pagamento": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "document pagamento": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "figure pagamento": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "record pagamento": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "FIIs_rendimentos_por_data_20212025.data_pagamento.hierarquia_de_data": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FIIs rendimentos por data (2021-2025)",
+			          "VariationSource": "DATA PAGAMENTO",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "hierarquia de data": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hierarquia de information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "FIIs_rendimentos_por_data_20212025.data_pagamento.ano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FIIs rendimentos por data (2021-2025)",
+			          "VariationSource": "DATA PAGAMENTO",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Ano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data pagamento ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information pagamento ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "fact pagamento ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "info pagamento ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "statistic pagamento ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "document pagamento ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "figure pagamento ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "record pagamento ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "FIIs_rendimentos_por_data_20212025.data_pagamento.trimestre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FIIs rendimentos por data (2021-2025)",
+			          "VariationSource": "DATA PAGAMENTO",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Trimestre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data pagamento trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information pagamento trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "fact pagamento trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "info pagamento trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "statistic pagamento trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "document pagamento trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "figure pagamento trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "record pagamento trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "FIIs_rendimentos_por_data_20212025.data_pagamento.mê": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FIIs rendimentos por data (2021-2025)",
+			          "VariationSource": "DATA PAGAMENTO",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Mês"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data pagamento mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information pagamento mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "fact pagamento mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "info pagamento mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "statistic pagamento mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "document pagamento mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "figure pagamento mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "record pagamento mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "FIIs_rendimentos_por_data_20212025.data_pagamento.dia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FIIs rendimentos por data (2021-2025)",
+			          "VariationSource": "DATA PAGAMENTO",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Dia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data pagamento dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information pagamento dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "fact pagamento dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "info pagamento dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "statistic pagamento dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "document pagamento dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "figure pagamento dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "record pagamento dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "FIIs_rendimentos_por_data_20212025.tipo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FIIs rendimentos por data (2021-2025)",
+			          "ConceptualProperty": "TIPO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tipo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "FIIs_rendimentos_por_data_20212025.dy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FIIs rendimentos por data (2021-2025)",
+			          "ConceptualProperty": "DY"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dy": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fii_com_preco": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fii_com_preco"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fii com preco": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Fii_com_preco": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "fii_com_preco.ativo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fii_com_preco",
+			          "ConceptualProperty": "ATIVO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ativo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fii_com_preco.preco": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fii_com_preco",
+			          "ConceptualProperty": "PRECO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "preco": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fii_com_preco.setor": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fii_com_preco",
+			          "ConceptualProperty": "SETOR"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "setor": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fii_com_preco.industria": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fii_com_preco",
+			          "ConceptualProperty": "INDUSTRIA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "industria": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "medida": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.value": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Value"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "value": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "assessment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "worth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "price": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "cost": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "charge": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "rate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "importance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "significance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "usefulness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "consequence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        }
+			      ]
+			    },
+			    "medida.média_de_valor": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Média de valor"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "média de valor": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "média de courage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "média de bravery": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "média de heroism": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "média de fearlessness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "média de boldness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "média de gallantry": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "média de lionheartedness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "média de pluck": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "média de spirit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "média de nerve": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "Média de rendimento": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Rendimento total": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "medida.média_de_DY": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Média de DY"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "média de DY": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "FIIs_rendimentos_por_data_20212025_data_pagamento_mê_has_FIIs_rendimentos_por_data_20212025_data_pagamento_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "FIIs rendimentos por data (2021-2025)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FIIs_rendimentos_por_data_20212025.data_pagamento.mê": {
+			          "Target": {
+			            "Entity": "FIIs_rendimentos_por_data_20212025.data_pagamento.mê"
+			          }
+			        },
+			        "FIIs_rendimentos_por_data_20212025.data_pagamento.dia": {
+			          "Target": {
+			            "Entity": "FIIs_rendimentos_por_data_20212025.data_pagamento.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.data_pagamento.mê"
+			            },
+			            "Object": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.data_pagamento.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_dias"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.data_pagamento.dia"
+			            },
+			            "Object": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.data_pagamento.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_have_mê"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.data_pagamento.dia"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.data_pagamento.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_are_in_mê1"
+			        }
+			      ]
+			    },
+			    "FIIs_rendimentos_por_data_20212025_data_pagamento_trimestre_has_FIIs_rendimentos_por_data_20212025_data_pagamento_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "FIIs rendimentos por data (2021-2025)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FIIs_rendimentos_por_data_20212025.data_pagamento.trimestre": {
+			          "Target": {
+			            "Entity": "FIIs_rendimentos_por_data_20212025.data_pagamento.trimestre"
+			          }
+			        },
+			        "FIIs_rendimentos_por_data_20212025.data_pagamento.mê": {
+			          "Target": {
+			            "Entity": "FIIs_rendimentos_por_data_20212025.data_pagamento.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.data_pagamento.trimestre"
+			            },
+			            "Object": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.data_pagamento.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_mê"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.data_pagamento.mê"
+			            },
+			            "Object": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.data_pagamento.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_trimestres"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.data_pagamento.mê"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.data_pagamento.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_are_in_trimestres1"
+			        }
+			      ]
+			    },
+			    "FIIs_rendimentos_por_data_20212025_data_pagamento_ano_has_FIIs_rendimentos_por_data_20212025_data_pagamento_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "FIIs rendimentos por data (2021-2025)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FIIs_rendimentos_por_data_20212025.data_pagamento.ano": {
+			          "Target": {
+			            "Entity": "FIIs_rendimentos_por_data_20212025.data_pagamento.ano"
+			          }
+			        },
+			        "FIIs_rendimentos_por_data_20212025.data_pagamento.trimestre": {
+			          "Target": {
+			            "Entity": "FIIs_rendimentos_por_data_20212025.data_pagamento.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.data_pagamento.ano"
+			            },
+			            "Object": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.data_pagamento.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "anos_have_trimestres"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.data_pagamento.trimestre"
+			            },
+			            "Object": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.data_pagamento.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_anos"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.data_pagamento.trimestre"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.data_pagamento.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_are_in_anos1"
+			        }
+			      ]
+			    },
+			    "FIIs_rendimentos_por_data_20212025_data_pagamento_hierarquia_de_data_has_FIIs_rendimentos_por_data_20212025_data_pagamento_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "FIIs rendimentos por data (2021-2025)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FIIs_rendimentos_por_data_20212025.data_pagamento.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "FIIs_rendimentos_por_data_20212025.data_pagamento.hierarquia_de_data"
+			          }
+			        },
+			        "FIIs_rendimentos_por_data_20212025.data_pagamento.dia": {
+			          "Target": {
+			            "Entity": "FIIs_rendimentos_por_data_20212025.data_pagamento.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.data_pagamento.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.data_pagamento.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_dias"
+			        }
+			      ]
+			    },
+			    "FIIs_rendimentos_por_data_20212025_data_pagamento_hierarquia_de_data_has_FIIs_rendimentos_por_data_20212025_data_pagamento_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "FIIs rendimentos por data (2021-2025)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FIIs_rendimentos_por_data_20212025.data_pagamento.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "FIIs_rendimentos_por_data_20212025.data_pagamento.hierarquia_de_data"
+			          }
+			        },
+			        "FIIs_rendimentos_por_data_20212025.data_pagamento.mê": {
+			          "Target": {
+			            "Entity": "FIIs_rendimentos_por_data_20212025.data_pagamento.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.data_pagamento.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.data_pagamento.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_mê"
+			        }
+			      ]
+			    },
+			    "FIIs_rendimentos_por_data_20212025_data_pagamento_hierarquia_de_data_has_FIIs_rendimentos_por_data_20212025_data_pagamento_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "FIIs rendimentos por data (2021-2025)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FIIs_rendimentos_por_data_20212025.data_pagamento.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "FIIs_rendimentos_por_data_20212025.data_pagamento.hierarquia_de_data"
+			          }
+			        },
+			        "FIIs_rendimentos_por_data_20212025.data_pagamento.trimestre": {
+			          "Target": {
+			            "Entity": "FIIs_rendimentos_por_data_20212025.data_pagamento.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.data_pagamento.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.data_pagamento.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_trimestres"
+			        }
+			      ]
+			    },
+			    "FIIs_rendimentos_por_data_20212025_data_pagamento_hierarquia_de_data_has_FIIs_rendimentos_por_data_20212025_data_pagamento_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "FIIs rendimentos por data (2021-2025)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FIIs_rendimentos_por_data_20212025.data_pagamento.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "FIIs_rendimentos_por_data_20212025.data_pagamento.hierarquia_de_data"
+			          }
+			        },
+			        "FIIs_rendimentos_por_data_20212025.data_pagamento.ano": {
+			          "Target": {
+			            "Entity": "FIIs_rendimentos_por_data_20212025.data_pagamento.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.data_pagamento.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.data_pagamento.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_anos"
+			        }
+			      ]
+			    },
+			    "FIIs_rendimentos_por_data_20212025_data_pagamento_has_hierarquia_de_data": {
+			      "Binding": {
+			        "ConceptualEntity": "FIIs rendimentos por data (2021-2025)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FIIs_rendimentos_por_data_20212025.data_pagamento": {
+			          "Target": {
+			            "Entity": "FIIs_rendimentos_por_data_20212025.data_pagamento"
+			          }
+			        },
+			        "FIIs_rendimentos_por_data_20212025.data_pagamento.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "FIIs_rendimentos_por_data_20212025.data_pagamento.hierarquia_de_data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.data_pagamento"
+			            },
+			            "Object": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.data_pagamento.hierarquia_de_data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "data_pagamentos_have_hierarquia_de_data"
+			        }
+			      ]
+			    },
+			    "FIIs_rendimentos_por_data_20212025_data_com_mê_has_FIIs_rendimentos_por_data_20212025_data_com_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "FIIs rendimentos por data (2021-2025)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FIIs_rendimentos_por_data_20212025.data_com.mê": {
+			          "Target": {
+			            "Entity": "FIIs_rendimentos_por_data_20212025.data_com.mê"
+			          }
+			        },
+			        "FIIs_rendimentos_por_data_20212025.data_com.dia": {
+			          "Target": {
+			            "Entity": "FIIs_rendimentos_por_data_20212025.data_com.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.data_com.mê"
+			            },
+			            "Object": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.data_com.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_dias1"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.data_com.dia"
+			            },
+			            "Object": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.data_com.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_have_mê1"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.data_com.dia"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.data_com.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_are_in_mê"
+			        }
+			      ]
+			    },
+			    "FIIs_rendimentos_por_data_20212025_data_com_trimestre_has_FIIs_rendimentos_por_data_20212025_data_com_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "FIIs rendimentos por data (2021-2025)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FIIs_rendimentos_por_data_20212025.data_com.trimestre": {
+			          "Target": {
+			            "Entity": "FIIs_rendimentos_por_data_20212025.data_com.trimestre"
+			          }
+			        },
+			        "FIIs_rendimentos_por_data_20212025.data_com.mê": {
+			          "Target": {
+			            "Entity": "FIIs_rendimentos_por_data_20212025.data_com.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.data_com.trimestre"
+			            },
+			            "Object": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.data_com.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_mê1"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.data_com.mê"
+			            },
+			            "Object": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.data_com.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_trimestres1"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.data_com.mê"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.data_com.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_are_in_trimestres"
+			        }
+			      ]
+			    },
+			    "FIIs_rendimentos_por_data_20212025_data_com_ano_has_FIIs_rendimentos_por_data_20212025_data_com_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "FIIs rendimentos por data (2021-2025)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FIIs_rendimentos_por_data_20212025.data_com.ano": {
+			          "Target": {
+			            "Entity": "FIIs_rendimentos_por_data_20212025.data_com.ano"
+			          }
+			        },
+			        "FIIs_rendimentos_por_data_20212025.data_com.trimestre": {
+			          "Target": {
+			            "Entity": "FIIs_rendimentos_por_data_20212025.data_com.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.data_com.ano"
+			            },
+			            "Object": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.data_com.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "anos_have_trimestres1"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.data_com.trimestre"
+			            },
+			            "Object": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.data_com.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_anos1"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.data_com.trimestre"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.data_com.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_are_in_anos"
+			        }
+			      ]
+			    },
+			    "FIIs_rendimentos_por_data_20212025_data_com_hierarquia_de_data_has_FIIs_rendimentos_por_data_20212025_data_com_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "FIIs rendimentos por data (2021-2025)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FIIs_rendimentos_por_data_20212025.data_com.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "FIIs_rendimentos_por_data_20212025.data_com.hierarquia_de_data"
+			          }
+			        },
+			        "FIIs_rendimentos_por_data_20212025.data_com.dia": {
+			          "Target": {
+			            "Entity": "FIIs_rendimentos_por_data_20212025.data_com.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.data_com.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.data_com.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_dias1"
+			        }
+			      ]
+			    },
+			    "FIIs_rendimentos_por_data_20212025_data_com_hierarquia_de_data_has_FIIs_rendimentos_por_data_20212025_data_com_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "FIIs rendimentos por data (2021-2025)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FIIs_rendimentos_por_data_20212025.data_com.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "FIIs_rendimentos_por_data_20212025.data_com.hierarquia_de_data"
+			          }
+			        },
+			        "FIIs_rendimentos_por_data_20212025.data_com.mê": {
+			          "Target": {
+			            "Entity": "FIIs_rendimentos_por_data_20212025.data_com.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.data_com.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.data_com.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_mê1"
+			        }
+			      ]
+			    },
+			    "FIIs_rendimentos_por_data_20212025_data_com_hierarquia_de_data_has_FIIs_rendimentos_por_data_20212025_data_com_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "FIIs rendimentos por data (2021-2025)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FIIs_rendimentos_por_data_20212025.data_com.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "FIIs_rendimentos_por_data_20212025.data_com.hierarquia_de_data"
+			          }
+			        },
+			        "FIIs_rendimentos_por_data_20212025.data_com.trimestre": {
+			          "Target": {
+			            "Entity": "FIIs_rendimentos_por_data_20212025.data_com.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.data_com.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.data_com.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_trimestres1"
+			        }
+			      ]
+			    },
+			    "FIIs_rendimentos_por_data_20212025_data_com_hierarquia_de_data_has_FIIs_rendimentos_por_data_20212025_data_com_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "FIIs rendimentos por data (2021-2025)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FIIs_rendimentos_por_data_20212025.data_com.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "FIIs_rendimentos_por_data_20212025.data_com.hierarquia_de_data"
+			          }
+			        },
+			        "FIIs_rendimentos_por_data_20212025.data_com.ano": {
+			          "Target": {
+			            "Entity": "FIIs_rendimentos_por_data_20212025.data_com.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.data_com.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.data_com.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_anos1"
+			        }
+			      ]
+			    },
+			    "FIIs_rendimentos_por_data_20212025_data_com_has_hierarquia_de_data": {
+			      "Binding": {
+			        "ConceptualEntity": "FIIs rendimentos por data (2021-2025)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FIIs_rendimentos_por_data_20212025.data_com": {
+			          "Target": {
+			            "Entity": "FIIs_rendimentos_por_data_20212025.data_com"
+			          }
+			        },
+			        "FIIs_rendimentos_por_data_20212025.data_com.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "FIIs_rendimentos_por_data_20212025.data_com.hierarquia_de_data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.data_com"
+			            },
+			            "Object": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.data_com.hierarquia_de_data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "data_com_have_hierarquia_de_data"
+			        }
+			      ]
+			    },
+			    "FIIs_rendimentos_por_data_20212025_has_fii_com_preco": {
+			      "Binding": {
+			        "ConceptualEntity": "FIIs rendimentos por data (2021-2025)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FIIs_rendimentos_por_data_20212025": {
+			          "Target": {
+			            "Entity": "FIIs_rendimentos_por_data_20212025"
+			          }
+			        },
+			        "fii_com_preco": {
+			          "Target": {
+			            "Entity": "fii_com_preco"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FIIs_rendimentos_por_data_20212025"
+			            },
+			            "Object": {
+			              "Role": "fii_com_preco"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FIIs_rendimentos_por_data_20212025_have_fii_com_precos"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fii_com_preco"
+			            },
+			            "Object": {
+			              "Role": "FIIs_rendimentos_por_data_20212025"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fii_com_precos_have_FIIs_rendimentos_por_data_20212025"
+			        }
+			      ]
+			    },
+			    "FIIs_rendimentos_por_data_20212025_has_medida_média_de_DY": {
+			      "Binding": {
+			        "ConceptualEntity": "FIIs rendimentos por data (2021-2025)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FIIs_rendimentos_por_data_20212025": {
+			          "Target": {
+			            "Entity": "FIIs_rendimentos_por_data_20212025"
+			          }
+			        },
+			        "medida.média_de_DY": {
+			          "Target": {
+			            "Entity": "medida.média_de_DY"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FIIs_rendimentos_por_data_20212025"
+			            },
+			            "Object": {
+			              "Role": "medida.média_de_DY"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FIIs_rendimentos_por_data_20212025_have_média_de_DY"
+			        }
+			      ]
+			    },
+			    "FIIs_rendimentos_por_data_20212025_has_medida_média_de_valor": {
+			      "Binding": {
+			        "ConceptualEntity": "FIIs rendimentos por data (2021-2025)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FIIs_rendimentos_por_data_20212025": {
+			          "Target": {
+			            "Entity": "FIIs_rendimentos_por_data_20212025"
+			          }
+			        },
+			        "medida.média_de_valor": {
+			          "Target": {
+			            "Entity": "medida.média_de_valor"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FIIs_rendimentos_por_data_20212025"
+			            },
+			            "Object": {
+			              "Role": "medida.média_de_valor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FIIs_rendimentos_por_data_20212025_have_média_de_valor"
+			        }
+			      ]
+			    },
+			    "medida_has_value": {
+			      "Binding": {
+			        "ConceptualEntity": "Medidas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "medida": {
+			          "Target": {
+			            "Entity": "medida"
+			          }
+			        },
+			        "medida.value": {
+			          "Target": {
+			            "Entity": "medida.value"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "medida"
+			            },
+			            "Object": {
+			              "Role": "medida.value"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "medidas_have_values"
+			        }
+			      ]
+			    },
+			    "fii_com_preco_has_industria": {
+			      "Binding": {
+			        "ConceptualEntity": "Fii_com_preco"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fii_com_preco": {
+			          "Target": {
+			            "Entity": "fii_com_preco"
+			          }
+			        },
+			        "fii_com_preco.industria": {
+			          "Target": {
+			            "Entity": "fii_com_preco.industria"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fii_com_preco"
+			            },
+			            "Object": {
+			              "Role": "fii_com_preco.industria"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fii_com_precos_have_industrias"
+			        }
+			      ]
+			    },
+			    "fii_com_preco_has_setor": {
+			      "Binding": {
+			        "ConceptualEntity": "Fii_com_preco"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fii_com_preco": {
+			          "Target": {
+			            "Entity": "fii_com_preco"
+			          }
+			        },
+			        "fii_com_preco.setor": {
+			          "Target": {
+			            "Entity": "fii_com_preco.setor"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fii_com_preco"
+			            },
+			            "Object": {
+			              "Role": "fii_com_preco.setor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fii_com_precos_have_setors"
+			        }
+			      ]
+			    },
+			    "fii_com_preco_has_preco": {
+			      "Binding": {
+			        "ConceptualEntity": "Fii_com_preco"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fii_com_preco": {
+			          "Target": {
+			            "Entity": "fii_com_preco"
+			          }
+			        },
+			        "fii_com_preco.preco": {
+			          "Target": {
+			            "Entity": "fii_com_preco.preco"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fii_com_preco"
+			            },
+			            "Object": {
+			              "Role": "fii_com_preco.preco"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fii_com_precos_have_precos"
+			        }
+			      ]
+			    },
+			    "fii_com_preco_has_ativo": {
+			      "Binding": {
+			        "ConceptualEntity": "Fii_com_preco"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fii_com_preco": {
+			          "Target": {
+			            "Entity": "fii_com_preco"
+			          }
+			        },
+			        "fii_com_preco.ativo": {
+			          "Target": {
+			            "Entity": "fii_com_preco.ativo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fii_com_preco"
+			            },
+			            "Object": {
+			              "Role": "fii_com_preco.ativo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fii_com_precos_have_ativos"
+			        }
+			      ]
+			    },
+			    "FIIs_rendimentos_por_data_20212025_has_dy": {
+			      "Binding": {
+			        "ConceptualEntity": "FIIs rendimentos por data (2021-2025)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FIIs_rendimentos_por_data_20212025": {
+			          "Target": {
+			            "Entity": "FIIs_rendimentos_por_data_20212025"
+			          }
+			        },
+			        "FIIs_rendimentos_por_data_20212025.dy": {
+			          "Target": {
+			            "Entity": "FIIs_rendimentos_por_data_20212025.dy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FIIs_rendimentos_por_data_20212025"
+			            },
+			            "Object": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.dy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FIIs_rendimentos_por_data_20212025_have_dies"
+			        }
+			      ]
+			    },
+			    "FIIs_rendimentos_por_data_20212025_has_tipo": {
+			      "Binding": {
+			        "ConceptualEntity": "FIIs rendimentos por data (2021-2025)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FIIs_rendimentos_por_data_20212025": {
+			          "Target": {
+			            "Entity": "FIIs_rendimentos_por_data_20212025"
+			          }
+			        },
+			        "FIIs_rendimentos_por_data_20212025.tipo": {
+			          "Target": {
+			            "Entity": "FIIs_rendimentos_por_data_20212025.tipo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FIIs_rendimentos_por_data_20212025"
+			            },
+			            "Object": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.tipo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FIIs_rendimentos_por_data_20212025_have_tipos"
+			        }
+			      ]
+			    },
+			    "FIIs_rendimentos_por_data_20212025_has_data_pagamento": {
+			      "Binding": {
+			        "ConceptualEntity": "FIIs rendimentos por data (2021-2025)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FIIs_rendimentos_por_data_20212025": {
+			          "Target": {
+			            "Entity": "FIIs_rendimentos_por_data_20212025"
+			          }
+			        },
+			        "FIIs_rendimentos_por_data_20212025.data_pagamento": {
+			          "Target": {
+			            "Entity": "FIIs_rendimentos_por_data_20212025.data_pagamento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FIIs_rendimentos_por_data_20212025"
+			            },
+			            "Object": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.data_pagamento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FIIs_rendimentos_por_data_20212025_have_data_pagamentos"
+			        }
+			      ]
+			    },
+			    "FIIs_rendimentos_por_data_20212025_has_data_com": {
+			      "Binding": {
+			        "ConceptualEntity": "FIIs rendimentos por data (2021-2025)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FIIs_rendimentos_por_data_20212025": {
+			          "Target": {
+			            "Entity": "FIIs_rendimentos_por_data_20212025"
+			          }
+			        },
+			        "FIIs_rendimentos_por_data_20212025.data_com": {
+			          "Target": {
+			            "Entity": "FIIs_rendimentos_por_data_20212025.data_com"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FIIs_rendimentos_por_data_20212025"
+			            },
+			            "Object": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.data_com"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FIIs_rendimentos_por_data_20212025_have_data_com"
+			        }
+			      ]
+			    },
+			    "FIIs_rendimentos_por_data_20212025_has_valor": {
+			      "Binding": {
+			        "ConceptualEntity": "FIIs rendimentos por data (2021-2025)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FIIs_rendimentos_por_data_20212025": {
+			          "Target": {
+			            "Entity": "FIIs_rendimentos_por_data_20212025"
+			          }
+			        },
+			        "FIIs_rendimentos_por_data_20212025.valor": {
+			          "Target": {
+			            "Entity": "FIIs_rendimentos_por_data_20212025.valor"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FIIs_rendimentos_por_data_20212025"
+			            },
+			            "Object": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.valor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FIIs_rendimentos_por_data_20212025_have_valor"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+

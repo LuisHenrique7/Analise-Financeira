@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Análise dividendos por data"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "ae6f9f70-307f-4a73-931b-71705dc8fb8f"
+  }
+}

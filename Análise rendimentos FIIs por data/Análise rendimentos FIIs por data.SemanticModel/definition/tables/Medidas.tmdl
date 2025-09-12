@@ -1,0 +1,40 @@
+table Medidas
+	lineageTag: 15cc1659-b3be-4490-ab05-476327bcd154
+
+	measure 'Média de valor' = SUM('FIIs rendimentos por data (2021-2025)'[VALOR]) / DISTINCTCOUNT('FIIs rendimentos por data (2021-2025)'[DATA PAGAMENTO].[Ano])
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: bf2b16bc-0f6c-4e95-a670-6a7c8ba19541
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Média de DY' = SUM('FIIs rendimentos por data (2021-2025)'[DY]) / DISTINCTCOUNT('FIIs rendimentos por data (2021-2025)'[DATA PAGAMENTO].[Ano])
+		lineageTag: 0b26c65e-f0a6-4a7c-bba8-8e6c5c38dea4
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'DY Médio' = [Média de DY] / DISTINCTCOUNT(Fii_com_preco[ATIVO])
+		lineageTag: 3c057419-2673-4495-a6fc-d050b747f253
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Rendimento Médio' = [Média de valor] / DISTINCTCOUNT(Fii_com_preco[ATIVO])
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 80da9d1d-ab79-4b70-850e-19d163058835
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column Value
+		formatString: 0
+		lineageTag: e699c584-fdee-43d7-b779-16b79384af9b
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Value]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Medidas = calculated
+		mode: import
+		source = {0}
+
+	annotation PBI_Id = 22ec869952a8487981013f8375ae67b3
+

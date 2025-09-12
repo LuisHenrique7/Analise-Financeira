@@ -1,0 +1,36 @@
+model Model
+	culture: pt-BR
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: pt-BR
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+queryGroup 'Tabelas Fato'
+
+	annotation PBI_QueryGroupOrder = 0
+
+queryGroup 'Tabelas Dimensão'
+
+	annotation PBI_QueryGroupOrder = 1
+
+annotation PBI_QueryOrder = ["Dividendos pagos por data (2021-2025)","Ativos","historico_ativos"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBIDesktopVersion = 2.146.1026.0 (25.08)+fb98ab832373de81dccd5c01cd96306a48477556
+
+annotation PBI_ProTooling = ["DevMode","TMDLView_Desktop"]
+
+ref table 'Dividendos pagos por data (2021-2025)'
+ref table DateTableTemplate_d643fde9-047b-4ec3-9d65-a421b81da242
+ref table LocalDateTable_b3bfa959-b5f7-41e3-9a4d-3a23c7df7937
+ref table LocalDateTable_f6f1966f-3dcf-4fc9-baa0-ec9e2829b0a7
+ref table Medidas
+ref table Ativos
+ref table historico_ativos
+ref table LocalDateTable_28d81a7b-c8e2-4ce2-bd32-cbf28956b76f
+ref table LocalDateTable_d7d993d8-7766-47dc-8ddd-149eead441b1
+
+ref cultureInfo pt-BR
+

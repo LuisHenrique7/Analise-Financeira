@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Análise rendimentos FIIs por data"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "fcb70bc0-5c97-4d6a-bb99-b3de586bdd7e"
+  }
+}

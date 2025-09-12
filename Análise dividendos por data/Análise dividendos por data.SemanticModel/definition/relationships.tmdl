@@ -1,0 +1,30 @@
+relationship 1f57eab7-b53e-4a7d-bf55-800b57ae4f4a
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'Dividendos pagos por data (2021-2025)'.'DATA COM'
+	toColumn: LocalDateTable_b3bfa959-b5f7-41e3-9a4d-3a23c7df7937.Date
+
+relationship 035b81e1-7e7e-4811-992e-9d86bd48a222
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'Dividendos pagos por data (2021-2025)'.'DATA PAGAMENTO'
+	toColumn: LocalDateTable_f6f1966f-3dcf-4fc9-baa0-ec9e2829b0a7.Date
+
+relationship b6f5e4d5-79c3-4b7e-a2dd-099e1690fd1f
+	joinOnDateBehavior: datePartOnly
+	fromColumn: historico_ativos.Data
+	toColumn: LocalDateTable_28d81a7b-c8e2-4ce2-bd32-cbf28956b76f.Date
+
+relationship ca3ad330-93a2-4684-a430-d63c779f350d
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Ativos.DATA
+	toColumn: LocalDateTable_d7d993d8-7766-47dc-8ddd-149eead441b1.Date
+
+relationship AutoDetected_6e30c920-60a0-406c-bb05-8131449bb66a
+	crossFilteringBehavior: bothDirections
+	fromColumn: 'Dividendos pagos por data (2021-2025)'.ATIVO
+	toColumn: Ativos.ATIVO
+
+relationship AutoDetected_717153ba-8701-4a32-93c9-4bdb17a66cce
+	crossFilteringBehavior: bothDirections
+	fromColumn: historico_ativos.Ativo
+	toColumn: Ativos.ATIVO
+

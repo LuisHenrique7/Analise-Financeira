@@ -1,0 +1,176 @@
+table Medidas
+	lineageTag: b166df5a-2038-41d2-a4b0-9667f1b2b4b4
+
+	measure 'Quantidade de Meses Pagos' =
+			DISTINCTCOUNT ('Dividendos pagos por data (2021-2025)'[AnoMes])
+			/*VAR AnoSelecionado = SELECTEDVALUE('Dividendos pagos por data (2023-2025)'[Ano])
+			RETURN
+			    SWITCH(
+			        AnoSelecionado,
+			        2023, SUM(Ativos[Quantidade em 2023]),
+			        2024, SUM(Ativos[Quantidade em 2024]),
+			        2025, SUM(Ativos[Quantidade em 2025]),
+			        SUM(Ativos[Quantidade em 2023]) + SUM(Ativos[Quantidade em 2024]) + SUM(Ativos[Quantidade em 2025])
+			    )
+			*/
+		formatString: 0
+		lineageTag: 4ae43d9f-2483-4dd8-aa91-515662d75b51
+
+	measure 'Média de pagamento' = SUM('Dividendos pagos por data (2021-2025)'[VALOR]) / Medidas[Quantidade de Meses Pagos]
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 565c0bb1-7566-44ae-9262-7613ab174195
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'VALOR MULTIPLICADO' = ```
+			
+			/*
+			VALOR MULTIPLICADO = IF(SELECTEDVALUE('Dividendos pagos por data (2023-2025)'[ATIVO]) = "PETR4" || SELECTEDVALUE('Dividendos pagos por data (2023-2025)'[ATIVO]) = "CURY3" 
+			|| SELECTEDVALUE('Dividendos pagos por data (2023-2025)'[ATIVO]) = "TIMS3" || SELECTEDVALUE('Dividendos pagos por data (2023-2025)'[ATIVO]) = "TAEE11" 
+			|| SELECTEDVALUE('Dividendos pagos por data (2023-2025)'[ATIVO]) = "VBBR3" 
+			, SUM('Dividendos pagos por data (2023-2025)'[VALOR]) * 2, SUM('Dividendos pagos por data (2023-2025)'[VALOR]))
+			*/
+			VAR AtivoSelecionado = SELECTEDVALUE('Dividendos pagos por data (2021-2025)'[ATIVO])
+			VAR ValorBase = SUM('Dividendos pagos por data (2021-2025)'[VALOR])
+			RETURN
+			    SWITCH(
+			        TRUE(),
+			        AtivoSelecionado IN {"PETR4"}, ValorBase * 2,
+			        AtivoSelecionado IN {"TAEE11", "CURY3"}, ValorBase * 3,
+			        AtivoSelecionado = "VBBR3", ValorBase * 2,
+			        AtivoSelecionado = "TIMS3", ValorBase * 4,
+			        ValorBase
+			    ) / DISTINCTCOUNT('Dividendos pagos por data (2021-2025)'[DATA PAGAMENTO].[Ano])
+			```
+		lineageTag: 714de1d9-6e52-4ec9-a392-7fa7d14c0083
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Média de Dividendos' = SUM('Dividendos pagos por data (2021-2025)'[VALOR]) / DISTINCTCOUNT('Dividendos pagos por data (2021-2025)'[DATA PAGAMENTO].[Ano])
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 67929952-6f16-4b0c-be7f-990d48ce2902
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Média de DY' = SUM('Dividendos pagos por data (2021-2025)'[DY]) / DISTINCTCOUNT('Dividendos pagos por data (2021-2025)'[DATA PAGAMENTO].[Ano])
+		lineageTag: bb12ecc0-9049-47e7-9c2d-2e8e8b5bebda
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'DY Médio' = [Média de DY] / DISTINCTCOUNT(Ativos[Ativo])
+		lineageTag: c75e1f89-b416-4ac7-82a2-4e18dfea0dae
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Renda Média' = Medidas[Média de Dividendos] / 12
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 42662739-1331-49a7-9e9a-194c77081476
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Média de Preço de Fechamento' = ```
+			
+			VAR MediaPreco = IF(DISTINCTCOUNT(historico_ativos[Ativo]) = 1, 
+			    CALCULATE(
+			        SUM(historico_ativos[close]) / COUNT(historico_ativos[Ativo]), 
+			        ALLSELECTED(historico_ativos)
+			    ),
+			    CALCULATE(
+			        SUM(historico_ativos[close]),
+			        ALLSELECTED(historico_ativos[Data])
+			    ) / 
+			    CALCULATE(
+			        DISTINCTCOUNT(historico_ativos[Data]),
+			        ALLSELECTED(historico_ativos[Data])
+			    )
+			)
+			
+			RETURN IF(SUM(historico_ativos[close]) > 0, MediaPreco, BLANK())
+			```
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: bdf5c0ed-ae06-47f1-a7ed-01d94929da6e
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Valor Abaixo da Média de Preço' = ```
+			
+			VAR AtivoSelecionado = SELECTEDVALUE(historico_ativos[Ativo])
+			
+			VAR MediaPrecoPorAtivo = 
+			IF(DISTINCTCOUNT(historico_ativos[Ativo]) = 1, 
+			    CALCULATE(
+			        SUM(historico_ativos[close]) / COUNT(historico_ativos[Ativo]), 
+			        ALLSELECTED(historico_ativos),
+			        KEEPFILTERS(historico_ativos[Ativo] = AtivoSelecionado)
+			    ),
+			    CALCULATE(
+			        SUM(historico_ativos[close]),
+			        ALLSELECTED(historico_ativos[Data]),
+			        KEEPFILTERS(historico_ativos[Ativo] = AtivoSelecionado)
+			    ) / 
+			    CALCULATE(
+			        DISTINCTCOUNT(historico_ativos[Data]),
+			        ALLSELECTED(historico_ativos[Data]),
+			        KEEPFILTERS(historico_ativos[Ativo] = AtivoSelecionado)
+			    )
+			)
+			
+			VAR DataRecentePorAtivo =
+			CALCULATE (
+			    MAX ( historico_ativos[Data] ),
+			    FILTER (
+			        historico_ativos,
+			        historico_ativos[Ativo] = SELECTEDVALUE ( historico_ativos[Ativo] )
+			    )
+			)
+			
+			
+			RETURN 
+			    CALCULATE(
+			        MediaPrecoPorAtivo - SUM(historico_ativos[close]),
+			        FILTER(
+			            historico_ativos,
+			            historico_ativos[Data] = DataRecentePorAtivo
+			        )
+			    )
+			```
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: a3ce5d8c-8872-4d8e-87e0-5adc50fb4021
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Preço Atual' =
+			
+			
+			VAR DataRecente = MAX (historico_ativos[Data])
+			
+			RETURN CALCULATE(
+			    SUM(historico_ativos[close]),
+			    FILTER (
+			        historico_ativos,
+			        historico_ativos[Data] = DataRecente
+			    )
+			)
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: e3fc0a3b-c0b5-4a9d-aa6c-d164fc1d3151
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure Recomendação = IF(HASONEVALUE(Ativos[ATIVO]), SELECTEDVALUE(Ativos[RECOMENDACAO]) , BLANK())
+		lineageTag: 6df3a72b-32ae-44a9-ac62-6650b5cffdab
+
+	column Value
+		formatString: 0
+		lineageTag: 733398f5-1785-40a2-8856-314c183302a8
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Value]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Medidas = calculated
+		mode: import
+		source = {0}
+
+	annotation PBI_Id = d2ddcb21b6c64b18a0055ab269e9070a
+

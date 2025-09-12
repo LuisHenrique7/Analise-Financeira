@@ -1,0 +1,15 @@
+relationship 65d265df-5d39-427f-ad63-1674305790da
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'FIIs rendimentos por data (2021-2025)'.'DATA COM'
+	toColumn: LocalDateTable_d3663bd9-96f4-4764-bbaf-6be066d46774.Date
+
+relationship 9a3e48c4-835a-4917-991d-67c740bbe3bc
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'FIIs rendimentos por data (2021-2025)'.'DATA PAGAMENTO'
+	toColumn: LocalDateTable_697dfe4d-403c-4b64-be53-4c060bec5b59.Date
+
+relationship AutoDetected_fbf0dabb-4ea3-4b94-80c3-6f9d14ac9ca1
+	crossFilteringBehavior: bothDirections
+	fromColumn: 'FIIs rendimentos por data (2021-2025)'.ATIVO
+	toColumn: Fii_com_preco.ATIVO
+

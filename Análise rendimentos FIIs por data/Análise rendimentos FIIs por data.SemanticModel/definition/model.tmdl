@@ -1,0 +1,25 @@
+model Model
+	culture: pt-BR
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: pt-BR
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["FIIs rendimentos por data (2021-2025)","Fii_com_preco"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBIDesktopVersion = 2.146.1026.0 (25.08)+fb98ab832373de81dccd5c01cd96306a48477556
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table 'FIIs rendimentos por data (2021-2025)'
+ref table DateTableTemplate_e9a436fa-5168-4fee-ad22-ddbfbc256e78
+ref table LocalDateTable_d3663bd9-96f4-4764-bbaf-6be066d46774
+ref table LocalDateTable_697dfe4d-403c-4b64-be53-4c060bec5b59
+ref table Fii_com_preco
+ref table Medidas
+
+ref cultureInfo pt-BR
+
