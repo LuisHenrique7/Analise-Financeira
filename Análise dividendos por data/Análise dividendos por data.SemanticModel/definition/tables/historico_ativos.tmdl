@@ -109,7 +109,7 @@ table historico_ativos
 		queryGroup: 'Tabelas Dimensão'
 		source =
 				let
-				    Fonte = Csv.Document(File.Contents("C:\Users\luis.nascimento\Documents\Análises Financeiras\Dados Modelados\historico_ativos.csv"),[Delimiter=",", Columns=10, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    Fonte = Csv.Document(File.Contents("D:\PycharmProjects\Analise-Financeira\Dados Modelados\historico_ativos.csv"),[Delimiter=",", Columns=10, Encoding=1252, QuoteStyle=QuoteStyle.None]),
 				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
 				    #"Valor Substituído" = Table.ReplaceValue(#"Cabeçalhos Promovidos",".",",",Replacer.ReplaceText,{"open", "high", "low", "close", "adjclose", "dividends", "splits"}),
 				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Valor Substituído",{{"open", type number}, {"high", type number}, {"low", type number}, {"close", type number}, {"adjclose", type number}, {"dividends", type number}, {"splits", type number}, {"Data", type date}})

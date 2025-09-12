@@ -54,7 +54,7 @@ table Ativos
 		queryGroup: 'Tabelas Fato'
 		source =
 				let
-				    Fonte = Csv.Document(File.Contents("C:\Users\luis.nascimento\Documents\Análises Financeiras\Dados Modelados\Ativos.csv"),[Delimiter=",", Columns=10, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    Fonte = Csv.Document(File.Contents("D:\PycharmProjects\Analise-Financeira\Dados Modelados\Ativos.csv"),[Delimiter=",", Columns=10, Encoding=1252, QuoteStyle=QuoteStyle.None]),
 				    #"Colunas Removidas" = Table.RemoveColumns(Fonte,{"Column6", "Column7", "Column8", "Column9", "Column10"}),
 				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(#"Colunas Removidas", [PromoteAllScalars=true]),
 				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"DATA", type date}})
