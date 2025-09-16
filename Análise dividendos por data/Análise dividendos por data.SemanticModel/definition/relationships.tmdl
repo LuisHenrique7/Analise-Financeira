@@ -28,3 +28,9 @@ relationship AutoDetected_717153ba-8701-4a32-93c9-4bdb17a66cce
 	fromColumn: historico_ativos.Ativo
 	toColumn: Ativos.ATIVO
 
+relationship 06337987-a286-986c-5d9f-68562bc4cc49
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: Ativos.ATIVO
+	toColumn: 'Multiplicadores de Cota'.ATIVO
+

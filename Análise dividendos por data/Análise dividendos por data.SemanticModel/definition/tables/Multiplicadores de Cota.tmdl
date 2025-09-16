@@ -1,0 +1,49 @@
+table 'Multiplicadores de Cota'
+	lineageTag: 25b2bb75-5de9-4d61-9346-a5b36f6e6e8c
+
+	column ATIVO
+		lineageTag: e76fb026-827b-49ff-9df3-2782d937c97f
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [ATIVO]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Multiplicador
+		formatString: 0
+		lineageTag: 045f1db1-614f-44ee-b30c-498e9fa0da7d
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Multiplicador]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Multiplicadores de Cota' = calculated
+		mode: import
+		source =
+				
+				DATATABLE (
+				    "ATIVO", STRING,
+				    "Multiplicador", INTEGER,
+				    {
+				        { "BBSE3" , 1 },
+				        { "CURY3" , 3 },
+				        { "EGIE3" , 1 },
+				        { "ENGI11" , 1 },
+				        { "FLRY3" , 1 },
+				        { "ISAE4" , 1 },
+				        { "PETR4" , 2 },
+				        { "PSSA3" , 1 },
+				        { "RECV3" , 1 },
+				        { "SBSP3" , 1 },
+				        { "SUZB3" , 1 },
+				        { "TAEE11" , 3 },
+				        { "TIMS3" , 4 },
+				        { "VALE3" , 1 },
+				        { "VBBR3" , 2 },
+				        { "VIVT3" , 1 }
+				    }
+				)
+
+	annotation PBI_Id = e7f432d31ae448f4a3d5b64ec9cb1a07
+

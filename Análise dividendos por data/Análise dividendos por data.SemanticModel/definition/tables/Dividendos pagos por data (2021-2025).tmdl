@@ -20,7 +20,7 @@ table 'Dividendos pagos por data (2021-2025)'
 
 	column 'DATA COM'
 		dataType: dateTime
-		formatString: Long Date
+		formatString: Short Date
 		lineageTag: 3ada64d1-933c-4412-811e-8cd97664c046
 		summarizeBy: none
 		sourceColumn: DATA COM

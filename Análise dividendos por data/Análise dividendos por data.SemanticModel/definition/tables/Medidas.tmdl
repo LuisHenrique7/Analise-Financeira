@@ -159,6 +159,43 @@ table Medidas
 	measure Recomendação = IF(HASONEVALUE(Ativos[ATIVO]), SELECTEDVALUE(Ativos[RECOMENDACAO]) , BLANK())
 		lineageTag: 6df3a72b-32ae-44a9-ac62-6650b5cffdab
 
+	measure 'Média de Dividendos Totais' =
+			
+			/*SUM('Dividendos pagos por data (2021-2025)'[Valor Multiplicado por número de cotas]) / DISTINCTCOUNT('Dividendos pagos por data (2021-2025)'[DATA PAGAMENTO].[Ano])*/
+			VAR QtdAnos = DISTINCTCOUNT ('Dividendos pagos por data (2021-2025)'[DATA PAGAMENTO].[Ano])
+			
+			RETURN SUMX(
+			    'Dividendos pagos por data (2021-2025)',
+			    'Dividendos pagos por data (2021-2025)'[VALOR] * RELATED('Multiplicadores de Cota'[Multiplicador])
+			) / QtdAnos
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: c8841a57-4250-4a45-b1fc-34e63ad98d1d
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Renda Média Total' = Medidas[Média de Dividendos Totais] / 12
+		lineageTag: 915964ce-1f3c-4e0f-8142-d8b5a6adf8e6
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Preço Atual Total' =
+			
+			
+			VAR DataRecente = MAX (historico_ativos[Data])
+			
+			RETURN SUMX (
+			    FILTER (historico_ativos, historico_ativos[Data] = DataRecente),
+			    historico_ativos[close] * RELATED('Multiplicadores de Cota'[Multiplicador])
+			)
+		lineageTag: f3b7d43a-70e1-49a6-b82b-35439da18504
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Média de DY Total' = (Medidas[Média de Dividendos Totais] / Medidas[Preço Atual Total]) * 100
+		lineageTag: 5a1ed304-337f-4003-9828-498334501447
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	column Value
 		formatString: 0
 		lineageTag: 733398f5-1785-40a2-8856-314c183302a8

@@ -3448,141 +3448,51 @@ cultureInfo pt-BR
 			          }
 			        }
 			      ]
+			    },
+			    "medida.recomendação": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Recomendação"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "recomendação": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.média_de_dividendos_totais": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Média de Dividendos Totais"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "média de dividendos totais": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Total de Dividendos": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
-			    "ativo_data_ano_has_ativo_data_trimestre": {
-			      "Binding": {
-			        "ConceptualEntity": "Ativos"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "ativo.data.ano": {
-			          "Target": {
-			            "Entity": "ativo.data.ano"
-			          }
-			        },
-			        "ativo.data.trimestre": {
-			          "Target": {
-			            "Entity": "ativo.data.trimestre"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "ativo.data.ano"
-			            },
-			            "Object": {
-			              "Role": "ativo.data.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "anos_have_trimestres"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "ativo.data.trimestre"
-			            },
-			            "Object": {
-			              "Role": "ativo.data.ano"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "trimestres_have_anos"
-			        },
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "ativo.data.trimestre"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "ativo.data.ano"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "trimestres_are_in_anos3"
-			        }
-			      ]
-			    },
-			    "ativo_data_hierarquia_de_data_has_ativo_data_dia": {
-			      "Binding": {
-			        "ConceptualEntity": "Ativos"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "ativo.data.hierarquia_de_data": {
-			          "Target": {
-			            "Entity": "ativo.data.hierarquia_de_data"
-			          }
-			        },
-			        "ativo.data.dia": {
-			          "Target": {
-			            "Entity": "ativo.data.dia"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "ativo.data.hierarquia_de_data"
-			            },
-			            "Object": {
-			              "Role": "ativo.data.dia"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_dias"
-			        }
-			      ]
-			    },
-			    "ativo_data_hierarquia_de_data_has_ativo_data_mê": {
-			      "Binding": {
-			        "ConceptualEntity": "Ativos"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "ativo.data.hierarquia_de_data": {
-			          "Target": {
-			            "Entity": "ativo.data.hierarquia_de_data"
-			          }
-			        },
-			        "ativo.data.mê": {
-			          "Target": {
-			            "Entity": "ativo.data.mê"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "ativo.data.hierarquia_de_data"
-			            },
-			            "Object": {
-			              "Role": "ativo.data.mê"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_mê"
-			        }
-			      ]
-			    },
 			    "ativo_data_hierarquia_de_data_has_ativo_data_trimestre": {
 			      "Binding": {
 			        "ConceptualEntity": "Ativos"
@@ -3843,7 +3753,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "anos_have_trimestres1"
+			          "ID": "anos_have_trimestres"
 			        },
 			        {
 			          "Attribute": {
@@ -3856,7 +3766,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_anos1"
+			          "ID": "trimestres_have_anos"
 			        },
 			        {
 			          "Preposition": {
@@ -3909,7 +3819,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_dias1"
+			          "ID": "hierarquia_de_data_have_dias"
 			        }
 			      ]
 			    },
@@ -3942,7 +3852,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_mê1"
+			          "ID": "hierarquia_de_data_have_mê"
 			        }
 			      ]
 			    },
@@ -4206,7 +4116,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "anos_have_trimestres2"
+			          "ID": "anos_have_trimestres1"
 			        },
 			        {
 			          "Attribute": {
@@ -4219,7 +4129,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_anos2"
+			          "ID": "trimestres_have_anos1"
 			        },
 			        {
 			          "Preposition": {
@@ -4272,7 +4182,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_dias2"
+			          "ID": "hierarquia_de_data_have_dias1"
 			        }
 			      ]
 			    },
@@ -4305,7 +4215,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_mê2"
+			          "ID": "hierarquia_de_data_have_mê1"
 			        }
 			      ]
 			    },
@@ -4569,7 +4479,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "anos_have_trimestres3"
+			          "ID": "anos_have_trimestres2"
 			        },
 			        {
 			          "Attribute": {
@@ -4582,7 +4492,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_anos3"
+			          "ID": "trimestres_have_anos2"
 			        },
 			        {
 			          "Preposition": {
@@ -4635,7 +4545,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_dias3"
+			          "ID": "hierarquia_de_data_have_dias2"
 			        }
 			      ]
 			    },
@@ -4668,7 +4578,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_mê3"
+			          "ID": "hierarquia_de_data_have_mê2"
 			        }
 			      ]
 			    },
@@ -4860,6 +4770,105 @@ cultureInfo pt-BR
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "ativos_have_dividendos_pagos_por_data_20212025"
+			        }
+			      ]
+			    },
+			    "dividendos_pagos_por_data_20212025_has_medida_média_de_dividendos_totais": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos pagos por data (2021-2025)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_pagos_por_data_20212025": {
+			          "Target": {
+			            "Entity": "dividendos_pagos_por_data_20212025"
+			          }
+			        },
+			        "medida.média_de_dividendos_totais": {
+			          "Target": {
+			            "Entity": "medida.média_de_dividendos_totais"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_pagos_por_data_20212025"
+			            },
+			            "Object": {
+			              "Role": "medida.média_de_dividendos_totais"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dividendos_pagos_por_data_20212025_have_média_de_dividendos_totais"
+			        }
+			      ]
+			    },
+			    "ativo_has_medida_recomendação": {
+			      "Binding": {
+			        "ConceptualEntity": "Ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "ativo": {
+			          "Target": {
+			            "Entity": "ativo"
+			          }
+			        },
+			        "medida.recomendação": {
+			          "Target": {
+			            "Entity": "medida.recomendação"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ativo"
+			            },
+			            "Object": {
+			              "Role": "medida.recomendação"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ativos_have_recomendação"
+			        }
+			      ]
+			    },
+			    "dividendos_pagos_por_data_20212025_has_valor_multiplicado_por_número_de_cota": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos pagos por data (2021-2025)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_pagos_por_data_20212025": {
+			          "Target": {
+			            "Entity": "dividendos_pagos_por_data_20212025"
+			          }
+			        },
+			        "dividendos_pagos_por_data_20212025.valor_multiplicado_por_número_de_cota": {
+			          "Target": {
+			            "Entity": "dividendos_pagos_por_data_20212025.valor_multiplicado_por_número_de_cota"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_pagos_por_data_20212025"
+			            },
+			            "Object": {
+			              "Role": "dividendos_pagos_por_data_20212025.valor_multiplicado_por_número_de_cota"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dividendos_pagos_por_data_20212025_have_valor_multiplicado_por_número_de_cotas"
 			        }
 			      ]
 			    },
@@ -5956,6 +5965,138 @@ cultureInfo pt-BR
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "dividendos_pagos_por_data_20212025_have_valor"
+			        }
+			      ]
+			    },
+			    "ativo_data_hierarquia_de_data_has_ativo_data_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "Ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "ativo.data.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "ativo.data.hierarquia_de_data"
+			          }
+			        },
+			        "ativo.data.mê": {
+			          "Target": {
+			            "Entity": "ativo.data.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ativo.data.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "ativo.data.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_mê3"
+			        }
+			      ]
+			    },
+			    "ativo_data_hierarquia_de_data_has_ativo_data_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "Ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "ativo.data.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "ativo.data.hierarquia_de_data"
+			          }
+			        },
+			        "ativo.data.dia": {
+			          "Target": {
+			            "Entity": "ativo.data.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ativo.data.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "ativo.data.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_dias3"
+			        }
+			      ]
+			    },
+			    "ativo_data_ano_has_ativo_data_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "Ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "ativo.data.ano": {
+			          "Target": {
+			            "Entity": "ativo.data.ano"
+			          }
+			        },
+			        "ativo.data.trimestre": {
+			          "Target": {
+			            "Entity": "ativo.data.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ativo.data.ano"
+			            },
+			            "Object": {
+			              "Role": "ativo.data.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "anos_have_trimestres3"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ativo.data.trimestre"
+			            },
+			            "Object": {
+			              "Role": "ativo.data.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_anos3"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "ativo.data.trimestre"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "ativo.data.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_are_in_anos3"
 			        }
 			      ]
 			    },

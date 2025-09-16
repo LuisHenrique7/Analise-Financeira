@@ -31,6 +31,7 @@ ref table Ativos
 ref table historico_ativos
 ref table LocalDateTable_28d81a7b-c8e2-4ce2-bd32-cbf28956b76f
 ref table LocalDateTable_d7d993d8-7766-47dc-8ddd-149eead441b1
+ref table 'Multiplicadores de Cota'
 
 ref cultureInfo pt-BR
 
