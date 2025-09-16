@@ -18,7 +18,7 @@ annotation PBI_QueryOrder = ["Dividendos pagos por data (2021-2025)","Ativos","h
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-annotation PBIDesktopVersion = 2.146.1026.0 (25.08)+fb98ab832373de81dccd5c01cd96306a48477556
+annotation PBIDesktopVersion = 2.146.1454.0 (25.08)+901d6c338d1dea81ac3e53073ffb10469f0f37b8
 
 annotation PBI_ProTooling = ["DevMode","TMDLView_Desktop"]
 

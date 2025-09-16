@@ -252,6 +252,17 @@
       "width": 1280.00
     },
     {
+      "config": "{}",
+      "displayName": "Testes",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "224d6ce7e1a915702c19",
+      "ordinal": 12,
+      "visualContainers": [],
+      "width": 1280.00
+    },
+    {
       "config": "{\"visibility\":1}",
       "displayName": "Setores de Ativos Filtro top 20 DY",
       "displayOption": 1,
