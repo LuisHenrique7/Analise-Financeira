@@ -1,9 +1,9 @@
-table historico_ativos
-	lineageTag: 0796ce6b-ad60-4227-a63b-6959e1c21903
+table historico_Fii
+	lineageTag: 5301579b-ec3c-4c16-880a-a28d2a61bea0
 
 	column open
 		dataType: double
-		lineageTag: a089a06b-6baa-48d7-bfe9-5307c197070e
+		lineageTag: 35969804-83a0-4f99-874f-12e1f0a0172b
 		summarizeBy: sum
 		sourceColumn: open
 
@@ -13,7 +13,7 @@ table historico_ativos
 
 	column high
 		dataType: double
-		lineageTag: db4db6a2-d070-426d-80ca-9a79ca3b85e6
+		lineageTag: 55ad8d46-9d7f-45f7-ac6e-21175ad9e740
 		summarizeBy: sum
 		sourceColumn: high
 
@@ -23,7 +23,7 @@ table historico_ativos
 
 	column low
 		dataType: double
-		lineageTag: 6e0c9a1f-288a-47e0-89d9-08062f379919
+		lineageTag: d95a5a15-ebcb-4185-a0a1-1a8b06b68aac
 		summarizeBy: sum
 		sourceColumn: low
 
@@ -34,7 +34,7 @@ table historico_ativos
 	column close
 		dataType: double
 		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
-		lineageTag: 0e7309b9-9b3c-43bb-ad33-5869ddc47f7f
+		lineageTag: d9a0b857-5c53-46fb-ab00-e5c172fb4acc
 		summarizeBy: sum
 		sourceColumn: close
 
@@ -43,16 +43,18 @@ table historico_ativos
 		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
 
 	column volume
-		dataType: string
-		lineageTag: a619a9dd-03a2-478b-ab48-dde8a2790fa1
-		summarizeBy: none
+		dataType: double
+		lineageTag: ebab23eb-683b-42c2-bd0d-32c1d30f046a
+		summarizeBy: sum
 		sourceColumn: volume
 
 		annotation SummarizationSetBy = Automatic
 
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	column adjclose
 		dataType: double
-		lineageTag: 9a3c60ac-3077-4ef0-852f-23fa8e760586
+		lineageTag: 5fc19449-fe8c-4701-b40e-643ef94ec21a
 		summarizeBy: sum
 		sourceColumn: adjclose
 
@@ -62,7 +64,7 @@ table historico_ativos
 
 	column dividends
 		dataType: double
-		lineageTag: 6531e389-4623-4cdd-a356-993d86b1cc58
+		lineageTag: 2ec8d2d8-74c8-4047-aeed-3df78759a7f8
 		summarizeBy: sum
 		sourceColumn: dividends
 
@@ -72,7 +74,7 @@ table historico_ativos
 
 	column splits
 		dataType: double
-		lineageTag: 8b6110c8-1fe2-43e8-9549-89079aee46f1
+		lineageTag: 2b653119-194f-481b-af68-3d0ec0e46985
 		summarizeBy: sum
 		sourceColumn: splits
 
@@ -82,7 +84,7 @@ table historico_ativos
 
 	column Ativo
 		dataType: string
-		lineageTag: b4dbf6ea-4b1f-4d3d-84cb-ac5f7ec8adf7
+		lineageTag: 1d5830f2-d0a5-407f-b049-91ae9b29d337
 		summarizeBy: none
 		sourceColumn: Ativo
 
@@ -90,29 +92,29 @@ table historico_ativos
 
 	column Data
 		dataType: dateTime
-		formatString: Short Date
-		lineageTag: 6924b5ee-b8c6-48b0-907d-0ec3df514158
+		formatString: Long Date
+		lineageTag: 2d9ebd96-7bb9-49a0-b6bc-4c5269b66716
 		summarizeBy: none
 		sourceColumn: Data
 
 		variation Variation
 			isDefault
-			relationship: b6f5e4d5-79c3-4b7e-a2dd-099e1690fd1f
-			defaultHierarchy: LocalDateTable_28d81a7b-c8e2-4ce2-bd32-cbf28956b76f.'Hierarquia de datas'
+			relationship: 3f4aa6be-2c33-4ee5-9b22-9165c11f79c2
+			defaultHierarchy: LocalDateTable_60dbead0-088b-4f33-8fcd-adcf5c5f9957.'Hierarquia de datas'
 
 		annotation SummarizationSetBy = Automatic
 
 		annotation UnderlyingDateTimeDataType = Date
 
-	partition historico_ativos = m
+	partition historico_Fii = m
 		mode: import
-		queryGroup: 'Tabelas Dimensão'
 		source =
 				let
-				    Fonte = Csv.Document(File.Contents("C:\Users\luis.nascimento\Documents\Análises Financeiras\Dados Modelados\historico_ativos.csv"),[Delimiter=",", Columns=10, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    Fonte = Csv.Document(File.Contents("C:\Users\luis.nascimento\Documents\Análises Financeiras\Dados Modelados\historico_Fii.csv"),[Delimiter=",", Columns=10, Encoding=1252, QuoteStyle=QuoteStyle.None]),
 				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
-				    #"Valor Substituído" = Table.ReplaceValue(#"Cabeçalhos Promovidos",".",",",Replacer.ReplaceText,{"open", "high", "low", "close", "adjclose", "dividends", "splits"}),
-				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Valor Substituído",{{"open", type number}, {"high", type number}, {"low", type number}, {"close", type number}, {"adjclose", type number}, {"dividends", type number}, {"splits", type number}, {"Data", type date}})
+				    #"Valor Substituído" = Table.ReplaceValue(#"Cabeçalhos Promovidos",".",",",Replacer.ReplaceText,{"open", "high", "low", "close", "volume", "adjclose", "dividends", "splits"}),
+				    #"Tipo Alterado1" = Table.TransformColumnTypes(#"Valor Substituído",{{"open", type number}, {"high", type number}, {"low", type number}, {"close", type number}, {"volume", type number}, {"adjclose", type number}, {"dividends", type number}, {"splits", type number}}),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Tipo Alterado1",{{"Data", type date}})
 				in
 				    #"Tipo Alterado"
 

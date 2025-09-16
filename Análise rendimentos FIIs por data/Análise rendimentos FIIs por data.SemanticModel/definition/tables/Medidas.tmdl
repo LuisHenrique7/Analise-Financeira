@@ -1,7 +1,7 @@
 table Medidas
 	lineageTag: 15cc1659-b3be-4490-ab05-476327bcd154
 
-	measure 'Média de valor' = SUM('FIIs rendimentos por data (2021-2025)'[VALOR]) / DISTINCTCOUNT('FIIs rendimentos por data (2021-2025)'[DATA PAGAMENTO].[Ano])
+	measure 'Média de Dividendos' = SUM('FIIs rendimentos por data (2021-2025)'[VALOR]) / DISTINCTCOUNT('FIIs rendimentos por data (2021-2025)'[DATA PAGAMENTO].[Ano])
 		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
 		lineageTag: bf2b16bc-0f6c-4e95-a670-6a7c8ba19541
 
@@ -12,14 +12,101 @@ table Medidas
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	measure 'DY Médio' = [Média de DY] / DISTINCTCOUNT(Fii_com_preco[ATIVO])
+	measure 'DY Médio' = [Média de DY] / DISTINCTCOUNT(FIIs[ATIVO])
 		lineageTag: 3c057419-2673-4495-a6fc-d050b747f253
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	measure 'Rendimento Médio' = [Média de valor] / DISTINCTCOUNT(Fii_com_preco[ATIVO])
+	measure 'Média de Preço de Fechamento' = ```
+			
+			VAR MediaPreco = IF(DISTINCTCOUNT(historico_Fii[Ativo]) = 1, 
+			    CALCULATE(
+			        SUM(historico_Fii[close]) / COUNT(historico_Fii[Ativo]), 
+			        ALLSELECTED(historico_Fii)
+			    ),
+			    CALCULATE(
+			        SUM(historico_Fii[close]),
+			        ALLSELECTED(historico_Fii[Data])
+			    ) / 
+			    CALCULATE(
+			        DISTINCTCOUNT(historico_Fii[Data]),
+			        ALLSELECTED(historico_Fii[Data])
+			    )
+			)
+			
+			RETURN IF(SUM(historico_Fii[close]) > 0, MediaPreco, BLANK())
+			```
 		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
-		lineageTag: 80da9d1d-ab79-4b70-850e-19d163058835
+		lineageTag: b86245cf-9da1-45a9-8386-6e7601172219
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Valor Abaixo da Média de Preço' = ```
+			
+			VAR AtivoSelecionado = SELECTEDVALUE(historico_Fii[Ativo])
+			
+			VAR MediaPrecoPorAtivo = 
+			IF(DISTINCTCOUNT(historico_Fii[Ativo]) = 1, 
+			    CALCULATE(
+			        SUM(historico_Fii[close]) / COUNT(historico_Fii[Ativo]), 
+			        ALLSELECTED(historico_Fii),
+			        KEEPFILTERS(historico_Fii[Ativo] = AtivoSelecionado)
+			    ),
+			    CALCULATE(
+			        SUM(historico_Fii[close]),
+			        ALLSELECTED(historico_Fii[Data]),
+			        KEEPFILTERS(historico_Fii[Ativo] = AtivoSelecionado)
+			    ) / 
+			    CALCULATE(
+			        DISTINCTCOUNT(historico_Fii[Data]),
+			        ALLSELECTED(historico_Fii[Data]),
+			        KEEPFILTERS(historico_Fii[Ativo] = AtivoSelecionado)
+			    )
+			)
+			
+			VAR DataRecentePorAtivo =
+			CALCULATE (
+			    MAX ( historico_Fii[Data] ),
+			    FILTER (
+			        historico_Fii,
+			        historico_Fii[Ativo] = SELECTEDVALUE ( historico_Fii[Ativo] )
+			    )
+			)
+			
+			
+			RETURN 
+			    CALCULATE(
+			        MediaPrecoPorAtivo - SUM(historico_Fii[close]),
+			        FILTER(
+			            historico_Fii,
+			            historico_Fii[Data] = DataRecentePorAtivo
+			        )
+			    )
+			```
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: cf7f239f-0023-433b-8f8d-90af1e6f2dd6
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Preço Atual' =
+			
+			
+			VAR DataRecente = MAX (historico_Fii[Data])
+			
+			RETURN CALCULATE(
+			    SUM(historico_Fii[close]),
+			    FILTER (
+			        historico_Fii,
+			        historico_Fii[Data] = DataRecente
+			    )
+			)
+		lineageTag: f32ca787-feca-4e79-b334-ecab648476ea
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Renda Média' = Medidas[Média de Dividendos] / 12
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 49a8abdd-e6ba-41f9-bad3-906510d459c1
 
 		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
 

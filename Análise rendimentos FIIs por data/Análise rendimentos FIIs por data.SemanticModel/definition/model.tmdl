@@ -6,7 +6,7 @@ model Model
 		legacyRedirects
 		returnErrorValuesAsNull
 
-annotation PBI_QueryOrder = ["FIIs rendimentos por data (2021-2025)","Fii_com_preco"]
+annotation PBI_QueryOrder = ["FIIs rendimentos por data (2021-2025)","FIIs","historico_Fii"]
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
@@ -18,8 +18,10 @@ ref table 'FIIs rendimentos por data (2021-2025)'
 ref table DateTableTemplate_e9a436fa-5168-4fee-ad22-ddbfbc256e78
 ref table LocalDateTable_d3663bd9-96f4-4764-bbaf-6be066d46774
 ref table LocalDateTable_697dfe4d-403c-4b64-be53-4c060bec5b59
-ref table Fii_com_preco
+ref table FIIs
 ref table Medidas
+ref table historico_Fii
+ref table LocalDateTable_60dbead0-088b-4f33-8fcd-adcf5c5f9957
 
 ref cultureInfo pt-BR
 

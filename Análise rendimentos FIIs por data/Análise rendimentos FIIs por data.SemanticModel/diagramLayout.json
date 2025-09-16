@@ -10,8 +10,8 @@
       "nodes": [
         {
           "location": {
-            "x": 0,
-            "y": 0
+            "x": 243,
+            "y": 283
           },
           "nodeIndex": "FIIs rendimentos por data (2021-2025)",
           "nodeLineageTag": "99fe8725-f98a-4222-bf79-a70d68c6bccb",
@@ -23,25 +23,37 @@
         },
         {
           "location": {
-            "x": 500,
-            "y": 19
+            "x": 784,
+            "y": 50
           },
-          "nodeIndex": "Fii_com_preco",
-          "nodeLineageTag": "4a4d88f2-c9a5-40d6-a351-8451d480f9ba",
+          "nodeIndex": "Medidas",
           "size": {
-            "height": 176,
+            "height": 200,
             "width": 234
           },
           "zIndex": 0
         },
         {
           "location": {
-            "x": 784,
-            "y": 12
+            "x": 778,
+            "y": 274
           },
-          "nodeIndex": "Medidas",
+          "nodeIndex": "historico_Fii",
+          "nodeLineageTag": "5301579b-ec3c-4c16-880a-a28d2a61bea0",
           "size": {
-            "height": 200,
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 500,
+            "y": 57
+          },
+          "nodeIndex": "FIIs",
+          "size": {
+            "height": 176,
             "width": 234
           },
           "zIndex": 0

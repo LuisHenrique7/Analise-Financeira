@@ -1,0 +1,42 @@
+table FIIs
+	lineageTag: 4a4d88f2-c9a5-40d6-a351-8451d480f9ba
+
+	column ATIVO
+		dataType: string
+		lineageTag: 0ea8f0e3-fe39-49ab-876e-acbdc2392776
+		summarizeBy: none
+		sourceColumn: ATIVO
+
+		annotation SummarizationSetBy = Automatic
+
+	column SETOR
+		dataType: string
+		lineageTag: 1932cc66-ff39-41ce-a0cc-8eb27a8a54bd
+		summarizeBy: none
+		sourceColumn: SETOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column INDUSTRIA
+		dataType: string
+		lineageTag: 3067c145-ce56-4f65-9330-2435dabe799b
+		summarizeBy: none
+		sourceColumn: INDUSTRIA
+
+		annotation SummarizationSetBy = Automatic
+
+	partition FIIs = m
+		mode: import
+		source =
+				let
+				    Fonte = Csv.Document(File.Contents("C:\Users\luis.nascimento\Documents\Análises Financeiras\Dados Modelados\FIIs.csv"),[Delimiter=",", Columns=4, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Colunas Removidas" = Table.RemoveColumns(Fonte,{"Column4"}),
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(#"Colunas Removidas", [PromoteAllScalars=true]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"ATIVO", type text}, {"SETOR", type text}, {"INDUSTRIA", type text}})
+				in
+				    #"Tipo Alterado"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

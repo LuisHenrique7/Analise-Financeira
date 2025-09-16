@@ -1330,7 +1330,7 @@ cultureInfo pt-BR
 			    "fii_com_preco": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Fii_com_preco"
+			          "ConceptualEntity": "FIIs"
 			        }
 			      },
 			      "State": "Generated",
@@ -1352,7 +1352,7 @@ cultureInfo pt-BR
 			    "fii_com_preco.ativo": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Fii_com_preco",
+			          "ConceptualEntity": "FIIs",
 			          "ConceptualProperty": "ATIVO"
 			        }
 			      },
@@ -1362,21 +1362,15 @@ cultureInfo pt-BR
 			          "ativo": {
 			            "State": "Generated"
 			          }
-			        }
-			      ]
-			    },
-			    "fii_com_preco.preco": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Fii_com_preco",
-			          "ConceptualProperty": "PRECO"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
+			        },
 			        {
-			          "preco": {
-			            "State": "Generated"
+			          "ATIVOS": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -1384,7 +1378,7 @@ cultureInfo pt-BR
 			    "fii_com_preco.setor": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Fii_com_preco",
+			          "ConceptualEntity": "FIIs",
 			          "ConceptualProperty": "SETOR"
 			        }
 			      },
@@ -1400,7 +1394,7 @@ cultureInfo pt-BR
 			    "fii_com_preco.industria": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Fii_com_preco",
+			          "ConceptualEntity": "FIIs",
 			          "ConceptualProperty": "INDUSTRIA"
 			        }
 			      },
@@ -1409,6 +1403,26 @@ cultureInfo pt-BR
 			        {
 			          "industria": {
 			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Indústria": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Indútria": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -1544,118 +1558,18 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "medida.média_de_valor": {
+			    "medida.média_de_dividendos": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Medidas",
-			          "ConceptualProperty": "Média de valor"
+			          "ConceptualProperty": "Média de Dividendos"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "média de valor": {
+			          "média de dividendos": {
 			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "média de courage": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.508
-			          }
-			        },
-			        {
-			          "média de bravery": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.508
-			          }
-			        },
-			        {
-			          "média de heroism": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.508
-			          }
-			        },
-			        {
-			          "média de fearlessness": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.508
-			          }
-			        },
-			        {
-			          "média de boldness": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.508
-			          }
-			        },
-			        {
-			          "média de gallantry": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.508
-			          }
-			        },
-			        {
-			          "média de lionheartedness": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.508
-			          }
-			        },
-			        {
-			          "média de pluck": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.492
-			          }
-			        },
-			        {
-			          "média de spirit": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.492
-			          }
-			        },
-			        {
-			          "média de nerve": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.492
 			          }
 			        },
 			        {
@@ -1670,6 +1584,16 @@ cultureInfo pt-BR
 			        },
 			        {
 			          "Rendimento total": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Total de Dividendos": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -1695,9 +1619,1446 @@ cultureInfo pt-BR
 			          }
 			        }
 			      ]
+			    },
+			    "medida.DY_médio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "DY Médio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "DY médio": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "historico_fii": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "historico_Fii"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "historico fii": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "historico_Fii": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "historico_fii.open": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "historico_Fii",
+			          "ConceptualProperty": "open"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "open": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "sweeping": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "historico_fii.high": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "historico_Fii",
+			          "ConceptualProperty": "high"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "high": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "great": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "extreme": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "historico_fii.low": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "historico_Fii",
+			          "ConceptualProperty": "low"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "low": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "little": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "squat": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "low-slung": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "short": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "small": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "soothing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "quiet": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "gentle": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "faint": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "historico_fii.close": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "historico_Fii",
+			          "ConceptualProperty": "close"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "close": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "local": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "neighboring": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "intimate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "familiar": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "dear": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "loving": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "friendly": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "warm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "historico_fii.volume": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "historico_Fii",
+			          "ConceptualProperty": "volume"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "volume": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "capacity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "size": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "bulk": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "tome": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "book": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "work": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "historico_fii.adjclose": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "historico_Fii",
+			          "ConceptualProperty": "adjclose"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "adjclose": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "historico_fii.dividend": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "historico_Fii",
+			          "ConceptualProperty": "dividends"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dividend": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "payment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "disbursement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "bonus": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "extra": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "share": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "surplus": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "historico_fii.split": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "historico_Fii",
+			          "ConceptualProperty": "splits"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "split": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "separation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "splitting": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "ripping": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "tearing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "cracking": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "rupture": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "historico_fii.ativo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "historico_Fii",
+			          "ConceptualProperty": "Ativo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "ativo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "historico_fii.data": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "historico_Fii",
+			          "ConceptualProperty": "Data"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "data": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "historico_fii.data.hierarquia_de_data": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "historico_Fii",
+			          "VariationSource": "Data",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "hierarquia de data": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hierarquia de information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "historico_fii.data.ano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "historico_Fii",
+			          "VariationSource": "Data",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Ano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "fact ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "info ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "statistic ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "document ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "figure ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "record ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "historico_fii.data.trimestre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "historico_Fii",
+			          "VariationSource": "Data",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Trimestre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "fact trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "info trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "statistic trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "document trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "figure trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "record trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "historico_fii.data.mê": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "historico_Fii",
+			          "VariationSource": "Data",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Mês"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "fact mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "info mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "statistic mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "document mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "figure mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "record mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "historico_fii.data.dia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "historico_Fii",
+			          "VariationSource": "Data",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Dia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "fact dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "info dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "statistic dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "document dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "figure dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "record dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "medida.média_de_preço_de_fechamento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Média de Preço de Fechamento"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "média de preço de fechamento": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Média de Preço": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "medida.valor_abaixo_da_média_de_preço": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Valor Abaixo da Média de Preço"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "valor abaixo da média de preço": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Desconto de Preço": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "medida.preço_atual": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Preço Atual"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "preço atual": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.renda_média": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Renda Média"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "renda média": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
+			    "historico_fii_data_ano_has_historico_fii_data_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "historico_Fii"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "historico_fii.data.ano": {
+			          "Target": {
+			            "Entity": "historico_fii.data.ano"
+			          }
+			        },
+			        "historico_fii.data.trimestre": {
+			          "Target": {
+			            "Entity": "historico_fii.data.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "historico_fii.data.ano"
+			            },
+			            "Object": {
+			              "Role": "historico_fii.data.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "anos_have_trimestres"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "historico_fii.data.trimestre"
+			            },
+			            "Object": {
+			              "Role": "historico_fii.data.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_anos"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "historico_fii.data.trimestre"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "historico_fii.data.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_are_in_anos2"
+			        }
+			      ]
+			    },
+			    "historico_fii_data_hierarquia_de_data_has_historico_fii_data_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "historico_Fii"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "historico_fii.data.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "historico_fii.data.hierarquia_de_data"
+			          }
+			        },
+			        "historico_fii.data.dia": {
+			          "Target": {
+			            "Entity": "historico_fii.data.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "historico_fii.data.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "historico_fii.data.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_dias"
+			        }
+			      ]
+			    },
+			    "historico_fii_data_hierarquia_de_data_has_historico_fii_data_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "historico_Fii"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "historico_fii.data.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "historico_fii.data.hierarquia_de_data"
+			          }
+			        },
+			        "historico_fii.data.mê": {
+			          "Target": {
+			            "Entity": "historico_fii.data.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "historico_fii.data.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "historico_fii.data.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_mê"
+			        }
+			      ]
+			    },
+			    "historico_fii_data_hierarquia_de_data_has_historico_fii_data_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "historico_Fii"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "historico_fii.data.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "historico_fii.data.hierarquia_de_data"
+			          }
+			        },
+			        "historico_fii.data.trimestre": {
+			          "Target": {
+			            "Entity": "historico_fii.data.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "historico_fii.data.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "historico_fii.data.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_trimestres"
+			        }
+			      ]
+			    },
+			    "historico_fii_data_hierarquia_de_data_has_historico_fii_data_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "historico_Fii"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "historico_fii.data.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "historico_fii.data.hierarquia_de_data"
+			          }
+			        },
+			        "historico_fii.data.ano": {
+			          "Target": {
+			            "Entity": "historico_fii.data.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "historico_fii.data.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "historico_fii.data.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_anos"
+			        }
+			      ]
+			    },
+			    "historico_fii_data_has_hierarquia_de_data": {
+			      "Binding": {
+			        "ConceptualEntity": "historico_Fii"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "historico_fii.data": {
+			          "Target": {
+			            "Entity": "historico_fii.data"
+			          }
+			        },
+			        "historico_fii.data.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "historico_fii.data.hierarquia_de_data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "historico_fii.data"
+			            },
+			            "Object": {
+			              "Role": "historico_fii.data.hierarquia_de_data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "data_have_hierarquia_de_data"
+			        }
+			      ]
+			    },
 			    "FIIs_rendimentos_por_data_20212025_data_pagamento_mê_has_FIIs_rendimentos_por_data_20212025_data_pagamento_dia": {
 			      "Binding": {
 			        "ConceptualEntity": "FIIs rendimentos por data (2021-2025)"
@@ -1859,7 +3220,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "anos_have_trimestres"
+			          "ID": "anos_have_trimestres1"
 			        },
 			        {
 			          "Attribute": {
@@ -1872,7 +3233,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_anos"
+			          "ID": "trimestres_have_anos1"
 			        },
 			        {
 			          "Preposition": {
@@ -1925,7 +3286,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_dias"
+			          "ID": "hierarquia_de_data_have_dias1"
 			        }
 			      ]
 			    },
@@ -1958,7 +3319,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_mê"
+			          "ID": "hierarquia_de_data_have_mê1"
 			        }
 			      ]
 			    },
@@ -1991,7 +3352,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_trimestres"
+			          "ID": "hierarquia_de_data_have_trimestres1"
 			        }
 			      ]
 			    },
@@ -2024,7 +3385,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_anos"
+			          "ID": "hierarquia_de_data_have_anos1"
 			        }
 			      ]
 			    },
@@ -2222,7 +3583,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "anos_have_trimestres1"
+			          "ID": "anos_have_trimestres2"
 			        },
 			        {
 			          "Attribute": {
@@ -2235,7 +3596,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_anos1"
+			          "ID": "trimestres_have_anos2"
 			        },
 			        {
 			          "Preposition": {
@@ -2288,7 +3649,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_dias1"
+			          "ID": "hierarquia_de_data_have_dias2"
 			        }
 			      ]
 			    },
@@ -2321,7 +3682,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_mê1"
+			          "ID": "hierarquia_de_data_have_mê2"
 			        }
 			      ]
 			    },
@@ -2354,7 +3715,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_trimestres1"
+			          "ID": "hierarquia_de_data_have_trimestres2"
 			        }
 			      ]
 			    },
@@ -2387,7 +3748,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_anos1"
+			          "ID": "hierarquia_de_data_have_anos2"
 			        }
 			      ]
 			    },
@@ -2421,6 +3782,52 @@ cultureInfo pt-BR
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "data_com_have_hierarquia_de_data"
+			        }
+			      ]
+			    },
+			    "historico_fii_has_fii_com_preco": {
+			      "Binding": {
+			        "ConceptualEntity": "historico_Fii"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "historico_fii": {
+			          "Target": {
+			            "Entity": "historico_fii"
+			          }
+			        },
+			        "fii_com_preco": {
+			          "Target": {
+			            "Entity": "fii_com_preco"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "historico_fii"
+			            },
+			            "Object": {
+			              "Role": "fii_com_preco"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "historico_fiis_have_fii_com_precos"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fii_com_preco"
+			            },
+			            "Object": {
+			              "Role": "historico_fii"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fii_com_precos_have_historico_fiis"
 			        }
 			      ]
 			    },
@@ -2470,6 +3877,594 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
+			    "FIIs_rendimentos_por_data_20212025_has_medida_renda_média": {
+			      "Binding": {
+			        "ConceptualEntity": "FIIs rendimentos por data (2021-2025)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FIIs_rendimentos_por_data_20212025": {
+			          "Target": {
+			            "Entity": "FIIs_rendimentos_por_data_20212025"
+			          }
+			        },
+			        "medida.renda_média": {
+			          "Target": {
+			            "Entity": "medida.renda_média"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FIIs_rendimentos_por_data_20212025"
+			            },
+			            "Object": {
+			              "Role": "medida.renda_média"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FIIs_rendimentos_por_data_20212025_have_renda_média"
+			        }
+			      ]
+			    },
+			    "historico_fii_has_medida_preço_atual": {
+			      "Binding": {
+			        "ConceptualEntity": "historico_Fii"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "historico_fii": {
+			          "Target": {
+			            "Entity": "historico_fii"
+			          }
+			        },
+			        "medida.preço_atual": {
+			          "Target": {
+			            "Entity": "medida.preço_atual"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "historico_fii"
+			            },
+			            "Object": {
+			              "Role": "medida.preço_atual"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "historico_fiis_have_preço_atual"
+			        }
+			      ]
+			    },
+			    "historico_fii_has_medida_valor_abaixo_da_média_de_preço": {
+			      "Binding": {
+			        "ConceptualEntity": "historico_Fii"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "historico_fii": {
+			          "Target": {
+			            "Entity": "historico_fii"
+			          }
+			        },
+			        "medida.valor_abaixo_da_média_de_preço": {
+			          "Target": {
+			            "Entity": "medida.valor_abaixo_da_média_de_preço"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "historico_fii"
+			            },
+			            "Object": {
+			              "Role": "medida.valor_abaixo_da_média_de_preço"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "historico_fiis_have_valor_abaixo_da_média_de_preço"
+			        }
+			      ]
+			    },
+			    "historico_fii_has_medida_média_de_preço_de_fechamento": {
+			      "Binding": {
+			        "ConceptualEntity": "historico_Fii"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "historico_fii": {
+			          "Target": {
+			            "Entity": "historico_fii"
+			          }
+			        },
+			        "medida.média_de_preço_de_fechamento": {
+			          "Target": {
+			            "Entity": "medida.média_de_preço_de_fechamento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "historico_fii"
+			            },
+			            "Object": {
+			              "Role": "medida.média_de_preço_de_fechamento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "historico_fiis_have_média_de_preço_de_fechamento"
+			        }
+			      ]
+			    },
+			    "historico_fii_has_data": {
+			      "Binding": {
+			        "ConceptualEntity": "historico_Fii"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "historico_fii": {
+			          "Target": {
+			            "Entity": "historico_fii"
+			          }
+			        },
+			        "historico_fii.data": {
+			          "Target": {
+			            "Entity": "historico_fii.data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "historico_fii"
+			            },
+			            "Object": {
+			              "Role": "historico_fii.data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "historico_fiis_have_data"
+			        }
+			      ]
+			    },
+			    "historico_fii_has_split": {
+			      "Binding": {
+			        "ConceptualEntity": "historico_Fii"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "historico_fii": {
+			          "Target": {
+			            "Entity": "historico_fii"
+			          }
+			        },
+			        "historico_fii.split": {
+			          "Target": {
+			            "Entity": "historico_fii.split"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "historico_fii"
+			            },
+			            "Object": {
+			              "Role": "historico_fii.split"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "historico_fiis_have_splits"
+			        }
+			      ]
+			    },
+			    "historico_fii_has_dividend": {
+			      "Binding": {
+			        "ConceptualEntity": "historico_Fii"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "historico_fii": {
+			          "Target": {
+			            "Entity": "historico_fii"
+			          }
+			        },
+			        "historico_fii.dividend": {
+			          "Target": {
+			            "Entity": "historico_fii.dividend"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "historico_fii"
+			            },
+			            "Object": {
+			              "Role": "historico_fii.dividend"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "historico_fiis_have_dividends"
+			        }
+			      ]
+			    },
+			    "historico_fii_has_adjclose": {
+			      "Binding": {
+			        "ConceptualEntity": "historico_Fii"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "historico_fii": {
+			          "Target": {
+			            "Entity": "historico_fii"
+			          }
+			        },
+			        "historico_fii.adjclose": {
+			          "Target": {
+			            "Entity": "historico_fii.adjclose"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "historico_fii"
+			            },
+			            "Object": {
+			              "Role": "historico_fii.adjclose"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "historico_fiis_have_adjcloses"
+			        }
+			      ]
+			    },
+			    "historico_fii_has_volume": {
+			      "Binding": {
+			        "ConceptualEntity": "historico_Fii"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "historico_fii": {
+			          "Target": {
+			            "Entity": "historico_fii"
+			          }
+			        },
+			        "historico_fii.volume": {
+			          "Target": {
+			            "Entity": "historico_fii.volume"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "historico_fii"
+			            },
+			            "Object": {
+			              "Role": "historico_fii.volume"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "historico_fiis_have_volumes"
+			        }
+			      ]
+			    },
+			    "historico_fii_has_close": {
+			      "Binding": {
+			        "ConceptualEntity": "historico_Fii"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "historico_fii": {
+			          "Target": {
+			            "Entity": "historico_fii"
+			          }
+			        },
+			        "historico_fii.close": {
+			          "Target": {
+			            "Entity": "historico_fii.close"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "historico_fii"
+			            },
+			            "Object": {
+			              "Role": "historico_fii.close"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "historico_fiis_have_closes"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "historico_fii"
+			            },
+			            "Adjectives": [
+			              {
+			                "expensive": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "cheap": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "historico_fii.close"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "close_indicates_how_expensive_historico_fiis_are"
+			        }
+			      ]
+			    },
+			    "historico_fii_has_low": {
+			      "Binding": {
+			        "ConceptualEntity": "historico_Fii"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "historico_fii": {
+			          "Target": {
+			            "Entity": "historico_fii"
+			          }
+			        },
+			        "historico_fii.low": {
+			          "Target": {
+			            "Entity": "historico_fii.low"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "historico_fii"
+			            },
+			            "Object": {
+			              "Role": "historico_fii.low"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "historico_fiis_have_lows"
+			        }
+			      ]
+			    },
+			    "historico_fii_has_high": {
+			      "Binding": {
+			        "ConceptualEntity": "historico_Fii"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "historico_fii": {
+			          "Target": {
+			            "Entity": "historico_fii"
+			          }
+			        },
+			        "historico_fii.high": {
+			          "Target": {
+			            "Entity": "historico_fii.high"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "historico_fii"
+			            },
+			            "Object": {
+			              "Role": "historico_fii.high"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "historico_fiis_have_highs"
+			        }
+			      ]
+			    },
+			    "historico_fii_has_open": {
+			      "Binding": {
+			        "ConceptualEntity": "historico_Fii"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "historico_fii": {
+			          "Target": {
+			            "Entity": "historico_fii"
+			          }
+			        },
+			        "historico_fii.open": {
+			          "Target": {
+			            "Entity": "historico_fii.open"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "historico_fii"
+			            },
+			            "Object": {
+			              "Role": "historico_fii.open"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "historico_fiis_have_opens"
+			        }
+			      ]
+			    },
+			    "fii_com_preco_has_medida_rendimento_médio": {
+			      "Binding": {
+			        "ConceptualEntity": "FIIs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fii_com_preco": {
+			          "Target": {
+			            "Entity": "fii_com_preco"
+			          }
+			        },
+			        "medida.rendimento_médio": {
+			          "Target": {
+			            "Entity": "medida.rendimento_médio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fii_com_preco"
+			            },
+			            "Object": {
+			              "Role": "medida.rendimento_médio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fii_com_precos_have_rendimento_médio"
+			        }
+			      ]
+			    },
+			    "FIIs_rendimentos_por_data_20212025_has_medida_rendimento_médio": {
+			      "Binding": {
+			        "ConceptualEntity": "FIIs rendimentos por data (2021-2025)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FIIs_rendimentos_por_data_20212025": {
+			          "Target": {
+			            "Entity": "FIIs_rendimentos_por_data_20212025"
+			          }
+			        },
+			        "medida.rendimento_médio": {
+			          "Target": {
+			            "Entity": "medida.rendimento_médio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FIIs_rendimentos_por_data_20212025"
+			            },
+			            "Object": {
+			              "Role": "medida.rendimento_médio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FIIs_rendimentos_por_data_20212025_have_rendimento_médio"
+			        }
+			      ]
+			    },
+			    "fii_com_preco_has_medida_DY_médio": {
+			      "Binding": {
+			        "ConceptualEntity": "FIIs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fii_com_preco": {
+			          "Target": {
+			            "Entity": "fii_com_preco"
+			          }
+			        },
+			        "medida.DY_médio": {
+			          "Target": {
+			            "Entity": "medida.DY_médio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fii_com_preco"
+			            },
+			            "Object": {
+			              "Role": "medida.DY_médio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fii_com_precos_have_DY_médio"
+			        }
+			      ]
+			    },
+			    "FIIs_rendimentos_por_data_20212025_has_medida_DY_médio": {
+			      "Binding": {
+			        "ConceptualEntity": "FIIs rendimentos por data (2021-2025)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FIIs_rendimentos_por_data_20212025": {
+			          "Target": {
+			            "Entity": "FIIs_rendimentos_por_data_20212025"
+			          }
+			        },
+			        "medida.DY_médio": {
+			          "Target": {
+			            "Entity": "medida.DY_médio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FIIs_rendimentos_por_data_20212025"
+			            },
+			            "Object": {
+			              "Role": "medida.DY_médio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FIIs_rendimentos_por_data_20212025_have_DY_médio"
+			        }
+			      ]
+			    },
 			    "FIIs_rendimentos_por_data_20212025_has_medida_média_de_DY": {
 			      "Binding": {
 			        "ConceptualEntity": "FIIs rendimentos por data (2021-2025)"
@@ -2503,7 +4498,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "FIIs_rendimentos_por_data_20212025_has_medida_média_de_valor": {
+			    "FIIs_rendimentos_por_data_20212025_has_medida_média_de_dividendos": {
 			      "Binding": {
 			        "ConceptualEntity": "FIIs rendimentos por data (2021-2025)"
 			      },
@@ -2514,9 +4509,9 @@ cultureInfo pt-BR
 			            "Entity": "FIIs_rendimentos_por_data_20212025"
 			          }
 			        },
-			        "medida.média_de_valor": {
+			        "medida.média_de_dividendos": {
 			          "Target": {
-			            "Entity": "medida.média_de_valor"
+			            "Entity": "medida.média_de_dividendos"
 			          }
 			        }
 			      },
@@ -2527,12 +4522,12 @@ cultureInfo pt-BR
 			              "Role": "FIIs_rendimentos_por_data_20212025"
 			            },
 			            "Object": {
-			              "Role": "medida.média_de_valor"
+			              "Role": "medida.média_de_dividendos"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "FIIs_rendimentos_por_data_20212025_have_média_de_valor"
+			          "ID": "FIIs_rendimentos_por_data_20212025_have_média_de_dividendos"
 			        }
 			      ]
 			    },
@@ -2571,7 +4566,7 @@ cultureInfo pt-BR
 			    },
 			    "fii_com_preco_has_industria": {
 			      "Binding": {
-			        "ConceptualEntity": "Fii_com_preco"
+			        "ConceptualEntity": "FIIs"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -2604,7 +4599,7 @@ cultureInfo pt-BR
 			    },
 			    "fii_com_preco_has_setor": {
 			      "Binding": {
-			        "ConceptualEntity": "Fii_com_preco"
+			        "ConceptualEntity": "FIIs"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -2637,7 +4632,7 @@ cultureInfo pt-BR
 			    },
 			    "fii_com_preco_has_preco": {
 			      "Binding": {
-			        "ConceptualEntity": "Fii_com_preco"
+			        "ConceptualEntity": "FIIs"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -2670,7 +4665,7 @@ cultureInfo pt-BR
 			    },
 			    "fii_com_preco_has_ativo": {
 			      "Binding": {
-			        "ConceptualEntity": "Fii_com_preco"
+			        "ConceptualEntity": "FIIs"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -2863,6 +4858,165 @@ cultureInfo pt-BR
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "FIIs_rendimentos_por_data_20212025_have_valor"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "FIIs_rendimentos_por_data_20212025"
+			            },
+			            "Adjectives": [
+			              {
+			                "expensive": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "cheap": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "FIIs_rendimentos_por_data_20212025.valor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "valor_indicates_how_expensive_FIIs_rendimentos_por_data_20212025_are"
+			        }
+			      ]
+			    },
+			    "historico_fii_data_trimestre_has_historico_fii_data_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "historico_Fii"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "historico_fii.data.trimestre": {
+			          "Target": {
+			            "Entity": "historico_fii.data.trimestre"
+			          }
+			        },
+			        "historico_fii.data.mê": {
+			          "Target": {
+			            "Entity": "historico_fii.data.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "historico_fii.data.trimestre"
+			            },
+			            "Object": {
+			              "Role": "historico_fii.data.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_mê2"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "historico_fii.data.mê"
+			            },
+			            "Object": {
+			              "Role": "historico_fii.data.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_trimestres2"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "historico_fii.data.mê"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "historico_fii.data.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_are_in_trimestres2"
+			        }
+			      ]
+			    },
+			    "historico_fii_data_mê_has_historico_fii_data_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "historico_Fii"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "historico_fii.data.mê": {
+			          "Target": {
+			            "Entity": "historico_fii.data.mê"
+			          }
+			        },
+			        "historico_fii.data.dia": {
+			          "Target": {
+			            "Entity": "historico_fii.data.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "historico_fii.data.mê"
+			            },
+			            "Object": {
+			              "Role": "historico_fii.data.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_dias2"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "historico_fii.data.dia"
+			            },
+			            "Object": {
+			              "Role": "historico_fii.data.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_have_mê2"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "historico_fii.data.dia"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "historico_fii.data.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_are_in_mê2"
 			        }
 			      ]
 			    }

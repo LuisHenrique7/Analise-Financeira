@@ -11,13 +11,14 @@ table 'FIIs rendimentos por data (2021-2025)'
 
 	column VALOR
 		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
 		lineageTag: c87c4cf2-6bc8-41f4-aa24-9fab9fb9c705
 		summarizeBy: sum
 		sourceColumn: VALOR
 
 		annotation SummarizationSetBy = Automatic
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
 
 	column 'DATA COM'
 		dataType: dateTime

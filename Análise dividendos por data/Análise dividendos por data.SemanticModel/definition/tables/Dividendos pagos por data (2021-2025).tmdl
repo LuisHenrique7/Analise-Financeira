@@ -81,7 +81,7 @@ table 'Dividendos pagos por data (2021-2025)'
 		queryGroup: 'Tabelas Dimensão'
 		source =
 				let
-				    Fonte = Csv.Document(File.Contents("D:\PycharmProjects\Analise-Financeira\Dados Modelados\Dividendos pagos por data (2021-2025).csv"),[Delimiter=",", Columns=6, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    Fonte = Csv.Document(File.Contents("C:\Users\luis.nascimento\Documents\Análises Financeiras\Dados Modelados\Dividendos pagos por data (2021-2025).csv"),[Delimiter=",", Columns=6, Encoding=65001, QuoteStyle=QuoteStyle.None]),
 				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
 				    #"Valor Substituído" = Table.ReplaceValue(#"Cabeçalhos Promovidos",".",",",Replacer.ReplaceText,{"DY"}),
 				    #"Tipo Alterado1" = Table.TransformColumnTypes(#"Valor Substituído",{{"DY", type number}}),
@@ -93,5 +93,5 @@ table 'Dividendos pagos por data (2021-2025)'
 
 	annotation PBI_NavigationStepName = Navegação
 
-	annotation PBI_ResultType = Exception
+	annotation PBI_ResultType = Table
 
