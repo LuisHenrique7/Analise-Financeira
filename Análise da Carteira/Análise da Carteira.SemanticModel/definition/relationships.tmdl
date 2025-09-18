@@ -1,0 +1,39 @@
+relationship 009f4e2f-691d-4fe5-9011-88de25fbfd60
+	joinOnDateBehavior: datePartOnly
+	fromColumn: carteira_ativos.DATA
+	toColumn: LocalDateTable_a7d9e78c-a172-4928-aab8-9992c6ea8153.Date
+
+relationship AutoDetected_339a0b3a-6735-4989-adcd-476d501f19cf
+	crossFilteringBehavior: bothDirections
+	fromColumn: historico_ativos_carteira.Ativo
+	toColumn: carteira_ativos.ATIVO
+
+relationship c2a193f6-1059-4f5a-908f-7d977ddb799b
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'Exemplo Aquisição'.Data
+	toColumn: LocalDateTable_0226609f-8445-475d-bcb3-66266ee4cb3d.Date
+
+relationship 6c0ce2c6-e174-18b5-9fda-3d4e9d17ce75
+	crossFilteringBehavior: bothDirections
+	fromColumn: 'Exemplo Aquisição'.'Chave de Histórico'
+	toColumn: historico_ativos_carteira.'Chave de Histórico'
+
+relationship 1e13650f-02ff-418c-83f0-5c664feab0b4
+	joinOnDateBehavior: datePartOnly
+	fromColumn: historico_ativos_carteira.Data
+	toColumn: LocalDateTable_7d8609fb-7187-476b-8296-1b2f5277e5b4.Date
+
+relationship 668b010e-210a-43e6-aba1-afd736b1abfb
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'Dividendos pagos por data (2021-2025)'.'DATA COM'
+	toColumn: LocalDateTable_c18c8d56-02f5-41ce-988e-2dace7ad89dc.Date
+
+relationship 9d2f2a77-99e3-4e05-a38b-77a81b1d5d0f
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'Dividendos pagos por data (2021-2025)'.'DATA PAGAMENTO'
+	toColumn: LocalDateTable_5b68e9b7-393a-4d99-b8f6-5f34342f548f.Date
+
+relationship 8eff30ff-c1a7-2aef-d1c1-0b48c89c6c74
+	fromColumn: 'Dividendos pagos por data (2021-2025)'.ATIVO
+	toColumn: carteira_ativos.ATIVO
+

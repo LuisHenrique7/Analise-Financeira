@@ -1,0 +1,87 @@
+table 'Dividendos pagos por data (2021-2025)'
+	lineageTag: 19e892bc-961a-4e2d-ac0b-f5c522b4e186
+
+	column ATIVO
+		dataType: string
+		lineageTag: 9d162195-9757-4177-b645-702535101e16
+		summarizeBy: none
+		sourceColumn: ATIVO
+
+		annotation SummarizationSetBy = Automatic
+
+	column VALOR
+		dataType: double
+		lineageTag: 7f770464-11a7-45e8-8c2e-ea814984f742
+		summarizeBy: sum
+		sourceColumn: VALOR
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'DATA COM'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 75f35589-52c0-405c-b956-3e3a03e73ce3
+		summarizeBy: none
+		sourceColumn: DATA COM
+
+		variation Variation
+			isDefault
+			relationship: 668b010e-210a-43e6-aba1-afd736b1abfb
+			defaultHierarchy: LocalDateTable_c18c8d56-02f5-41ce-988e-2dace7ad89dc.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'DATA PAGAMENTO'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 1610464d-f6aa-4a86-8e43-f43d04915ea7
+		summarizeBy: none
+		sourceColumn: DATA PAGAMENTO
+
+		variation Variation
+			isDefault
+			relationship: 9d2f2a77-99e3-4e05-a38b-77a81b1d5d0f
+			defaultHierarchy: LocalDateTable_5b68e9b7-393a-4d99-b8f6-5f34342f548f.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column TIPO
+		dataType: string
+		lineageTag: 5a114fa8-31dd-466f-87e3-7d62562bc700
+		summarizeBy: none
+		sourceColumn: TIPO
+
+		annotation SummarizationSetBy = Automatic
+
+	column DY
+		dataType: double
+		lineageTag: 930b56f3-ef1f-4687-9798-db12684772ef
+		summarizeBy: sum
+		sourceColumn: DY
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition 'Dividendos pagos por data (2021-2025)' = m
+		mode: import
+		source =
+				let
+				    Fonte = Csv.Document(File.Contents("C:\Users\luis.nascimento\Documents\Análises Financeiras\Dados Modelados\Dividendos pagos por data (2021-2025).csv"),[Delimiter=",", Columns=6, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
+				    #"Valor Substituído" = Table.ReplaceValue(#"Cabeçalhos Promovidos",".",",",Replacer.ReplaceText,{"VALOR", "DY"}),
+				    #"Tipo Alterado1" = Table.TransformColumnTypes(#"Valor Substituído",{{"VALOR", type number}, {"DY", type number}}),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Tipo Alterado1",{{"ATIVO", type text}, {"DATA COM", type date}, {"DATA PAGAMENTO", type date}, {"TIPO", type text}})
+				in
+				    #"Tipo Alterado"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

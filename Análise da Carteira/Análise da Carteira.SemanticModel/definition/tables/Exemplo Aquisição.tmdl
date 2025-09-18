@@ -1,0 +1,85 @@
+table 'Exemplo Aquisição'
+	lineageTag: 640fa036-0dba-4bfa-be8c-c0e619551afc
+
+	column Dono
+		dataType: string
+		lineageTag: 2bdf16ce-2843-44fd-8ae6-d95c92c90c57
+		summarizeBy: none
+		sourceColumn: Dono
+
+		annotation SummarizationSetBy = Automatic
+
+	column Ativo
+		dataType: string
+		lineageTag: 518ae5a2-41b0-4973-a386-a0febc4ab8a2
+		summarizeBy: none
+		sourceColumn: Ativo
+
+		annotation SummarizationSetBy = Automatic
+
+	column Preço
+		dataType: double
+		lineageTag: d57850c6-509d-45a7-b3a0-55ada370b4ee
+		summarizeBy: sum
+		sourceColumn: Preço
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Data
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: da06c6bc-529a-4bba-96ae-e9c4c3c9c7e7
+		summarizeBy: none
+		sourceColumn: Data
+
+		variation Variation
+			isDefault
+			relationship: c2a193f6-1059-4f5a-908f-7d977ddb799b
+			defaultHierarchy: LocalDateTable_0226609f-8445-475d-bcb3-66266ee4cb3d.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Chave de Histórico'
+		dataType: string
+		lineageTag: ea2f6dff-3589-4ae4-9009-44115e364410
+		summarizeBy: none
+		sourceColumn: Chave de Histórico
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Número de Cotas'
+		dataType: int64
+		formatString: 0
+		lineageTag: 9b3595ea-8987-4003-9b7c-29854140ea42
+		summarizeBy: sum
+		sourceColumn: Número de Cotas
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Valor investido' = 'Exemplo Aquisição'[Preço] * 'Exemplo Aquisição'[Número de Cotas]
+		lineageTag: 9d7c6376-93a9-42cb-a14e-089e5b790382
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition 'Exemplo Aquisição' = m
+		mode: import
+		source =
+				let
+				    Fonte = Csv.Document(File.Contents("C:\Users\luis.nascimento\Documents\Análises Financeiras\Exemplo Aquisição.csv"),[Delimiter=",", Columns=5, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"Dono", type text}, {"Ativo", type text}, {"Preço", type number}, {"Número de Cotas", Int64.Type}, {"Data", type date}}),
+				    #"Personalização Adicionada" = Table.AddColumn(#"Tipo Alterado", "Chave de Histórico", each [Ativo] & " - " & Date.ToText([Data], "dd/MM/yyyy", "pt-BR"))
+				in
+				    #"Personalização Adicionada"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

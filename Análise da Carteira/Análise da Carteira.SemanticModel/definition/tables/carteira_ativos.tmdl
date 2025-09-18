@@ -1,0 +1,82 @@
+table carteira_ativos
+	lineageTag: c320a723-c7e1-4d57-bb0c-a6c29678a04b
+
+	column ATIVO
+		dataType: string
+		lineageTag: 359eaae0-1a2b-4866-8d3e-9863e794100f
+		summarizeBy: none
+		sourceColumn: ATIVO
+
+		annotation SummarizationSetBy = Automatic
+
+	column SETOR
+		dataType: string
+		lineageTag: be93f8a9-01ec-41d8-9faa-15ac16b8c5aa
+		summarizeBy: none
+		sourceColumn: SETOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column INDUSTRIA
+		dataType: string
+		lineageTag: e2fc299d-b568-4beb-8fa5-e567bd2c2dc8
+		summarizeBy: none
+		sourceColumn: INDUSTRIA
+
+		annotation SummarizationSetBy = Automatic
+
+	column DATA
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: c3e6c05d-404d-4107-a1d7-15e4ff56671c
+		summarizeBy: none
+		sourceColumn: DATA
+
+		variation Variation
+			isDefault
+			relationship: 009f4e2f-691d-4fe5-9011-88de25fbfd60
+			defaultHierarchy: LocalDateTable_a7d9e78c-a172-4928-aab8-9992c6ea8153.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column RECOMENDACAO
+		dataType: string
+		lineageTag: af8dd43d-51ad-438f-a69f-52eeae5e1c1f
+		summarizeBy: none
+		sourceColumn: RECOMENDACAO
+
+		annotation SummarizationSetBy = Automatic
+
+	column Tipo
+		dataType: string
+		lineageTag: 1c60b7ef-2fa4-4911-ac5e-fd1c2eea5b8d
+		summarizeBy: none
+		sourceColumn: Tipo
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Balanço de Cotas'
+		dataType: int64
+		formatString: 0
+		lineageTag: 5e91f555-9dc4-4c90-83e0-b0af10a77cea
+		summarizeBy: sum
+		sourceColumn: Balanço de Cotas
+
+		annotation SummarizationSetBy = Automatic
+
+	partition carteira_ativos = m
+		mode: import
+		source =
+				let
+				    Fonte = Csv.Document(File.Contents("C:\Users\luis.nascimento\Documents\Análises Financeiras\Dados Modelados\carteira_ativos.csv"),[Delimiter=",", Columns=7, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"ATIVO", type text}, {"SETOR", type text}, {"INDUSTRIA", type text}, {"DATA", type date}, {"RECOMENDACAO", type text}, {"Tipo", type text}, {"Balanço de Cotas", Int64.Type}})
+				in
+				    #"Tipo Alterado"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

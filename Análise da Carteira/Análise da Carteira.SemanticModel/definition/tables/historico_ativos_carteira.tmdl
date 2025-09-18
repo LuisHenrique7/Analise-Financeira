@@ -1,0 +1,140 @@
+table historico_ativos_carteira
+	lineageTag: 8bc87fbd-8c5c-4cb5-819e-79d45a960199
+
+	column open
+		dataType: double
+		lineageTag: 7c8ac329-8763-43b7-a0c4-5b854d6f6079
+		summarizeBy: sum
+		sourceColumn: open
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column high
+		dataType: double
+		lineageTag: b3d0617f-aac3-4e73-b5bf-ce46fca811db
+		summarizeBy: sum
+		sourceColumn: high
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column low
+		dataType: double
+		lineageTag: 5fa18df6-391f-4310-a928-e9a0c572ad31
+		summarizeBy: sum
+		sourceColumn: low
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column close
+		dataType: double
+		lineageTag: 2239afc4-6ea5-4664-a9aa-4b0465e89ee4
+		summarizeBy: sum
+		sourceColumn: close
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column volume
+		dataType: double
+		lineageTag: bb9e195a-42bc-4069-9b16-c35a361a43c0
+		summarizeBy: sum
+		sourceColumn: volume
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column adjclose
+		dataType: double
+		lineageTag: 46c9443b-8ca0-4b50-b924-c8116cacf3b2
+		summarizeBy: sum
+		sourceColumn: adjclose
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column dividends
+		dataType: double
+		lineageTag: 424e8e34-bcd6-41b6-a0f7-c335e1c33264
+		summarizeBy: sum
+		sourceColumn: dividends
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column splits
+		dataType: double
+		lineageTag: 949caa25-9780-4a87-ab81-f0d5b32c4126
+		summarizeBy: sum
+		sourceColumn: splits
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Ativo
+		dataType: string
+		lineageTag: becb6401-57a5-4dbc-aef8-93a34fc30b5b
+		summarizeBy: none
+		sourceColumn: Ativo
+
+		annotation SummarizationSetBy = Automatic
+
+	column Data
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 9de3ff8a-a440-4a4b-b277-91c9ce5c3b55
+		summarizeBy: none
+		sourceColumn: Data
+
+		variation Variation
+			isDefault
+			relationship: 1e13650f-02ff-418c-83f0-5c664feab0b4
+			defaultHierarchy: LocalDateTable_7d8609fb-7187-476b-8296-1b2f5277e5b4.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Tipo
+		dataType: string
+		lineageTag: f0df31bc-6656-40bf-b0cf-266cf287c1c3
+		summarizeBy: none
+		sourceColumn: Tipo
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Chave de Histórico'
+		dataType: string
+		lineageTag: 7abab15b-ed7b-4176-8133-02d2f83a9a22
+		summarizeBy: none
+		sourceColumn: Chave de Histórico
+
+		annotation SummarizationSetBy = Automatic
+
+	partition historico_ativos_carteira = m
+		mode: import
+		source =
+				let
+				    Fonte = Csv.Document(File.Contents("C:\Users\luis.nascimento\Documents\Análises Financeiras\Dados Modelados\historico_ativos_carteira.csv"),[Delimiter=",", Columns=11, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
+				    #"Valor Substituído" = Table.ReplaceValue(#"Cabeçalhos Promovidos",".",",",Replacer.ReplaceText,{"open", "high", "low", "close", "volume", "adjclose", "dividends", "splits"}),
+				    #"Tipo Alterado1" = Table.TransformColumnTypes(#"Valor Substituído",{{"open", type number}, {"high", type number}, {"low", type number}, {"close", type number}, {"volume", type number}, {"adjclose", type number}, {"dividends", type number}, {"splits", type number}}),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Tipo Alterado1",{{"Ativo", type text}, {"Data", type date}, {"Tipo", type text}}),
+				    #"Personalização Adicionada" = Table.AddColumn(#"Tipo Alterado", "Chave de Histórico", each [Ativo] & " - " & Date.ToText([Data], "dd/MM/yyyy", "pt-BR"))
+				in
+				    #"Personalização Adicionada"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

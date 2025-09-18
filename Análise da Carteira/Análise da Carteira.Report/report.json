@@ -1,0 +1,237 @@
+{
+  "config": "{\"version\":\"5.66\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"type\":2,\"version\":{\"visual\":\"1.8.95\",\"report\":\"2.0.95\",\"page\":\"1.3.95\"}}},\"activeSectionIndex\":2,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{\"relationships\":[{\"source\":\"ee8a937f77e2e4b906c7\",\"target\":\"9ccd5c10587583131430\",\"type\":1}]}",
+      "displayName": "Preço x Valor Investido",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "26e0bcd02193fb95db79",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"15287b58d9ceebf1d14e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1154.5288753799393,\"y\":15.562310030395137,\"z\":4,\"width\":117.68996960486322,\"height\":76.83890577507599,\"tabOrder\":4}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Exemplo Aquisição.Dono\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"Exemplo Aquisição\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"Dono\"},\"Name\":\"Exemplo Aquisição.Dono\",\"NativeReferenceName\":\"Dono\"}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F2F2F2'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F2F2F2'\"}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}},\"width\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 76.84,
+          "width": 117.69,
+          "x": 1154.53,
+          "y": 15.56,
+          "z": 4.00
+        },
+        {
+          "config": "{\"name\":\"41f103a1d71574efd2ea\",\"layouts\":[{\"id\":0,\"position\":{\"x\":34.04255319148936,\"y\":128.3890577507599,\"z\":6,\"width\":582.613981762918,\"height\":267.47720364741645,\"tabOrder\":6}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"historico_ativos_carteira.Data\",\"active\":true}],\"Y\":[{\"queryRef\":\"Medidas.Preço da Carteira\"},{\"queryRef\":\"Sum(Exemplo Aquisição.Valor investido)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"historico_ativos_carteira\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0},{\"Name\":\"e\",\"Entity\":\"Exemplo Aquisição\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Data\"},\"Name\":\"historico_ativos_carteira.Data\",\"NativeReferenceName\":\"Data\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Preço da Carteira\"},\"Name\":\"Medidas.Preço da Carteira\",\"NativeReferenceName\":\"Preço da Carteira\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"Valor investido\"}},\"Function\":0},\"Name\":\"Sum(Exemplo Aquisição.Valor investido)\",\"NativeReferenceName\":\"Soma de Valor investido\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Data\"}}}]},\"drillFilterOtherVisuals\":true,\"filterSortOrder\":3,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"enableValueDataLabel\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"2L\"}}}}},{\"properties\":{\"enableValueDataLabel\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"metadata\":\"Medidas.Média de Dividendos\"}}],\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#11AA55'\"}}}}}}}],\"seriesLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F2F2F2'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F2F2F2'\"}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}},\"width\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]}}}",
+          "filters": "[{\"name\":\"bc705261ebd2851152af\",\"expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"historico_ativos_carteira\"}},\"Property\":\"close\"}},\"Function\":0}},\"type\":\"Advanced\",\"howCreated\":1,\"isHiddenInViewMode\":false,\"ordinal\":2}]",
+          "height": 267.48,
+          "width": 582.61,
+          "x": 34.04,
+          "y": 128.39,
+          "z": 6.00
+        },
+        {
+          "config": "{\"name\":\"4b4a1800684f04356f4e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":34.04255319148936,\"y\":424.0729483282675,\"z\":8,\"width\":582.613981762918,\"height\":266.5045592705167,\"tabOrder\":8}}],\"singleVisual\":{\"visualType\":\"areaChart\",\"projections\":{\"Category\":[{\"queryRef\":\"historico_ativos_carteira.Data\",\"active\":true}],\"Y\":[{\"queryRef\":\"Medidas.Valorização\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"historico_ativos_carteira\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Data\"},\"Name\":\"historico_ativos_carteira.Data\",\"NativeReferenceName\":\"Data\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Valorização\"},\"Name\":\"Medidas.Valorização\",\"NativeReferenceName\":\"Valorização\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Data\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"enableValueDataLabel\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"2L\"}}},\"leaderLines\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}},{\"properties\":{\"enableValueDataLabel\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"metadata\":\"Medidas.Média de Dividendos\"}}],\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#11AA55'\"}}}}}}}],\"seriesLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F2F2F2'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F2F2F2'\"}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}},\"width\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 266.50,
+          "width": 582.61,
+          "x": 34.04,
+          "y": 424.07,
+          "z": 8.00
+        },
+        {
+          "config": "{\"name\":\"7a2940e19d9150f0b538\",\"layouts\":[{\"id\":0,\"position\":{\"x\":34.04255319148936,\"y\":15.562310030395137,\"z\":11,\"width\":146.8693009118541,\"height\":94.34650455927051,\"tabOrder\":11}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Medidas.Medida\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Rendimento\"},\"Name\":\"Medidas.Medida\",\"NativeReferenceName\":\"Medida\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Rendimento\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"25D\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F2F2F2'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F2F2F2'\"}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}},\"width\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 94.35,
+          "width": 146.87,
+          "x": 34.04,
+          "y": 15.56,
+          "z": 11.00
+        },
+        {
+          "config": "{\"name\":\"8dd1afd752a65aecc5e5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1024.19452887538,\"y\":15.562310030395137,\"z\":10,\"width\":117.68996960486322,\"height\":76.83890577507599,\"tabOrder\":10}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"carteira_ativos.Tipo\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"carteira_ativos\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Tipo\"},\"Name\":\"carteira_ativos.Tipo\",\"NativeReferenceName\":\"Tipo\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F2F2F2'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F2F2F2'\"}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}},\"width\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 76.84,
+          "width": 117.69,
+          "x": 1024.19,
+          "y": 15.56,
+          "z": 10.00
+        },
+        {
+          "config": "{\"name\":\"9ccd5c10587583131430\",\"layouts\":[{\"id\":0,\"position\":{\"x\":679,\"y\":128,\"width\":583,\"height\":267,\"z\":9,\"tabOrder\":9}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"historico_ativos_carteira.Data.Variation.Hierarquia de datas.Ano\",\"active\":true}],\"Y\":[{\"queryRef\":\"Medidas.Preço Investido Acumulado\"},{\"queryRef\":\"Medidas.Valorização\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"historico_ativos_carteira\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Name\":\"Variation\",\"Property\":\"Data\"}},\"Hierarchy\":\"Hierarquia de datas\"}},\"Level\":\"Ano\"},\"Name\":\"historico_ativos_carteira.Data.Variation.Hierarquia de datas.Ano\",\"NativeReferenceName\":\"Data Ano\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Preço Investido Acumulado\"},\"Name\":\"Medidas.Preço Investido Acumulado\",\"NativeReferenceName\":\"Preço Investido Acumulado\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Valorização\"},\"Name\":\"Medidas.Valorização\",\"NativeReferenceName\":\"Valorização\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Name\":\"Variation\",\"Property\":\"Data\"}},\"Hierarchy\":\"Hierarquia de datas\"}},\"Level\":\"Ano\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"2L\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"enableValueDataLabel\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"enableTitleDataLabel\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"enableDetailDataLabel\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"enableBackground\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}},{\"properties\":{\"enableValueDataLabel\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"metadata\":\"Medidas.Média de Dividendos\"}}],\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#11AA55'\"}}}}}}}],\"totals\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"showPositiveAndNegative\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"enableBackground\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F2F2F2'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F2F2F2'\"}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}},\"width\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 267.00,
+          "width": 583.00,
+          "x": 679.00,
+          "y": 128.00,
+          "z": 9.00
+        },
+        {
+          "config": "{\"name\":\"e7c3d1983cf65ca07aff\",\"layouts\":[{\"id\":0,\"position\":{\"x\":863.7082066869301,\"y\":15.562310030395137,\"z\":5,\"width\":143.95136778115503,\"height\":76.83890577507599,\"tabOrder\":5}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"carteira_ativos.ATIVO\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"carteira_ativos\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"ATIVO\"},\"Name\":\"carteira_ativos.ATIVO\",\"NativeReferenceName\":\"ATIVO\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"selfFilterEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F2F2F2'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F2F2F2'\"}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}},\"width\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 76.84,
+          "width": 143.95,
+          "x": 863.71,
+          "y": 15.56,
+          "z": 5.00
+        },
+        {
+          "config": "{\"name\":\"ee8a937f77e2e4b906c7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":678.9057750759879,\"y\":424.0729483282675,\"z\":7,\"width\":582.613981762918,\"height\":266.5045592705167,\"tabOrder\":7}}],\"singleVisual\":{\"visualType\":\"areaChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Medidas.Preço Carteira Acumulado\"},{\"queryRef\":\"Medidas.Preço Invstido Acumulado\"}],\"Category\":[{\"queryRef\":\"historico_ativos_carteira.Data\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0},{\"Name\":\"h\",\"Entity\":\"historico_ativos_carteira\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Preço Carteira Acumulado\"},\"Name\":\"Medidas.Preço Carteira Acumulado\",\"NativeReferenceName\":\"Preço Carteira Acumulado\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Data\"},\"Name\":\"historico_ativos_carteira.Data\",\"NativeReferenceName\":\"Data\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Preço Investido Acumulado\"},\"Name\":\"Medidas.Preço Invstido Acumulado\",\"NativeReferenceName\":\"Preço Investido Acumulado\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Data\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"enableValueDataLabel\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"2L\"}}},\"leaderLines\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"enableBackground\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}},{\"properties\":{\"enableValueDataLabel\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"metadata\":\"Medidas.Média de Dividendos\"}}],\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#11AA55'\"}}}}}}}],\"seriesLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F2F2F2'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F2F2F2'\"}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}},\"width\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 266.50,
+          "width": 582.61,
+          "x": 678.91,
+          "y": 424.07,
+          "z": 7.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Página 2",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "8d5458bc4b182a5efe44",
+      "ordinal": 2,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"003cd109b796a3bd0957\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.72644376899696,\"y\":280.1215805471125,\"z\":1,\"width\":918.1762917933131,\"height\":280.1215805471125,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(Dividendos pagos por data (2021-2025).VALOR)\"}],\"Category\":[{\"queryRef\":\"Dividendos pagos por data (2021-2025).DATA PAGAMENTO.Variation.Hierarquia de datas.Mês\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Dividendos pagos por data (2021-2025)\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"VALOR\"}},\"Function\":0},\"Name\":\"Sum(Dividendos pagos por data (2021-2025).VALOR)\",\"NativeReferenceName\":\"Soma de VALOR\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Name\":\"Variation\",\"Property\":\"DATA PAGAMENTO\"}},\"Hierarchy\":\"Hierarquia de datas\"}},\"Level\":\"Mês\"},\"Name\":\"Dividendos pagos por data (2021-2025).DATA PAGAMENTO.Variation.Hierarquia de datas.Mês\",\"NativeReferenceName\":\"DATA PAGAMENTO Mês\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 280.12,
+          "width": 918.18,
+          "x": 9.73,
+          "y": 280.12,
+          "z": 1.00
+        },
+        {
+          "config": "{\"name\":\"17945a78fbb32701ce38\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1011.5501519756839,\"y\":359.87841945288756,\"z\":2,\"width\":268.4498480243161,\"height\":149.7872340425532,\"tabOrder\":2}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Dividendos pagos por data (2021-2025).DATA PAGAMENTO.Variation.Hierarquia de datas.Ano\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Dividendos pagos por data (2021-2025)\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Name\":\"Variation\",\"Property\":\"DATA PAGAMENTO\"}},\"Hierarchy\":\"Hierarquia de datas\"}},\"Level\":\"Ano\"},\"Name\":\"Dividendos pagos por data (2021-2025).DATA PAGAMENTO.Variation.Hierarquia de datas.Ano\",\"NativeReferenceName\":\"DATA PAGAMENTO Ano\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Name\":\"Variation\",\"Property\":\"DATA PAGAMENTO\"}},\"Hierarchy\":\"Hierarquia de datas\"}},\"Level\":\"Ano\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 149.79,
+          "width": 268.45,
+          "x": 1011.55,
+          "y": 359.88,
+          "z": 2.00
+        },
+        {
+          "config": "{\"name\":\"9be3662d24f9b7473f1b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1011.5501519756839,\"y\":81.70212765957447,\"z\":3,\"width\":268.4498480243161,\"height\":149.7872340425532,\"tabOrder\":3}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"historico_ativos_carteira.Data.Variation.Hierarquia de datas.Ano\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"historico_ativos_carteira\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Name\":\"Variation\",\"Property\":\"Data\"}},\"Hierarchy\":\"Hierarquia de datas\"}},\"Level\":\"Ano\"},\"Name\":\"historico_ativos_carteira.Data.Variation.Hierarquia de datas.Ano\",\"NativeReferenceName\":\"Data Ano\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Name\":\"Variation\",\"Property\":\"Data\"}},\"Hierarchy\":\"Hierarquia de datas\"}},\"Level\":\"Ano\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"LocalDateTable_7d8609fb-7187-476b-8296-1b2f5277e5b4\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"Ano\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2024L\"}}]]}}}]}}}}]},\"cachedFilterDisplayItems\":[{\"id\":{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"LocalDateTable_7d8609fb-7187-476b-8296-1b2f5277e5b4\"}},\"Property\":\"Ano\"}},\"Right\":{\"Literal\":{\"Value\":\"2024L\"}}}}},\"displayName\":\"2024\"}]}}",
+          "filters": "[]",
+          "height": 149.79,
+          "width": 268.45,
+          "x": 1011.55,
+          "y": 81.70,
+          "z": 3.00
+        },
+        {
+          "config": "{\"name\":\"d28a069e4c2535ce5471\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.72644376899696,\"y\":0,\"z\":0,\"width\":918.1762917933131,\"height\":280.1215805471125,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(historico_ativos_carteira.dividends)\"}],\"Category\":[{\"queryRef\":\"historico_ativos_carteira.Data.Variation.Hierarquia de datas.Mês\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"historico_ativos_carteira\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"dividends\"}},\"Function\":0},\"Name\":\"Sum(historico_ativos_carteira.dividends)\",\"NativeReferenceName\":\"Soma de dividends\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Name\":\"Variation\",\"Property\":\"Data\"}},\"Hierarchy\":\"Hierarquia de datas\"}},\"Level\":\"Mês\"},\"Name\":\"historico_ativos_carteira.Data.Variation.Hierarquia de datas.Mês\",\"NativeReferenceName\":\"Data Mês\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 280.12,
+          "width": 918.18,
+          "x": 9.73,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Página 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "eb9e46fc44a36fc96d73",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"00808db06408c9ec7fa0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1007.6595744680851,\"y\":0,\"z\":1000,\"width\":159.51367781155017,\"height\":73.9209726443769,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"carteira_ativos.ATIVO\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"carteira_ativos\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"ATIVO\"},\"Name\":\"carteira_ativos.ATIVO\",\"NativeReferenceName\":\"ATIVO\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"selfFilterEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"carteira_ativos\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"ATIVO\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'BBSE3'\"}}],[{\"Literal\":{\"Value\":\"'HGLG11'\"}}],[{\"Literal\":{\"Value\":\"'HTMX11'\"}}],[{\"Literal\":{\"Value\":\"'KNCR11'\"}}],[{\"Literal\":{\"Value\":\"'PETR4'\"}}]]}}}]}}}}]}}}",
+          "filters": "[]",
+          "height": 73.92,
+          "width": 159.51,
+          "x": 1007.66,
+          "y": 0.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"1803db45100138f407b7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1150.6382978723404,\"y\":76.83890577507599,\"z\":5000,\"width\":129.36170212765958,\"height\":70.03039513677813,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Exemplo Aquisição.Dono\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"Exemplo Aquisição\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"Dono\"},\"Name\":\"Exemplo Aquisição.Dono\",\"NativeReferenceName\":\"Dono\"}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 70.03,
+          "width": 129.36,
+          "x": 1150.64,
+          "y": 76.84,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"263c02fa3974893a3f45\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.72644376899696,\"y\":332.64437689969606,\"z\":5005,\"width\":404.62006079027356,\"height\":322.9179331306991,\"tabOrder\":5005}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"carteira_ativos.ATIVO\"},{\"queryRef\":\"Dividendos pagos por data (2021-2025).ATIVO\"},{\"queryRef\":\"historico_ativos_carteira.Ativo\"},{\"queryRef\":\"Exemplo Aquisição.Ativo\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"carteira_ativos\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"Dividendos pagos por data (2021-2025)\",\"Type\":0},{\"Name\":\"h\",\"Entity\":\"historico_ativos_carteira\",\"Type\":0},{\"Name\":\"e\",\"Entity\":\"Exemplo Aquisição\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"ATIVO\"},\"Name\":\"carteira_ativos.ATIVO\",\"NativeReferenceName\":\"ATIVO\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"ATIVO\"}},\"Function\":3},\"Name\":\"Dividendos pagos por data (2021-2025).ATIVO\",\"NativeReferenceName\":\"Primeiro ATIVO\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Ativo\"},\"Name\":\"historico_ativos_carteira.Ativo\",\"NativeReferenceName\":\"Ativo\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"Ativo\"},\"Name\":\"Exemplo Aquisição.Ativo\",\"NativeReferenceName\":\"Ativo1\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 322.92,
+          "width": 404.62,
+          "x": 9.73,
+          "y": 332.64,
+          "z": 5005.00
+        },
+        {
+          "config": "{\"name\":\"7290f2d60402c0bcbace\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1007.6595744680851,\"y\":141.03343465045594,\"z\":5007,\"width\":272.3404255319149,\"height\":202.31003039513678,\"tabOrder\":5007}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Exemplo Aquisição.Data\"},{\"queryRef\":\"Medidas.Total de Cotas por Mês\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0},{\"Name\":\"e\",\"Entity\":\"Exemplo Aquisição\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total de Cotas por Mês\"},\"Name\":\"Medidas.Total de Cotas por Mês\",\"NativeReferenceName\":\"Total de Cotas por Mês\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"Data\"},\"Name\":\"Exemplo Aquisição.Data\",\"NativeReferenceName\":\"Data\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 202.31,
+          "width": 272.34,
+          "x": 1007.66,
+          "y": 141.03,
+          "z": 5007.00
+        },
+        {
+          "config": "{\"name\":\"a536c258f94bf27d95fd\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.72644376899696,\"y\":0,\"z\":0,\"width\":914.2857142857143,\"height\":322.9179331306991,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(historico_ativos_carteira.close)\"},{\"queryRef\":\"Medidas.Medida\"}],\"Category\":[{\"queryRef\":\"historico_ativos_carteira.Data\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"historico_ativos_carteira\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"close\"}},\"Function\":0},\"Name\":\"Sum(historico_ativos_carteira.close)\",\"NativeReferenceName\":\"Soma de close\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Data\"},\"Name\":\"historico_ativos_carteira.Data\",\"NativeReferenceName\":\"Data\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Média de Preço de aquisição\"},\"Name\":\"Medidas.Medida\",\"NativeReferenceName\":\"Média de Preço de aquisição\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Data\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"2L\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 322.92,
+          "width": 914.29,
+          "x": 9.73,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"ab47134e74500972a28f\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1167.1732522796353,\"y\":0,\"z\":3000,\"width\":112.82674772036475,\"height\":76.83890577507599,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"historico_ativos_carteira.Data.Variation.Hierarquia de datas.Ano\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"historico_ativos_carteira\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Name\":\"Variation\",\"Property\":\"Data\"}},\"Hierarchy\":\"Hierarquia de datas\"}},\"Level\":\"Ano\"},\"Name\":\"historico_ativos_carteira.Data.Variation.Hierarquia de datas.Ano\",\"NativeReferenceName\":\"Data Ano\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Name\":\"Variation\",\"Property\":\"Data\"}},\"Hierarchy\":\"Hierarquia de datas\"}},\"Level\":\"Ano\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"LocalDateTable_7d8609fb-7187-476b-8296-1b2f5277e5b4\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"Ano\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2025L\"}}]]}}}]}}}}]},\"cachedFilterDisplayItems\":[{\"id\":{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"LocalDateTable_7d8609fb-7187-476b-8296-1b2f5277e5b4\"}},\"Property\":\"Ano\"}},\"Right\":{\"Literal\":{\"Value\":\"2025L\"}}}}},\"displayName\":\"2025\"}]}}",
+          "filters": "[]",
+          "height": 76.84,
+          "width": 112.83,
+          "x": 1167.17,
+          "y": 0.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"addd20e2b668994f8ece\",\"layouts\":[{\"id\":0,\"position\":{\"x\":394.8936170212766,\"y\":396.838905775076,\"z\":5006,\"width\":840.3647416413374,\"height\":322.9179331306991,\"tabOrder\":5006}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"carteira_ativos.ATIVO\"},{\"queryRef\":\"Dividendos pagos por data (2021-2025).ATIVO\"},{\"queryRef\":\"Dividendos pagos por data (2021-2025).DATA COM.Variation.Hierarquia de datas.Ano\"},{\"queryRef\":\"Dividendos pagos por data (2021-2025).DATA COM.Variation.Hierarquia de datas.Mês\"},{\"queryRef\":\"historico_ativos_carteira.Ativo\"},{\"queryRef\":\"historico_ativos_carteira.Data.Variation.Hierarquia de datas.Ano\"},{\"queryRef\":\"historico_ativos_carteira.Data.Variation.Hierarquia de datas.Mês\"},{\"queryRef\":\"Exemplo Aquisição.Ativo\"},{\"queryRef\":\"Exemplo Aquisição.Data.Variation.Hierarquia de datas.Ano\"},{\"queryRef\":\"Exemplo Aquisição.Data.Variation.Hierarquia de datas.Mês\"},{\"queryRef\":\"Medidas.Medida\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"carteira_ativos\",\"Type\":0},{\"Name\":\"h\",\"Entity\":\"historico_ativos_carteira\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"Dividendos pagos por data (2021-2025)\",\"Type\":0},{\"Name\":\"e\",\"Entity\":\"Exemplo Aquisição\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"ATIVO\"},\"Name\":\"carteira_ativos.ATIVO\",\"NativeReferenceName\":\"ATIVO\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Ativo\"}},\"Function\":3},\"Name\":\"historico_ativos_carteira.Ativo\",\"NativeReferenceName\":\"Primeiro Ativo\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"ATIVO\"}},\"Function\":3},\"Name\":\"Dividendos pagos por data (2021-2025).ATIVO\",\"NativeReferenceName\":\"Primeiro ATIVO\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Name\":\"Variation\",\"Property\":\"DATA COM\"}},\"Hierarchy\":\"Hierarquia de datas\"}},\"Level\":\"Ano\"},\"Name\":\"Dividendos pagos por data (2021-2025).DATA COM.Variation.Hierarquia de datas.Ano\",\"NativeReferenceName\":\"DATA COM Ano\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Name\":\"Variation\",\"Property\":\"DATA COM\"}},\"Hierarchy\":\"Hierarquia de datas\"}},\"Level\":\"Mês\"},\"Name\":\"Dividendos pagos por data (2021-2025).DATA COM.Variation.Hierarquia de datas.Mês\",\"NativeReferenceName\":\"DATA COM Mês\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Name\":\"Variation\",\"Property\":\"Data\"}},\"Hierarchy\":\"Hierarquia de datas\"}},\"Level\":\"Ano\"},\"Name\":\"historico_ativos_carteira.Data.Variation.Hierarquia de datas.Ano\",\"NativeReferenceName\":\"Data Ano\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Name\":\"Variation\",\"Property\":\"Data\"}},\"Hierarchy\":\"Hierarquia de datas\"}},\"Level\":\"Mês\"},\"Name\":\"historico_ativos_carteira.Data.Variation.Hierarquia de datas.Mês\",\"NativeReferenceName\":\"Data Mês\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"Ativo\"},\"Name\":\"Exemplo Aquisição.Ativo\",\"NativeReferenceName\":\"Ativo\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Name\":\"Variation\",\"Property\":\"Data\"}},\"Hierarchy\":\"Hierarquia de datas\"}},\"Level\":\"Ano\"},\"Name\":\"Exemplo Aquisição.Data.Variation.Hierarquia de datas.Ano\",\"NativeReferenceName\":\"Data Ano1\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Name\":\"Variation\",\"Property\":\"Data\"}},\"Hierarchy\":\"Hierarquia de datas\"}},\"Level\":\"Mês\"},\"Name\":\"Exemplo Aquisição.Data.Variation.Hierarquia de datas.Mês\",\"NativeReferenceName\":\"Data Mês1\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Medida\"},\"Name\":\"Medidas.Medida\",\"NativeReferenceName\":\"Medida\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"ATIVO\"}},\"Function\":3}}}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"carteira_ativos\"}},\"Property\":\"ATIVO\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"carteira_ativos\",\"Type\":0}],\"Where\":[{\"Condition\":{\"And\":{\"Left\":{\"Not\":{\"Expression\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"ATIVO\"}},\"Right\":{\"Literal\":{\"Value\":\"''\"}}}}}},\"Right\":{\"Not\":{\"Expression\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"ATIVO\"}},\"Right\":{\"Literal\":{\"Value\":\"null\"}}}}}}}}}]},\"type\":\"Advanced\",\"howCreated\":0,\"isHiddenInViewMode\":false},{\"expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Dividendos pagos por data (2021-2025)\"}},\"Property\":\"ATIVO\"}},\"Function\":3}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Dividendos pagos por data (2021-2025)\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"ATIVO\"}},\"Function\":3}},\"Right\":{\"Literal\":{\"Value\":\"''\"}}}}}}}]},\"type\":\"Advanced\",\"howCreated\":0,\"isHiddenInViewMode\":false},{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Exemplo Aquisição\"}},\"Property\":\"Ativo\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"Exemplo Aquisição\",\"Type\":0}],\"Where\":[{\"Condition\":{\"And\":{\"Left\":{\"Not\":{\"Expression\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"Ativo\"}},\"Right\":{\"Literal\":{\"Value\":\"null\"}}}}}},\"Right\":{\"Not\":{\"Expression\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"Ativo\"}},\"Right\":{\"Literal\":{\"Value\":\"''\"}}}}}}}}}]},\"type\":\"Advanced\",\"howCreated\":0,\"isHiddenInViewMode\":false},{\"expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"historico_ativos_carteira\"}},\"Property\":\"Ativo\"}},\"Function\":3}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"historico_ativos_carteira\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Or\":{\"Left\":{\"Not\":{\"Expression\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Ativo\"}},\"Function\":3}},\"Right\":{\"Literal\":{\"Value\":\"''\"}}}}}},\"Right\":{\"Not\":{\"Expression\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Ativo\"}},\"Function\":3}},\"Right\":{\"Literal\":{\"Value\":\"null\"}}}}}}}}}]},\"type\":\"Advanced\",\"howCreated\":0,\"isHiddenInViewMode\":false}]",
+          "height": 322.92,
+          "width": 840.36,
+          "x": 394.89,
+          "y": 396.84,
+          "z": 5006.00
+        },
+        {
+          "config": "{\"name\":\"cf219fad29ddef3c4162\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1007.6595744680851,\"y\":82.67477203647417,\"z\":5004,\"width\":136.17021276595744,\"height\":58.358662613981764,\"tabOrder\":5004}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"carteira_ativos.Tipo\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"carteira_ativos\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Tipo\"},\"Name\":\"carteira_ativos.Tipo\",\"NativeReferenceName\":\"Tipo\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 58.36,
+          "width": 136.17,
+          "x": 1007.66,
+          "y": 82.67,
+          "z": 5004.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

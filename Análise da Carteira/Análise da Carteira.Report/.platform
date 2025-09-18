@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Análise da Carteira"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "28f1076d-3089-41f4-910c-903b6ae248bb"
+  }
+}

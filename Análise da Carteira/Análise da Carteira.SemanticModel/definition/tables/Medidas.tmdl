@@ -1,0 +1,99 @@
+table Medidas
+	lineageTag: 5147bab2-5470-46cc-a3fd-0368fef5510d
+
+	measure 'Média de Preço de aquisição' =
+			SUMX(
+			    FILTER(historico_ativos_carteira, historico_ativos_carteira[Data] = SELECTEDVALUE(historico_ativos_carteira[Data])),
+			    AVERAGE('Exemplo Aquisição'[Preço])
+			)
+		lineageTag: 4672fc00-ccbc-48ed-aa7f-5a832d94deeb
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Total de Cotas por Mês' =
+			CALCULATE(
+			    SUM('Exemplo Aquisição'[Número de Cotas]),
+			    ALL('Exemplo Aquisição'[Preço])
+			)
+		formatString: 0
+		lineageTag: ce3b6c4f-c6f7-4a01-9287-e8ba8ab029d3
+
+	measure 'Preço da Carteira' =
+			SUMX(
+			    historico_ativos_carteira,
+			    historico_ativos_carteira[close] * Medidas[Total de Cotas por Mês]
+			 )
+		lineageTag: 8982aeab-df6c-4bd4-9e14-6e7a887cb130
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Preço Carteira Acumulado' =
+			
+			CALCULATE (
+			    [Preço da Carteira],
+			    FILTER (
+			        ALL ( historico_ativos_carteira[Data] ),
+			        historico_ativos_carteira[Data] <= MAX ( historico_ativos_carteira[Data] )
+			    )
+			)
+			
+			/*CALCULATE (
+			    SUMX (
+			        historico_ativos_carteira,
+			        historico_ativos_carteira[close] * Medidas[Medida]
+			    ),
+			    FILTER (
+			        ALL ( historico_ativos_carteira[Data] ),
+			        historico_ativos_carteira[Data] <= MAX ( historico_ativos_carteira[Data] )
+			    )
+			)*/
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: da929f8e-c96a-4660-afdf-63a820a86481
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Preço Investido Acumulado' =
+			
+			CALCULATE (
+			    SUM('Exemplo Aquisição'[Valor investido]),
+			    FILTER (
+			        ALL ( historico_ativos_carteira[Data] ),
+			        historico_ativos_carteira[Data] <= MAX ( historico_ativos_carteira[Data] )
+			    )
+			)
+		lineageTag: 9a58a537-49e4-40ed-aab0-2f3ffe6db61d
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Valorização = Medidas[Preço Carteira Acumulado] - Medidas[Preço Investido Acumulado]
+		lineageTag: 2ff87b33-ef14-4d63-8499-ea2e4d7a3dfc
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Rendimento = (Medidas[Preço Carteira Acumulado] / Medidas[Preço Investido Acumulado]) / 100
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 20d3fb87-b843-4a97-9993-2f2c13ced153
+
+	measure Medida =
+			IF(SELECTEDVALUE('Dividendos pagos por data (2021-2025)'[DATA COM].[Ano]) >= SELECTEDVALUE('Exemplo Aquisição'[Data].[Ano]),
+			    TRUE(),
+			    FALSE()
+			)
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: ace733c3-d091-46d3-b6ab-3bcc31c3516e
+
+	column Value
+		formatString: 0
+		lineageTag: 02466e31-5880-40ad-967e-ab0f6d8e1b18
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Value]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Medidas = calculated
+		mode: import
+		source = {0}
+
+	annotation PBI_Id = 89f11b7180634487b1893ffc19bb19dc
+
