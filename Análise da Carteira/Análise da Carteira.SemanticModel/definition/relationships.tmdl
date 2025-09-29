@@ -14,14 +14,10 @@ relationship c2a193f6-1059-4f5a-908f-7d977ddb799b
 	toColumn: LocalDateTable_0226609f-8445-475d-bcb3-66266ee4cb3d.Date
 
 relationship 6c0ce2c6-e174-18b5-9fda-3d4e9d17ce75
+	isActive: false
 	crossFilteringBehavior: bothDirections
 	fromColumn: 'Exemplo Aquisição'.'Chave de Histórico'
 	toColumn: historico_ativos_carteira.'Chave de Histórico'
-
-relationship 1e13650f-02ff-418c-83f0-5c664feab0b4
-	joinOnDateBehavior: datePartOnly
-	fromColumn: historico_ativos_carteira.Data
-	toColumn: LocalDateTable_7d8609fb-7187-476b-8296-1b2f5277e5b4.Date
 
 relationship 668b010e-210a-43e6-aba1-afd736b1abfb
 	joinOnDateBehavior: datePartOnly
@@ -35,5 +31,13 @@ relationship 9d2f2a77-99e3-4e05-a38b-77a81b1d5d0f
 
 relationship 8eff30ff-c1a7-2aef-d1c1-0b48c89c6c74
 	fromColumn: 'Dividendos pagos por data (2021-2025)'.ATIVO
+	toColumn: carteira_ativos.ATIVO
+
+relationship a8746077-aea6-8e19-0d32-17a6a1caa032
+	fromColumn: historico_ativos_carteira.Data
+	toColumn: DimCalendario.Data
+
+relationship 8afc54b3-8d0a-2c7a-291f-cda93a892c1e
+	fromColumn: 'Exemplo Aquisição'.Ativo
 	toColumn: carteira_ativos.ATIVO
 

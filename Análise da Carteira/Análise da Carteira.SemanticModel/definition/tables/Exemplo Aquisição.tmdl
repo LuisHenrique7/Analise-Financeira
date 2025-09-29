@@ -19,13 +19,14 @@ table 'Exemplo Aquisição'
 
 	column Preço
 		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
 		lineageTag: d57850c6-509d-45a7-b3a0-55ada370b4ee
 		summarizeBy: sum
 		sourceColumn: Preço
 
 		annotation SummarizationSetBy = Automatic
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
 
 	column Data
 		dataType: dateTime
@@ -61,12 +62,13 @@ table 'Exemplo Aquisição'
 		annotation SummarizationSetBy = Automatic
 
 	column 'Valor investido' = 'Exemplo Aquisição'[Preço] * 'Exemplo Aquisição'[Número de Cotas]
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
 		lineageTag: 9d7c6376-93a9-42cb-a14e-089e5b790382
 		summarizeBy: sum
 
 		annotation SummarizationSetBy = Automatic
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
 
 	partition 'Exemplo Aquisição' = m
 		mode: import

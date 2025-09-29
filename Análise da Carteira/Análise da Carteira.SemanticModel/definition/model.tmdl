@@ -6,13 +6,13 @@ model Model
 		legacyRedirects
 		returnErrorValuesAsNull
 
-annotation PBI_QueryOrder = ["carteira_ativos","historico_ativos_carteira","Exemplo Aquisição","Dividendos pagos por data (2021-2025)"]
+annotation PBI_QueryOrder = ["carteira_ativos","historico_ativos_carteira","Exemplo Aquisição","Dividendos pagos por data (2021-2025)","DimCalendario"]
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
 annotation PBIDesktopVersion = 2.146.1026.0 (25.08)+fb98ab832373de81dccd5c01cd96306a48477556
 
-annotation PBI_ProTooling = ["DevMode"]
+annotation PBI_ProTooling = ["DevMode","TMDLView_Desktop"]
 
 ref table carteira_ativos
 ref table DateTableTemplate_9d118cd7-414d-4840-8861-44212b53b466
@@ -20,11 +20,11 @@ ref table LocalDateTable_a7d9e78c-a172-4928-aab8-9992c6ea8153
 ref table historico_ativos_carteira
 ref table 'Exemplo Aquisição'
 ref table LocalDateTable_0226609f-8445-475d-bcb3-66266ee4cb3d
-ref table LocalDateTable_7d8609fb-7187-476b-8296-1b2f5277e5b4
 ref table Medidas
 ref table 'Dividendos pagos por data (2021-2025)'
 ref table LocalDateTable_c18c8d56-02f5-41ce-988e-2dace7ad89dc
 ref table LocalDateTable_5b68e9b7-393a-4d99-b8f6-5f34342f548f
+ref table DimCalendario
 
 ref cultureInfo pt-BR
 

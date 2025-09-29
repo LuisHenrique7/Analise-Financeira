@@ -11,17 +11,18 @@ table 'Dividendos pagos por data (2021-2025)'
 
 	column VALOR
 		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
 		lineageTag: 7f770464-11a7-45e8-8c2e-ea814984f742
 		summarizeBy: sum
 		sourceColumn: VALOR
 
 		annotation SummarizationSetBy = Automatic
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
 
 	column 'DATA COM'
 		dataType: dateTime
-		formatString: Long Date
+		formatString: Short Date
 		lineageTag: 75f35589-52c0-405c-b956-3e3a03e73ce3
 		summarizeBy: none
 		sourceColumn: DATA COM
@@ -37,7 +38,7 @@ table 'Dividendos pagos por data (2021-2025)'
 
 	column 'DATA PAGAMENTO'
 		dataType: dateTime
-		formatString: Long Date
+		formatString: Short Date
 		lineageTag: 1610464d-f6aa-4a86-8e43-f43d04915ea7
 		summarizeBy: none
 		sourceColumn: DATA PAGAMENTO

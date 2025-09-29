@@ -10,8 +10,8 @@
       "nodes": [
         {
           "location": {
-            "x": 288,
-            "y": 0
+            "x": 719.85775016702428,
+            "y": 677.31989970043924
           },
           "nodeIndex": "carteira_ativos",
           "nodeLineageTag": "c320a723-c7e1-4d57-bb0c-a6c29678a04b",
@@ -19,12 +19,12 @@
             "height": 248,
             "width": 234
           },
-          "zIndex": 1
+          "zIndex": 4
         },
         {
           "location": {
-            "x": 0,
-            "y": 332
+            "x": 731.04578298959382,
+            "y": 301.88766811060088
           },
           "nodeIndex": "historico_ativos_carteira",
           "nodeLineageTag": "8bc87fbd-8c5c-4cb5-819e-79d45a960199",
@@ -32,12 +32,12 @@
             "height": 300,
             "width": 234
           },
-          "zIndex": 2
+          "zIndex": 5
         },
         {
           "location": {
-            "x": 345,
-            "y": 411
+            "x": 289.69108730415252,
+            "y": 722.74114428568578
           },
           "nodeIndex": "Exemplo Aquisição",
           "nodeLineageTag": "640fa036-0dba-4bfa-be8c-c0e619551afc",
@@ -45,12 +45,12 @@
             "height": 176,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 1
         },
         {
           "location": {
-            "x": 630,
-            "y": 0
+            "x": 347.17033280532536,
+            "y": 1.257020743087442
           },
           "nodeIndex": "Medidas",
           "nodeLineageTag": "5147bab2-5470-46cc-a3fd-0368fef5510d",
@@ -58,12 +58,12 @@
             "height": 200,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 6
         },
         {
           "location": {
-            "x": 638,
-            "y": 309
+            "x": 1187.3180647292124,
+            "y": 650.90964211978428
           },
           "nodeIndex": "Dividendos pagos por data (2021-2025)",
           "nodeLineageTag": "19e892bc-961a-4e2d-ac0b-f5c522b4e186",
@@ -71,11 +71,24 @@
             "height": 224,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 734.0177000172439,
+            "y": 0
+          },
+          "nodeIndex": "DimCalendario",
+          "nodeLineageTag": "e4abe5dd-cd1f-4a1d-af4e-12b0be6427ca",
+          "size": {
+            "height": 180,
+            "width": 234
+          },
+          "zIndex": 3
         }
       ],
       "name": "Todas as tabelas",
-      "zoomValue": 100,
+      "zoomValue": 79.553182037699813,
       "pinKeyFieldsToTop": false,
       "showExtraHeaderInfo": false,
       "hideKeyFieldsWhenCollapsed": false,

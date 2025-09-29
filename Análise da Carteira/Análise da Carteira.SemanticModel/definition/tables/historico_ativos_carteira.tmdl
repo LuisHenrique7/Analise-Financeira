@@ -96,11 +96,6 @@ table historico_ativos_carteira
 		summarizeBy: none
 		sourceColumn: Data
 
-		variation Variation
-			isDefault
-			relationship: 1e13650f-02ff-418c-83f0-5c664feab0b4
-			defaultHierarchy: LocalDateTable_7d8609fb-7187-476b-8296-1b2f5277e5b4.'Hierarquia de datas'
-
 		annotation SummarizationSetBy = Automatic
 
 		annotation UnderlyingDateTimeDataType = Date

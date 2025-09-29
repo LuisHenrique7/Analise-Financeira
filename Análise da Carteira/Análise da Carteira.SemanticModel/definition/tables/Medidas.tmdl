@@ -18,19 +18,80 @@ table Medidas
 		formatString: 0
 		lineageTag: ce3b6c4f-c6f7-4a01-9287-e8ba8ab029d3
 
-	measure 'Preço da Carteira' =
+	measure 'Preço Carteira' = ```
+			
 			SUMX(
 			    historico_ativos_carteira,
-			    historico_ativos_carteira[close] * Medidas[Total de Cotas por Mês]
-			 )
+			    VAR chave_his = historico_ativos_carteira[Chave de Histórico]
+			    VAR data = historico_ativos_carteira[Data]
+			    VAR calculo = SUMX(
+			        'Exemplo Aquisição',
+			        --VAR chave_2 = SELECTEDVALUE('Exemplo Aquisição'[Chave de Histórico])
+			        Var chave_aqu = SUM('Exemplo Aquisição'[Número de Cotas])
+			        RETURN CALCULATE(
+			            SUM('Exemplo Aquisição'[Número de Cotas]),
+			            FILTER(
+			                ALL('Exemplo Aquisição'[Data]),
+			                'Exemplo Aquisição'[Data] <= MAX('Exemplo Aquisição'[Data])
+			            ),
+			            'Exemplo Aquisição'[Data] <= data
+			            --'Exemplo Aquisição'[Chave de Histórico] = chave_his
+			        )
+			    )
+			    /*CALCULATE(
+			        Medidas[Total acumulado de Dividendos Recebidos em DATA PAGAMENTO],
+			        TREATAS(VALUES('Exemplo Aquisição'[Chave de Histórico]), historico_ativos_carteira[Chave de Histórico])
+			    )*/
+			    --RETURN CALCULATE(calculo * SUM(historico_ativos_carteira[close]), TREATAS(VALUES('Exemplo Aquisição'[Chave de Histórico]), historico_ativos_carteira[Chave de Histórico]))
+			    RETURN calculo * SUM(historico_ativos_carteira[close])
+			)
+			
+			/*SUMX (
+			    historico_ativos_carteira,
+			    historico_ativos_carteira[close] *
+			        CALCULATE (
+			            SUM ( 'Exemplo Aquisição'[Número de Cotas] ),
+			            TREATAS ( VALUES( 'Exemplo Aquisição'[Chave de Histórico] ), historico_ativos_carteira[Chave de Histórico] ),
+			            FILTER (
+			                ALL ( 'Exemplo Aquisição' ),
+			                'Exemplo Aquisição'[Data] <= historico_ativos_carteira[Data]
+			            )
+			        )
+			)*/
+			
+			/*Preço da Carteira = 
+			SUMX(
+			        historico_ativos_carteira,
+			        historico_ativos_carteira[close] * Medidas[Total de Cotas por Mês]
+			    )*/
+			/*CALCULATE(
+			    SUMX(
+			        historico_ativos_carteira,
+			        historico_ativos_carteira[close] * Medidas[Total de Cotas por Mês]
+			    ),
+			    TREATAS(VALUES(historico_ativos_carteira[Chave de Histórico]), 'Exemplo Aquisição'[Chave de Histórico])
+			 )*/
+			
+			/*SUMX(
+			        historico_ativos_carteira,
+			        historico_ativos_carteira[close] * 
+			        CALCULATE(
+			            Medidas[Total de Cotas por Mês],
+			            TREATAS(VALUES('Exemplo Aquisição'[Chave de Histórico]),  historico_ativos_carteira[Chave de Histórico])
+			        )
+			)*/
+			
+			
+			```
+		formatString: 0
 		lineageTag: 8982aeab-df6c-4bd4-9e14-6e7a887cb130
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
+		annotation PBI_FormatHint = {"isDecimal":true}
 
 	measure 'Preço Carteira Acumulado' =
 			
 			CALCULATE (
-			    [Preço da Carteira],
+			    [Preço Carteira],
 			    FILTER (
 			        ALL ( historico_ativos_carteira[Data] ),
 			        historico_ativos_carteira[Data] <= MAX ( historico_ativos_carteira[Data] )
@@ -74,13 +135,504 @@ table Medidas
 		formatString: 0.00%;-0.00%;0.00%
 		lineageTag: 20d3fb87-b843-4a97-9993-2f2c13ced153
 
-	measure Medida =
-			IF(SELECTEDVALUE('Dividendos pagos por data (2021-2025)'[DATA COM].[Ano]) >= SELECTEDVALUE('Exemplo Aquisição'[Data].[Ano]),
-			    TRUE(),
-			    FALSE()
+	measure 'Dividendos Recebidos' = ```
+			
+			SUMX (
+			    'Dividendos pagos por data (2021-2025)',
+			    VAR AtivoAtual = 'Dividendos pagos por data (2021-2025)'[Ativo]
+			    VAR DataCom = 'Dividendos pagos por data (2021-2025)'[DATA COM]
+			    VAR CotasCompradas =
+			        CALCULATE (
+			            SUM ( 'Exemplo Aquisição'[Número de Cotas] ),
+			            FILTER (
+			                'Exemplo Aquisição',
+			                'Exemplo Aquisição'[Ativo] = AtivoAtual &&
+			                'Exemplo Aquisição'[Data] <= DataCom
+			            )
+			        )
+			    RETURN
+			        'Dividendos pagos por data (2021-2025)'[Valor] * CotasCompradas
 			)
-		formatString: """TRUE"";""TRUE"";""FALSE"""
+			
+			```
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
 		lineageTag: ace733c3-d091-46d3-b6ab-3bcc31c3516e
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Total acumulado de Dividendos Recebidos em DATA PAGAMENTO' =
+			
+			CALCULATE(
+				[Dividendos Recebidos],
+				FILTER(
+					ALLSELECTED('Dividendos pagos por data (2021-2025)'[DATA PAGAMENTO]),
+					ISONORAFTER('Dividendos pagos por data (2021-2025)'[DATA PAGAMENTO], MAX('Dividendos pagos por data (2021-2025)'[DATA PAGAMENTO]), DESC)
+				)
+			)
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 86cb8bd7-477e-45ba-9cbf-83327a08773a
+
+		extendedProperty MeasureTemplate =
+				{
+				  "version": 0,
+				  "daxTemplateName": "RunningTotal"
+				}
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Total acumulado de Soma de Número de Cotas em Data' =
+			
+			/*CALCULATE(
+				SUM('Exemplo Aquisição'[Número de Cotas]),
+				FILTER(
+					ALL('Exemplo Aquisição'[Data]),
+					'Exemplo Aquisição'[Data] <= MAX('Exemplo Aquisição'[Data])
+				)
+			)*/
+			CALCULATE(
+				SUM('Exemplo Aquisição'[Número de Cotas]),
+				FILTER(
+					ALL('Exemplo Aquisição'[Data]),
+					'Exemplo Aquisição'[Data] <= MAX(historico_ativos_carteira[Data])
+				)
+			)
+		formatString: 0
+		lineageTag: d5438ea2-0826-45d4-aad1-7987f84d3cfe
+
+		extendedProperty MeasureTemplate =
+				{
+				  "version": 0,
+				  "daxTemplateName": "RunningTotal"
+				}
+
+	measure medida = ```
+			
+			    CALCULATE(
+			        SUM('Exemplo Aquisição'[Número de Cotas]),
+			        FILTER(
+			            ALL('Exemplo Aquisição'[Data]),
+			            'Exemplo Aquisição'[Data] <= MAX(historico_ativos_carteira[Data])
+			        )
+			    )
+			    * SUM(historico_ativos_carteira[close])
+			```
+		lineageTag: 2303a77a-040e-4082-8cfe-8fc7f66e2cc6
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Valor Investido ao longo do tempo' =
+			CALCULATE(
+			    SUM('Exemplo Aquisição'[Valor investido]),
+			    'Exemplo Aquisição'[Data] <= MAX(historico_ativos_carteira[Data]),
+			    REMOVEFILTERS(historico_ativos_carteira[Data])
+			)
+		lineageTag: 453986c2-6633-43f9-82b1-06ff28460e7c
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Valor Carteira Acumulado' =
+			
+			SUMX (
+			    historico_ativos_carteira,
+			    VAR DataAtual = historico_ativos_carteira[Data]
+			    VAR AtivoAtual = historico_ativos_carteira[Ativo]
+			    VAR Preco = historico_ativos_carteira[close]
+			    VAR chave = historico_ativos_carteira[Chave de Histórico]
+			
+			    VAR CotasAcumuladas =
+			        CALCULATE (
+			            SUM ( 'Exemplo Aquisição'[Número de Cotas] ),
+			            --TREATAS ( { chave }, 'Exemplo Aquisição'[Chave de Histórico] ),
+			            KEEPFILTERS ( FILTER ( 'Exemplo Aquisição', 'Exemplo Aquisição'[Ativo] = AtivoAtual ) ),
+			            FILTER (
+			                ALL ( 'Exemplo Aquisição'[Data] ),
+			                'Exemplo Aquisição'[Ativo] = AtivoAtual
+			                    && 'Exemplo Aquisição'[Data] <= DataAtual
+			            )
+			        )
+			    RETURN
+			        Preco * CotasAcumuladas
+			)
+		lineageTag: 861b188d-cdd3-4732-bdb6-82741603fa36
+
+	measure teste =
+			
+			VAR HistTable =
+			    SUMMARIZE(
+			        historico_ativos_carteira,
+			        historico_ativos_carteira[Ativo],
+			        historico_ativos_carteira[Data],
+			        "Close", MAX( historico_ativos_carteira[close] )
+			    )
+			RETURN
+			SUMX(
+			    HistTable,
+			    VAR CurAtivo  = [Ativo]
+			    VAR CurData   = [Data]
+			    VAR CurClose  = [Close]
+			    VAR CotasAcum =
+			        CALCULATE(
+			            SUM( 'Exemplo Aquisição'[Número de Cotas] ),
+			            -- remove apenas o filtro de Data (preserva Dono/Outros filtros)
+			            ALL( 'Exemplo Aquisição'[Data] ),
+			            -- aplica filtro pelo ativo da linha atual (CurAtivo)
+			            'Exemplo Aquisição'[Ativo] = CurAtivo,
+			            -- aplica condição de acumulação até a data corrente
+			            'Exemplo Aquisição'[Data] <= CurData,
+			            REMOVEFILTERS(historico_ativos_carteira[Data])
+			        )
+			    RETURN CurClose * CotasAcum
+			)
+		lineageTag: 10309af1-bd30-48bd-a3ca-3cdd744e447c
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Investido Acumulado' =
+			CALCULATE(
+			    Medidas[Valor Investido ao longo do tempo],
+			    FILTER(
+			        ALL(historico_ativos_carteira[Data]),
+			        historico_ativos_carteira[Data] <= MAX(historico_ativos_carteira[Data])
+			    )
+			)
+		lineageTag: 5d920a0e-6296-4d4c-a085-f5bb1e9ee7c1
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Preço multiplicado no mês' = ```
+			
+			 VAR HistTable =
+			    SUMMARIZE(
+			        historico_ativos_carteira,
+			        historico_ativos_carteira[Ativo],
+			        historico_ativos_carteira[Data],
+			        "Close", MAX( historico_ativos_carteira[close] )
+			    )
+			RETURN
+			SUMX(
+			    HistTable,
+			    VAR CurAtivo  = [Ativo]
+			    VAR CurData   = [Data]
+			    VAR CurClose  = [Close]
+			    VAR CotasAcum =
+			        CALCULATE(
+			            SUM( 'Exemplo Aquisição'[Número de Cotas] ),
+			            -- remove apenas o filtro de Data (preserva Dono/Outros filtros)
+			            ALL( 'Exemplo Aquisição'[Data] ),
+			            -- aplica filtro pelo ativo da linha atual (CurAtivo)
+			            'Exemplo Aquisição'[Ativo] = CurAtivo
+			        )
+			    RETURN
+			        CurClose * CotasAcum
+			)
+			```
+		lineageTag: fd1c6cc8-440e-4de9-90e8-460aae81185a
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Rendimento de Valorização' = Medidas[teste] - Medidas[Valor Investido ao longo do tempo]
+		lineageTag: b2a5593e-9dff-40dc-9d89-080c512460bc
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Percentual de Rendimento' =
+			CALCULATE(
+			    ((Medidas[teste] - Medidas[Valor Investido ao longo do tempo]) / Medidas[Valor Investido ao longo do tempo]),
+			    historico_ativos_carteira[Data] = MAX(historico_ativos_carteira[Data])
+			)
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: fceb5dcd-6e8a-42f5-8177-7b8a23545769
+
+	measure 'teste 2' = ```
+			
+			VAR HistTable =
+			    SUMMARIZE(
+			        historico_ativos_carteira,
+			        historico_ativos_carteira[Ativo],
+			        historico_ativos_carteira[Data],
+			        "Close", MAX( historico_ativos_carteira[close] )
+			    )
+			RETURN
+			SUMX(
+			    HistTable,
+			    VAR CurAtivo  = [Ativo]
+			    VAR CurData   = [Data]
+			    VAR CurClose  = [Close]
+			
+			        /* última data de aquisição desse ativo (independente dos filtros de data) */
+			    VAR LastAcqDate =
+			        CALCULATE(
+			            MAX( 'Exemplo Aquisição'[Data] ),
+			            'Exemplo Aquisição'[Ativo] = CurAtivo
+			        )
+			
+			    /* Se já passou da última compra, usamos a última data de compra como "effective date" */
+			    VAR EffectiveDate =
+			        IF( NOT( ISBLANK( LastAcqDate ) ) && CurData > LastAcqDate, LastAcqDate, CurData )
+			    
+			    VAR CotasAcum =
+			        CALCULATE(
+			            SUM( 'Exemplo Aquisição'[Número de Cotas] ),
+			            -- remove apenas o filtro de Data (preserva Dono/Outros filtros)
+			            ALL( 'Exemplo Aquisição'[Data] ),
+			            -- aplica filtro pelo ativo da linha atual (CurAtivo)
+			            'Exemplo Aquisição'[Ativo] = CurAtivo,
+			            -- aplica condição de acumulação até a data corrente
+			            'Exemplo Aquisição'[Data] <= EffectiveDate
+			        )
+			    RETURN LastAcqDate
+			)
+			```
+		formatString: General Date
+		lineageTag: a53f5b47-db9f-42a3-82c0-59a74476bfc6
+
+	measure 'A preço da carteira' = ```
+			CALCULATE(
+			    SUM(historico_ativos_carteira[close]),
+			    TREATAS(
+			        VALUES('Exemplo Aquisição'[Chave de Histórico]),
+			        historico_ativos_carteira[Chave de Histórico]
+			    )
+			)
+			/*CALCULATE(
+			    SUM(historico_ativos_carteira[close]),
+			    FILTER(
+			        historico_ativos_carteira,
+			        historico_ativos_carteira[Ativo] IN 
+			            CALCULATETABLE(
+			                VALUES('Exemplo Aquisição'[Ativo]),
+			                'Exemplo Aquisição'[Data] <= MAX(historico_ativos_carteira[Data])
+			            )
+			    )
+			)*/
+			
+			```
+		lineageTag: cbf36008-b414-49e3-867d-b934328d27bf
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'A preço comprado' =
+			CALCULATE(
+			    SUM('Exemplo Aquisição'[Preço]),
+			    'Exemplo Aquisição'[Data] = MAX(historico_ativos_carteira[Data])
+			    /*TREATAS(
+			        VALUES('Exemplo Aquisição'[Chave de Histórico]),
+			        historico_ativos_carteira[Chave de Histórico]
+			    )*/
+			)
+		lineageTag: ef10f66b-11c7-448a-b08d-63e471bafe0f
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'A carteira acumulado' =
+			CALCULATE(
+			    Medidas[A preço da carteira],
+			    ALL(historico_ativos_carteira[Data]),
+			    historico_ativos_carteira[Data] <= MAX(historico_ativos_carteira[Data])
+			)
+		lineageTag: f7569c92-cea5-434e-93e0-d20fdfd3dd58
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'A investido acumulado' =
+			/*CALCULATE(
+			    Medidas[A preço comprado],
+			    ALL('Exemplo Aquisição'[Data]),
+			    'Exemplo Aquisição'[Data] <= MAX(historico_ativos_carteira[Data]),
+			    TREATAS(
+			        VALUES(historico_ativos_carteira[Chave de Histórico]),
+			        'Exemplo Aquisição'[Chave de Histórico]
+			    )
+			)*/
+			
+			CALCULATE(
+			    SUM('Exemplo Aquisição'[Preço]),
+			    FILTER(
+			        'Exemplo Aquisição',
+			        'Exemplo Aquisição'[Data] <= MAX(historico_ativos_carteira[Data])
+			    ),
+			    KEEPFILTERS(historico_ativos_carteira[Data])
+			)
+		lineageTag: 57fc3574-0861-4fea-af37-2d609e5a3139
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'A preço da carteira mutiplicado' =
+			CALCULATE(
+			    SUM('Exemplo Aquisição'[Número de Cotas]) * SUM(historico_ativos_carteira[close]),
+			    TREATAS(
+			        VALUES('Exemplo Aquisição'[Chave de Histórico]),
+			        historico_ativos_carteira[Chave de Histórico]
+			    ),
+			    'Exemplo Aquisição'[Data] = MAX(historico_ativos_carteira[Data])
+			)
+		lineageTag: 0243f5a5-111c-4608-9e7d-ba2a4d30ee74
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'A Número de Cotas Compradas' =
+			CALCULATE(
+			    SUM('Exemplo Aquisição'[Número de Cotas]),
+			    TREATAS(
+			        VALUES('Exemplo Aquisição'[Chave de Histórico]),
+			        historico_ativos_carteira[Chave de Histórico]
+			    ),
+			    'Exemplo Aquisição'[Data] = MAX(historico_ativos_carteira[Data])
+			)
+		formatString: 0
+		lineageTag: 5985f9ba-597a-4707-a7ee-47b7bc116446
+
+	measure 'A preço bolsa acumulado' = ```
+			
+			/*CALCULATE(
+			    SUM('Exemplo Aquisição'[Número de Cotas]),
+			    TREATAS(
+			        VALUES('Exemplo Aquisição'[Chave de Histórico]),
+			        historico_ativos_carteira[Chave de Histórico]
+			    ),
+			    'Exemplo Aquisição'[Data] <= MAX(historico_ativos_carteira[Data])
+			)*/
+			/*SUMX(
+			    historico_ativos_carteira,
+			VAR precoHistoricoAcumPorHistorico = CALCULATE(
+			    SUM(historico_ativos_carteira[close]),
+			    TREATAS(
+			        VALUES('Exemplo Aquisição'[Chave de Histórico]),
+			        historico_ativos_carteira[Chave de Histórico]
+			    ),
+			    'Exemplo Aquisição'[Data] <= MAX(historico_ativos_carteira[Data])
+			)
+			
+			VAR numCotasAcumPorHistorico = CALCULATE(
+			    SUM('Exemplo Aquisição'[Número de Cotas]),
+			    FILTER(
+			            historico_ativos_carteira,
+			            historico_ativos_carteira[Ativo] IN 
+			                CALCULATETABLE(
+			                    VALUES('Exemplo Aquisição'[Ativo]),
+			                    'Exemplo Aquisição'[Data] <= MAX(historico_ativos_carteira[Data])
+			                )
+			        ),
+			        'Exemplo Aquisição'[Data] <= MAX(historico_ativos_carteira[Data])
+			)
+			
+			
+			RETURN precoHistoricoAcumPorHistorico * numCotasAcumPorHistorico
+			)*/
+			
+			CALCULATE(
+			    SUM('Exemplo Aquisição'[Número de Cotas]) * SUM(historico_ativos_carteira[close]),
+			    TREATAS(
+			        VALUES('Exemplo Aquisição'[Chave de Histórico]),
+			        historico_ativos_carteira[Chave de Histórico]
+			    ),
+			    'Exemplo Aquisição'[Data] <= MAX(historico_ativos_carteira[Data]),
+			    historico_ativos_carteira[Data] <= MAX(historico_ativos_carteira[Data])
+			)
+			/*CALCULATE(
+			    Medidas[A preço da carteira mutiplicado],
+			    ALL(historico_ativos_carteira[Data]),
+			    'Exemplo Aquisição'[Data] <= MAX(historico_ativos_carteira[Data])
+			    //KEEPFILTERS(historico_ativos_carteira[Data])
+			)*/
+			```
+		lineageTag: 7e51bf8c-2716-4ef0-9a3b-a0fac92f052b
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'A cotas acumuladas' =
+			CALCULATE(
+			    Medidas[A Número de Cotas Compradas],
+			    FILTER(
+			        ALL('Exemplo Aquisição'[Data]),
+			        'Exemplo Aquisição'[Data] <= MAX(historico_ativos_carteira[Data])
+			    )
+			)
+		formatString: 0
+		lineageTag: a76e2e98-fe3d-4e9b-91a9-59c82692eb0d
+
+	measure 'AA carti mult' = ```
+			
+			 SUMX(
+			    'Exemplo Aquisição',
+			    VAR ativo = 'Exemplo Aquisição'[Ativo]
+			    VAR data = 'Exemplo Aquisição'[Data]
+			
+			    VAR nCotas = CALCULATE(
+			        SUM('Exemplo Aquisição'[Número de Cotas]),
+			        'Exemplo Aquisição'[Ativo] = ativo,
+			        'Exemplo Aquisição'[Data] = MAX(historico_ativos_carteira[Data])
+			    )
+			        
+			 
+			 
+			    //RETURN nCotas
+			 
+			 
+			 
+			 
+			    /*VAR preco = CALCULATE(
+			        nCotas * SUM(historico_ativos_carteira[close]),
+			        TREATAS(
+			            VALUES('Exemplo Aquisição'[Chave de Histórico]),
+			            historico_ativos_carteira[Chave de Histórico]
+			        ),
+			        'Exemplo Aquisição'[Data] = MAX(historico_ativos_carteira[Data])
+			    )*/
+			
+			    VAR preco = CALCULATE(
+			        nCotas * SUM(historico_ativos_carteira[close]),
+			        historico_ativos_carteira[Ativo] = ativo,
+			        historico_ativos_carteira[Data] = data
+			    )
+			
+			    RETURN preco
+			)
+			```
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: e50f323a-4115-452e-b675-cd26ca879a91
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'AAA carti mult' =
+			
+			SUMX(
+			    VALUES(historico_ativos_carteira[Data]),
+			    VAR dataHistorico = historico_ativos_carteira[Data]
+			
+			    VAR precoTotal = SUMX(
+			        VALUES('Exemplo Aquisição'[Ativo]),
+			        VAR ativo = 'Exemplo Aquisição'[Ativo]
+			
+			        VAR cotasAteData = CALCULATE(
+			            SUM('Exemplo Aquisição'[Número de Cotas]),
+			            'Exemplo Aquisição'[Ativo] = ativo,
+			            'Exemplo Aquisição'[Data] <= dataHistorico
+			        )
+			
+			        VAR preco = CALCULATE(
+			            cotasAteData * SUM(historico_ativos_carteira[close]),
+			            historico_ativos_carteira[Ativo] = ativo,
+			            historico_ativos_carteira[Data] = dataHistorico,
+			            TREATAS(VALUES('Exemplo Aquisição'[Chave de Histórico]), historico_ativos_carteira[Chave de Histórico])
+			        )
+			
+			        RETURN preco
+			    )
+			    RETURN precoTotal
+			)
+		lineageTag: fd3ffe4b-0dea-491a-8d7c-b469fc8b3a7f
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Valor Investido' =
+			CALCULATE(
+			    SUM('Exemplo Aquisição'[Valor investido]),
+			    'Exemplo Aquisição'[Data] = MAX(historico_ativos_carteira[Data])
+			)
+		lineageTag: ed501c66-d40e-4cf7-9014-c66fe229e842
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	column Value
 		formatString: 0
