@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Desempenho da Carteira"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "b3d48697-5ecf-4f3c-a70f-29de24f11b4f"
+  }
+}

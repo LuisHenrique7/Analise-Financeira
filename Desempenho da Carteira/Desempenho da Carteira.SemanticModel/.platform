@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Desempenho da Carteira"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "9c5e255b-cd1d-4efc-8d5a-83936f0c472e"
+  }
+}

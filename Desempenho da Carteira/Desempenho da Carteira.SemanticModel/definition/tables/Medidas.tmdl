@@ -1,0 +1,84 @@
+table Medidas
+	lineageTag: 440d5894-2b9e-4977-8253-051c31d1b9ff
+
+	measure 'Preço Médio' = [Valor Investido Acumulado] / MAX(historico_da_carteira[Cotas Acumuladas])
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: e19ab4a3-5022-4067-9290-c391710ac625
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Renda Mensal' =
+			CALCULATE(
+			    SUM(historico_da_carteira[Dividendos Totais]),
+			    historico_da_carteira[Data].[Ano] = SELECTEDVALUE(historico_da_carteira[Data].[Ano])
+			) / 12
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 5b1a68c0-62fc-4571-a397-2fadf0d78074
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure Lucro = [Preço Histórico Total Acumulado] - [Valor Investido Acumulado]
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: c79964ab-cbd0-419a-947d-a0b124219179
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure Rendimento = [Lucro] / [Valor Investido Acumulado]
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: c0124247-360c-4436-a347-cdf632d5c2d1
+
+	measure 'Dividendos Totais Acumulados' =
+			
+			CALCULATE(
+				SUM('historico_da_carteira'[Dividendos Totais]),
+				FILTER(
+					ALLSELECTED('historico_da_carteira'[Data]),
+					ISONORAFTER('historico_da_carteira'[Data], MAX('historico_da_carteira'[Data]), DESC)
+				)
+			)
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 43538d6d-a91b-4986-a98b-710a42f7a74d
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Preço Histórico Total Acumulado' =
+			
+			CALCULATE(
+				SUM('historico_da_carteira'[Preço Total]),
+				FILTER(
+					ALLSELECTED('historico_da_carteira'[Data]),
+					ISONORAFTER('historico_da_carteira'[Data], MAX('historico_da_carteira'[Data]), DESC)
+				)
+			)
+		lineageTag: 437130db-62d0-4661-ae4d-56befa99afa4
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Valor Investido Acumulado' =
+			
+			CALCULATE(
+				SUM('historico_da_carteira'[Valor Investido]),
+				FILTER(
+					ALLSELECTED('historico_da_carteira'[Data]),
+					ISONORAFTER('historico_da_carteira'[Data], MAX('historico_da_carteira'[Data]), DESC)
+				)
+			)
+		lineageTag: 1286bc87-7fe7-47bf-afcc-31e92985245f
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Value
+		formatString: 0
+		lineageTag: 0ee8fb13-cf21-41ff-b00f-5881b98324b5
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Value]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Medidas = calculated
+		mode: import
+		source = {0}
+
+	annotation PBI_Id = 7dc0d9189dee42c180f517c23f8c01bb
+

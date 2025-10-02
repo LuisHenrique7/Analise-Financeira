@@ -1,0 +1,21 @@
+relationship ec93efc9-3757-4e72-b7f1-5bef920dbac4
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'Exemplo Aquisição'.'Data de Aquisição'
+	toColumn: LocalDateTable_426fa909-23bf-4417-a2f4-6aa7e3d78c57.Date
+
+relationship 0325945e-d39e-0138-28b0-50ad4a945e82
+	crossFilteringBehavior: bothDirections
+	toCardinality: many
+	fromColumn: 'Exemplo Aquisição'.Ativo
+	toColumn: historico_da_carteira.Ativo
+
+relationship f308a8f1-be64-487f-b0e2-eb7dad09189e
+	joinOnDateBehavior: datePartOnly
+	fromColumn: historico_da_carteira.Data
+	toColumn: LocalDateTable_03f9a08b-4228-44b2-9604-2da3b7f35937.Date
+
+relationship 15ec095b-dc61-4f96-b817-efe5bdb20cfc
+	joinOnDateBehavior: datePartOnly
+	fromColumn: historico_da_carteira.'DATA COM'
+	toColumn: LocalDateTable_6b344d55-aaf4-4e7a-aa96-8b430b46f292.Date
+

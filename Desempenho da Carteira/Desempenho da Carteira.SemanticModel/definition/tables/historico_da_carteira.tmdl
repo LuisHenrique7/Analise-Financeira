@@ -1,0 +1,166 @@
+table historico_da_carteira
+	lineageTag: 9e5504b5-a928-4acb-9e35-ad4742755ddb
+
+	column Ativo
+		dataType: string
+		lineageTag: b03fca95-0a5e-4a1c-8a01-b2fb5f427548
+		summarizeBy: none
+		sourceColumn: Ativo
+
+		annotation SummarizationSetBy = Automatic
+
+	column Data
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 9b18676b-369b-4052-907c-ef6dda2de409
+		summarizeBy: none
+		sourceColumn: Data
+
+		variation Variation
+			isDefault
+			relationship: f308a8f1-be64-487f-b0e2-eb7dad09189e
+			defaultHierarchy: LocalDateTable_03f9a08b-4228-44b2-9604-2da3b7f35937.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Valor
+		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: b219312a-ec38-4474-85c0-2058f6e8e566
+		summarizeBy: sum
+		sourceColumn: Valor
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column Natureza
+		dataType: string
+		lineageTag: 2e94dfe9-3eb9-48f1-8352-6eacc23ff4c8
+		summarizeBy: none
+		sourceColumn: Natureza
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'DATA COM'
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 4f7b3262-4bed-4619-8068-7776395fc551
+		summarizeBy: none
+		sourceColumn: DATA COM
+
+		variation Variation
+			isDefault
+			relationship: 15ec095b-dc61-4f96-b817-efe5bdb20cfc
+			defaultHierarchy: LocalDateTable_6b344d55-aaf4-4e7a-aa96-8b430b46f292.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Tipo Receita'
+		dataType: string
+		lineageTag: 38a7e93f-90b2-44d7-a00a-ecae1509c885
+		summarizeBy: none
+		sourceColumn: Tipo Receita
+
+		annotation SummarizationSetBy = Automatic
+
+	column DY
+		dataType: double
+		lineageTag: 704d0dc8-6d23-42a1-9858-ffea6dbc1ff9
+		summarizeBy: sum
+		sourceColumn: DY
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Dono
+		dataType: string
+		lineageTag: 496b89f5-1319-48f1-9794-caecdff0b90f
+		summarizeBy: none
+		sourceColumn: Dono
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Cotas Acumuladas'
+		dataType: int64
+		formatString: 0
+		lineageTag: 9ed7c24f-b346-40a2-92eb-74dd32c611a7
+		summarizeBy: sum
+		sourceColumn: Cotas Acumuladas
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Dividendos Totais'
+		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: ca303dbb-faab-4203-9015-96641954fa72
+		summarizeBy: sum
+		sourceColumn: Dividendos Totais
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column 'Número de Cotas'
+		dataType: int64
+		formatString: 0
+		lineageTag: 82643a50-3606-4e8f-8555-2a4c0db28afc
+		summarizeBy: sum
+		sourceColumn: Número de Cotas
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Valor Investido'
+		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 616d0080-0103-4485-a615-b5d06bc4c615
+		summarizeBy: sum
+		sourceColumn: Valor Investido
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column 'Preço Unitário'
+		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 4ca21a52-9d5a-45d3-86d6-2ede646d5633
+		summarizeBy: sum
+		sourceColumn: Preço Unitário
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column 'Preço Total'
+		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 5ea125b7-6cbb-4f41-a664-246caa18ade4
+		summarizeBy: sum
+		sourceColumn: Preço Total
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	partition historico_da_carteira = m
+		mode: import
+		source =
+				let
+				    Fonte = Csv.Document(File.Contents("C:\Users\luis.nascimento\Documents\Análises Financeiras\Dados Modelados\historico_da_carteira.csv"),[Delimiter=",", Columns=14, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
+				    #"Valor Substituído" = Table.ReplaceValue(#"Cabeçalhos Promovidos",".",",",Replacer.ReplaceText,{"Valor", "DY", "Cotas Acumuladas", "Dividendos Totais", "Número de Cotas", "Valor Investido", "Preço Unitário", "Preço Total"}),
+				    #"Tipo Alterado1" = Table.TransformColumnTypes(#"Valor Substituído",{{"Valor", type number}, {"DY", type number}, {"Dividendos Totais", type number}, {"Valor Investido", type number}, {"Preço Unitário", type number}, {"Preço Total", type number}}),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Tipo Alterado1",{{"Cotas Acumuladas", Int64.Type}, {"Número de Cotas", Int64.Type}, {"Data", type date}, {"DATA COM", type date}})
+				in
+				    #"Tipo Alterado"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+
