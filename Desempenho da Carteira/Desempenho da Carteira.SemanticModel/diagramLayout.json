@@ -23,11 +23,10 @@
         },
         {
           "location": {
-            "x": 421,
-            "y": 46
+            "x": 705,
+            "y": 50
           },
-          "nodeIndex": "Exemplo Aquisição",
-          "nodeLineageTag": "1195ffdc-3138-4d63-bb0c-265702a20fa3",
+          "nodeIndex": "Medidas",
           "size": {
             "height": 200,
             "width": 234
@@ -36,12 +35,13 @@
         },
         {
           "location": {
-            "x": 705,
-            "y": 50
+            "x": 384,
+            "y": 19
           },
-          "nodeIndex": "Medidas",
+          "nodeIndex": "carteira_ativos",
+          "nodeLineageTag": "8ebd0226-0fe0-44fd-8935-5fdeb4f32bd8",
           "size": {
-            "height": 200,
+            "height": 248,
             "width": 234
           },
           "zIndex": 0

@@ -35,6 +35,9 @@ cultureInfo pt-BR
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
 			        {
 			          "ativo": {
@@ -1473,645 +1476,6 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "exemplo_aquisição": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Exemplo Aquisição"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "exemplo aquisição": {
-			            "State": "Generated"
-			          }
-			        }
-			      ]
-			    },
-			    "exemplo_aquisição.dono": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Exemplo Aquisição",
-			          "ConceptualProperty": "Dono"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "dono": {
-			            "State": "Generated"
-			          }
-			        }
-			      ]
-			    },
-			    "exemplo_aquisição.ativo": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Exemplo Aquisição",
-			          "ConceptualProperty": "Ativo"
-			        }
-			      },
-			      "State": "Generated",
-			      "Visibility": {
-			        "Value": "Hidden"
-			      },
-			      "Terms": [
-			        {
-			          "ativo": {
-			            "State": "Generated"
-			          }
-			        }
-			      ]
-			    },
-			    "exemplo_aquisição.preço_de_aquisição": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Exemplo Aquisição",
-			          "ConceptualProperty": "Preço de Aquisição"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "preço de aquisição": {
-			            "State": "Generated"
-			          }
-			        }
-			      ]
-			    },
-			    "exemplo_aquisição.número_de_cota": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Exemplo Aquisição",
-			          "ConceptualProperty": "Número de Cotas"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "número de cota": {
-			            "State": "Generated"
-			          }
-			        }
-			      ]
-			    },
-			    "exemplo_aquisição.data_de_aquisição": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Exemplo Aquisição",
-			          "ConceptualProperty": "Data de Aquisição"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "data de aquisição": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "date": {
-			            "State": "Generated",
-			            "Weight": 0.7
-			          }
-			        },
-			        {
-			          "information de aquisição": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.609
-			          }
-			        },
-			        {
-			          "fact de aquisição": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.609
-			          }
-			        },
-			        {
-			          "info de aquisição": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.609
-			          }
-			        },
-			        {
-			          "statistic de aquisição": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.609
-			          }
-			        },
-			        {
-			          "document de aquisição": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
-			          }
-			        },
-			        {
-			          "figure de aquisição": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
-			          }
-			        },
-			        {
-			          "record de aquisição": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
-			          }
-			        }
-			      ],
-			      "SemanticType": "Time"
-			    },
-			    "exemplo_aquisição.data_de_aquisição.hierarquia_de_data": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Exemplo Aquisição",
-			          "VariationSource": "Data de Aquisição",
-			          "VariationSet": "Variation",
-			          "Hierarchy": "Hierarquia de datas"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "hierarquia de data": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "hierarquia de information": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.762
-			          }
-			        },
-			        {
-			          "hierarquia de fact": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.762
-			          }
-			        },
-			        {
-			          "hierarquia de info": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.762
-			          }
-			        },
-			        {
-			          "hierarquia de statistic": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.762
-			          }
-			        },
-			        {
-			          "hierarquia de document": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "hierarquia de figure": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "hierarquia de record": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        }
-			      ]
-			    },
-			    "exemplo_aquisição.data_de_aquisição.ano": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Exemplo Aquisição",
-			          "VariationSource": "Data de Aquisição",
-			          "VariationSet": "Variation",
-			          "Hierarchy": "Hierarquia de datas",
-			          "HierarchyLevel": "Ano"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "ano": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "data de aquisição ano": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "information de aquisição ano": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.617
-			          }
-			        },
-			        {
-			          "fact de aquisição ano": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.617
-			          }
-			        },
-			        {
-			          "info de aquisição ano": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.617
-			          }
-			        },
-			        {
-			          "statistic de aquisição ano": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.617
-			          }
-			        },
-			        {
-			          "document de aquisição ano": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.599
-			          }
-			        },
-			        {
-			          "figure de aquisição ano": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.599
-			          }
-			        },
-			        {
-			          "record de aquisição ano": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.599
-			          }
-			        }
-			      ]
-			    },
-			    "exemplo_aquisição.data_de_aquisição.trimestre": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Exemplo Aquisição",
-			          "VariationSource": "Data de Aquisição",
-			          "VariationSet": "Variation",
-			          "Hierarchy": "Hierarquia de datas",
-			          "HierarchyLevel": "Trimestre"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "trimestre": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "data de aquisição trimestre": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "information de aquisição trimestre": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.617
-			          }
-			        },
-			        {
-			          "fact de aquisição trimestre": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.617
-			          }
-			        },
-			        {
-			          "info de aquisição trimestre": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.617
-			          }
-			        },
-			        {
-			          "statistic de aquisição trimestre": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.617
-			          }
-			        },
-			        {
-			          "document de aquisição trimestre": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.599
-			          }
-			        },
-			        {
-			          "figure de aquisição trimestre": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.599
-			          }
-			        },
-			        {
-			          "record de aquisição trimestre": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.599
-			          }
-			        }
-			      ]
-			    },
-			    "exemplo_aquisição.data_de_aquisição.mê": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Exemplo Aquisição",
-			          "VariationSource": "Data de Aquisição",
-			          "VariationSet": "Variation",
-			          "Hierarchy": "Hierarquia de datas",
-			          "HierarchyLevel": "Mês"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "mê": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "data de aquisição mê": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "information de aquisição mê": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.617
-			          }
-			        },
-			        {
-			          "fact de aquisição mê": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.617
-			          }
-			        },
-			        {
-			          "info de aquisição mê": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.617
-			          }
-			        },
-			        {
-			          "statistic de aquisição mê": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.617
-			          }
-			        },
-			        {
-			          "document de aquisição mê": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.599
-			          }
-			        },
-			        {
-			          "figure de aquisição mê": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.599
-			          }
-			        },
-			        {
-			          "record de aquisição mê": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.599
-			          }
-			        }
-			      ]
-			    },
-			    "exemplo_aquisição.data_de_aquisição.dia": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Exemplo Aquisição",
-			          "VariationSource": "Data de Aquisição",
-			          "VariationSet": "Variation",
-			          "Hierarchy": "Hierarquia de datas",
-			          "HierarchyLevel": "Dia"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "dia": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "data de aquisição dia": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "information de aquisição dia": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.617
-			          }
-			        },
-			        {
-			          "fact de aquisição dia": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.617
-			          }
-			        },
-			        {
-			          "info de aquisição dia": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.617
-			          }
-			        },
-			        {
-			          "statistic de aquisição dia": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.617
-			          }
-			        },
-			        {
-			          "document de aquisição dia": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.599
-			          }
-			        },
-			        {
-			          "figure de aquisição dia": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.599
-			          }
-			        },
-			        {
-			          "record de aquisição dia": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.599
-			          }
-			        }
-			      ]
-			    },
 			    "medida": {
 			      "Definition": {
 			        "Binding": {
@@ -2307,7 +1671,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "medida.total_acumulado_de_soma_de_dividendos_totais_em_data": {
+			    "medida.dividendos_totais_acumulados": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Medidas",
@@ -2317,38 +1681,755 @@ cultureInfo pt-BR
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "total acumulado de soma de dividendos totais em data": {
+			          "dividendos totais acumulados": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.preço_histórico_total_acumulado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Preço Histórico Total Acumulado"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "preço histórico total acumulado": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "Dividendos Totais Acumulados": {
+			          "preço histórico aggregate acumulado": {
+			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
+			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.9
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "preço histórico overall acumulado": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        }
+			      ]
+			    },
+			    "medida.valor_investido_acumulado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Valor Investido Acumulado"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "valor investido acumulado": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "carteira_ativo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "carteira_ativos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "carteira ativo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "carteira_ativos": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "carteira_ativo.ativo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "carteira_ativos",
+			          "ConceptualProperty": "ATIVO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ativo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "carteira_ativo.setor": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "carteira_ativos",
+			          "ConceptualProperty": "SETOR"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "setor": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "carteira_ativo.industria": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "carteira_ativos",
+			          "ConceptualProperty": "INDUSTRIA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "industria": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "carteira_ativo.data": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "carteira_ativos",
+			          "ConceptualProperty": "DATA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "data": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "carteira_ativo.data.hierarquia_de_data": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "carteira_ativos",
+			          "VariationSource": "DATA",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "hierarquia de data": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hierarquia de information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "carteira_ativo.data.ano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "carteira_ativos",
+			          "VariationSource": "DATA",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Ano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "fact ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "info ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "statistic ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "document ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "figure ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "record ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "carteira_ativo.data.trimestre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "carteira_ativos",
+			          "VariationSource": "DATA",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Trimestre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "fact trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "info trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "statistic trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "document trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "figure trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "record trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "carteira_ativo.data.mê": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "carteira_ativos",
+			          "VariationSource": "DATA",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Mês"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "fact mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "info mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "statistic mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "document mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "figure mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "record mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "carteira_ativo.data.dia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "carteira_ativos",
+			          "VariationSource": "DATA",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Dia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "fact dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "info dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "statistic dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "document dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "figure dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "record dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "carteira_ativo.recomendacao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "carteira_ativos",
+			          "ConceptualProperty": "RECOMENDACAO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "recomendacao": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "carteira_ativo.tipo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "carteira_ativos",
+			          "ConceptualProperty": "Tipo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tipo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "carteira_ativo.balanço_de_cota": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "carteira_ativos",
+			          "ConceptualProperty": "Balanço de Cotas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "balanço de cota": {
+			            "State": "Generated"
 			          }
 			        }
 			      ]
 			    }
 			  },
 			  "Relationships": {
-			    "exemplo_aquisição_data_de_aquisição_has_hierarquia_de_data": {
+			    "carteira_ativo_data_hierarquia_de_data_has_carteira_ativo_data_trimestre": {
 			      "Binding": {
-			        "ConceptualEntity": "Exemplo Aquisição"
+			        "ConceptualEntity": "carteira_ativos"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "exemplo_aquisição.data_de_aquisição": {
+			        "carteira_ativo.data.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "exemplo_aquisição.data_de_aquisição"
+			            "Entity": "carteira_ativo.data.hierarquia_de_data"
 			          }
 			        },
-			        "exemplo_aquisição.data_de_aquisição.hierarquia_de_data": {
+			        "carteira_ativo.data.trimestre": {
 			          "Target": {
-			            "Entity": "exemplo_aquisição.data_de_aquisição.hierarquia_de_data"
+			            "Entity": "carteira_ativo.data.trimestre"
 			          }
 			        }
 			      },
@@ -2356,15 +2437,81 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "exemplo_aquisição.data_de_aquisição"
+			              "Role": "carteira_ativo.data.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "exemplo_aquisição.data_de_aquisição.hierarquia_de_data"
+			              "Role": "carteira_ativo.data.trimestre"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "data_de_aquisiçãos_have_hierarquia_de_data"
+			          "ID": "hierarquia_de_data_have_trimestres"
+			        }
+			      ]
+			    },
+			    "carteira_ativo_data_hierarquia_de_data_has_carteira_ativo_data_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "carteira_ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "carteira_ativo.data.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "carteira_ativo.data.hierarquia_de_data"
+			          }
+			        },
+			        "carteira_ativo.data.ano": {
+			          "Target": {
+			            "Entity": "carteira_ativo.data.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "carteira_ativo.data.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "carteira_ativo.data.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_anos"
+			        }
+			      ]
+			    },
+			    "carteira_ativo_data_has_hierarquia_de_data": {
+			      "Binding": {
+			        "ConceptualEntity": "carteira_ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "carteira_ativo.data": {
+			          "Target": {
+			            "Entity": "carteira_ativo.data"
+			          }
+			        },
+			        "carteira_ativo.data.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "carteira_ativo.data.hierarquia_de_data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "carteira_ativo.data"
+			            },
+			            "Object": {
+			              "Role": "carteira_ativo.data.hierarquia_de_data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "data_have_hierarquia_de_data"
 			        }
 			      ]
 			    },
@@ -2661,7 +2808,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_trimestres"
+			          "ID": "hierarquia_de_data_have_trimestres1"
 			        }
 			      ]
 			    },
@@ -2694,7 +2841,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_anos"
+			          "ID": "hierarquia_de_data_have_anos1"
 			        }
 			      ]
 			    },
@@ -3024,7 +3171,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_trimestres1"
+			          "ID": "hierarquia_de_data_have_trimestres2"
 			        }
 			      ]
 			    },
@@ -3057,7 +3204,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_anos1"
+			          "ID": "hierarquia_de_data_have_anos2"
 			        }
 			      ]
 			    },
@@ -3090,44 +3237,11 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "data_have_hierarquia_de_data"
+			          "ID": "data_have_hierarquia_de_data1"
 			        }
 			      ]
 			    },
-			    "exemplo_aquisição_has_historico_da_carteira": {
-			      "Binding": {
-			        "ConceptualEntity": "Exemplo Aquisição"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "exemplo_aquisição": {
-			          "Target": {
-			            "Entity": "exemplo_aquisição"
-			          }
-			        },
-			        "historico_da_carteira": {
-			          "Target": {
-			            "Entity": "historico_da_carteira"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "exemplo_aquisição"
-			            },
-			            "Object": {
-			              "Role": "historico_da_carteira"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "exemplo_aquisiçãos_have_historico_da_carteiras"
-			        }
-			      ]
-			    },
-			    "historico_da_carteira_has_medida_total_acumulado_de_soma_de_dividendos_totais_em_data": {
+			    "historico_da_carteira_has_carteira_ativo": {
 			      "Binding": {
 			        "ConceptualEntity": "historico_da_carteira"
 			      },
@@ -3138,9 +3252,9 @@ cultureInfo pt-BR
 			            "Entity": "historico_da_carteira"
 			          }
 			        },
-			        "medida.total_acumulado_de_soma_de_dividendos_totais_em_data": {
+			        "carteira_ativo": {
 			          "Target": {
-			            "Entity": "medida.total_acumulado_de_soma_de_dividendos_totais_em_data"
+			            "Entity": "carteira_ativo"
 			          }
 			        }
 			      },
@@ -3151,12 +3265,355 @@ cultureInfo pt-BR
 			              "Role": "historico_da_carteira"
 			            },
 			            "Object": {
-			              "Role": "medida.total_acumulado_de_soma_de_dividendos_totais_em_data"
+			              "Role": "carteira_ativo"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "historico_da_carteiras_have_total_acumulado_de_soma_de_dividendos_totais_em_data"
+			          "ID": "historico_da_carteiras_have_carteira_ativos"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "carteira_ativo"
+			            },
+			            "Object": {
+			              "Role": "historico_da_carteira"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "carteira_ativos_have_historico_da_carteiras"
+			        }
+			      ]
+			    },
+			    "carteira_ativo_has_balanço_de_cota": {
+			      "Binding": {
+			        "ConceptualEntity": "carteira_ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "carteira_ativo": {
+			          "Target": {
+			            "Entity": "carteira_ativo"
+			          }
+			        },
+			        "carteira_ativo.balanço_de_cota": {
+			          "Target": {
+			            "Entity": "carteira_ativo.balanço_de_cota"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "carteira_ativo"
+			            },
+			            "Object": {
+			              "Role": "carteira_ativo.balanço_de_cota"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "carteira_ativos_have_balanço_de_cotas"
+			        }
+			      ]
+			    },
+			    "carteira_ativo_has_tipo": {
+			      "Binding": {
+			        "ConceptualEntity": "carteira_ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "carteira_ativo": {
+			          "Target": {
+			            "Entity": "carteira_ativo"
+			          }
+			        },
+			        "carteira_ativo.tipo": {
+			          "Target": {
+			            "Entity": "carteira_ativo.tipo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "carteira_ativo"
+			            },
+			            "Object": {
+			              "Role": "carteira_ativo.tipo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "carteira_ativos_have_tipos"
+			        }
+			      ]
+			    },
+			    "carteira_ativo_has_recomendacao": {
+			      "Binding": {
+			        "ConceptualEntity": "carteira_ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "carteira_ativo": {
+			          "Target": {
+			            "Entity": "carteira_ativo"
+			          }
+			        },
+			        "carteira_ativo.recomendacao": {
+			          "Target": {
+			            "Entity": "carteira_ativo.recomendacao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "carteira_ativo"
+			            },
+			            "Object": {
+			              "Role": "carteira_ativo.recomendacao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "carteira_ativos_have_recomendacaos"
+			        }
+			      ]
+			    },
+			    "carteira_ativo_has_data": {
+			      "Binding": {
+			        "ConceptualEntity": "carteira_ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "carteira_ativo": {
+			          "Target": {
+			            "Entity": "carteira_ativo"
+			          }
+			        },
+			        "carteira_ativo.data": {
+			          "Target": {
+			            "Entity": "carteira_ativo.data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "carteira_ativo"
+			            },
+			            "Object": {
+			              "Role": "carteira_ativo.data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "carteira_ativos_have_data"
+			        }
+			      ]
+			    },
+			    "carteira_ativo_has_industria": {
+			      "Binding": {
+			        "ConceptualEntity": "carteira_ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "carteira_ativo": {
+			          "Target": {
+			            "Entity": "carteira_ativo"
+			          }
+			        },
+			        "carteira_ativo.industria": {
+			          "Target": {
+			            "Entity": "carteira_ativo.industria"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "carteira_ativo"
+			            },
+			            "Object": {
+			              "Role": "carteira_ativo.industria"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "carteira_ativos_have_industrias"
+			        }
+			      ]
+			    },
+			    "carteira_ativo_has_setor": {
+			      "Binding": {
+			        "ConceptualEntity": "carteira_ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "carteira_ativo": {
+			          "Target": {
+			            "Entity": "carteira_ativo"
+			          }
+			        },
+			        "carteira_ativo.setor": {
+			          "Target": {
+			            "Entity": "carteira_ativo.setor"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "carteira_ativo"
+			            },
+			            "Object": {
+			              "Role": "carteira_ativo.setor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "carteira_ativos_have_setors"
+			        }
+			      ]
+			    },
+			    "carteira_ativo_has_ativo": {
+			      "Binding": {
+			        "ConceptualEntity": "carteira_ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "carteira_ativo": {
+			          "Target": {
+			            "Entity": "carteira_ativo"
+			          }
+			        },
+			        "carteira_ativo.ativo": {
+			          "Target": {
+			            "Entity": "carteira_ativo.ativo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "carteira_ativo"
+			            },
+			            "Object": {
+			              "Role": "carteira_ativo.ativo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "carteira_ativos_have_ativos"
+			        }
+			      ]
+			    },
+			    "historico_da_carteira_has_medida_valor_investido_acumulado": {
+			      "Binding": {
+			        "ConceptualEntity": "historico_da_carteira"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "historico_da_carteira": {
+			          "Target": {
+			            "Entity": "historico_da_carteira"
+			          }
+			        },
+			        "medida.valor_investido_acumulado": {
+			          "Target": {
+			            "Entity": "medida.valor_investido_acumulado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "historico_da_carteira"
+			            },
+			            "Object": {
+			              "Role": "medida.valor_investido_acumulado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "historico_da_carteiras_have_valor_investido_acumulado"
+			        }
+			      ]
+			    },
+			    "historico_da_carteira_has_medida_preço_histórico_total_acumulado": {
+			      "Binding": {
+			        "ConceptualEntity": "historico_da_carteira"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "historico_da_carteira": {
+			          "Target": {
+			            "Entity": "historico_da_carteira"
+			          }
+			        },
+			        "medida.preço_histórico_total_acumulado": {
+			          "Target": {
+			            "Entity": "medida.preço_histórico_total_acumulado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "historico_da_carteira"
+			            },
+			            "Object": {
+			              "Role": "medida.preço_histórico_total_acumulado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "historico_da_carteiras_have_preço_histórico_total_acumulado"
+			        }
+			      ]
+			    },
+			    "historico_da_carteira_has_medida_dividendos_totais_acumulados": {
+			      "Binding": {
+			        "ConceptualEntity": "historico_da_carteira"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "historico_da_carteira": {
+			          "Target": {
+			            "Entity": "historico_da_carteira"
+			          }
+			        },
+			        "medida.dividendos_totais_acumulados": {
+			          "Target": {
+			            "Entity": "medida.dividendos_totais_acumulados"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "historico_da_carteira"
+			            },
+			            "Object": {
+			              "Role": "medida.dividendos_totais_acumulados"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "historico_da_carteiras_have_dividendos_totais_acumulados"
 			        }
 			      ]
 			    },
@@ -3322,204 +3779,6 @@ cultureInfo pt-BR
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "medidas_have_values"
-			        }
-			      ]
-			    },
-			    "exemplo_aquisição_has_data_de_aquisição": {
-			      "Binding": {
-			        "ConceptualEntity": "Exemplo Aquisição"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "exemplo_aquisição": {
-			          "Target": {
-			            "Entity": "exemplo_aquisição"
-			          }
-			        },
-			        "exemplo_aquisição.data_de_aquisição": {
-			          "Target": {
-			            "Entity": "exemplo_aquisição.data_de_aquisição"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "exemplo_aquisição"
-			            },
-			            "Object": {
-			              "Role": "exemplo_aquisição.data_de_aquisição"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "exemplo_aquisiçãos_have_data_de_aquisiçãos"
-			        }
-			      ]
-			    },
-			    "exemplo_aquisição_has_número_de_cota": {
-			      "Binding": {
-			        "ConceptualEntity": "Exemplo Aquisição"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "exemplo_aquisição": {
-			          "Target": {
-			            "Entity": "exemplo_aquisição"
-			          }
-			        },
-			        "exemplo_aquisição.número_de_cota": {
-			          "Target": {
-			            "Entity": "exemplo_aquisição.número_de_cota"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "exemplo_aquisição"
-			            },
-			            "Object": {
-			              "Role": "exemplo_aquisição.número_de_cota"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "exemplo_aquisiçãos_have_número_de_cotas"
-			        }
-			      ]
-			    },
-			    "exemplo_aquisição_has_preço_de_aquisição": {
-			      "Binding": {
-			        "ConceptualEntity": "Exemplo Aquisição"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "exemplo_aquisição": {
-			          "Target": {
-			            "Entity": "exemplo_aquisição"
-			          }
-			        },
-			        "exemplo_aquisição.preço_de_aquisição": {
-			          "Target": {
-			            "Entity": "exemplo_aquisição.preço_de_aquisição"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "exemplo_aquisição"
-			            },
-			            "Object": {
-			              "Role": "exemplo_aquisição.preço_de_aquisição"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "exemplo_aquisiçãos_have_preço_de_aquisiçãos"
-			        }
-			      ]
-			    },
-			    "exemplo_aquisição_has_dono": {
-			      "Binding": {
-			        "ConceptualEntity": "Exemplo Aquisição"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "exemplo_aquisição": {
-			          "Target": {
-			            "Entity": "exemplo_aquisição"
-			          }
-			        },
-			        "exemplo_aquisição.dono": {
-			          "Target": {
-			            "Entity": "exemplo_aquisição.dono"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "exemplo_aquisição"
-			            },
-			            "Object": {
-			              "Role": "exemplo_aquisição.dono"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "exemplo_aquisiçãos_have_donos"
-			        }
-			      ]
-			    },
-			    "historico_da_carteira_has_total_acumulado_de_soma_de_preço_total_em_data": {
-			      "Binding": {
-			        "ConceptualEntity": "historico_da_carteira"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "historico_da_carteira": {
-			          "Target": {
-			            "Entity": "historico_da_carteira"
-			          }
-			        },
-			        "historico_da_carteira.total_acumulado_de_soma_de_preço_total_em_data": {
-			          "Target": {
-			            "Entity": "historico_da_carteira.total_acumulado_de_soma_de_preço_total_em_data"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "historico_da_carteira"
-			            },
-			            "Object": {
-			              "Role": "historico_da_carteira.total_acumulado_de_soma_de_preço_total_em_data"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "historico_da_carteiras_have_total_acumulado_de_soma_de_preço_total_em_data"
-			        }
-			      ]
-			    },
-			    "historico_da_carteira_has_total_acumulado_de_soma_de_valor_investido_em_data": {
-			      "Binding": {
-			        "ConceptualEntity": "historico_da_carteira"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "historico_da_carteira": {
-			          "Target": {
-			            "Entity": "historico_da_carteira"
-			          }
-			        },
-			        "historico_da_carteira.total_acumulado_de_soma_de_valor_investido_em_data": {
-			          "Target": {
-			            "Entity": "historico_da_carteira.total_acumulado_de_soma_de_valor_investido_em_data"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "historico_da_carteira"
-			            },
-			            "Object": {
-			              "Role": "historico_da_carteira.total_acumulado_de_soma_de_valor_investido_em_data"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "historico_da_carteiras_have_total_acumulado_de_soma_de_valor_investido_em_data"
 			        }
 			      ]
 			    },
@@ -4087,20 +4346,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "historico_da_carteira_has_ativo": {
+			    "carteira_ativo_data_hierarquia_de_data_has_carteira_ativo_data_mê": {
 			      "Binding": {
-			        "ConceptualEntity": "historico_da_carteira"
+			        "ConceptualEntity": "carteira_ativos"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "historico_da_carteira": {
+			        "carteira_ativo.data.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "historico_da_carteira"
+			            "Entity": "carteira_ativo.data.hierarquia_de_data"
 			          }
 			        },
-			        "historico_da_carteira.ativo": {
+			        "carteira_ativo.data.mê": {
 			          "Target": {
-			            "Entity": "historico_da_carteira.ativo"
+			            "Entity": "carteira_ativo.data.mê"
 			          }
 			        }
 			      },
@@ -4108,109 +4367,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "historico_da_carteira"
+			              "Role": "carteira_ativo.data.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "historico_da_carteira.ativo"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "historico_da_carteiras_have_ativos"
-			        }
-			      ]
-			    },
-			    "exemplo_aquisição_data_de_aquisição_hierarquia_de_data_has_exemplo_aquisição_data_de_aquisição_ano": {
-			      "Binding": {
-			        "ConceptualEntity": "Exemplo Aquisição"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "exemplo_aquisição.data_de_aquisição.hierarquia_de_data": {
-			          "Target": {
-			            "Entity": "exemplo_aquisição.data_de_aquisição.hierarquia_de_data"
-			          }
-			        },
-			        "exemplo_aquisição.data_de_aquisição.ano": {
-			          "Target": {
-			            "Entity": "exemplo_aquisição.data_de_aquisição.ano"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "exemplo_aquisição.data_de_aquisição.hierarquia_de_data"
-			            },
-			            "Object": {
-			              "Role": "exemplo_aquisição.data_de_aquisição.ano"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_anos2"
-			        }
-			      ]
-			    },
-			    "exemplo_aquisição_data_de_aquisição_hierarquia_de_data_has_exemplo_aquisição_data_de_aquisição_trimestre": {
-			      "Binding": {
-			        "ConceptualEntity": "Exemplo Aquisição"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "exemplo_aquisição.data_de_aquisição.hierarquia_de_data": {
-			          "Target": {
-			            "Entity": "exemplo_aquisição.data_de_aquisição.hierarquia_de_data"
-			          }
-			        },
-			        "exemplo_aquisição.data_de_aquisição.trimestre": {
-			          "Target": {
-			            "Entity": "exemplo_aquisição.data_de_aquisição.trimestre"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "exemplo_aquisição.data_de_aquisição.hierarquia_de_data"
-			            },
-			            "Object": {
-			              "Role": "exemplo_aquisição.data_de_aquisição.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_trimestres2"
-			        }
-			      ]
-			    },
-			    "exemplo_aquisição_data_de_aquisição_hierarquia_de_data_has_exemplo_aquisição_data_de_aquisição_mê": {
-			      "Binding": {
-			        "ConceptualEntity": "Exemplo Aquisição"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "exemplo_aquisição.data_de_aquisição.hierarquia_de_data": {
-			          "Target": {
-			            "Entity": "exemplo_aquisição.data_de_aquisição.hierarquia_de_data"
-			          }
-			        },
-			        "exemplo_aquisição.data_de_aquisição.mê": {
-			          "Target": {
-			            "Entity": "exemplo_aquisição.data_de_aquisição.mê"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "exemplo_aquisição.data_de_aquisição.hierarquia_de_data"
-			            },
-			            "Object": {
-			              "Role": "exemplo_aquisição.data_de_aquisição.mê"
+			              "Role": "carteira_ativo.data.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -4219,20 +4379,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "exemplo_aquisição_data_de_aquisição_hierarquia_de_data_has_exemplo_aquisição_data_de_aquisição_dia": {
+			    "carteira_ativo_data_hierarquia_de_data_has_carteira_ativo_data_dia": {
 			      "Binding": {
-			        "ConceptualEntity": "Exemplo Aquisição"
+			        "ConceptualEntity": "carteira_ativos"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "exemplo_aquisição.data_de_aquisição.hierarquia_de_data": {
+			        "carteira_ativo.data.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "exemplo_aquisição.data_de_aquisição.hierarquia_de_data"
+			            "Entity": "carteira_ativo.data.hierarquia_de_data"
 			          }
 			        },
-			        "exemplo_aquisição.data_de_aquisição.dia": {
+			        "carteira_ativo.data.dia": {
 			          "Target": {
-			            "Entity": "exemplo_aquisição.data_de_aquisição.dia"
+			            "Entity": "carteira_ativo.data.dia"
 			          }
 			        }
 			      },
@@ -4240,10 +4400,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "exemplo_aquisição.data_de_aquisição.hierarquia_de_data"
+			              "Role": "carteira_ativo.data.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "exemplo_aquisição.data_de_aquisição.dia"
+			              "Role": "carteira_ativo.data.dia"
 			            }
 			          },
 			          "State": "Generated",
@@ -4252,20 +4412,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "exemplo_aquisição_data_de_aquisição_ano_has_exemplo_aquisição_data_de_aquisição_trimestre": {
+			    "carteira_ativo_data_ano_has_carteira_ativo_data_trimestre": {
 			      "Binding": {
-			        "ConceptualEntity": "Exemplo Aquisição"
+			        "ConceptualEntity": "carteira_ativos"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "exemplo_aquisição.data_de_aquisição.ano": {
+			        "carteira_ativo.data.ano": {
 			          "Target": {
-			            "Entity": "exemplo_aquisição.data_de_aquisição.ano"
+			            "Entity": "carteira_ativo.data.ano"
 			          }
 			        },
-			        "exemplo_aquisição.data_de_aquisição.trimestre": {
+			        "carteira_ativo.data.trimestre": {
 			          "Target": {
-			            "Entity": "exemplo_aquisição.data_de_aquisição.trimestre"
+			            "Entity": "carteira_ativo.data.trimestre"
 			          }
 			        }
 			      },
@@ -4273,10 +4433,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "exemplo_aquisição.data_de_aquisição.ano"
+			              "Role": "carteira_ativo.data.ano"
 			            },
 			            "Object": {
-			              "Role": "exemplo_aquisição.data_de_aquisição.trimestre"
+			              "Role": "carteira_ativo.data.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -4286,10 +4446,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "exemplo_aquisição.data_de_aquisição.trimestre"
+			              "Role": "carteira_ativo.data.trimestre"
 			            },
 			            "Object": {
-			              "Role": "exemplo_aquisição.data_de_aquisição.ano"
+			              "Role": "carteira_ativo.data.ano"
 			            }
 			          },
 			          "State": "Generated",
@@ -4299,7 +4459,7 @@ cultureInfo pt-BR
 			        {
 			          "Preposition": {
 			            "Subject": {
-			              "Role": "exemplo_aquisição.data_de_aquisição.trimestre"
+			              "Role": "carteira_ativo.data.trimestre"
 			            },
 			            "Prepositions": [
 			              {
@@ -4309,7 +4469,7 @@ cultureInfo pt-BR
 			              }
 			            ],
 			            "Object": {
-			              "Role": "exemplo_aquisição.data_de_aquisição.ano"
+			              "Role": "carteira_ativo.data.ano"
 			            }
 			          },
 			          "State": "Generated",
@@ -4318,20 +4478,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "exemplo_aquisição_data_de_aquisição_trimestre_has_exemplo_aquisição_data_de_aquisição_mê": {
+			    "carteira_ativo_data_trimestre_has_carteira_ativo_data_mê": {
 			      "Binding": {
-			        "ConceptualEntity": "Exemplo Aquisição"
+			        "ConceptualEntity": "carteira_ativos"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "exemplo_aquisição.data_de_aquisição.trimestre": {
+			        "carteira_ativo.data.trimestre": {
 			          "Target": {
-			            "Entity": "exemplo_aquisição.data_de_aquisição.trimestre"
+			            "Entity": "carteira_ativo.data.trimestre"
 			          }
 			        },
-			        "exemplo_aquisição.data_de_aquisição.mê": {
+			        "carteira_ativo.data.mê": {
 			          "Target": {
-			            "Entity": "exemplo_aquisição.data_de_aquisição.mê"
+			            "Entity": "carteira_ativo.data.mê"
 			          }
 			        }
 			      },
@@ -4339,10 +4499,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "exemplo_aquisição.data_de_aquisição.trimestre"
+			              "Role": "carteira_ativo.data.trimestre"
 			            },
 			            "Object": {
-			              "Role": "exemplo_aquisição.data_de_aquisição.mê"
+			              "Role": "carteira_ativo.data.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -4352,10 +4512,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "exemplo_aquisição.data_de_aquisição.mê"
+			              "Role": "carteira_ativo.data.mê"
 			            },
 			            "Object": {
-			              "Role": "exemplo_aquisição.data_de_aquisição.trimestre"
+			              "Role": "carteira_ativo.data.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -4365,7 +4525,7 @@ cultureInfo pt-BR
 			        {
 			          "Preposition": {
 			            "Subject": {
-			              "Role": "exemplo_aquisição.data_de_aquisição.mê"
+			              "Role": "carteira_ativo.data.mê"
 			            },
 			            "Prepositions": [
 			              {
@@ -4375,7 +4535,7 @@ cultureInfo pt-BR
 			              }
 			            ],
 			            "Object": {
-			              "Role": "exemplo_aquisição.data_de_aquisição.trimestre"
+			              "Role": "carteira_ativo.data.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -4384,20 +4544,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "exemplo_aquisição_data_de_aquisição_mê_has_exemplo_aquisição_data_de_aquisição_dia": {
+			    "carteira_ativo_data_mê_has_carteira_ativo_data_dia": {
 			      "Binding": {
-			        "ConceptualEntity": "Exemplo Aquisição"
+			        "ConceptualEntity": "carteira_ativos"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "exemplo_aquisição.data_de_aquisição.mê": {
+			        "carteira_ativo.data.mê": {
 			          "Target": {
-			            "Entity": "exemplo_aquisição.data_de_aquisição.mê"
+			            "Entity": "carteira_ativo.data.mê"
 			          }
 			        },
-			        "exemplo_aquisição.data_de_aquisição.dia": {
+			        "carteira_ativo.data.dia": {
 			          "Target": {
-			            "Entity": "exemplo_aquisição.data_de_aquisição.dia"
+			            "Entity": "carteira_ativo.data.dia"
 			          }
 			        }
 			      },
@@ -4405,10 +4565,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "exemplo_aquisição.data_de_aquisição.mê"
+			              "Role": "carteira_ativo.data.mê"
 			            },
 			            "Object": {
-			              "Role": "exemplo_aquisição.data_de_aquisição.dia"
+			              "Role": "carteira_ativo.data.dia"
 			            }
 			          },
 			          "State": "Generated",
@@ -4418,10 +4578,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "exemplo_aquisição.data_de_aquisição.dia"
+			              "Role": "carteira_ativo.data.dia"
 			            },
 			            "Object": {
-			              "Role": "exemplo_aquisição.data_de_aquisição.mê"
+			              "Role": "carteira_ativo.data.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -4431,7 +4591,7 @@ cultureInfo pt-BR
 			        {
 			          "Preposition": {
 			            "Subject": {
-			              "Role": "exemplo_aquisição.data_de_aquisição.dia"
+			              "Role": "carteira_ativo.data.dia"
 			            },
 			            "Prepositions": [
 			              {
@@ -4441,7 +4601,7 @@ cultureInfo pt-BR
 			              }
 			            ],
 			            "Object": {
-			              "Role": "exemplo_aquisição.data_de_aquisição.mê"
+			              "Role": "carteira_ativo.data.mê"
 			            }
 			          },
 			          "State": "Generated",

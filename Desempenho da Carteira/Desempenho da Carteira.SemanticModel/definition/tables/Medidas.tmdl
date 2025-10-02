@@ -50,9 +50,10 @@ table Medidas
 					ISONORAFTER('historico_da_carteira'[Data], MAX('historico_da_carteira'[Data]), DESC)
 				)
 			)
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
 		lineageTag: 437130db-62d0-4661-ae4d-56befa99afa4
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
 
 	measure 'Valor Investido Acumulado' =
 			
@@ -63,9 +64,10 @@ table Medidas
 					ISONORAFTER('historico_da_carteira'[Data], MAX('historico_da_carteira'[Data]), DESC)
 				)
 			)
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
 		lineageTag: 1286bc87-7fe7-47bf-afcc-31e92985245f
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
 
 	column Value
 		formatString: 0
