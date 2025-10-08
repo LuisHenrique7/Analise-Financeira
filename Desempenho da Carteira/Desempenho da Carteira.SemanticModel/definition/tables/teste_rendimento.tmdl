@@ -1,0 +1,248 @@
+table teste_rendimento
+	lineageTag: 87fbbbbf-140b-48ee-8a2e-8965005e6a66
+
+	measure 'Rendimento Valorização' =
+			CALCULATE(
+			    SUM(teste_rendimento[Lucro]) / SUM(teste_rendimento[Valor Investido Total]),
+			    teste_rendimento[Data] = MAX(teste_rendimento[Data]
+			))
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 3341b491-2a76-4bdb-bb9f-9c7731bbb14a
+
+	measure 'Valor Investido Acumulado + Lucro' =
+			
+			VAR lucroDia = CALCULATE(
+			    SUM(teste_rendimento[Lucro]),
+			    teste_rendimento[Data] = MAX(teste_rendimento[Data])
+			)
+			
+			VAR investidoAcumulado = CALCULATE(
+				SUM(teste_rendimento[Valor Investido Total]),
+				ALL(teste_rendimento[Data]),
+			    teste_rendimento[Data] <= MAX(teste_rendimento[Data])
+			)
+			
+			RETURN lucroDia + investidoAcumulado
+		lineageTag: f48e24e4-35e8-4e1f-8fc0-98f7ce629ccc
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure investidoAcumulado =
+			CALCULATE(
+				SUM(teste_rendimento[Valor Investido Total]),
+				ALL(teste_rendimento[Data]),
+			    teste_rendimento[Data] <= MAX(teste_rendimento[Data])
+			)
+		lineageTag: 8c0dc43e-c5c0-42c4-b536-aeed4fc78f16
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Preço Total Atual' = ```
+			
+						
+						// SUMX(
+						//     carteira_ativos,
+						//     VAR ativo = carteira_ativos[ATIVO]
+						
+						//     // VAR precoDataMax = SUMX(
+						//     //     FILTER(historico_da_carteira, historico_da_carteira[Natureza] = "Aquisição"),
+						//     //     VAR data = historico_da_carteira[Data]
+						
+						//     //     VAR 
+						//     // )
+						//     VAR dataMaxAtivo = MAXX(
+						//         FILTER(
+						//             FILTER(historico_da_carteira, historico_da_carteira[Natureza] = "Aquisição"),
+						//             historico_da_carteira[Ativo] = ativo
+						//         ),
+						//         historico_da_carteira[Data]
+						//     )
+						
+						
+						//     VAR ultimoPrecoUnitario = CALCULATE(
+						//         SUM(historico_da_carteira[Preço Unitário]),
+						//         historico_da_carteira[Data] = dataMaxAtivo,
+						//         historico_da_carteira[Ativo] = ativo
+						//     )
+						
+						//     VAR cotasAumuladas = CALCULATE(
+						//         MAX(historico_da_carteira[Cotas Acumuladas]),
+						//         historico_da_carteira[Data] = dataMaxAtivo,
+						//         historico_da_carteira[Ativo] = ativo
+						//     )
+						
+						//     RETURN ultimoPrecoUnitario * cotasAumuladas
+						// )
+			
+			            SUMX(
+						    carteira_ativos,
+						    VAR ativo = carteira_ativos[ATIVO]
+						
+						    // VAR precoDataMax = SUMX(
+						    //     FILTER(historico_da_carteira, historico_da_carteira[Natureza] = "Aquisição"),
+						    //     VAR data = historico_da_carteira[Data]
+						
+						    //     VAR 
+						    // )
+						    VAR dataMaxAtivo = MAXX(
+						        FILTER(
+						            FILTER(teste_rendimento, teste_rendimento[Natureza] = "Aquisição"),
+						            teste_rendimento[Ativo] = ativo
+						        ),
+						        teste_rendimento[Data]
+						    )
+						
+						
+						    VAR ultimoPrecoUnitario = CALCULATE(
+						        SUM(teste_rendimento[Preço de Fechamento]),
+						        teste_rendimento[Data] = dataMaxAtivo,
+						        teste_rendimento[Ativo] = ativo
+						    )
+						
+						    VAR cotasAumuladas = CALCULATE(
+						        MAX(teste_rendimento[Cotas Acumuladas]),
+						        teste_rendimento[Data] = dataMaxAtivo,
+						        teste_rendimento[Ativo] = ativo
+						    )
+						
+						    RETURN ultimoPrecoUnitario * cotasAumuladas
+						)
+			```
+		lineageTag: 9171b7bd-2130-4504-ae74-a359c9926f83
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Ativo
+		dataType: string
+		lineageTag: 69e4415f-faad-4d7f-8c48-1e7eca957d47
+		summarizeBy: none
+		sourceColumn: Ativo
+
+		annotation SummarizationSetBy = Automatic
+
+	column Data
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: afa7c692-1ee7-4cee-a76d-bb246db69996
+		summarizeBy: none
+		sourceColumn: Data
+
+		variation Variation
+			isDefault
+			relationship: 6790c147-7186-4169-a07f-ea1917cddae6
+			defaultHierarchy: LocalDateTable_19d88120-9552-4012-bfba-43089834e8fa.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Valor
+		dataType: double
+		lineageTag: dd6145de-32e1-48d3-ba26-1fae7c427ec2
+		summarizeBy: sum
+		sourceColumn: Valor
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Número de Cotas'
+		dataType: int64
+		formatString: 0
+		lineageTag: cc8beeaf-ba23-4fed-a324-88c718726b62
+		summarizeBy: sum
+		sourceColumn: Número de Cotas
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Cotas Acumuladas'
+		dataType: int64
+		formatString: 0
+		lineageTag: f6ee8ce1-9959-4051-8567-2d6b6f48718a
+		summarizeBy: sum
+		sourceColumn: Cotas Acumuladas
+
+		annotation SummarizationSetBy = Automatic
+
+	column Dono
+		dataType: string
+		lineageTag: 14cc1f7f-802a-440f-ab0a-fa410306ef07
+		summarizeBy: none
+		sourceColumn: Dono
+
+		annotation SummarizationSetBy = Automatic
+
+	column Natureza
+		dataType: string
+		lineageTag: 9c90d054-bd38-4bc1-9a1e-24b88ccbdda2
+		summarizeBy: none
+		sourceColumn: Natureza
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Preço de Fechamento'
+		dataType: double
+		lineageTag: 8431cf64-2634-4e9e-95be-9fc422e8a207
+		summarizeBy: sum
+		sourceColumn: Preço de Fechamento
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Preço de Fechamento Total'
+		dataType: double
+		lineageTag: 264400ea-b6b9-4496-93c6-ce8bd7ecaf76
+		summarizeBy: sum
+		sourceColumn: Preço de Fechamento Total
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Valor Investido Total'
+		dataType: double
+		lineageTag: fe2f060f-1825-4635-916d-3900ea836463
+		summarizeBy: sum
+		sourceColumn: Valor Investido Total
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Lucro
+		dataType: double
+		lineageTag: adeedd76-2d87-4d0d-a1ef-d871db39764b
+		summarizeBy: sum
+		sourceColumn: Lucro
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Rendimento Preço'
+		dataType: double
+		lineageTag: 5aa0a65d-6916-4de4-88f2-ae4054f7624e
+		summarizeBy: sum
+		sourceColumn: Rendimento Preço
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition teste_rendimento = m
+		mode: import
+		source =
+				let
+				    Fonte = Csv.Document(File.Contents("C:\Users\luis.nascimento\Documents\Análises Financeiras\teste_rendimento.csv"),[Delimiter=",", Columns=12, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
+				    #"Valor Substituído" = Table.ReplaceValue(#"Cabeçalhos Promovidos",".",",",Replacer.ReplaceText,{"Valor", "Preço de Fechamento", "Preço de Fechamento Total", "Valor Investido Total", "Lucro", "Rendimento Preço"}),
+				    #"Tipo Alterado1" = Table.TransformColumnTypes(#"Valor Substituído",{{"Valor", type number}, {"Preço de Fechamento", type number}, {"Preço de Fechamento Total", type number}, {"Valor Investido Total", type number}, {"Lucro", type number}, {"Rendimento Preço", type number}}),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Tipo Alterado1",{{"Data", type date}, {"Número de Cotas", Int64.Type}, {"Cotas Acumuladas", Int64.Type}})
+				in
+				    #"Tipo Alterado"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

@@ -17,3 +17,21 @@ relationship AutoDetected_b15c99fb-1842-4a7f-a6c2-349acedb365d
 	fromColumn: historico_da_carteira.Ativo
 	toColumn: carteira_ativos.ATIVO
 
+relationship 6790c147-7186-4169-a07f-ea1917cddae6
+	joinOnDateBehavior: datePartOnly
+	fromColumn: teste_rendimento.Data
+	toColumn: LocalDateTable_19d88120-9552-4012-bfba-43089834e8fa.Date
+
+relationship AutoDetected_160787b4-0513-4a43-a67e-2fc7c4a431ec
+	fromColumn: teste_rendimento.Ativo
+	toColumn: carteira_ativos.ATIVO
+
+relationship e2058381-f780-4770-b6a1-c4db2f157506
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'Aquisições Realizadas'.Data
+	toColumn: LocalDateTable_f7c0031a-135b-4687-820b-7cadf9b51b97.Date
+
+relationship AutoDetected_1c6a14e1-5089-4c59-82a3-b636fbc3a8a7
+	fromColumn: 'Aquisições Realizadas'.Ativo
+	toColumn: carteira_ativos.ATIVO
+

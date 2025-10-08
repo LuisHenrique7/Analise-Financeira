@@ -17,7 +17,7 @@ table Medidas
 
 		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
 
-	measure Lucro = [Preço Histórico Total Acumulado] - [Valor Investido Acumulado]
+	measure Lucro = [Preço Total Atual] - [investidoAcumulado]
 		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
 		lineageTag: c79964ab-cbd0-419a-947d-a0b124219179
 

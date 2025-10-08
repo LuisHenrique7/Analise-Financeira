@@ -6,7 +6,7 @@ model Model
 		legacyRedirects
 		returnErrorValuesAsNull
 
-annotation PBI_QueryOrder = ["historico_da_carteira","carteira_ativos"]
+annotation PBI_QueryOrder = ["historico_da_carteira","carteira_ativos","teste_rendimento","Aquisições Realizadas"]
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
@@ -21,6 +21,10 @@ ref table LocalDateTable_6b344d55-aaf4-4e7a-aa96-8b430b46f292
 ref table Medidas
 ref table carteira_ativos
 ref table LocalDateTable_4540737c-9fdd-44c7-8dd2-57e89f225b80
+ref table teste_rendimento
+ref table LocalDateTable_19d88120-9552-4012-bfba-43089834e8fa
+ref table 'Aquisições Realizadas'
+ref table LocalDateTable_f7c0031a-135b-4687-820b-7cadf9b51b97
 
 ref cultureInfo pt-BR
 

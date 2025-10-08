@@ -45,6 +45,32 @@
             "width": 234
           },
           "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 246,
+            "y": 394
+          },
+          "nodeIndex": "teste_rendimento",
+          "nodeLineageTag": "87fbbbbf-140b-48ee-8a2e-8965005e6a66",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 989,
+            "y": 197
+          },
+          "nodeIndex": "Aquisições Realizadas",
+          "nodeLineageTag": "df46cf64-abd3-41ad-83aa-a412d0b300de",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
         }
       ],
       "name": "Todas as tabelas",
