@@ -102,7 +102,7 @@ table 'Dividendos Recebidos'
 		mode: import
 		source =
 				let
-				    Fonte = Csv.Document(File.Contents("C:\Users\luis.nascimento\Documents\Análises Financeiras\Dividendos Recebidos.csv"),[Delimiter=",", Columns=9, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    Fonte = Csv.Document(File.Contents("C:\Users\luis.nascimento\Documents\Análises Financeiras\Dados Modelados\Dividendos Recebidos.csv"),[Delimiter=",", Columns=9, Encoding=1252, QuoteStyle=QuoteStyle.None]),
 				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
 				    #"Valor Substituído" = Table.ReplaceValue(#"Cabeçalhos Promovidos",".",",",Replacer.ReplaceText,{"Valor", "DY", "Dividendos Totais"}),
 				    #"Tipo Alterado1" = Table.TransformColumnTypes(#"Valor Substituído",{{"Valor", type number}, {"DY", type number}, {"Dividendos Totais", type number}}),

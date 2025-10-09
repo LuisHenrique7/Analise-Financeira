@@ -50,6 +50,15 @@ table Medidas
 
 		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
 
+	measure 'Dividendos no Ano' =
+			CALCULATE(
+			    SUM('Dividendos Recebidos'[Dividendos Totais]),
+			    'Dividendos Recebidos'[Data].[Ano] = SELECTEDVALUE('Aquisições Realizadas'[Data].[Ano])
+			)
+		lineageTag: 3de076e6-17a0-4b4f-839a-fca3a3c95fee
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	column Value
 		formatString: 0
 		lineageTag: 0ee8fb13-cf21-41ff-b00f-5881b98324b5

@@ -1,54 +1,6 @@
 table carteira_ativos
 	lineageTag: 8ebd0226-0fe0-44fd-8935-5fdeb4f32bd8
 
-	column ATIVO
-		dataType: string
-		lineageTag: 9a578fda-eaf9-4241-afa5-021713d4c601
-		summarizeBy: none
-		sourceColumn: ATIVO
-
-		annotation SummarizationSetBy = Automatic
-
-	column SETOR
-		dataType: string
-		lineageTag: c843d33e-4dc3-476f-875d-2d0b39e96b1f
-		summarizeBy: none
-		sourceColumn: SETOR
-
-		annotation SummarizationSetBy = Automatic
-
-	column INDUSTRIA
-		dataType: string
-		lineageTag: 7de68814-88f6-435f-8c4b-9ee68cc9c381
-		summarizeBy: none
-		sourceColumn: INDUSTRIA
-
-		annotation SummarizationSetBy = Automatic
-
-	column DATA
-		dataType: dateTime
-		formatString: Long Date
-		lineageTag: 3986b78a-148f-43de-93c2-54e51ae2f05e
-		summarizeBy: none
-		sourceColumn: DATA
-
-		variation Variation
-			isDefault
-			relationship: 443be0f8-394f-4907-8bf3-c620a9b38b2f
-			defaultHierarchy: LocalDateTable_4540737c-9fdd-44c7-8dd2-57e89f225b80.'Hierarquia de datas'
-
-		annotation SummarizationSetBy = Automatic
-
-		annotation UnderlyingDateTimeDataType = Date
-
-	column RECOMENDACAO
-		dataType: string
-		lineageTag: b48a94dd-e65a-4286-b8d1-4108f35e2c2f
-		summarizeBy: none
-		sourceColumn: RECOMENDACAO
-
-		annotation SummarizationSetBy = Automatic
-
 	column Tipo
 		dataType: string
 		lineageTag: f7c51d59-fef6-4527-8baf-a1cdca4ed4cd
@@ -66,13 +18,70 @@ table carteira_ativos
 
 		annotation SummarizationSetBy = Automatic
 
+	column Ativo
+		dataType: string
+		lineageTag: 02edd3f2-2da5-4853-adf9-a42d68478ff0
+		summarizeBy: none
+		sourceColumn: Ativo
+
+		annotation SummarizationSetBy = Automatic
+
+	column Setor
+		dataType: string
+		lineageTag: 4d1541ad-c95c-48a4-b539-955bddf926a5
+		summarizeBy: none
+		sourceColumn: Setor
+
+		annotation SummarizationSetBy = Automatic
+
+	column Indústria
+		dataType: string
+		lineageTag: 0a97d01a-0f0b-4917-9b81-5174e60cb8ee
+		summarizeBy: none
+		sourceColumn: Indústria
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Data Recomendação'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 01bbabbb-6dfc-457d-8565-84caa8f91690
+		summarizeBy: none
+		sourceColumn: Data Recomendação
+
+		variation Variation
+			isDefault
+			relationship: ae7db270-9299-46cf-948e-b59f9a46841f
+			defaultHierarchy: LocalDateTable_9cd4b772-aadd-46c6-a818-5f54c17f8bd0.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Recomendação
+		dataType: string
+		lineageTag: f51d71bb-3e46-44e5-bbdd-c0c40ad1a508
+		summarizeBy: none
+		sourceColumn: Recomendação
+
+		annotation SummarizationSetBy = Automatic
+
+	column Carteira
+		dataType: int64
+		formatString: 0
+		lineageTag: 0826a720-4d29-46f4-9035-e8e895d63559
+		summarizeBy: sum
+		sourceColumn: Carteira
+
+		annotation SummarizationSetBy = Automatic
+
 	partition carteira_ativos = m
 		mode: import
 		source =
 				let
-				    Fonte = Csv.Document(File.Contents("C:\Users\luis.nascimento\Documents\Análises Financeiras\Dados Modelados\carteira_ativos.csv"),[Delimiter=",", Columns=7, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    Fonte = Csv.Document(File.Contents("C:\Users\luis.nascimento\Documents\Análises Financeiras\Dados Modelados\carteira_ativos.csv"),[Delimiter=",", Columns=8, Encoding=65001, QuoteStyle=QuoteStyle.None]),
 				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
-				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"ATIVO", type text}, {"SETOR", type text}, {"INDUSTRIA", type text}, {"DATA", type date}, {"RECOMENDACAO", type text}, {"Tipo", type text}, {"Balanço de Cotas", Int64.Type}})
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"Data Recomendação", type date}, {"Carteira", Int64.Type}, {"Balanço de Cotas", Int64.Type}})
 				in
 				    #"Tipo Alterado"
 

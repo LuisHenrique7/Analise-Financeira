@@ -140,7 +140,7 @@ table 'Aquisições Realizadas'
 		mode: import
 		source =
 				let
-				    Fonte = Csv.Document(File.Contents("C:\Users\luis.nascimento\Documents\Análises Financeiras\Aquisições Realizadas.csv"),[Delimiter=",", Columns=13, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    Fonte = Csv.Document(File.Contents("C:\Users\luis.nascimento\Documents\Análises Financeiras\Dados Modelados\Aquisições Realizadas.csv"),[Delimiter=",", Columns=13, Encoding=65001, QuoteStyle=QuoteStyle.None]),
 				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
 				    #"Valor Substituído" = Table.ReplaceValue(#"Cabeçalhos Promovidos",".",",",Replacer.ReplaceText,{"Valor", "Preço Médio", "Valor Investido", "Valor Investido Total", "Preço de Fechamento", "Preço de Fechamento Total", "Lucro"}),
 				    #"Tipo Alterado1" = Table.TransformColumnTypes(#"Valor Substituído",{{"Valor", type number}, {"Preço Médio", type number}, {"Valor Investido", type number}, {"Valor Investido Total", type number}, {"Preço de Fechamento Total", type number}, {"Preço de Fechamento", type number}, {"Lucro", type number}}),

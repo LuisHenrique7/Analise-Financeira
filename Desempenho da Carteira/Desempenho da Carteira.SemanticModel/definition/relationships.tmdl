@@ -1,16 +1,7 @@
-relationship 443be0f8-394f-4907-8bf3-c620a9b38b2f
-	joinOnDateBehavior: datePartOnly
-	fromColumn: carteira_ativos.DATA
-	toColumn: LocalDateTable_4540737c-9fdd-44c7-8dd2-57e89f225b80.Date
-
 relationship e2058381-f780-4770-b6a1-c4db2f157506
 	joinOnDateBehavior: datePartOnly
 	fromColumn: 'Aquisições Realizadas'.Data
 	toColumn: LocalDateTable_f7c0031a-135b-4687-820b-7cadf9b51b97.Date
-
-relationship AutoDetected_1c6a14e1-5089-4c59-82a3-b636fbc3a8a7
-	fromColumn: 'Aquisições Realizadas'.Ativo
-	toColumn: carteira_ativos.ATIVO
 
 relationship 551e1bca-5d01-4c49-9561-78df33cd18ee
 	joinOnDateBehavior: datePartOnly
@@ -22,7 +13,16 @@ relationship eae5642e-2162-40a0-a166-b780d738a917
 	fromColumn: 'Dividendos Recebidos'.'DATA COM'
 	toColumn: LocalDateTable_534954a1-eca8-436c-9a29-70d97f4bee81.Date
 
-relationship AutoDetected_e299c15e-3444-4585-ae9a-d42a0c07bf68
+relationship ae7db270-9299-46cf-948e-b59f9a46841f
+	joinOnDateBehavior: datePartOnly
+	fromColumn: carteira_ativos.'Data Recomendação'
+	toColumn: LocalDateTable_9cd4b772-aadd-46c6-a818-5f54c17f8bd0.Date
+
+relationship AutoDetected_27d14922-e7b0-4670-8091-a35cacd86612
+	fromColumn: 'Aquisições Realizadas'.Ativo
+	toColumn: carteira_ativos.Ativo
+
+relationship AutoDetected_e08dd4d5-a055-4a49-bcbe-0c115c241bdb
 	fromColumn: 'Dividendos Recebidos'.Ativo
-	toColumn: carteira_ativos.ATIVO
+	toColumn: carteira_ativos.Ativo
 

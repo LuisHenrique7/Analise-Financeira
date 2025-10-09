@@ -17,12 +17,12 @@ annotation PBI_ProTooling = ["DevMode"]
 ref table DateTableTemplate_76844280-8e4a-4e02-8b64-e5ffdf0484e0
 ref table Medidas
 ref table carteira_ativos
-ref table LocalDateTable_4540737c-9fdd-44c7-8dd2-57e89f225b80
 ref table 'Aquisições Realizadas'
 ref table LocalDateTable_f7c0031a-135b-4687-820b-7cadf9b51b97
 ref table 'Dividendos Recebidos'
 ref table LocalDateTable_0f02ffa1-a590-4c67-94a6-a42ed3b2653b
 ref table LocalDateTable_534954a1-eca8-436c-9a29-70d97f4bee81
+ref table LocalDateTable_9cd4b772-aadd-46c6-a818-5f54c17f8bd0
 
 ref cultureInfo pt-BR
 
