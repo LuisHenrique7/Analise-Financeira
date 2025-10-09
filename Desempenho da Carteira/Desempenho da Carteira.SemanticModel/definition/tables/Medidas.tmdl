@@ -1,71 +1,52 @@
 table Medidas
 	lineageTag: 440d5894-2b9e-4977-8253-051c31d1b9ff
 
-	measure 'Preço Médio' = [Valor Investido Acumulado] / MAX(historico_da_carteira[Cotas Acumuladas])
+	measure Rendimento =
+			CALCULATE(
+			    SUM('Aquisições Realizadas'[Lucro]) / SUM('Aquisições Realizadas'[Valor Investido Total]),
+			    'Aquisições Realizadas'[Data] = MAX('Aquisições Realizadas'[Data])
+			)
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: c0124247-360c-4436-a347-cdf632d5c2d1
+
+	measure 'Média de Aportes' = ```
+			
+			VAR num_dias_aportados = CALCULATE(
+			        DISTINCTCOUNT('Aquisições Realizadas'[Data]),
+			        'Aquisições Realizadas'[Valor Investido] > 0
+			    )
+			
+			RETURN CALCULATE(
+			    SUM('Aquisições Realizadas'[Valor Investido]) / num_dias_aportados
+			)
+			
+			```
 		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
-		lineageTag: e19ab4a3-5022-4067-9290-c391710ac625
+		lineageTag: 81f44cf9-5269-48b5-9f46-af55b1b7b906
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Dividendos Totais Acumulados' =
+			
+			CALCULATE(
+				SUM('Dividendos Recebidos'[Dividendos Totais]),
+				FILTER(
+					ALLSELECTED('Dividendos Recebidos'[Data]),
+					ISONORAFTER('Dividendos Recebidos'[Data], MAX('Dividendos Recebidos'[Data]), DESC)
+				)
+			)
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 75e5c747-32de-4ea1-98b2-91578712e445
 
 		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
 
 	measure 'Renda Mensal' =
 			CALCULATE(
-			    SUM(historico_da_carteira[Dividendos Totais]),
-			    historico_da_carteira[Data].[Ano] = SELECTEDVALUE(historico_da_carteira[Data].[Ano])
+			    SUM('Dividendos Recebidos'[Dividendos Totais]),
+			    'Dividendos Recebidos'[Data].[Ano] = SELECTEDVALUE('Dividendos Recebidos'[Data].[Ano])
 			) / 12
 		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
-		lineageTag: 5b1a68c0-62fc-4571-a397-2fadf0d78074
-
-		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
-
-	measure Lucro = [Preço Total Atual] - [investidoAcumulado]
-		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
-		lineageTag: c79964ab-cbd0-419a-947d-a0b124219179
-
-		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
-
-	measure Rendimento = [Lucro] / [Valor Investido Acumulado]
-		formatString: 0.00%;-0.00%;0.00%
-		lineageTag: c0124247-360c-4436-a347-cdf632d5c2d1
-
-	measure 'Dividendos Totais Acumulados' =
-			
-			CALCULATE(
-				SUM('historico_da_carteira'[Dividendos Totais]),
-				FILTER(
-					ALLSELECTED('historico_da_carteira'[Data]),
-					ISONORAFTER('historico_da_carteira'[Data], MAX('historico_da_carteira'[Data]), DESC)
-				)
-			)
-		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
-		lineageTag: 43538d6d-a91b-4986-a98b-710a42f7a74d
-
-		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
-
-	measure 'Preço Histórico Total Acumulado' =
-			
-			CALCULATE(
-				SUM('historico_da_carteira'[Preço Total]),
-				FILTER(
-					ALLSELECTED('historico_da_carteira'[Data]),
-					ISONORAFTER('historico_da_carteira'[Data], MAX('historico_da_carteira'[Data]), DESC)
-				)
-			)
-		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
-		lineageTag: 437130db-62d0-4661-ae4d-56befa99afa4
-
-		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
-
-	measure 'Valor Investido Acumulado' =
-			
-			CALCULATE(
-				SUM('historico_da_carteira'[Valor Investido]),
-				FILTER(
-					ALLSELECTED('historico_da_carteira'[Data]),
-					ISONORAFTER('historico_da_carteira'[Data], MAX('historico_da_carteira'[Data]), DESC)
-				)
-			)
-		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
-		lineageTag: 1286bc87-7fe7-47bf-afcc-31e92985245f
+		lineageTag: a2d5986d-d97b-47c8-b25f-6e67b1dfe131
 
 		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
 

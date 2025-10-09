@@ -10,19 +10,6 @@
       "nodes": [
         {
           "location": {
-            "x": 0,
-            "y": 0
-          },
-          "nodeIndex": "historico_da_carteira",
-          "nodeLineageTag": "9e5504b5-a928-4acb-9e35-ad4742755ddb",
-          "size": {
-            "height": 300,
-            "width": 234
-          },
-          "zIndex": 0
-        },
-        {
-          "location": {
             "x": 705,
             "y": 50
           },
@@ -48,11 +35,11 @@
         },
         {
           "location": {
-            "x": 246,
-            "y": 394
+            "x": 120,
+            "y": 350
           },
-          "nodeIndex": "teste_rendimento",
-          "nodeLineageTag": "87fbbbbf-140b-48ee-8a2e-8965005e6a66",
+          "nodeIndex": "Aquisições Realizadas",
+          "nodeLineageTag": "df46cf64-abd3-41ad-83aa-a412d0b300de",
           "size": {
             "height": 300,
             "width": 234
@@ -61,13 +48,13 @@
         },
         {
           "location": {
-            "x": 989,
-            "y": 197
+            "x": 617,
+            "y": 337.5
           },
-          "nodeIndex": "Aquisições Realizadas",
-          "nodeLineageTag": "df46cf64-abd3-41ad-83aa-a412d0b300de",
+          "nodeIndex": "Dividendos Recebidos",
+          "nodeLineageTag": "274d647f-0f60-46c7-875d-5de3ddc15ac9",
           "size": {
-            "height": 300,
+            "height": 296,
             "width": 234
           },
           "zIndex": 0

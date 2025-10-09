@@ -1,14 +1,6 @@
 table 'Aquisições Realizadas'
 	lineageTag: df46cf64-abd3-41ad-83aa-a412d0b300de
 
-	measure 'Rendimento Total' =
-			CALCULATE(
-			    SUM('Aquisições Realizadas'[Lucro]) / SUM('Aquisições Realizadas'[Valor Investido]),
-			    'Aquisições Realizadas'[Data] = MAX('Aquisições Realizadas'[Data])
-			)
-		formatString: 0.00%;-0.00%;0.00%
-		lineageTag: 6e040eac-d108-4a18-a72b-3361f77e8870
-
 	column Ativo
 		dataType: string
 		lineageTag: c32bd45d-11c4-4b9d-9e11-2fca1ce2b22d
@@ -67,14 +59,6 @@ table 'Aquisições Realizadas'
 		lineageTag: 4382db86-1938-455c-8de7-b69dee4f881c
 		summarizeBy: none
 		sourceColumn: Dono
-
-		annotation SummarizationSetBy = Automatic
-
-	column Natureza
-		dataType: string
-		lineageTag: 2652beb9-fc92-4dfc-8994-38c88da9981c
-		summarizeBy: none
-		sourceColumn: Natureza
 
 		annotation SummarizationSetBy = Automatic
 
@@ -141,25 +125,26 @@ table 'Aquisições Realizadas'
 
 		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
 
-	column Rendimento
+	column 'Valor Investido Total'
 		dataType: double
-		lineageTag: 90ed08a2-da09-491a-b0e6-79b8e4b7e07f
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: affcb60b-b50a-4c2b-9487-f91304c7fa60
 		summarizeBy: sum
-		sourceColumn: Rendimento
+		sourceColumn: Valor Investido Total
 
 		annotation SummarizationSetBy = Automatic
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
 
 	partition 'Aquisições Realizadas' = m
 		mode: import
 		source =
 				let
-				    Fonte = Csv.Document(File.Contents("C:\Users\luis.nascimento\Documents\Análises Financeiras\Aquisições Realizadas.csv"),[Delimiter=",", Columns=14, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    Fonte = Csv.Document(File.Contents("C:\Users\luis.nascimento\Documents\Análises Financeiras\Aquisições Realizadas.csv"),[Delimiter=",", Columns=13, Encoding=65001, QuoteStyle=QuoteStyle.None]),
 				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
-				    #"Valor Substituído" = Table.ReplaceValue(#"Cabeçalhos Promovidos",".",",",Replacer.ReplaceText,{"Valor", "Preço Médio", "Valor Investido", "Preço de Fechamento", "Preço de Fechamento Total", "Lucro", "Rendimento"}),
-				    #"Tipo Alterado1" = Table.TransformColumnTypes(#"Valor Substituído",{{"Valor", type number}, {"Preço Médio", type number}, {"Valor Investido", type number}, {"Preço de Fechamento Total", type number}, {"Preço de Fechamento", type number}, {"Lucro", type number}, {"Rendimento", type number}}),
-				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Tipo Alterado1",{{"Ativo", type text}, {"Data", type date}, {"Número de Cotas", Int64.Type}, {"Cotas Acumuladas", Int64.Type}, {"Dono", type text}, {"Natureza", type text}, {"Ano Mês", type text}})
+				    #"Valor Substituído" = Table.ReplaceValue(#"Cabeçalhos Promovidos",".",",",Replacer.ReplaceText,{"Valor", "Preço Médio", "Valor Investido", "Valor Investido Total", "Preço de Fechamento", "Preço de Fechamento Total", "Lucro"}),
+				    #"Tipo Alterado1" = Table.TransformColumnTypes(#"Valor Substituído",{{"Valor", type number}, {"Preço Médio", type number}, {"Valor Investido", type number}, {"Valor Investido Total", type number}, {"Preço de Fechamento Total", type number}, {"Preço de Fechamento", type number}, {"Lucro", type number}}),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Tipo Alterado1",{{"Ativo", type text}, {"Data", type date}, {"Número de Cotas", Int64.Type}, {"Cotas Acumuladas", Int64.Type}, {"Dono", type text}, {"Ano Mês", type text}})
 				in
 				    #"Tipo Alterado"
 

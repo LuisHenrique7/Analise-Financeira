@@ -6,7 +6,7 @@ model Model
 		legacyRedirects
 		returnErrorValuesAsNull
 
-annotation PBI_QueryOrder = ["historico_da_carteira","carteira_ativos","teste_rendimento","Aquisições Realizadas"]
+annotation PBI_QueryOrder = ["carteira_ativos","Aquisições Realizadas","Dividendos Recebidos"]
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
@@ -14,17 +14,15 @@ annotation PBIDesktopVersion = 2.146.1026.0 (25.08)+fb98ab832373de81dccd5c01cd96
 
 annotation PBI_ProTooling = ["DevMode"]
 
-ref table historico_da_carteira
 ref table DateTableTemplate_76844280-8e4a-4e02-8b64-e5ffdf0484e0
-ref table LocalDateTable_03f9a08b-4228-44b2-9604-2da3b7f35937
-ref table LocalDateTable_6b344d55-aaf4-4e7a-aa96-8b430b46f292
 ref table Medidas
 ref table carteira_ativos
 ref table LocalDateTable_4540737c-9fdd-44c7-8dd2-57e89f225b80
-ref table teste_rendimento
-ref table LocalDateTable_19d88120-9552-4012-bfba-43089834e8fa
 ref table 'Aquisições Realizadas'
 ref table LocalDateTable_f7c0031a-135b-4687-820b-7cadf9b51b97
+ref table 'Dividendos Recebidos'
+ref table LocalDateTable_0f02ffa1-a590-4c67-94a6-a42ed3b2653b
+ref table LocalDateTable_534954a1-eca8-436c-9a29-70d97f4bee81
 
 ref cultureInfo pt-BR
 
