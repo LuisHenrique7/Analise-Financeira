@@ -50,11 +50,25 @@ table Medidas
 
 		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
 
-	measure 'Dividendos no Ano' =
-			CALCULATE(
+	measure 'Dividendos Recbidos' =
+			
+			VAR ano_aquisicao = SELECTEDVALUE('Aquisições Realizadas'[Data].[Ano])
+			VAR mes_aquisicao = MID(SELECTEDVALUE('Aquisições Realizadas'[Data]), 4,2)
+			
+			VAR dividendo_no_mes = CALCULATE(
+			    SUM('Dividendos Recebidos'[Dividendos Totais]),
+			    'Dividendos Recebidos'[Data].[Ano] = ano_aquisicao,
+			    MID('Dividendos Recebidos'[Data], 4,2) = mes_aquisicao
+			)
+			
+			
+			
+			VAR dividendo_no_ano = CALCULATE(
 			    SUM('Dividendos Recebidos'[Dividendos Totais]),
 			    'Dividendos Recebidos'[Data].[Ano] = SELECTEDVALUE('Aquisições Realizadas'[Data].[Ano])
 			)
+			
+			RETURN IF(mes_aquisicao == BLANK(), dividendo_no_ano, dividendo_no_mes)
 		lineageTag: 3de076e6-17a0-4b4f-839a-fca3a3c95fee
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
