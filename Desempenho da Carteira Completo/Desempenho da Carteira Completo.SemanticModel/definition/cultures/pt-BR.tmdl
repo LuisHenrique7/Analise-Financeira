@@ -1,0 +1,6223 @@
+cultureInfo pt-BR
+
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "medida": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "medida": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.value": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Value"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "value": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "assessment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "worth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "price": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "cost": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "charge": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "rate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "importance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "significance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "usefulness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "consequence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        }
+			      ]
+			    },
+			    "medida.rendimento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Rendimento"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "rendimento": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Rendimento Atual": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "carteira_ativo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "carteira_ativos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "carteira ativo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "carteira_ativos": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "carteira_ativo.data_recomendação": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "carteira_ativos",
+			          "ConceptualProperty": "Data Recomendação"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "data recomendação": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "information recomendação": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "fact recomendação": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "info recomendação": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "statistic recomendação": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "document recomendação": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "figure recomendação": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "record recomendação": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "carteira_ativo.indústria": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "carteira_ativos",
+			          "ConceptualProperty": "Indústria"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "indústria": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "carteira_ativo.setor": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "carteira_ativos",
+			          "ConceptualProperty": "Setor"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "setor": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "carteira_ativo.ativo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "carteira_ativos",
+			          "ConceptualProperty": "Ativo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ativo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.dividendos_recbidos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Dividendos Recbidos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dividendos recbidos": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "carteira_ativo.tipo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "carteira_ativos",
+			          "ConceptualProperty": "Tipo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tipo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "carteira_ativo.balanço_de_cota": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "carteira_ativos",
+			          "ConceptualProperty": "Balanço de Cotas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "balanço de cota": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.média_de_aportes": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Média de Aportes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "média de aportes": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "aquisições_realizada": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Aquisições Realizadas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "aquisições realizada": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "aquisiçõe realizada": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        }
+			      ]
+			    },
+			    "aquisições_realizada.ativo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Aquisições Realizadas",
+			          "ConceptualProperty": "Ativo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "ativo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "aquisições_realizada.data": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Aquisições Realizadas",
+			          "ConceptualProperty": "Data"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "data": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "aquisições_realizada.data.hierarquia_de_data": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Aquisições Realizadas",
+			          "VariationSource": "Data",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "hierarquia de data": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hierarquia de information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "aquisições_realizada.data.ano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Aquisições Realizadas",
+			          "VariationSource": "Data",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Ano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "fact ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "info ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "statistic ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "document ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "figure ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "record ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "aquisições_realizada.data.trimestre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Aquisições Realizadas",
+			          "VariationSource": "Data",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Trimestre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "fact trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "info trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "statistic trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "document trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "figure trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "record trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "aquisições_realizada.data.mê": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Aquisições Realizadas",
+			          "VariationSource": "Data",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Mês"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "fact mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "info mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "statistic mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "document mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "figure mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "record mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "aquisições_realizada.data.dia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Aquisições Realizadas",
+			          "VariationSource": "Data",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Dia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "fact dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "info dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "statistic dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "document dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "figure dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "record dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "aquisições_realizada.valor": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Aquisições Realizadas",
+			          "ConceptualProperty": "Valor"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "valor": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "courage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "bravery": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "heroism": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "fearlessness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "boldness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "gallantry": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "lionheartedness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "pluck": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "spirit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "nerve": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "aquisições_realizada.número_de_cota": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Aquisições Realizadas",
+			          "ConceptualProperty": "Número de Cotas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "número de cota": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "aquisições_realizada.cotas_acumulada": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Aquisições Realizadas",
+			          "ConceptualProperty": "Cotas Acumuladas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cotas acumulada": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "cota acumulada": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        }
+			      ]
+			    },
+			    "aquisições_realizada.dono": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Aquisições Realizadas",
+			          "ConceptualProperty": "Dono"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dono": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "aquisições_realizada.preço_médio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Aquisições Realizadas",
+			          "ConceptualProperty": "Preço Médio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "preço médio": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "aquisições_realizada.valor_investido": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Aquisições Realizadas",
+			          "ConceptualProperty": "Valor Investido"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "valor investido": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "aquisições_realizada.ano_mê": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Aquisições Realizadas",
+			          "ConceptualProperty": "Ano Mês"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano mê": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "aquisições_realizada.preço_de_fechamento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Aquisições Realizadas",
+			          "ConceptualProperty": "Preço de Fechamento"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "preço de fechamento": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "aquisições_realizada.preço_de_fechamento_total": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Aquisições Realizadas",
+			          "ConceptualProperty": "Preço de Fechamento Total"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "preço de fechamento total": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "preço de fechamento aggregate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "preço de fechamento overall": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        }
+			      ]
+			    },
+			    "aquisições_realizada.lucro": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Aquisições Realizadas",
+			          "ConceptualProperty": "Lucro"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "lucro": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "aquisições_realizada.valor_investido_total": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Aquisições Realizadas",
+			          "ConceptualProperty": "Valor Investido Total"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "valor investido total": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "valor investido aggregate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "valor investido overall": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "dividendos_recebido": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dividendos Recebidos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dividendos recebido": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dividendo recebido": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        }
+			      ]
+			    },
+			    "dividendos_recebido.ativo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dividendos Recebidos",
+			          "ConceptualProperty": "Ativo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "ativo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dividendos_recebido.data": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dividendos Recebidos",
+			          "ConceptualProperty": "Data"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "data": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "dividendos_recebido.data.hierarquia_de_data": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dividendos Recebidos",
+			          "VariationSource": "Data",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "hierarquia de data": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hierarquia de information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "dividendos_recebido.data.ano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dividendos Recebidos",
+			          "VariationSource": "Data",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Ano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "fact ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "info ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "statistic ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "document ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "figure ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "record ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "dividendos_recebido.data.trimestre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dividendos Recebidos",
+			          "VariationSource": "Data",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Trimestre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "fact trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "info trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "statistic trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "document trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "figure trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "record trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "dividendos_recebido.data.mê": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dividendos Recebidos",
+			          "VariationSource": "Data",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Mês"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "fact mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "info mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "statistic mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "document mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "figure mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "record mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "dividendos_recebido.data.dia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dividendos Recebidos",
+			          "VariationSource": "Data",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Dia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "fact dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "info dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "statistic dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "document dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "figure dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "record dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "dividendos_recebido.valor": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dividendos Recebidos",
+			          "ConceptualProperty": "Valor"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "valor": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "courage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "bravery": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "heroism": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "fearlessness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "boldness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "gallantry": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "lionheartedness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "pluck": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "spirit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "nerve": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "dividendos_recebido.data_com": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dividendos Recebidos",
+			          "ConceptualProperty": "DATA COM"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "data com": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "com": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "information com": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "fact com": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "info com": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "statistic com": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "document com": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "figure com": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "record com": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "dividendos_recebido.data_com.hierarquia_de_data": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dividendos Recebidos",
+			          "VariationSource": "DATA COM",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "hierarquia de data": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hierarquia de information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "dividendos_recebido.data_com.ano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dividendos Recebidos",
+			          "VariationSource": "DATA COM",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Ano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data com ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information com ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "fact com ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "info com ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "statistic com ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "document com ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "figure com ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "record com ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "dividendos_recebido.data_com.trimestre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dividendos Recebidos",
+			          "VariationSource": "DATA COM",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Trimestre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data com trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information com trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "fact com trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "info com trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "statistic com trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "document com trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "figure com trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "record com trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "dividendos_recebido.data_com.mê": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dividendos Recebidos",
+			          "VariationSource": "DATA COM",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Mês"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data com mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information com mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "fact com mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "info com mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "statistic com mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "document com mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "figure com mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "record com mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "dividendos_recebido.data_com.dia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dividendos Recebidos",
+			          "VariationSource": "DATA COM",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Dia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data com dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information com dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "fact com dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "info com dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "statistic com dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "document com dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "figure com dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "record com dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "dividendos_recebido.tipo_receita": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dividendos Recebidos",
+			          "ConceptualProperty": "Tipo Receita"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tipo receita": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dividendos_recebido.dy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dividendos Recebidos",
+			          "ConceptualProperty": "DY"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dy": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dividendos_recebido.dono": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dividendos Recebidos",
+			          "ConceptualProperty": "Dono"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dono": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dividendos_recebido.cotas_acumulada": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dividendos Recebidos",
+			          "ConceptualProperty": "Cotas Acumuladas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cotas acumulada": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "cota acumulada": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        }
+			      ]
+			    },
+			    "dividendos_recebido.dividendos_totais": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dividendos Recebidos",
+			          "ConceptualProperty": "Dividendos Totais"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dividendos totais": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dividendo totais": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        }
+			      ]
+			    },
+			    "medida.dividendos_totais_acumulados": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Dividendos Totais Acumulados"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dividendos totais acumulados": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.renda_mensal": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Renda Mensal"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "renda mensal": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "carteira_ativo.data_recomendação.hierarquia_de_data": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "carteira_ativos",
+			          "VariationSource": "Data Recomendação",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "hierarquia de data": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hierarquia de information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "carteira_ativo.data_recomendação.ano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "carteira_ativos",
+			          "VariationSource": "Data Recomendação",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Ano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data recomendação ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information recomendação ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "fact recomendação ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "info recomendação ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "statistic recomendação ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "document recomendação ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "figure recomendação ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "record recomendação ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "carteira_ativo.data_recomendação.trimestre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "carteira_ativos",
+			          "VariationSource": "Data Recomendação",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Trimestre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data recomendação trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information recomendação trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "fact recomendação trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "info recomendação trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "statistic recomendação trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "document recomendação trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "figure recomendação trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "record recomendação trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "carteira_ativo.data_recomendação.mê": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "carteira_ativos",
+			          "VariationSource": "Data Recomendação",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Mês"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data recomendação mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information recomendação mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "fact recomendação mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "info recomendação mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "statistic recomendação mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "document recomendação mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "figure recomendação mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "record recomendação mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "carteira_ativo.data_recomendação.dia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "carteira_ativos",
+			          "VariationSource": "Data Recomendação",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Dia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data recomendação dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information recomendação dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "fact recomendação dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "info recomendação dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "statistic recomendação dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "document recomendação dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "figure recomendação dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "record recomendação dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "carteira_ativo.recomendação": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "carteira_ativos",
+			          "ConceptualProperty": "Recomendação"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "recomendação": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "carteira_ativo.carteira": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "carteira_ativos",
+			          "ConceptualProperty": "Carteira"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "carteira": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.porcentagem_unica_na_carteira": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Porcentagem unica na Carteira"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "porcentagem unica na carteira": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Porcentagem na Carteira": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "carteira_ativo_data_recomendação_hierarquia_de_data_has_carteira_ativo_data_recomendação_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "carteira_ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "carteira_ativo.data_recomendação.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "carteira_ativo.data_recomendação.hierarquia_de_data"
+			          }
+			        },
+			        "carteira_ativo.data_recomendação.ano": {
+			          "Target": {
+			            "Entity": "carteira_ativo.data_recomendação.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "carteira_ativo.data_recomendação.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "carteira_ativo.data_recomendação.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_anos"
+			        }
+			      ]
+			    },
+			    "carteira_ativo_data_recomendação_has_hierarquia_de_data": {
+			      "Binding": {
+			        "ConceptualEntity": "carteira_ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "carteira_ativo.data_recomendação": {
+			          "Target": {
+			            "Entity": "carteira_ativo.data_recomendação"
+			          }
+			        },
+			        "carteira_ativo.data_recomendação.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "carteira_ativo.data_recomendação.hierarquia_de_data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "carteira_ativo.data_recomendação"
+			            },
+			            "Object": {
+			              "Role": "carteira_ativo.data_recomendação.hierarquia_de_data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "data_recomendaçãos_have_hierarquia_de_data"
+			        }
+			      ]
+			    },
+			    "dividendos_recebido_data_com_mê_has_dividendos_recebido_data_com_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos Recebidos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_recebido.data_com.mê": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data_com.mê"
+			          }
+			        },
+			        "dividendos_recebido.data_com.dia": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data_com.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_recebido.data_com.mê"
+			            },
+			            "Object": {
+			              "Role": "dividendos_recebido.data_com.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_dias"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_recebido.data_com.dia"
+			            },
+			            "Object": {
+			              "Role": "dividendos_recebido.data_com.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_have_mê"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "dividendos_recebido.data_com.dia"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "dividendos_recebido.data_com.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_are_in_mê2"
+			        }
+			      ]
+			    },
+			    "dividendos_recebido_data_com_trimestre_has_dividendos_recebido_data_com_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos Recebidos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_recebido.data_com.trimestre": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data_com.trimestre"
+			          }
+			        },
+			        "dividendos_recebido.data_com.mê": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data_com.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_recebido.data_com.trimestre"
+			            },
+			            "Object": {
+			              "Role": "dividendos_recebido.data_com.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_mê"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_recebido.data_com.mê"
+			            },
+			            "Object": {
+			              "Role": "dividendos_recebido.data_com.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_trimestres"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "dividendos_recebido.data_com.mê"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "dividendos_recebido.data_com.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_are_in_trimestres2"
+			        }
+			      ]
+			    },
+			    "dividendos_recebido_data_com_ano_has_dividendos_recebido_data_com_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos Recebidos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_recebido.data_com.ano": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data_com.ano"
+			          }
+			        },
+			        "dividendos_recebido.data_com.trimestre": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data_com.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_recebido.data_com.ano"
+			            },
+			            "Object": {
+			              "Role": "dividendos_recebido.data_com.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "anos_have_trimestres"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_recebido.data_com.trimestre"
+			            },
+			            "Object": {
+			              "Role": "dividendos_recebido.data_com.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_anos"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "dividendos_recebido.data_com.trimestre"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "dividendos_recebido.data_com.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_are_in_anos2"
+			        }
+			      ]
+			    },
+			    "dividendos_recebido_data_com_hierarquia_de_data_has_dividendos_recebido_data_com_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos Recebidos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_recebido.data_com.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data_com.hierarquia_de_data"
+			          }
+			        },
+			        "dividendos_recebido.data_com.dia": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data_com.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_recebido.data_com.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "dividendos_recebido.data_com.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_dias"
+			        }
+			      ]
+			    },
+			    "dividendos_recebido_data_com_hierarquia_de_data_has_dividendos_recebido_data_com_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos Recebidos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_recebido.data_com.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data_com.hierarquia_de_data"
+			          }
+			        },
+			        "dividendos_recebido.data_com.mê": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data_com.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_recebido.data_com.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "dividendos_recebido.data_com.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_mê"
+			        }
+			      ]
+			    },
+			    "dividendos_recebido_data_com_hierarquia_de_data_has_dividendos_recebido_data_com_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos Recebidos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_recebido.data_com.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data_com.hierarquia_de_data"
+			          }
+			        },
+			        "dividendos_recebido.data_com.trimestre": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data_com.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_recebido.data_com.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "dividendos_recebido.data_com.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_trimestres"
+			        }
+			      ]
+			    },
+			    "dividendos_recebido_data_com_hierarquia_de_data_has_dividendos_recebido_data_com_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos Recebidos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_recebido.data_com.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data_com.hierarquia_de_data"
+			          }
+			        },
+			        "dividendos_recebido.data_com.ano": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data_com.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_recebido.data_com.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "dividendos_recebido.data_com.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_anos1"
+			        }
+			      ]
+			    },
+			    "dividendos_recebido_data_com_has_hierarquia_de_data": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos Recebidos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_recebido.data_com": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data_com"
+			          }
+			        },
+			        "dividendos_recebido.data_com.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data_com.hierarquia_de_data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_recebido.data_com"
+			            },
+			            "Object": {
+			              "Role": "dividendos_recebido.data_com.hierarquia_de_data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "data_com_have_hierarquia_de_data"
+			        }
+			      ]
+			    },
+			    "dividendos_recebido_data_mê_has_dividendos_recebido_data_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos Recebidos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_recebido.data.mê": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data.mê"
+			          }
+			        },
+			        "dividendos_recebido.data.dia": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_recebido.data.mê"
+			            },
+			            "Object": {
+			              "Role": "dividendos_recebido.data.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_dias1"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_recebido.data.dia"
+			            },
+			            "Object": {
+			              "Role": "dividendos_recebido.data.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_have_mê1"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "dividendos_recebido.data.dia"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "dividendos_recebido.data.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_are_in_mê1"
+			        }
+			      ]
+			    },
+			    "dividendos_recebido_data_trimestre_has_dividendos_recebido_data_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos Recebidos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_recebido.data.trimestre": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data.trimestre"
+			          }
+			        },
+			        "dividendos_recebido.data.mê": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_recebido.data.trimestre"
+			            },
+			            "Object": {
+			              "Role": "dividendos_recebido.data.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_mê1"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_recebido.data.mê"
+			            },
+			            "Object": {
+			              "Role": "dividendos_recebido.data.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_trimestres1"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "dividendos_recebido.data.mê"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "dividendos_recebido.data.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_are_in_trimestres1"
+			        }
+			      ]
+			    },
+			    "dividendos_recebido_data_ano_has_dividendos_recebido_data_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos Recebidos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_recebido.data.ano": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data.ano"
+			          }
+			        },
+			        "dividendos_recebido.data.trimestre": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_recebido.data.ano"
+			            },
+			            "Object": {
+			              "Role": "dividendos_recebido.data.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "anos_have_trimestres1"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_recebido.data.trimestre"
+			            },
+			            "Object": {
+			              "Role": "dividendos_recebido.data.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_anos1"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "dividendos_recebido.data.trimestre"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "dividendos_recebido.data.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_are_in_anos1"
+			        }
+			      ]
+			    },
+			    "dividendos_recebido_data_hierarquia_de_data_has_dividendos_recebido_data_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos Recebidos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_recebido.data.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data.hierarquia_de_data"
+			          }
+			        },
+			        "dividendos_recebido.data.dia": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_recebido.data.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "dividendos_recebido.data.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_dias1"
+			        }
+			      ]
+			    },
+			    "dividendos_recebido_data_hierarquia_de_data_has_dividendos_recebido_data_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos Recebidos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_recebido.data.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data.hierarquia_de_data"
+			          }
+			        },
+			        "dividendos_recebido.data.mê": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_recebido.data.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "dividendos_recebido.data.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_mê1"
+			        }
+			      ]
+			    },
+			    "dividendos_recebido_data_hierarquia_de_data_has_dividendos_recebido_data_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos Recebidos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_recebido.data.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data.hierarquia_de_data"
+			          }
+			        },
+			        "dividendos_recebido.data.trimestre": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_recebido.data.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "dividendos_recebido.data.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_trimestres1"
+			        }
+			      ]
+			    },
+			    "dividendos_recebido_data_hierarquia_de_data_has_dividendos_recebido_data_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos Recebidos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_recebido.data.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data.hierarquia_de_data"
+			          }
+			        },
+			        "dividendos_recebido.data.ano": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_recebido.data.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "dividendos_recebido.data.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_anos2"
+			        }
+			      ]
+			    },
+			    "dividendos_recebido_data_has_hierarquia_de_data": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos Recebidos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_recebido.data": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data"
+			          }
+			        },
+			        "dividendos_recebido.data.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data.hierarquia_de_data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_recebido.data"
+			            },
+			            "Object": {
+			              "Role": "dividendos_recebido.data.hierarquia_de_data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "data_have_hierarquia_de_data"
+			        }
+			      ]
+			    },
+			    "aquisições_realizada_data_mê_has_aquisições_realizada_data_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "Aquisições Realizadas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aquisições_realizada.data.mê": {
+			          "Target": {
+			            "Entity": "aquisições_realizada.data.mê"
+			          }
+			        },
+			        "aquisições_realizada.data.dia": {
+			          "Target": {
+			            "Entity": "aquisições_realizada.data.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aquisições_realizada.data.mê"
+			            },
+			            "Object": {
+			              "Role": "aquisições_realizada.data.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_dias2"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aquisições_realizada.data.dia"
+			            },
+			            "Object": {
+			              "Role": "aquisições_realizada.data.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_have_mê2"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "aquisições_realizada.data.dia"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "aquisições_realizada.data.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_are_in_mê"
+			        }
+			      ]
+			    },
+			    "aquisições_realizada_data_trimestre_has_aquisições_realizada_data_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "Aquisições Realizadas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aquisições_realizada.data.trimestre": {
+			          "Target": {
+			            "Entity": "aquisições_realizada.data.trimestre"
+			          }
+			        },
+			        "aquisições_realizada.data.mê": {
+			          "Target": {
+			            "Entity": "aquisições_realizada.data.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aquisições_realizada.data.trimestre"
+			            },
+			            "Object": {
+			              "Role": "aquisições_realizada.data.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_mê2"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aquisições_realizada.data.mê"
+			            },
+			            "Object": {
+			              "Role": "aquisições_realizada.data.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_trimestres2"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "aquisições_realizada.data.mê"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "aquisições_realizada.data.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_are_in_trimestres"
+			        }
+			      ]
+			    },
+			    "aquisições_realizada_data_ano_has_aquisições_realizada_data_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "Aquisições Realizadas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aquisições_realizada.data.ano": {
+			          "Target": {
+			            "Entity": "aquisições_realizada.data.ano"
+			          }
+			        },
+			        "aquisições_realizada.data.trimestre": {
+			          "Target": {
+			            "Entity": "aquisições_realizada.data.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aquisições_realizada.data.ano"
+			            },
+			            "Object": {
+			              "Role": "aquisições_realizada.data.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "anos_have_trimestres2"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aquisições_realizada.data.trimestre"
+			            },
+			            "Object": {
+			              "Role": "aquisições_realizada.data.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_anos2"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "aquisições_realizada.data.trimestre"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "aquisições_realizada.data.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_are_in_anos"
+			        }
+			      ]
+			    },
+			    "aquisições_realizada_data_hierarquia_de_data_has_aquisições_realizada_data_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "Aquisições Realizadas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aquisições_realizada.data.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "aquisições_realizada.data.hierarquia_de_data"
+			          }
+			        },
+			        "aquisições_realizada.data.dia": {
+			          "Target": {
+			            "Entity": "aquisições_realizada.data.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aquisições_realizada.data.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "aquisições_realizada.data.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_dias2"
+			        }
+			      ]
+			    },
+			    "aquisições_realizada_data_hierarquia_de_data_has_aquisições_realizada_data_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "Aquisições Realizadas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aquisições_realizada.data.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "aquisições_realizada.data.hierarquia_de_data"
+			          }
+			        },
+			        "aquisições_realizada.data.mê": {
+			          "Target": {
+			            "Entity": "aquisições_realizada.data.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aquisições_realizada.data.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "aquisições_realizada.data.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_mê2"
+			        }
+			      ]
+			    },
+			    "aquisições_realizada_data_hierarquia_de_data_has_aquisições_realizada_data_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "Aquisições Realizadas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aquisições_realizada.data.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "aquisições_realizada.data.hierarquia_de_data"
+			          }
+			        },
+			        "aquisições_realizada.data.trimestre": {
+			          "Target": {
+			            "Entity": "aquisições_realizada.data.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aquisições_realizada.data.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "aquisições_realizada.data.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_trimestres2"
+			        }
+			      ]
+			    },
+			    "aquisições_realizada_data_hierarquia_de_data_has_aquisições_realizada_data_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "Aquisições Realizadas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aquisições_realizada.data.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "aquisições_realizada.data.hierarquia_de_data"
+			          }
+			        },
+			        "aquisições_realizada.data.ano": {
+			          "Target": {
+			            "Entity": "aquisições_realizada.data.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aquisições_realizada.data.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "aquisições_realizada.data.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_anos3"
+			        }
+			      ]
+			    },
+			    "aquisições_realizada_data_has_hierarquia_de_data": {
+			      "Binding": {
+			        "ConceptualEntity": "Aquisições Realizadas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aquisições_realizada.data": {
+			          "Target": {
+			            "Entity": "aquisições_realizada.data"
+			          }
+			        },
+			        "aquisições_realizada.data.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "aquisições_realizada.data.hierarquia_de_data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aquisições_realizada.data"
+			            },
+			            "Object": {
+			              "Role": "aquisições_realizada.data.hierarquia_de_data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "data_have_hierarquia_de_data1"
+			        }
+			      ]
+			    },
+			    "dividendos_recebido_has_carteira_ativo": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos Recebidos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_recebido": {
+			          "Target": {
+			            "Entity": "dividendos_recebido"
+			          }
+			        },
+			        "carteira_ativo": {
+			          "Target": {
+			            "Entity": "carteira_ativo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_recebido"
+			            },
+			            "Object": {
+			              "Role": "carteira_ativo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dividendos_recebidos_have_carteira_ativos"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "carteira_ativo"
+			            },
+			            "Object": {
+			              "Role": "dividendos_recebido"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "carteira_ativos_have_dividendos_recebidos"
+			        }
+			      ]
+			    },
+			    "aquisições_realizada_has_carteira_ativo": {
+			      "Binding": {
+			        "ConceptualEntity": "Aquisições Realizadas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aquisições_realizada": {
+			          "Target": {
+			            "Entity": "aquisições_realizada"
+			          }
+			        },
+			        "carteira_ativo": {
+			          "Target": {
+			            "Entity": "carteira_ativo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aquisições_realizada"
+			            },
+			            "Object": {
+			              "Role": "carteira_ativo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "aquisições_realizadas_have_carteira_ativos"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "carteira_ativo"
+			            },
+			            "Object": {
+			              "Role": "aquisições_realizada"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "carteira_ativos_have_aquisições_realizadas"
+			        }
+			      ]
+			    },
+			    "aquisições_realizada_has_medida_porcentagem_unica_na_carteira": {
+			      "Binding": {
+			        "ConceptualEntity": "Aquisições Realizadas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aquisições_realizada": {
+			          "Target": {
+			            "Entity": "aquisições_realizada"
+			          }
+			        },
+			        "medida.porcentagem_unica_na_carteira": {
+			          "Target": {
+			            "Entity": "medida.porcentagem_unica_na_carteira"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aquisições_realizada"
+			            },
+			            "Object": {
+			              "Role": "medida.porcentagem_unica_na_carteira"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "aquisições_realizadas_have_porcentagem_unica_na_carteira"
+			        }
+			      ]
+			    },
+			    "carteira_ativo_has_carteira": {
+			      "Binding": {
+			        "ConceptualEntity": "carteira_ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "carteira_ativo": {
+			          "Target": {
+			            "Entity": "carteira_ativo"
+			          }
+			        },
+			        "carteira_ativo.carteira": {
+			          "Target": {
+			            "Entity": "carteira_ativo.carteira"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "carteira_ativo"
+			            },
+			            "Object": {
+			              "Role": "carteira_ativo.carteira"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "carteira_ativos_have_carteiras"
+			        }
+			      ]
+			    },
+			    "carteira_ativo_has_recomendação": {
+			      "Binding": {
+			        "ConceptualEntity": "carteira_ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "carteira_ativo": {
+			          "Target": {
+			            "Entity": "carteira_ativo"
+			          }
+			        },
+			        "carteira_ativo.recomendação": {
+			          "Target": {
+			            "Entity": "carteira_ativo.recomendação"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "carteira_ativo"
+			            },
+			            "Object": {
+			              "Role": "carteira_ativo.recomendação"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "carteira_ativos_have_recomendaçãos"
+			        }
+			      ]
+			    },
+			    "dividendos_recebido_has_medida_renda_mensal": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos Recebidos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_recebido": {
+			          "Target": {
+			            "Entity": "dividendos_recebido"
+			          }
+			        },
+			        "medida.renda_mensal": {
+			          "Target": {
+			            "Entity": "medida.renda_mensal"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_recebido"
+			            },
+			            "Object": {
+			              "Role": "medida.renda_mensal"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dividendos_recebidos_have_renda_mensal"
+			        }
+			      ]
+			    },
+			    "dividendos_recebido_has_medida_dividendos_totais_acumulados": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos Recebidos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_recebido": {
+			          "Target": {
+			            "Entity": "dividendos_recebido"
+			          }
+			        },
+			        "medida.dividendos_totais_acumulados": {
+			          "Target": {
+			            "Entity": "medida.dividendos_totais_acumulados"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_recebido"
+			            },
+			            "Object": {
+			              "Role": "medida.dividendos_totais_acumulados"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dividendos_recebidos_have_dividendos_totais_acumulados"
+			        }
+			      ]
+			    },
+			    "dividendos_recebido_has_dividendos_totais": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos Recebidos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_recebido": {
+			          "Target": {
+			            "Entity": "dividendos_recebido"
+			          }
+			        },
+			        "dividendos_recebido.dividendos_totais": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.dividendos_totais"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_recebido"
+			            },
+			            "Object": {
+			              "Role": "dividendos_recebido.dividendos_totais"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dividendos_recebidos_have_dividendos_totaises"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "dividendos_recebido"
+			            },
+			            "Adjectives": [
+			              {
+			                "expensive": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "cheap": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "dividendos_recebido.dividendos_totais"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dividendos_totais_indicates_how_expensive_dividendos_recebidos_are"
+			        }
+			      ]
+			    },
+			    "dividendos_recebido_has_cotas_acumulada": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos Recebidos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_recebido": {
+			          "Target": {
+			            "Entity": "dividendos_recebido"
+			          }
+			        },
+			        "dividendos_recebido.cotas_acumulada": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.cotas_acumulada"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_recebido"
+			            },
+			            "Object": {
+			              "Role": "dividendos_recebido.cotas_acumulada"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dividendos_recebidos_have_cotas_acumuladas"
+			        }
+			      ]
+			    },
+			    "dividendos_recebido_has_dono": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos Recebidos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_recebido": {
+			          "Target": {
+			            "Entity": "dividendos_recebido"
+			          }
+			        },
+			        "dividendos_recebido.dono": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.dono"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_recebido"
+			            },
+			            "Object": {
+			              "Role": "dividendos_recebido.dono"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dividendos_recebidos_have_donos"
+			        }
+			      ]
+			    },
+			    "dividendos_recebido_has_dy": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos Recebidos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_recebido": {
+			          "Target": {
+			            "Entity": "dividendos_recebido"
+			          }
+			        },
+			        "dividendos_recebido.dy": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.dy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_recebido"
+			            },
+			            "Object": {
+			              "Role": "dividendos_recebido.dy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dividendos_recebidos_have_dies"
+			        }
+			      ]
+			    },
+			    "dividendos_recebido_has_tipo_receita": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos Recebidos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_recebido": {
+			          "Target": {
+			            "Entity": "dividendos_recebido"
+			          }
+			        },
+			        "dividendos_recebido.tipo_receita": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.tipo_receita"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_recebido"
+			            },
+			            "Object": {
+			              "Role": "dividendos_recebido.tipo_receita"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dividendos_recebidos_have_tipo_receitas"
+			        }
+			      ]
+			    },
+			    "dividendos_recebido_has_data_com": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos Recebidos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_recebido": {
+			          "Target": {
+			            "Entity": "dividendos_recebido"
+			          }
+			        },
+			        "dividendos_recebido.data_com": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data_com"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_recebido"
+			            },
+			            "Object": {
+			              "Role": "dividendos_recebido.data_com"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dividendos_recebidos_have_data_com"
+			        }
+			      ]
+			    },
+			    "dividendos_recebido_has_valor": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos Recebidos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_recebido": {
+			          "Target": {
+			            "Entity": "dividendos_recebido"
+			          }
+			        },
+			        "dividendos_recebido.valor": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.valor"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_recebido"
+			            },
+			            "Object": {
+			              "Role": "dividendos_recebido.valor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dividendos_recebidos_have_valor"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "dividendos_recebido"
+			            },
+			            "Adjectives": [
+			              {
+			                "expensive": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "cheap": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "dividendos_recebido.valor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "valor_indicates_how_expensive_dividendos_recebidos_are"
+			        }
+			      ]
+			    },
+			    "dividendos_recebido_has_data": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos Recebidos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_recebido": {
+			          "Target": {
+			            "Entity": "dividendos_recebido"
+			          }
+			        },
+			        "dividendos_recebido.data": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_recebido"
+			            },
+			            "Object": {
+			              "Role": "dividendos_recebido.data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dividendos_recebidos_have_data"
+			        }
+			      ]
+			    },
+			    "aquisições_realizada_has_valor_investido_total": {
+			      "Binding": {
+			        "ConceptualEntity": "Aquisições Realizadas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aquisições_realizada": {
+			          "Target": {
+			            "Entity": "aquisições_realizada"
+			          }
+			        },
+			        "aquisições_realizada.valor_investido_total": {
+			          "Target": {
+			            "Entity": "aquisições_realizada.valor_investido_total"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aquisições_realizada"
+			            },
+			            "Object": {
+			              "Role": "aquisições_realizada.valor_investido_total"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "aquisições_realizadas_have_valor_investido_totals"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "aquisições_realizada"
+			            },
+			            "Adjectives": [
+			              {
+			                "expensive": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "cheap": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "aquisições_realizada.valor_investido_total"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "valor_investido_total_indicates_how_expensive_aquisições_realizadas_are"
+			        }
+			      ]
+			    },
+			    "aquisições_realizada_has_lucro": {
+			      "Binding": {
+			        "ConceptualEntity": "Aquisições Realizadas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aquisições_realizada": {
+			          "Target": {
+			            "Entity": "aquisições_realizada"
+			          }
+			        },
+			        "aquisições_realizada.lucro": {
+			          "Target": {
+			            "Entity": "aquisições_realizada.lucro"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aquisições_realizada"
+			            },
+			            "Object": {
+			              "Role": "aquisições_realizada.lucro"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "aquisições_realizadas_have_lucros"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "aquisições_realizada"
+			            },
+			            "Adjectives": [
+			              {
+			                "expensive": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "cheap": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "aquisições_realizada.lucro"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "lucro_indicates_how_expensive_aquisições_realizadas_are"
+			        }
+			      ]
+			    },
+			    "aquisições_realizada_has_preço_de_fechamento_total": {
+			      "Binding": {
+			        "ConceptualEntity": "Aquisições Realizadas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aquisições_realizada": {
+			          "Target": {
+			            "Entity": "aquisições_realizada"
+			          }
+			        },
+			        "aquisições_realizada.preço_de_fechamento_total": {
+			          "Target": {
+			            "Entity": "aquisições_realizada.preço_de_fechamento_total"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aquisições_realizada"
+			            },
+			            "Object": {
+			              "Role": "aquisições_realizada.preço_de_fechamento_total"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "aquisições_realizadas_have_preço_de_fechamento_totals"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "aquisições_realizada"
+			            },
+			            "Adjectives": [
+			              {
+			                "expensive": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "cheap": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "aquisições_realizada.preço_de_fechamento_total"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "preço_de_fechamento_total_indicates_how_expensive_aquisições_realizadas_are"
+			        }
+			      ]
+			    },
+			    "aquisições_realizada_has_preço_de_fechamento": {
+			      "Binding": {
+			        "ConceptualEntity": "Aquisições Realizadas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aquisições_realizada": {
+			          "Target": {
+			            "Entity": "aquisições_realizada"
+			          }
+			        },
+			        "aquisições_realizada.preço_de_fechamento": {
+			          "Target": {
+			            "Entity": "aquisições_realizada.preço_de_fechamento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aquisições_realizada"
+			            },
+			            "Object": {
+			              "Role": "aquisições_realizada.preço_de_fechamento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "aquisições_realizadas_have_preço_de_fechamentos"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "aquisições_realizada"
+			            },
+			            "Adjectives": [
+			              {
+			                "expensive": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "cheap": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "aquisições_realizada.preço_de_fechamento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "preço_de_fechamento_indicates_how_expensive_aquisições_realizadas_are"
+			        }
+			      ]
+			    },
+			    "aquisições_realizada_has_ano_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "Aquisições Realizadas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aquisições_realizada": {
+			          "Target": {
+			            "Entity": "aquisições_realizada"
+			          }
+			        },
+			        "aquisições_realizada.ano_mê": {
+			          "Target": {
+			            "Entity": "aquisições_realizada.ano_mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aquisições_realizada"
+			            },
+			            "Object": {
+			              "Role": "aquisições_realizada.ano_mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "aquisições_realizadas_have_ano_mê"
+			        }
+			      ]
+			    },
+			    "aquisições_realizada_has_valor_investido": {
+			      "Binding": {
+			        "ConceptualEntity": "Aquisições Realizadas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aquisições_realizada": {
+			          "Target": {
+			            "Entity": "aquisições_realizada"
+			          }
+			        },
+			        "aquisições_realizada.valor_investido": {
+			          "Target": {
+			            "Entity": "aquisições_realizada.valor_investido"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aquisições_realizada"
+			            },
+			            "Object": {
+			              "Role": "aquisições_realizada.valor_investido"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "aquisições_realizadas_have_valor_investidos"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "aquisições_realizada"
+			            },
+			            "Adjectives": [
+			              {
+			                "expensive": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "cheap": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "aquisições_realizada.valor_investido"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "valor_investido_indicates_how_expensive_aquisições_realizadas_are"
+			        }
+			      ]
+			    },
+			    "aquisições_realizada_has_preço_médio": {
+			      "Binding": {
+			        "ConceptualEntity": "Aquisições Realizadas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aquisições_realizada": {
+			          "Target": {
+			            "Entity": "aquisições_realizada"
+			          }
+			        },
+			        "aquisições_realizada.preço_médio": {
+			          "Target": {
+			            "Entity": "aquisições_realizada.preço_médio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aquisições_realizada"
+			            },
+			            "Object": {
+			              "Role": "aquisições_realizada.preço_médio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "aquisições_realizadas_have_preço_médios"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "aquisições_realizada"
+			            },
+			            "Adjectives": [
+			              {
+			                "expensive": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "cheap": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "aquisições_realizada.preço_médio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "preço_médio_indicates_how_expensive_aquisições_realizadas_are"
+			        }
+			      ]
+			    },
+			    "aquisições_realizada_has_dono": {
+			      "Binding": {
+			        "ConceptualEntity": "Aquisições Realizadas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aquisições_realizada": {
+			          "Target": {
+			            "Entity": "aquisições_realizada"
+			          }
+			        },
+			        "aquisições_realizada.dono": {
+			          "Target": {
+			            "Entity": "aquisições_realizada.dono"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aquisições_realizada"
+			            },
+			            "Object": {
+			              "Role": "aquisições_realizada.dono"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "aquisições_realizadas_have_donos"
+			        }
+			      ]
+			    },
+			    "aquisições_realizada_has_cotas_acumulada": {
+			      "Binding": {
+			        "ConceptualEntity": "Aquisições Realizadas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aquisições_realizada": {
+			          "Target": {
+			            "Entity": "aquisições_realizada"
+			          }
+			        },
+			        "aquisições_realizada.cotas_acumulada": {
+			          "Target": {
+			            "Entity": "aquisições_realizada.cotas_acumulada"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aquisições_realizada"
+			            },
+			            "Object": {
+			              "Role": "aquisições_realizada.cotas_acumulada"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "aquisições_realizadas_have_cotas_acumuladas"
+			        }
+			      ]
+			    },
+			    "aquisições_realizada_has_número_de_cota": {
+			      "Binding": {
+			        "ConceptualEntity": "Aquisições Realizadas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aquisições_realizada": {
+			          "Target": {
+			            "Entity": "aquisições_realizada"
+			          }
+			        },
+			        "aquisições_realizada.número_de_cota": {
+			          "Target": {
+			            "Entity": "aquisições_realizada.número_de_cota"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aquisições_realizada"
+			            },
+			            "Object": {
+			              "Role": "aquisições_realizada.número_de_cota"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "aquisições_realizadas_have_número_de_cotas"
+			        }
+			      ]
+			    },
+			    "aquisições_realizada_has_valor": {
+			      "Binding": {
+			        "ConceptualEntity": "Aquisições Realizadas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aquisições_realizada": {
+			          "Target": {
+			            "Entity": "aquisições_realizada"
+			          }
+			        },
+			        "aquisições_realizada.valor": {
+			          "Target": {
+			            "Entity": "aquisições_realizada.valor"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aquisições_realizada"
+			            },
+			            "Object": {
+			              "Role": "aquisições_realizada.valor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "aquisições_realizadas_have_valor"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "aquisições_realizada"
+			            },
+			            "Adjectives": [
+			              {
+			                "expensive": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "cheap": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "aquisições_realizada.valor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "valor_indicates_how_expensive_aquisições_realizadas_are"
+			        }
+			      ]
+			    },
+			    "aquisições_realizada_has_data": {
+			      "Binding": {
+			        "ConceptualEntity": "Aquisições Realizadas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aquisições_realizada": {
+			          "Target": {
+			            "Entity": "aquisições_realizada"
+			          }
+			        },
+			        "aquisições_realizada.data": {
+			          "Target": {
+			            "Entity": "aquisições_realizada.data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aquisições_realizada"
+			            },
+			            "Object": {
+			              "Role": "aquisições_realizada.data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "aquisições_realizadas_have_data"
+			        }
+			      ]
+			    },
+			    "aquisições_realizada_has_medida_média_de_aportes": {
+			      "Binding": {
+			        "ConceptualEntity": "Aquisições Realizadas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aquisições_realizada": {
+			          "Target": {
+			            "Entity": "aquisições_realizada"
+			          }
+			        },
+			        "medida.média_de_aportes": {
+			          "Target": {
+			            "Entity": "medida.média_de_aportes"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aquisições_realizada"
+			            },
+			            "Object": {
+			              "Role": "medida.média_de_aportes"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "aquisições_realizadas_have_média_de_aportes"
+			        }
+			      ]
+			    },
+			    "carteira_ativo_has_balanço_de_cota": {
+			      "Binding": {
+			        "ConceptualEntity": "carteira_ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "carteira_ativo": {
+			          "Target": {
+			            "Entity": "carteira_ativo"
+			          }
+			        },
+			        "carteira_ativo.balanço_de_cota": {
+			          "Target": {
+			            "Entity": "carteira_ativo.balanço_de_cota"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "carteira_ativo"
+			            },
+			            "Object": {
+			              "Role": "carteira_ativo.balanço_de_cota"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "carteira_ativos_have_balanço_de_cotas"
+			        }
+			      ]
+			    },
+			    "carteira_ativo_has_tipo": {
+			      "Binding": {
+			        "ConceptualEntity": "carteira_ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "carteira_ativo": {
+			          "Target": {
+			            "Entity": "carteira_ativo"
+			          }
+			        },
+			        "carteira_ativo.tipo": {
+			          "Target": {
+			            "Entity": "carteira_ativo.tipo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "carteira_ativo"
+			            },
+			            "Object": {
+			              "Role": "carteira_ativo.tipo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "carteira_ativos_have_tipos"
+			        }
+			      ]
+			    },
+			    "dividendos_recebido_has_medida_dividendos_recbidos": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos Recebidos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_recebido": {
+			          "Target": {
+			            "Entity": "dividendos_recebido"
+			          }
+			        },
+			        "medida.dividendos_recbidos": {
+			          "Target": {
+			            "Entity": "medida.dividendos_recbidos"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_recebido"
+			            },
+			            "Object": {
+			              "Role": "medida.dividendos_recbidos"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dividendos_recebidos_have_dividendos_recbidos"
+			        }
+			      ]
+			    },
+			    "aquisições_realizada_has_medida_dividendos_recbidos": {
+			      "Binding": {
+			        "ConceptualEntity": "Aquisições Realizadas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aquisições_realizada": {
+			          "Target": {
+			            "Entity": "aquisições_realizada"
+			          }
+			        },
+			        "medida.dividendos_recbidos": {
+			          "Target": {
+			            "Entity": "medida.dividendos_recbidos"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aquisições_realizada"
+			            },
+			            "Object": {
+			              "Role": "medida.dividendos_recbidos"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "aquisições_realizadas_have_dividendos_recbidos"
+			        }
+			      ]
+			    },
+			    "carteira_ativo_has_ativo": {
+			      "Binding": {
+			        "ConceptualEntity": "carteira_ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "carteira_ativo": {
+			          "Target": {
+			            "Entity": "carteira_ativo"
+			          }
+			        },
+			        "carteira_ativo.ativo": {
+			          "Target": {
+			            "Entity": "carteira_ativo.ativo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "carteira_ativo"
+			            },
+			            "Object": {
+			              "Role": "carteira_ativo.ativo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "carteira_ativos_have_ativos"
+			        }
+			      ]
+			    },
+			    "carteira_ativo_has_setor": {
+			      "Binding": {
+			        "ConceptualEntity": "carteira_ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "carteira_ativo": {
+			          "Target": {
+			            "Entity": "carteira_ativo"
+			          }
+			        },
+			        "carteira_ativo.setor": {
+			          "Target": {
+			            "Entity": "carteira_ativo.setor"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "carteira_ativo"
+			            },
+			            "Object": {
+			              "Role": "carteira_ativo.setor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "carteira_ativos_have_setors"
+			        }
+			      ]
+			    },
+			    "carteira_ativo_has_indústria": {
+			      "Binding": {
+			        "ConceptualEntity": "carteira_ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "carteira_ativo": {
+			          "Target": {
+			            "Entity": "carteira_ativo"
+			          }
+			        },
+			        "carteira_ativo.indústria": {
+			          "Target": {
+			            "Entity": "carteira_ativo.indústria"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "carteira_ativo"
+			            },
+			            "Object": {
+			              "Role": "carteira_ativo.indústria"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "carteira_ativos_have_indústrias"
+			        }
+			      ]
+			    },
+			    "carteira_ativo_has_data_recomendação": {
+			      "Binding": {
+			        "ConceptualEntity": "carteira_ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "carteira_ativo": {
+			          "Target": {
+			            "Entity": "carteira_ativo"
+			          }
+			        },
+			        "carteira_ativo.data_recomendação": {
+			          "Target": {
+			            "Entity": "carteira_ativo.data_recomendação"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "carteira_ativo"
+			            },
+			            "Object": {
+			              "Role": "carteira_ativo.data_recomendação"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "carteira_ativos_have_data_recomendaçãos"
+			        }
+			      ]
+			    },
+			    "aquisições_realizada_has_medida_rendimento": {
+			      "Binding": {
+			        "ConceptualEntity": "Aquisições Realizadas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aquisições_realizada": {
+			          "Target": {
+			            "Entity": "aquisições_realizada"
+			          }
+			        },
+			        "medida.rendimento": {
+			          "Target": {
+			            "Entity": "medida.rendimento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aquisições_realizada"
+			            },
+			            "Object": {
+			              "Role": "medida.rendimento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "aquisições_realizadas_have_rendimento"
+			        }
+			      ]
+			    },
+			    "medida_has_value": {
+			      "Binding": {
+			        "ConceptualEntity": "Medidas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "medida": {
+			          "Target": {
+			            "Entity": "medida"
+			          }
+			        },
+			        "medida.value": {
+			          "Target": {
+			            "Entity": "medida.value"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "medida"
+			            },
+			            "Object": {
+			              "Role": "medida.value"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "medidas_have_values"
+			        }
+			      ]
+			    },
+			    "carteira_ativo_data_recomendação_hierarquia_de_data_has_carteira_ativo_data_recomendação_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "carteira_ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "carteira_ativo.data_recomendação.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "carteira_ativo.data_recomendação.hierarquia_de_data"
+			          }
+			        },
+			        "carteira_ativo.data_recomendação.trimestre": {
+			          "Target": {
+			            "Entity": "carteira_ativo.data_recomendação.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "carteira_ativo.data_recomendação.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "carteira_ativo.data_recomendação.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_trimestres3"
+			        }
+			      ]
+			    },
+			    "carteira_ativo_data_recomendação_hierarquia_de_data_has_carteira_ativo_data_recomendação_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "carteira_ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "carteira_ativo.data_recomendação.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "carteira_ativo.data_recomendação.hierarquia_de_data"
+			          }
+			        },
+			        "carteira_ativo.data_recomendação.mê": {
+			          "Target": {
+			            "Entity": "carteira_ativo.data_recomendação.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "carteira_ativo.data_recomendação.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "carteira_ativo.data_recomendação.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_mê3"
+			        }
+			      ]
+			    },
+			    "carteira_ativo_data_recomendação_hierarquia_de_data_has_carteira_ativo_data_recomendação_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "carteira_ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "carteira_ativo.data_recomendação.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "carteira_ativo.data_recomendação.hierarquia_de_data"
+			          }
+			        },
+			        "carteira_ativo.data_recomendação.dia": {
+			          "Target": {
+			            "Entity": "carteira_ativo.data_recomendação.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "carteira_ativo.data_recomendação.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "carteira_ativo.data_recomendação.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_dias3"
+			        }
+			      ]
+			    },
+			    "carteira_ativo_data_recomendação_ano_has_carteira_ativo_data_recomendação_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "carteira_ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "carteira_ativo.data_recomendação.ano": {
+			          "Target": {
+			            "Entity": "carteira_ativo.data_recomendação.ano"
+			          }
+			        },
+			        "carteira_ativo.data_recomendação.trimestre": {
+			          "Target": {
+			            "Entity": "carteira_ativo.data_recomendação.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "carteira_ativo.data_recomendação.ano"
+			            },
+			            "Object": {
+			              "Role": "carteira_ativo.data_recomendação.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "anos_have_trimestres3"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "carteira_ativo.data_recomendação.trimestre"
+			            },
+			            "Object": {
+			              "Role": "carteira_ativo.data_recomendação.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_anos3"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "carteira_ativo.data_recomendação.trimestre"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "carteira_ativo.data_recomendação.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_are_in_anos3"
+			        }
+			      ]
+			    },
+			    "carteira_ativo_data_recomendação_trimestre_has_carteira_ativo_data_recomendação_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "carteira_ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "carteira_ativo.data_recomendação.trimestre": {
+			          "Target": {
+			            "Entity": "carteira_ativo.data_recomendação.trimestre"
+			          }
+			        },
+			        "carteira_ativo.data_recomendação.mê": {
+			          "Target": {
+			            "Entity": "carteira_ativo.data_recomendação.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "carteira_ativo.data_recomendação.trimestre"
+			            },
+			            "Object": {
+			              "Role": "carteira_ativo.data_recomendação.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_mê3"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "carteira_ativo.data_recomendação.mê"
+			            },
+			            "Object": {
+			              "Role": "carteira_ativo.data_recomendação.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_trimestres3"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "carteira_ativo.data_recomendação.mê"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "carteira_ativo.data_recomendação.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_are_in_trimestres3"
+			        }
+			      ]
+			    },
+			    "carteira_ativo_data_recomendação_mê_has_carteira_ativo_data_recomendação_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "carteira_ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "carteira_ativo.data_recomendação.mê": {
+			          "Target": {
+			            "Entity": "carteira_ativo.data_recomendação.mê"
+			          }
+			        },
+			        "carteira_ativo.data_recomendação.dia": {
+			          "Target": {
+			            "Entity": "carteira_ativo.data_recomendação.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "carteira_ativo.data_recomendação.mê"
+			            },
+			            "Object": {
+			              "Role": "carteira_ativo.data_recomendação.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_dias3"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "carteira_ativo.data_recomendação.dia"
+			            },
+			            "Object": {
+			              "Role": "carteira_ativo.data_recomendação.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_have_mê3"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "carteira_ativo.data_recomendação.dia"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "carteira_ativo.data_recomendação.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_are_in_mê3"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+

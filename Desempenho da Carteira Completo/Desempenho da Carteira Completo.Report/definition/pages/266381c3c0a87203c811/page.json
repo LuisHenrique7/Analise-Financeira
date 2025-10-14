@@ -1,0 +1,55 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
+  "name": "266381c3c0a87203c811",
+  "displayName": "Valor Investido",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "visualInteractions": [
+    {
+      "source": "dc79bbb3c2e3ed0a8259",
+      "target": "f2b863b10d12e0a03a0c",
+      "type": "DataFilter"
+    },
+    {
+      "source": "57a77bef36b5a1e51c00",
+      "target": "f2b863b10d12e0a03a0c",
+      "type": "DataFilter"
+    },
+    {
+      "source": "66e726f10294b75cadb7",
+      "target": "f2b863b10d12e0a03a0c",
+      "type": "DataFilter"
+    },
+    {
+      "source": "57a77bef36b5a1e51c00",
+      "target": "dc79bbb3c2e3ed0a8259",
+      "type": "DataFilter"
+    },
+    {
+      "source": "f2b863b10d12e0a03a0c",
+      "target": "dc79bbb3c2e3ed0a8259",
+      "type": "DataFilter"
+    },
+    {
+      "source": "f2b863b10d12e0a03a0c",
+      "target": "66e726f10294b75cadb7",
+      "type": "DataFilter"
+    },
+    {
+      "source": "57a77bef36b5a1e51c00",
+      "target": "66e726f10294b75cadb7",
+      "type": "DataFilter"
+    },
+    {
+      "source": "dc79bbb3c2e3ed0a8259",
+      "target": "66e726f10294b75cadb7",
+      "type": "DataFilter"
+    },
+    {
+      "source": "66e726f10294b75cadb7",
+      "target": "dc79bbb3c2e3ed0a8259",
+      "type": "DataFilter"
+    }
+  ]
+}

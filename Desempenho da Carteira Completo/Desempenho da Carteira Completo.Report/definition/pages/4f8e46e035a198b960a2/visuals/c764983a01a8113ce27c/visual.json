@@ -1,0 +1,232 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
+  "name": "c764983a01a8113ce27c",
+  "position": {
+    "x": 813.13069908814589,
+    "y": 107.96352583586626,
+    "z": 2000,
+    "height": 293.73860182370822,
+    "width": 456.17021276595744,
+    "tabOrder": 2000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Dividendos Recebidos"
+                    }
+                  },
+                  "Property": "Ativo"
+                }
+              },
+              "queryRef": "Dividendos Recebidos.Ativo",
+              "nativeQueryRef": "Ativo"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Dividendos Recebidos"
+                        }
+                      },
+                      "Property": "Cotas Acumuladas"
+                    }
+                  },
+                  "Function": 4
+                }
+              },
+              "queryRef": "Sum(Dividendos Recebidos.Cotas Acumuladas)",
+              "nativeQueryRef": "Cotas Acumuladas Válidas",
+              "displayName": "Cotas Acumuladas Válidas"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Dividendos Recebidos"
+                        }
+                      },
+                      "Property": "Dividendos Totais"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(Dividendos Recebidos.Dividendos Totais)",
+              "nativeQueryRef": "Dividendos Totais",
+              "displayName": "Dividendos Totais"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Dividendos Recebidos"
+                    }
+                  },
+                  "Property": "Dono"
+                }
+              },
+              "queryRef": "Dividendos Recebidos.Dono",
+              "nativeQueryRef": "Dono"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Dividendos Recebidos"
+                  }
+                },
+                "Property": "Ativo"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    },
+    "objects": {
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "170.5659214973443D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(Dividendos Recebidos.Cotas Acumuladas)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "114.47942112986823D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(Dividendos Recebidos.Dividendos Totais)"
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#F2F2F2'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#F2F2F2'"
+                    }
+                  }
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "30D"
+                }
+              }
+            },
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
