@@ -73,6 +73,22 @@ table Medidas
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
+	measure 'DY Carteira' = ```
+			
+			VAR valorTotalInvestido = CALCULATE(
+			    SUM('Aquisições Realizadas'[Valor Investido]),
+			    'Aquisições Realizadas'[Data].[Ano] <= SELECTEDVALUE('Dividendos Recebidos'[Data].[Ano]),
+			    'Aquisições Realizadas'[Dono] = SELECTEDVALUE('Dividendos Recebidos'[Dono])
+			)
+			
+			RETURN IF(valorTotalInvestido == BLANK(), 
+			            BLANK(),
+			            SUM('Dividendos Recebidos'[Dividendos Totais]) / valorTotalInvestido
+			)
+			```
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 3309b76d-cfb2-49f3-83df-5566f0bf8c59
+
 	column Value
 		formatString: 0
 		lineageTag: 0ee8fb13-cf21-41ff-b00f-5881b98324b5
