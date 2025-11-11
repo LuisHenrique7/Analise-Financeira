@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
   "name": "2b7645905b529b6c1183",
   "position": {
     "x": 538.03042433947155,
@@ -28,11 +28,11 @@
                       "Property": "Valor Investido Total"
                     }
                   },
-                  "Function": 0
+                  "Function": 4
                 }
               },
               "queryRef": "Sum(Aquisições Realizadas.Valor Investido Total)",
-              "nativeQueryRef": "Valor Investido Total",
+              "nativeQueryRef": "Máximo de Valor Investido Total",
               "displayName": "Valor Investido Total"
             }
           ]
@@ -53,7 +53,7 @@
                     "Property": "Valor Investido Total"
                   }
                 },
-                "Function": 0
+                "Function": 4
               }
             },
             "direction": "Descending"
@@ -169,5 +169,28 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "f0e3438f2cd245c0608b",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Aquisições Realizadas"
+                  }
+                },
+                "Property": "Valor Investido Total"
+              }
+            },
+            "Function": 4
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

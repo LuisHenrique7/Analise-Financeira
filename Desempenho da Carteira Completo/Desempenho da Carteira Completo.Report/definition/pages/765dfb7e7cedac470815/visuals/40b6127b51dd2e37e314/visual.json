@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
   "name": "40b6127b51dd2e37e314",
   "position": {
     "x": 834.52887537993922,
@@ -91,7 +91,7 @@
                           [
                             {
                               "Literal": {
-                                "Value": "'PETR4'"
+                                "Value": "'RAIL3'"
                               }
                             }
                           ]
@@ -211,5 +211,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "75658fa8bf3b021e0f07",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "carteira_ativos"
+              }
+            },
+            "Property": "Ativo"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   }
 }

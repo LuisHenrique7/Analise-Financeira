@@ -142,7 +142,7 @@ table 'Aquisições Realizadas'
 				let
 				    Fonte = Csv.Document(File.Contents("C:\Users\luis.nascimento\Documents\Análises Financeiras\Dados Modelados\Aquisições Realizadas.csv"),[Delimiter=",", Columns=13, Encoding=65001, QuoteStyle=QuoteStyle.None]),
 				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
-				    #"Valor Substituído" = Table.ReplaceValue(#"Cabeçalhos Promovidos",".",",",Replacer.ReplaceText,{"Valor", "Preço Médio", "Valor Investido", "Valor Investido Total", "Preço de Fechamento", "Preço de Fechamento Total", "Lucro"}),
+				    #"Valor Substituído" = Table.ReplaceValue(#"Cabeçalhos Promovidos",".",",",Replacer.ReplaceText,{"Valor", "Preço Médio", "Valor Investido", "Valor Investido Total", "Preço de Fechamento", "Preço de Fechamento Total", "Lucro", "Número de Cotas", "Cotas Acumuladas"}),
 				    #"Tipo Alterado1" = Table.TransformColumnTypes(#"Valor Substituído",{{"Valor", type number}, {"Preço Médio", type number}, {"Valor Investido", type number}, {"Valor Investido Total", type number}, {"Preço de Fechamento Total", type number}, {"Preço de Fechamento", type number}, {"Lucro", type number}}),
 				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Tipo Alterado1",{{"Ativo", type text}, {"Data", type date}, {"Número de Cotas", Int64.Type}, {"Cotas Acumuladas", Int64.Type}, {"Dono", type text}, {"Ano Mês", type text}})
 				in

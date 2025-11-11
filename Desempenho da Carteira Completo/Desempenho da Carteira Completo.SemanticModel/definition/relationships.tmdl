@@ -26,3 +26,12 @@ relationship AutoDetected_e08dd4d5-a055-4a49-bcbe-0c115c241bdb
 	fromColumn: 'Dividendos Recebidos'.Ativo
 	toColumn: carteira_ativos.Ativo
 
+relationship 31952903-3c4e-485e-91e8-0614de6f140b
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'Preços nos últimos 6 meses'.Data
+	toColumn: LocalDateTable_49ea0991-42cd-44dd-b0b2-3f1e3d0259b6.Date
+
+relationship AutoDetected_fa1ffdbb-944f-4d3e-9f26-04fc3e05112b
+	fromColumn: 'Preços nos últimos 6 meses'.Ativo
+	toColumn: carteira_ativos.Ativo
+

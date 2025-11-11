@@ -85,6 +85,103 @@ table Medidas
 		formatString: 0.00%;-0.00%;0.00%
 		lineageTag: ae2d7881-bd7a-46b7-a74e-ebc7a3e26de7
 
+	measure 'Preço Médio' =
+			
+			SUMX(
+			    carteira_ativos,
+			    VAR ativo = carteira_ativos[Ativo]
+			
+			    VAR data_maxima = CALCULATE(
+			        MAX('Aquisições Realizadas'[Data]),
+			        'Aquisições Realizadas'[Dono] = SELECTEDVALUE('Aquisições Realizadas'[Dono]),
+			        'Aquisições Realizadas'[Ativo] = ativo
+			    )
+			
+			    RETURN CALCULATE(
+			        SUM('Aquisições Realizadas'[Preço Médio]),
+			        'Aquisições Realizadas'[Data] = data_maxima
+			    )
+			)
+		lineageTag: 7b322cc1-c7d3-4fe0-92a6-5232e64f025a
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Preço Mais Recente' =
+			
+			
+			// VAR data_maxima = CALCULATE(
+			//     MAX('Preços nos últimos 6 meses'[Data]),
+			//     'Preços nos últimos 6 meses'[Ativo] = SELECTEDVALUE(carteira_ativos[Ativo])
+			// )
+			
+			// RETURN CALCULATE(
+			//     SUM('Preços nos últimos 6 meses'[Preço]),
+			//     'Preços nos últimos 6 meses'[Data] = data_maxima
+			// )
+			
+			SUMX(
+			    carteira_ativos,
+			    VAR ativo = carteira_ativos[Ativo]
+			    VAR data_maxima = CALCULATE(
+			        MAX('Preços nos últimos 6 meses'[Data]),
+			        'Preços nos últimos 6 meses'[Ativo] = ativo
+			    )
+			
+			    RETURN CALCULATE(
+			        SUM('Preços nos últimos 6 meses'[Preço]),
+			        'Preços nos últimos 6 meses'[Data] = data_maxima
+			    )
+			)
+		lineageTag: cbdde8a1-9118-4600-959f-68e18b78950c
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Preço Recente da Carteira' =
+			
+			SUMX(
+			    carteira_ativos,
+			    VAR ativo = carteira_ativos[Ativo]
+			    VAR balanco = carteira_ativos[Balanço de Cotas]
+			    VAR data_maxima = CALCULATE(
+			        MAX('Preços nos últimos 6 meses'[Data]),
+			        'Preços nos últimos 6 meses'[Ativo] = ativo
+			    )
+			
+			    RETURN CALCULATE(
+			        SUM('Preços nos últimos 6 meses'[Preço]) * balanco,
+			        'Preços nos últimos 6 meses'[Data] = data_maxima
+			    )
+			)
+		lineageTag: 0ac95b4c-8e36-4e6e-842d-1f3a8709359e
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Preço Médio da Carteira' =
+			
+			SUMX(
+			    carteira_ativos,
+			    VAR ativo = carteira_ativos[Ativo]
+			    VAR balanco = carteira_ativos[Balanço de Cotas]
+			    VAR data_maxima = CALCULATE(
+			        MAX('Aquisições Realizadas'[Data]),
+			        'Aquisições Realizadas'[Dono] = SELECTEDVALUE('Aquisições Realizadas'[Dono]),
+			        'Aquisições Realizadas'[Ativo] = ativo
+			    )
+			
+			    RETURN CALCULATE(
+			        SUM('Aquisições Realizadas'[Preço Médio]) * balanco,
+			        'Aquisições Realizadas'[Data] = data_maxima
+			    )
+			)
+		lineageTag: 5501d652-d26a-4705-bd03-5697a1d64b94
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure medida = [Preço Recente da Carteira] - [Preço Médio da Carteira]
+		lineageTag: 93f78a60-e4aa-49f7-956b-85847452588c
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	column Value
 		formatString: 0
 		lineageTag: 0ee8fb13-cf21-41ff-b00f-5881b98324b5

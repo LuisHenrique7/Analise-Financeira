@@ -1,0 +1,52 @@
+table 'Preços nos últimos 6 meses'
+	lineageTag: c098358a-4ec9-4d61-b014-2518aff3c80f
+
+	column Ativo
+		dataType: string
+		lineageTag: 32ab85df-c84c-4966-bb06-8b4190c87e71
+		summarizeBy: none
+		sourceColumn: Ativo
+
+		annotation SummarizationSetBy = Automatic
+
+	column Data
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 64641bc9-dd54-421b-be93-557bf36b4227
+		summarizeBy: none
+		sourceColumn: Data
+
+		variation Variation
+			isDefault
+			relationship: 31952903-3c4e-485e-91e8-0614de6f140b
+			defaultHierarchy: LocalDateTable_49ea0991-42cd-44dd-b0b2-3f1e3d0259b6.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Preço
+		dataType: double
+		lineageTag: dea96ce9-638b-4d47-b5ea-69b4e676ebf4
+		summarizeBy: sum
+		sourceColumn: Preço
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition 'Preços nos últimos 6 meses' = m
+		mode: import
+		source =
+				let
+				    Fonte = Csv.Document(File.Contents("C:\Users\luis.nascimento\Documents\Análises Financeiras\Dados Modelados\Preços nos últimos 6 meses.csv"),[Delimiter=",", Columns=3, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
+				    #"Valor Substituído" = Table.ReplaceValue(#"Cabeçalhos Promovidos",".",",",Replacer.ReplaceText,{"Preço"}),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Valor Substituído",{{"Data", type date}, {"Preço", type number}})
+				in
+				    #"Tipo Alterado"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+
