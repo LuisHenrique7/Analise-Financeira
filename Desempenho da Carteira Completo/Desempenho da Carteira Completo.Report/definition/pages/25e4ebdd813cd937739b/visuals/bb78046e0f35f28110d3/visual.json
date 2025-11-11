@@ -6,7 +6,7 @@
     "y": 83.647416413373861,
     "z": 0,
     "height": 433.79939209726444,
-    "width": 837.44680851063833
+    "width": 872.46200607902745
   },
   "visual": {
     "visualType": "tableEx",
@@ -98,9 +98,40 @@
               "queryRef": "Medidas.medida",
               "nativeQueryRef": "Diferença de Preço",
               "displayName": "Diferença de Preço"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "carteira_ativos"
+                    }
+                  },
+                  "Property": "Balanço de Cotas"
+                }
+              },
+              "queryRef": "Sum(carteira_ativos.Balanço de Cotas)",
+              "nativeQueryRef": "Balanço de Cotas"
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "carteira_ativos"
+                  }
+                },
+                "Property": "Ativo"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
       }
     },
     "objects": {
@@ -362,6 +393,20 @@
               }
             },
             "Property": "medida"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "d32759ad54cb3a0a436e",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "carteira_ativos"
+              }
+            },
+            "Property": "Balanço de Cotas"
           }
         },
         "type": "Advanced"
