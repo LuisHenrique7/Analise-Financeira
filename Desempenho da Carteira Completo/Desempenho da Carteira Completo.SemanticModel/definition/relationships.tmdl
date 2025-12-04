@@ -19,6 +19,7 @@ relationship ae7db270-9299-46cf-948e-b59f9a46841f
 	toColumn: LocalDateTable_9cd4b772-aadd-46c6-a818-5f54c17f8bd0.Date
 
 relationship AutoDetected_27d14922-e7b0-4670-8091-a35cacd86612
+	crossFilteringBehavior: bothDirections
 	fromColumn: 'Aquisições Realizadas'.Ativo
 	toColumn: carteira_ativos.Ativo
 

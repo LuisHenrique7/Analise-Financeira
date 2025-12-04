@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
   "name": "c764983a01a8113ce27c",
   "position": {
     "x": 813.13069908814589,
@@ -228,5 +228,75 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "ea89a31cb60314766a73",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Dividendos Recebidos"
+              }
+            },
+            "Property": "Ativo"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "a7c254bfbb8143c70cec",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Dividendos Recebidos"
+                  }
+                },
+                "Property": "Cotas Acumuladas"
+              }
+            },
+            "Function": 4
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "5e43613cd2cd5b1c37a3",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Dividendos Recebidos"
+                  }
+                },
+                "Property": "Dividendos Totais"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "10a34bf7672b4105056a",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Dividendos Recebidos"
+              }
+            },
+            "Property": "Dono"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   }
 }

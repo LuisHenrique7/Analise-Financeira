@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
   "name": "7a2cce0267d11a874407",
   "position": {
     "x": 423.10030395136778,
@@ -257,5 +257,84 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "06edf476439510c8eb30",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "carteira_ativos"
+              }
+            },
+            "Property": "Ativo"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "ab048e6551d070d7291b",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "carteira_ativos"
+              }
+            },
+            "Property": "Recomendação"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "e6d160b711827357b88d",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Medidas"
+              }
+            },
+            "Property": "Rendimento"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "c2792f470c06abb91406",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "carteira_ativos"
+              }
+            },
+            "Property": "Indústria"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "6f014c28c05160491512",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Aquisições Realizadas"
+                  }
+                },
+                "Property": "Valor Investido"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }
