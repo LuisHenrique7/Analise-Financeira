@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
   "name": "e76d969005a4dac8589c",
   "position": {
     "x": 205.22796352583586,
@@ -263,6 +263,20 @@
           ]
         },
         "howCreated": "User"
+      },
+      {
+        "name": "b59cbdfbbb2b01c7406b",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Medidas"
+              }
+            },
+            "Property": "Rendimento"
+          }
+        },
+        "type": "Advanced"
       }
     ]
   }

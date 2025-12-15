@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
   "name": "010edbbb584020a07199",
   "position": {
     "x": 653.61702127659578,
@@ -157,5 +157,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "200700d36ea672502449",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "carteira_ativos"
+              }
+            },
+            "Property": "Ativo"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   }
 }

@@ -177,7 +177,7 @@ table Medidas
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	measure medida = [Preço Recente da Carteira] - [Preço Médio da Carteira]
+	measure 'Diferença de Preço' = [Preço Recente da Carteira] - [Preço Médio da Carteira]
 		lineageTag: 93f78a60-e4aa-49f7-956b-85847452588c
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}

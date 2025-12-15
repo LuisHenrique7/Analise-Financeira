@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
-  "name": "7a2cce0267d11a874407",
+  "name": "b6fc7ab5d75e0912194b",
   "position": {
     "x": 423.10030395136778,
     "y": 138.11550151975683,
-    "z": 3000,
+    "z": 10001,
     "height": 535.92705167173256,
     "width": 846.20060790273556,
-    "tabOrder": 3000
+    "tabOrder": 10001
   },
   "visual": {
     "visualType": "multiRowCard",
@@ -81,15 +81,35 @@
                           "Entity": "Aquisições Realizadas"
                         }
                       },
-                      "Property": "Valor Investido"
+                      "Property": "Cotas Acumuladas"
+                    }
+                  },
+                  "Function": 4
+                }
+              },
+              "queryRef": "Sum(Aquisições Realizadas.Cotas Acumuladas)",
+              "nativeQueryRef": "Nº de Cotas",
+              "displayName": "Nº de Cotas"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Aquisições Realizadas"
+                        }
+                      },
+                      "Property": "Preço Médio"
                     }
                   },
                   "Function": 0
                 }
               },
-              "queryRef": "Sum(Aquisições Realizadas.Valor Investido)",
-              "nativeQueryRef": "Valor Investido",
-              "displayName": "Valor Investido"
+              "queryRef": "Sum(Aquisições Realizadas.Preço Médio)",
+              "nativeQueryRef": "Preço Médio",
+              "displayName": "Preço Médio"
             }
           ]
         }
@@ -261,7 +281,8 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "06edf476439510c8eb30",
+        "name": "3435d9a1f6be0cdb1006",
+        "ordinal": 0,
         "field": {
           "Column": {
             "Expression": {
@@ -275,35 +296,8 @@
         "type": "Categorical"
       },
       {
-        "name": "ab048e6551d070d7291b",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "carteira_ativos"
-              }
-            },
-            "Property": "Recomendação"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "e6d160b711827357b88d",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Medidas"
-              }
-            },
-            "Property": "Rendimento"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "c2792f470c06abb91406",
+        "name": "fb73dc9736464cd4b1be",
+        "ordinal": 1,
         "field": {
           "Column": {
             "Expression": {
@@ -317,7 +311,38 @@
         "type": "Categorical"
       },
       {
-        "name": "6f014c28c05160491512",
+        "name": "01970da98ef30df1470d",
+        "ordinal": 2,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "carteira_ativos"
+              }
+            },
+            "Property": "Recomendação"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "b8d74a9b2ee87c45ed7d",
+        "ordinal": 3,
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Medidas"
+              }
+            },
+            "Property": "Rendimento"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "2e5189afa3b39f49ba78",
+        "ordinal": 4,
         "field": {
           "Aggregation": {
             "Expression": {
@@ -327,14 +352,176 @@
                     "Entity": "Aquisições Realizadas"
                   }
                 },
-                "Property": "Valor Investido"
+                "Property": "Preço Médio"
               }
             },
             "Function": 0
           }
         },
+        "type": "Advanced",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "a",
+              "Entity": "Aquisições Realizadas",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Comparison": {
+                  "ComparisonKind": 1,
+                  "Left": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "a"
+                            }
+                          },
+                          "Property": "Preço Médio"
+                        }
+                      },
+                      "Function": 0
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "0L"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "0627ae255a7cbd97163e",
+        "ordinal": 5,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Aquisições Realizadas"
+              }
+            },
+            "Property": "Data"
+          }
+        },
+        "type": "TopN",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "subquery",
+              "Expression": {
+                "Subquery": {
+                  "Query": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "a",
+                        "Entity": "Aquisições Realizadas",
+                        "Type": 0
+                      }
+                    ],
+                    "Select": [
+                      {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "a"
+                            }
+                          },
+                          "Property": "Data"
+                        },
+                        "Name": "field"
+                      }
+                    ],
+                    "OrderBy": [
+                      {
+                        "Direction": 2,
+                        "Expression": {
+                          "Aggregation": {
+                            "Expression": {
+                              "Column": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Source": "a"
+                                  }
+                                },
+                                "Property": "Data"
+                              }
+                            },
+                            "Function": 3
+                          }
+                        }
+                      }
+                    ],
+                    "Top": 1
+                  }
+                }
+              },
+              "Type": 2
+            },
+            {
+              "Name": "a",
+              "Entity": "Aquisições Realizadas",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "a"
+                          }
+                        },
+                        "Property": "Data"
+                      }
+                    }
+                  ],
+                  "Table": {
+                    "SourceRef": {
+                      "Source": "subquery"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User"
+      },
+      {
+        "name": "1b9024e1c7ac7ad0b23e",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Aquisições Realizadas"
+                  }
+                },
+                "Property": "Cotas Acumuladas"
+              }
+            },
+            "Function": 4
+          }
+        },
         "type": "Advanced"
       }
-    ]
+    ],
+    "filterSortOrder": "Custom"
   }
 }

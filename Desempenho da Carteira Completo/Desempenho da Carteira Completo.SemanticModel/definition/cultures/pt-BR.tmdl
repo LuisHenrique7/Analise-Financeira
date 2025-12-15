@@ -3303,7 +3303,7 @@ cultureInfo pt-BR
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Medidas",
-			          "ConceptualProperty": "medida"
+			          "ConceptualProperty": "Diferença de Preço"
 			        }
 			      },
 			      "State": "Generated",
@@ -3941,6 +3941,996 @@ cultureInfo pt-BR
 			    }
 			  },
 			  "Relationships": {
+			    "carteira_ativo_data_recomendação_trimestre_has_carteira_ativo_data_recomendação_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "carteira_ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "carteira_ativo.data_recomendação.trimestre": {
+			          "Target": {
+			            "Entity": "carteira_ativo.data_recomendação.trimestre"
+			          }
+			        },
+			        "carteira_ativo.data_recomendação.mê": {
+			          "Target": {
+			            "Entity": "carteira_ativo.data_recomendação.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "carteira_ativo.data_recomendação.trimestre"
+			            },
+			            "Object": {
+			              "Role": "carteira_ativo.data_recomendação.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_mê"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "carteira_ativo.data_recomendação.mê"
+			            },
+			            "Object": {
+			              "Role": "carteira_ativo.data_recomendação.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_trimestres"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "carteira_ativo.data_recomendação.mê"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "carteira_ativo.data_recomendação.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_are_in_trimestres3"
+			        }
+			      ]
+			    },
+			    "carteira_ativo_data_recomendação_ano_has_carteira_ativo_data_recomendação_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "carteira_ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "carteira_ativo.data_recomendação.ano": {
+			          "Target": {
+			            "Entity": "carteira_ativo.data_recomendação.ano"
+			          }
+			        },
+			        "carteira_ativo.data_recomendação.trimestre": {
+			          "Target": {
+			            "Entity": "carteira_ativo.data_recomendação.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "carteira_ativo.data_recomendação.ano"
+			            },
+			            "Object": {
+			              "Role": "carteira_ativo.data_recomendação.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "anos_have_trimestres"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "carteira_ativo.data_recomendação.trimestre"
+			            },
+			            "Object": {
+			              "Role": "carteira_ativo.data_recomendação.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_anos"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "carteira_ativo.data_recomendação.trimestre"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "carteira_ativo.data_recomendação.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_are_in_anos3"
+			        }
+			      ]
+			    },
+			    "carteira_ativo_data_recomendação_hierarquia_de_data_has_carteira_ativo_data_recomendação_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "carteira_ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "carteira_ativo.data_recomendação.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "carteira_ativo.data_recomendação.hierarquia_de_data"
+			          }
+			        },
+			        "carteira_ativo.data_recomendação.dia": {
+			          "Target": {
+			            "Entity": "carteira_ativo.data_recomendação.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "carteira_ativo.data_recomendação.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "carteira_ativo.data_recomendação.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_dias"
+			        }
+			      ]
+			    },
+			    "carteira_ativo_data_recomendação_hierarquia_de_data_has_carteira_ativo_data_recomendação_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "carteira_ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "carteira_ativo.data_recomendação.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "carteira_ativo.data_recomendação.hierarquia_de_data"
+			          }
+			        },
+			        "carteira_ativo.data_recomendação.mê": {
+			          "Target": {
+			            "Entity": "carteira_ativo.data_recomendação.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "carteira_ativo.data_recomendação.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "carteira_ativo.data_recomendação.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_mê"
+			        }
+			      ]
+			    },
+			    "carteira_ativo_data_recomendação_hierarquia_de_data_has_carteira_ativo_data_recomendação_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "carteira_ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "carteira_ativo.data_recomendação.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "carteira_ativo.data_recomendação.hierarquia_de_data"
+			          }
+			        },
+			        "carteira_ativo.data_recomendação.trimestre": {
+			          "Target": {
+			            "Entity": "carteira_ativo.data_recomendação.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "carteira_ativo.data_recomendação.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "carteira_ativo.data_recomendação.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_trimestres"
+			        }
+			      ]
+			    },
+			    "carteira_ativo_data_recomendação_hierarquia_de_data_has_carteira_ativo_data_recomendação_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "carteira_ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "carteira_ativo.data_recomendação.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "carteira_ativo.data_recomendação.hierarquia_de_data"
+			          }
+			        },
+			        "carteira_ativo.data_recomendação.ano": {
+			          "Target": {
+			            "Entity": "carteira_ativo.data_recomendação.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "carteira_ativo.data_recomendação.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "carteira_ativo.data_recomendação.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_anos"
+			        }
+			      ]
+			    },
+			    "carteira_ativo_data_recomendação_has_hierarquia_de_data": {
+			      "Binding": {
+			        "ConceptualEntity": "carteira_ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "carteira_ativo.data_recomendação": {
+			          "Target": {
+			            "Entity": "carteira_ativo.data_recomendação"
+			          }
+			        },
+			        "carteira_ativo.data_recomendação.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "carteira_ativo.data_recomendação.hierarquia_de_data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "carteira_ativo.data_recomendação"
+			            },
+			            "Object": {
+			              "Role": "carteira_ativo.data_recomendação.hierarquia_de_data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "data_recomendaçãos_have_hierarquia_de_data"
+			        }
+			      ]
+			    },
+			    "dividendos_recebido_data_com_mê_has_dividendos_recebido_data_com_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos Recebidos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_recebido.data_com.mê": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data_com.mê"
+			          }
+			        },
+			        "dividendos_recebido.data_com.dia": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data_com.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_recebido.data_com.mê"
+			            },
+			            "Object": {
+			              "Role": "dividendos_recebido.data_com.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_dias"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_recebido.data_com.dia"
+			            },
+			            "Object": {
+			              "Role": "dividendos_recebido.data_com.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_have_mê"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "dividendos_recebido.data_com.dia"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "dividendos_recebido.data_com.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_are_in_mê2"
+			        }
+			      ]
+			    },
+			    "dividendos_recebido_data_com_trimestre_has_dividendos_recebido_data_com_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos Recebidos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_recebido.data_com.trimestre": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data_com.trimestre"
+			          }
+			        },
+			        "dividendos_recebido.data_com.mê": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data_com.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_recebido.data_com.trimestre"
+			            },
+			            "Object": {
+			              "Role": "dividendos_recebido.data_com.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_mê1"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_recebido.data_com.mê"
+			            },
+			            "Object": {
+			              "Role": "dividendos_recebido.data_com.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_trimestres1"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "dividendos_recebido.data_com.mê"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "dividendos_recebido.data_com.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_are_in_trimestres2"
+			        }
+			      ]
+			    },
+			    "dividendos_recebido_data_com_ano_has_dividendos_recebido_data_com_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos Recebidos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_recebido.data_com.ano": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data_com.ano"
+			          }
+			        },
+			        "dividendos_recebido.data_com.trimestre": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data_com.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_recebido.data_com.ano"
+			            },
+			            "Object": {
+			              "Role": "dividendos_recebido.data_com.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "anos_have_trimestres1"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_recebido.data_com.trimestre"
+			            },
+			            "Object": {
+			              "Role": "dividendos_recebido.data_com.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_anos1"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "dividendos_recebido.data_com.trimestre"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "dividendos_recebido.data_com.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_are_in_anos2"
+			        }
+			      ]
+			    },
+			    "dividendos_recebido_data_com_hierarquia_de_data_has_dividendos_recebido_data_com_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos Recebidos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_recebido.data_com.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data_com.hierarquia_de_data"
+			          }
+			        },
+			        "dividendos_recebido.data_com.dia": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data_com.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_recebido.data_com.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "dividendos_recebido.data_com.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_dias1"
+			        }
+			      ]
+			    },
+			    "dividendos_recebido_data_com_hierarquia_de_data_has_dividendos_recebido_data_com_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos Recebidos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_recebido.data_com.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data_com.hierarquia_de_data"
+			          }
+			        },
+			        "dividendos_recebido.data_com.mê": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data_com.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_recebido.data_com.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "dividendos_recebido.data_com.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_mê1"
+			        }
+			      ]
+			    },
+			    "dividendos_recebido_data_com_hierarquia_de_data_has_dividendos_recebido_data_com_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos Recebidos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_recebido.data_com.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data_com.hierarquia_de_data"
+			          }
+			        },
+			        "dividendos_recebido.data_com.trimestre": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data_com.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_recebido.data_com.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "dividendos_recebido.data_com.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_trimestres1"
+			        }
+			      ]
+			    },
+			    "dividendos_recebido_data_com_hierarquia_de_data_has_dividendos_recebido_data_com_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos Recebidos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_recebido.data_com.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data_com.hierarquia_de_data"
+			          }
+			        },
+			        "dividendos_recebido.data_com.ano": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data_com.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_recebido.data_com.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "dividendos_recebido.data_com.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_anos1"
+			        }
+			      ]
+			    },
+			    "dividendos_recebido_data_com_has_hierarquia_de_data": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos Recebidos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_recebido.data_com": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data_com"
+			          }
+			        },
+			        "dividendos_recebido.data_com.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data_com.hierarquia_de_data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_recebido.data_com"
+			            },
+			            "Object": {
+			              "Role": "dividendos_recebido.data_com.hierarquia_de_data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "data_com_have_hierarquia_de_data"
+			        }
+			      ]
+			    },
+			    "dividendos_recebido_data_mê_has_dividendos_recebido_data_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos Recebidos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_recebido.data.mê": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data.mê"
+			          }
+			        },
+			        "dividendos_recebido.data.dia": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_recebido.data.mê"
+			            },
+			            "Object": {
+			              "Role": "dividendos_recebido.data.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_dias1"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_recebido.data.dia"
+			            },
+			            "Object": {
+			              "Role": "dividendos_recebido.data.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_have_mê1"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "dividendos_recebido.data.dia"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "dividendos_recebido.data.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_are_in_mê1"
+			        }
+			      ]
+			    },
+			    "dividendos_recebido_data_trimestre_has_dividendos_recebido_data_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos Recebidos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_recebido.data.trimestre": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data.trimestre"
+			          }
+			        },
+			        "dividendos_recebido.data.mê": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_recebido.data.trimestre"
+			            },
+			            "Object": {
+			              "Role": "dividendos_recebido.data.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_mê2"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_recebido.data.mê"
+			            },
+			            "Object": {
+			              "Role": "dividendos_recebido.data.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_trimestres2"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "dividendos_recebido.data.mê"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "dividendos_recebido.data.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_are_in_trimestres1"
+			        }
+			      ]
+			    },
+			    "dividendos_recebido_data_ano_has_dividendos_recebido_data_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos Recebidos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_recebido.data.ano": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data.ano"
+			          }
+			        },
+			        "dividendos_recebido.data.trimestre": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_recebido.data.ano"
+			            },
+			            "Object": {
+			              "Role": "dividendos_recebido.data.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "anos_have_trimestres2"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_recebido.data.trimestre"
+			            },
+			            "Object": {
+			              "Role": "dividendos_recebido.data.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_anos2"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "dividendos_recebido.data.trimestre"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "dividendos_recebido.data.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_are_in_anos1"
+			        }
+			      ]
+			    },
+			    "dividendos_recebido_data_hierarquia_de_data_has_dividendos_recebido_data_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos Recebidos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_recebido.data.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data.hierarquia_de_data"
+			          }
+			        },
+			        "dividendos_recebido.data.dia": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_recebido.data.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "dividendos_recebido.data.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_dias2"
+			        }
+			      ]
+			    },
+			    "dividendos_recebido_data_hierarquia_de_data_has_dividendos_recebido_data_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos Recebidos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_recebido.data.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data.hierarquia_de_data"
+			          }
+			        },
+			        "dividendos_recebido.data.mê": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_recebido.data.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "dividendos_recebido.data.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_mê2"
+			        }
+			      ]
+			    },
+			    "dividendos_recebido_data_hierarquia_de_data_has_dividendos_recebido_data_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos Recebidos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_recebido.data.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data.hierarquia_de_data"
+			          }
+			        },
+			        "dividendos_recebido.data.trimestre": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_recebido.data.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "dividendos_recebido.data.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_trimestres2"
+			        }
+			      ]
+			    },
+			    "dividendos_recebido_data_hierarquia_de_data_has_dividendos_recebido_data_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "Dividendos Recebidos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dividendos_recebido.data.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data.hierarquia_de_data"
+			          }
+			        },
+			        "dividendos_recebido.data.ano": {
+			          "Target": {
+			            "Entity": "dividendos_recebido.data.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dividendos_recebido.data.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "dividendos_recebido.data.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_anos2"
+			        }
+			      ]
+			    },
 			    "dividendos_recebido_data_has_hierarquia_de_data": {
 			      "Binding": {
 			        "ConceptualEntity": "Dividendos Recebidos"
@@ -4003,7 +4993,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "mê_have_dias"
+			          "ID": "mê_have_dias2"
 			        },
 			        {
 			          "Attribute": {
@@ -4016,7 +5006,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "dias_have_mê"
+			          "ID": "dias_have_mê2"
 			        },
 			        {
 			          "Preposition": {
@@ -4069,7 +5059,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_mê"
+			          "ID": "trimestres_have_mê3"
 			        },
 			        {
 			          "Attribute": {
@@ -4082,7 +5072,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "mê_have_trimestres"
+			          "ID": "mê_have_trimestres3"
 			        },
 			        {
 			          "Preposition": {
@@ -4135,7 +5125,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "anos_have_trimestres"
+			          "ID": "anos_have_trimestres3"
 			        },
 			        {
 			          "Attribute": {
@@ -4148,7 +5138,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_anos"
+			          "ID": "trimestres_have_anos3"
 			        },
 			        {
 			          "Preposition": {
@@ -4201,7 +5191,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_dias"
+			          "ID": "hierarquia_de_data_have_dias3"
 			        }
 			      ]
 			    },
@@ -4234,7 +5224,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_mê"
+			          "ID": "hierarquia_de_data_have_mê3"
 			        }
 			      ]
 			    },
@@ -4267,7 +5257,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_trimestres"
+			          "ID": "hierarquia_de_data_have_trimestres3"
 			        }
 			      ]
 			    },
@@ -4300,7 +5290,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_anos"
+			          "ID": "hierarquia_de_data_have_anos3"
 			        }
 			      ]
 			    },
@@ -6332,996 +7322,6 @@ cultureInfo pt-BR
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "medidas_have_values"
-			        }
-			      ]
-			    },
-			    "dividendos_recebido_data_hierarquia_de_data_has_dividendos_recebido_data_ano": {
-			      "Binding": {
-			        "ConceptualEntity": "Dividendos Recebidos"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "dividendos_recebido.data.hierarquia_de_data": {
-			          "Target": {
-			            "Entity": "dividendos_recebido.data.hierarquia_de_data"
-			          }
-			        },
-			        "dividendos_recebido.data.ano": {
-			          "Target": {
-			            "Entity": "dividendos_recebido.data.ano"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "dividendos_recebido.data.hierarquia_de_data"
-			            },
-			            "Object": {
-			              "Role": "dividendos_recebido.data.ano"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_anos1"
-			        }
-			      ]
-			    },
-			    "dividendos_recebido_data_hierarquia_de_data_has_dividendos_recebido_data_trimestre": {
-			      "Binding": {
-			        "ConceptualEntity": "Dividendos Recebidos"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "dividendos_recebido.data.hierarquia_de_data": {
-			          "Target": {
-			            "Entity": "dividendos_recebido.data.hierarquia_de_data"
-			          }
-			        },
-			        "dividendos_recebido.data.trimestre": {
-			          "Target": {
-			            "Entity": "dividendos_recebido.data.trimestre"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "dividendos_recebido.data.hierarquia_de_data"
-			            },
-			            "Object": {
-			              "Role": "dividendos_recebido.data.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_trimestres1"
-			        }
-			      ]
-			    },
-			    "dividendos_recebido_data_hierarquia_de_data_has_dividendos_recebido_data_mê": {
-			      "Binding": {
-			        "ConceptualEntity": "Dividendos Recebidos"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "dividendos_recebido.data.hierarquia_de_data": {
-			          "Target": {
-			            "Entity": "dividendos_recebido.data.hierarquia_de_data"
-			          }
-			        },
-			        "dividendos_recebido.data.mê": {
-			          "Target": {
-			            "Entity": "dividendos_recebido.data.mê"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "dividendos_recebido.data.hierarquia_de_data"
-			            },
-			            "Object": {
-			              "Role": "dividendos_recebido.data.mê"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_mê1"
-			        }
-			      ]
-			    },
-			    "dividendos_recebido_data_hierarquia_de_data_has_dividendos_recebido_data_dia": {
-			      "Binding": {
-			        "ConceptualEntity": "Dividendos Recebidos"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "dividendos_recebido.data.hierarquia_de_data": {
-			          "Target": {
-			            "Entity": "dividendos_recebido.data.hierarquia_de_data"
-			          }
-			        },
-			        "dividendos_recebido.data.dia": {
-			          "Target": {
-			            "Entity": "dividendos_recebido.data.dia"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "dividendos_recebido.data.hierarquia_de_data"
-			            },
-			            "Object": {
-			              "Role": "dividendos_recebido.data.dia"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_dias1"
-			        }
-			      ]
-			    },
-			    "dividendos_recebido_data_ano_has_dividendos_recebido_data_trimestre": {
-			      "Binding": {
-			        "ConceptualEntity": "Dividendos Recebidos"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "dividendos_recebido.data.ano": {
-			          "Target": {
-			            "Entity": "dividendos_recebido.data.ano"
-			          }
-			        },
-			        "dividendos_recebido.data.trimestre": {
-			          "Target": {
-			            "Entity": "dividendos_recebido.data.trimestre"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "dividendos_recebido.data.ano"
-			            },
-			            "Object": {
-			              "Role": "dividendos_recebido.data.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "anos_have_trimestres1"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "dividendos_recebido.data.trimestre"
-			            },
-			            "Object": {
-			              "Role": "dividendos_recebido.data.ano"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "trimestres_have_anos1"
-			        },
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "dividendos_recebido.data.trimestre"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "dividendos_recebido.data.ano"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "trimestres_are_in_anos1"
-			        }
-			      ]
-			    },
-			    "dividendos_recebido_data_trimestre_has_dividendos_recebido_data_mê": {
-			      "Binding": {
-			        "ConceptualEntity": "Dividendos Recebidos"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "dividendos_recebido.data.trimestre": {
-			          "Target": {
-			            "Entity": "dividendos_recebido.data.trimestre"
-			          }
-			        },
-			        "dividendos_recebido.data.mê": {
-			          "Target": {
-			            "Entity": "dividendos_recebido.data.mê"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "dividendos_recebido.data.trimestre"
-			            },
-			            "Object": {
-			              "Role": "dividendos_recebido.data.mê"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "trimestres_have_mê1"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "dividendos_recebido.data.mê"
-			            },
-			            "Object": {
-			              "Role": "dividendos_recebido.data.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "mê_have_trimestres1"
-			        },
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "dividendos_recebido.data.mê"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "dividendos_recebido.data.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "mê_are_in_trimestres1"
-			        }
-			      ]
-			    },
-			    "dividendos_recebido_data_mê_has_dividendos_recebido_data_dia": {
-			      "Binding": {
-			        "ConceptualEntity": "Dividendos Recebidos"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "dividendos_recebido.data.mê": {
-			          "Target": {
-			            "Entity": "dividendos_recebido.data.mê"
-			          }
-			        },
-			        "dividendos_recebido.data.dia": {
-			          "Target": {
-			            "Entity": "dividendos_recebido.data.dia"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "dividendos_recebido.data.mê"
-			            },
-			            "Object": {
-			              "Role": "dividendos_recebido.data.dia"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "mê_have_dias1"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "dividendos_recebido.data.dia"
-			            },
-			            "Object": {
-			              "Role": "dividendos_recebido.data.mê"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dias_have_mê1"
-			        },
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "dividendos_recebido.data.dia"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "dividendos_recebido.data.mê"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dias_are_in_mê1"
-			        }
-			      ]
-			    },
-			    "dividendos_recebido_data_com_has_hierarquia_de_data": {
-			      "Binding": {
-			        "ConceptualEntity": "Dividendos Recebidos"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "dividendos_recebido.data_com": {
-			          "Target": {
-			            "Entity": "dividendos_recebido.data_com"
-			          }
-			        },
-			        "dividendos_recebido.data_com.hierarquia_de_data": {
-			          "Target": {
-			            "Entity": "dividendos_recebido.data_com.hierarquia_de_data"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "dividendos_recebido.data_com"
-			            },
-			            "Object": {
-			              "Role": "dividendos_recebido.data_com.hierarquia_de_data"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "data_com_have_hierarquia_de_data"
-			        }
-			      ]
-			    },
-			    "dividendos_recebido_data_com_hierarquia_de_data_has_dividendos_recebido_data_com_ano": {
-			      "Binding": {
-			        "ConceptualEntity": "Dividendos Recebidos"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "dividendos_recebido.data_com.hierarquia_de_data": {
-			          "Target": {
-			            "Entity": "dividendos_recebido.data_com.hierarquia_de_data"
-			          }
-			        },
-			        "dividendos_recebido.data_com.ano": {
-			          "Target": {
-			            "Entity": "dividendos_recebido.data_com.ano"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "dividendos_recebido.data_com.hierarquia_de_data"
-			            },
-			            "Object": {
-			              "Role": "dividendos_recebido.data_com.ano"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_anos2"
-			        }
-			      ]
-			    },
-			    "dividendos_recebido_data_com_hierarquia_de_data_has_dividendos_recebido_data_com_trimestre": {
-			      "Binding": {
-			        "ConceptualEntity": "Dividendos Recebidos"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "dividendos_recebido.data_com.hierarquia_de_data": {
-			          "Target": {
-			            "Entity": "dividendos_recebido.data_com.hierarquia_de_data"
-			          }
-			        },
-			        "dividendos_recebido.data_com.trimestre": {
-			          "Target": {
-			            "Entity": "dividendos_recebido.data_com.trimestre"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "dividendos_recebido.data_com.hierarquia_de_data"
-			            },
-			            "Object": {
-			              "Role": "dividendos_recebido.data_com.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_trimestres2"
-			        }
-			      ]
-			    },
-			    "dividendos_recebido_data_com_hierarquia_de_data_has_dividendos_recebido_data_com_mê": {
-			      "Binding": {
-			        "ConceptualEntity": "Dividendos Recebidos"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "dividendos_recebido.data_com.hierarquia_de_data": {
-			          "Target": {
-			            "Entity": "dividendos_recebido.data_com.hierarquia_de_data"
-			          }
-			        },
-			        "dividendos_recebido.data_com.mê": {
-			          "Target": {
-			            "Entity": "dividendos_recebido.data_com.mê"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "dividendos_recebido.data_com.hierarquia_de_data"
-			            },
-			            "Object": {
-			              "Role": "dividendos_recebido.data_com.mê"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_mê2"
-			        }
-			      ]
-			    },
-			    "dividendos_recebido_data_com_hierarquia_de_data_has_dividendos_recebido_data_com_dia": {
-			      "Binding": {
-			        "ConceptualEntity": "Dividendos Recebidos"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "dividendos_recebido.data_com.hierarquia_de_data": {
-			          "Target": {
-			            "Entity": "dividendos_recebido.data_com.hierarquia_de_data"
-			          }
-			        },
-			        "dividendos_recebido.data_com.dia": {
-			          "Target": {
-			            "Entity": "dividendos_recebido.data_com.dia"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "dividendos_recebido.data_com.hierarquia_de_data"
-			            },
-			            "Object": {
-			              "Role": "dividendos_recebido.data_com.dia"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_dias2"
-			        }
-			      ]
-			    },
-			    "dividendos_recebido_data_com_ano_has_dividendos_recebido_data_com_trimestre": {
-			      "Binding": {
-			        "ConceptualEntity": "Dividendos Recebidos"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "dividendos_recebido.data_com.ano": {
-			          "Target": {
-			            "Entity": "dividendos_recebido.data_com.ano"
-			          }
-			        },
-			        "dividendos_recebido.data_com.trimestre": {
-			          "Target": {
-			            "Entity": "dividendos_recebido.data_com.trimestre"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "dividendos_recebido.data_com.ano"
-			            },
-			            "Object": {
-			              "Role": "dividendos_recebido.data_com.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "anos_have_trimestres2"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "dividendos_recebido.data_com.trimestre"
-			            },
-			            "Object": {
-			              "Role": "dividendos_recebido.data_com.ano"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "trimestres_have_anos2"
-			        },
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "dividendos_recebido.data_com.trimestre"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "dividendos_recebido.data_com.ano"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "trimestres_are_in_anos2"
-			        }
-			      ]
-			    },
-			    "dividendos_recebido_data_com_trimestre_has_dividendos_recebido_data_com_mê": {
-			      "Binding": {
-			        "ConceptualEntity": "Dividendos Recebidos"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "dividendos_recebido.data_com.trimestre": {
-			          "Target": {
-			            "Entity": "dividendos_recebido.data_com.trimestre"
-			          }
-			        },
-			        "dividendos_recebido.data_com.mê": {
-			          "Target": {
-			            "Entity": "dividendos_recebido.data_com.mê"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "dividendos_recebido.data_com.trimestre"
-			            },
-			            "Object": {
-			              "Role": "dividendos_recebido.data_com.mê"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "trimestres_have_mê2"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "dividendos_recebido.data_com.mê"
-			            },
-			            "Object": {
-			              "Role": "dividendos_recebido.data_com.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "mê_have_trimestres2"
-			        },
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "dividendos_recebido.data_com.mê"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "dividendos_recebido.data_com.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "mê_are_in_trimestres2"
-			        }
-			      ]
-			    },
-			    "dividendos_recebido_data_com_mê_has_dividendos_recebido_data_com_dia": {
-			      "Binding": {
-			        "ConceptualEntity": "Dividendos Recebidos"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "dividendos_recebido.data_com.mê": {
-			          "Target": {
-			            "Entity": "dividendos_recebido.data_com.mê"
-			          }
-			        },
-			        "dividendos_recebido.data_com.dia": {
-			          "Target": {
-			            "Entity": "dividendos_recebido.data_com.dia"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "dividendos_recebido.data_com.mê"
-			            },
-			            "Object": {
-			              "Role": "dividendos_recebido.data_com.dia"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "mê_have_dias2"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "dividendos_recebido.data_com.dia"
-			            },
-			            "Object": {
-			              "Role": "dividendos_recebido.data_com.mê"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dias_have_mê2"
-			        },
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "dividendos_recebido.data_com.dia"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "dividendos_recebido.data_com.mê"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dias_are_in_mê2"
-			        }
-			      ]
-			    },
-			    "carteira_ativo_data_recomendação_has_hierarquia_de_data": {
-			      "Binding": {
-			        "ConceptualEntity": "carteira_ativos"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "carteira_ativo.data_recomendação": {
-			          "Target": {
-			            "Entity": "carteira_ativo.data_recomendação"
-			          }
-			        },
-			        "carteira_ativo.data_recomendação.hierarquia_de_data": {
-			          "Target": {
-			            "Entity": "carteira_ativo.data_recomendação.hierarquia_de_data"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "carteira_ativo.data_recomendação"
-			            },
-			            "Object": {
-			              "Role": "carteira_ativo.data_recomendação.hierarquia_de_data"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "data_recomendaçãos_have_hierarquia_de_data"
-			        }
-			      ]
-			    },
-			    "carteira_ativo_data_recomendação_hierarquia_de_data_has_carteira_ativo_data_recomendação_ano": {
-			      "Binding": {
-			        "ConceptualEntity": "carteira_ativos"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "carteira_ativo.data_recomendação.hierarquia_de_data": {
-			          "Target": {
-			            "Entity": "carteira_ativo.data_recomendação.hierarquia_de_data"
-			          }
-			        },
-			        "carteira_ativo.data_recomendação.ano": {
-			          "Target": {
-			            "Entity": "carteira_ativo.data_recomendação.ano"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "carteira_ativo.data_recomendação.hierarquia_de_data"
-			            },
-			            "Object": {
-			              "Role": "carteira_ativo.data_recomendação.ano"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_anos3"
-			        }
-			      ]
-			    },
-			    "carteira_ativo_data_recomendação_hierarquia_de_data_has_carteira_ativo_data_recomendação_trimestre": {
-			      "Binding": {
-			        "ConceptualEntity": "carteira_ativos"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "carteira_ativo.data_recomendação.hierarquia_de_data": {
-			          "Target": {
-			            "Entity": "carteira_ativo.data_recomendação.hierarquia_de_data"
-			          }
-			        },
-			        "carteira_ativo.data_recomendação.trimestre": {
-			          "Target": {
-			            "Entity": "carteira_ativo.data_recomendação.trimestre"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "carteira_ativo.data_recomendação.hierarquia_de_data"
-			            },
-			            "Object": {
-			              "Role": "carteira_ativo.data_recomendação.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_trimestres3"
-			        }
-			      ]
-			    },
-			    "carteira_ativo_data_recomendação_hierarquia_de_data_has_carteira_ativo_data_recomendação_mê": {
-			      "Binding": {
-			        "ConceptualEntity": "carteira_ativos"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "carteira_ativo.data_recomendação.hierarquia_de_data": {
-			          "Target": {
-			            "Entity": "carteira_ativo.data_recomendação.hierarquia_de_data"
-			          }
-			        },
-			        "carteira_ativo.data_recomendação.mê": {
-			          "Target": {
-			            "Entity": "carteira_ativo.data_recomendação.mê"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "carteira_ativo.data_recomendação.hierarquia_de_data"
-			            },
-			            "Object": {
-			              "Role": "carteira_ativo.data_recomendação.mê"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_mê3"
-			        }
-			      ]
-			    },
-			    "carteira_ativo_data_recomendação_hierarquia_de_data_has_carteira_ativo_data_recomendação_dia": {
-			      "Binding": {
-			        "ConceptualEntity": "carteira_ativos"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "carteira_ativo.data_recomendação.hierarquia_de_data": {
-			          "Target": {
-			            "Entity": "carteira_ativo.data_recomendação.hierarquia_de_data"
-			          }
-			        },
-			        "carteira_ativo.data_recomendação.dia": {
-			          "Target": {
-			            "Entity": "carteira_ativo.data_recomendação.dia"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "carteira_ativo.data_recomendação.hierarquia_de_data"
-			            },
-			            "Object": {
-			              "Role": "carteira_ativo.data_recomendação.dia"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_dias3"
-			        }
-			      ]
-			    },
-			    "carteira_ativo_data_recomendação_ano_has_carteira_ativo_data_recomendação_trimestre": {
-			      "Binding": {
-			        "ConceptualEntity": "carteira_ativos"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "carteira_ativo.data_recomendação.ano": {
-			          "Target": {
-			            "Entity": "carteira_ativo.data_recomendação.ano"
-			          }
-			        },
-			        "carteira_ativo.data_recomendação.trimestre": {
-			          "Target": {
-			            "Entity": "carteira_ativo.data_recomendação.trimestre"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "carteira_ativo.data_recomendação.ano"
-			            },
-			            "Object": {
-			              "Role": "carteira_ativo.data_recomendação.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "anos_have_trimestres3"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "carteira_ativo.data_recomendação.trimestre"
-			            },
-			            "Object": {
-			              "Role": "carteira_ativo.data_recomendação.ano"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "trimestres_have_anos3"
-			        },
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "carteira_ativo.data_recomendação.trimestre"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "carteira_ativo.data_recomendação.ano"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "trimestres_are_in_anos3"
-			        }
-			      ]
-			    },
-			    "carteira_ativo_data_recomendação_trimestre_has_carteira_ativo_data_recomendação_mê": {
-			      "Binding": {
-			        "ConceptualEntity": "carteira_ativos"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "carteira_ativo.data_recomendação.trimestre": {
-			          "Target": {
-			            "Entity": "carteira_ativo.data_recomendação.trimestre"
-			          }
-			        },
-			        "carteira_ativo.data_recomendação.mê": {
-			          "Target": {
-			            "Entity": "carteira_ativo.data_recomendação.mê"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "carteira_ativo.data_recomendação.trimestre"
-			            },
-			            "Object": {
-			              "Role": "carteira_ativo.data_recomendação.mê"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "trimestres_have_mê3"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "carteira_ativo.data_recomendação.mê"
-			            },
-			            "Object": {
-			              "Role": "carteira_ativo.data_recomendação.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "mê_have_trimestres3"
-			        },
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "carteira_ativo.data_recomendação.mê"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "carteira_ativo.data_recomendação.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "mê_are_in_trimestres3"
 			        }
 			      ]
 			    },

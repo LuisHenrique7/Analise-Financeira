@@ -191,5 +191,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "b4c3af5d49c5d9d96f6c",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "carteira_ativos"
+              }
+            },
+            "Property": "Carteira"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }
