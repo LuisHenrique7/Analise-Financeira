@@ -1,0 +1,199 @@
+table Medidas
+	lineageTag: 440d5894-2b9e-4977-8253-051c31d1b9ff
+
+	measure Rendimento =
+			CALCULATE(
+			    SUM('Aquisições Realizadas'[Lucro]) / SUM('Aquisições Realizadas'[Valor Investido Total]),
+			    'Aquisições Realizadas'[Data] = MAX('Aquisições Realizadas'[Data])
+			)
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: c0124247-360c-4436-a347-cdf632d5c2d1
+
+	measure 'Média de Aportes' = ```
+			
+			VAR num_dias_aportados = CALCULATE(
+			        DISTINCTCOUNT('Aquisições Realizadas'[Data]),
+			        'Aquisições Realizadas'[Valor Investido] > 0
+			    )
+			
+			RETURN CALCULATE(
+			    SUM('Aquisições Realizadas'[Valor Investido]) / num_dias_aportados
+			)
+			
+			```
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 81f44cf9-5269-48b5-9f46-af55b1b7b906
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Dividendos Totais Acumulados' =
+			
+			CALCULATE(
+				SUM('Dividendos Recebidos'[Dividendos Totais]),
+				FILTER(
+					ALLSELECTED('Dividendos Recebidos'[Data]),
+					ISONORAFTER('Dividendos Recebidos'[Data], MAX('Dividendos Recebidos'[Data]), DESC)
+				)
+			)
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 75e5c747-32de-4ea1-98b2-91578712e445
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Renda Mensal' =
+			CALCULATE(
+			    SUM('Dividendos Recebidos'[Dividendos Totais]),
+			    'Dividendos Recebidos'[Data].[Ano] = SELECTEDVALUE('Dividendos Recebidos'[Data].[Ano])
+			) / 12
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: a2d5986d-d97b-47c8-b25f-6e67b1dfe131
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Dividendos Recbidos' =
+			
+			VAR ano_aquisicao = SELECTEDVALUE('Aquisições Realizadas'[Data].[Ano])
+			VAR mes_aquisicao = MID(SELECTEDVALUE('Aquisições Realizadas'[Data]), 4,2)
+			
+			VAR dividendo_no_mes = CALCULATE(
+			    SUM('Dividendos Recebidos'[Dividendos Totais]),
+			    'Dividendos Recebidos'[Data].[Ano] = ano_aquisicao,
+			    MID('Dividendos Recebidos'[Data], 4,2) = mes_aquisicao
+			)
+			
+			
+			
+			VAR dividendo_no_ano = CALCULATE(
+			    SUM('Dividendos Recebidos'[Dividendos Totais]),
+			    'Dividendos Recebidos'[Data].[Ano] = SELECTEDVALUE('Aquisições Realizadas'[Data].[Ano])
+			)
+			
+			RETURN IF(mes_aquisicao == BLANK(), dividendo_no_ano, dividendo_no_mes)
+		lineageTag: 3de076e6-17a0-4b4f-839a-fca3a3c95fee
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Porcentagem unica na Carteira' = ```
+			
+			VAR ValorInvestidoGeral = 
+			CALCULATE(
+				SUM('Aquisições Realizadas'[Valor Investido]),
+			    ALL(carteira_ativos[Ativo])
+			)
+			RETURN SUM('Aquisições Realizadas'[Valor Investido]) / ValorInvestidoGeral
+			```
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: ae2d7881-bd7a-46b7-a74e-ebc7a3e26de7
+
+	measure 'Preço Médio' =
+			
+			SUMX(
+			    carteira_ativos,
+			    VAR ativo = carteira_ativos[Ativo]
+			
+			    VAR data_maxima = CALCULATE(
+			        MAX('Aquisições Realizadas'[Data]),
+			        'Aquisições Realizadas'[Dono] = SELECTEDVALUE('Aquisições Realizadas'[Dono]),
+			        'Aquisições Realizadas'[Ativo] = ativo
+			    )
+			
+			    RETURN CALCULATE(
+			        SUM('Aquisições Realizadas'[Preço Médio]),
+			        'Aquisições Realizadas'[Data] = data_maxima
+			    )
+			)
+		lineageTag: 7b322cc1-c7d3-4fe0-92a6-5232e64f025a
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Preço Mais Recente' =
+			
+			
+			// VAR data_maxima = CALCULATE(
+			//     MAX('Preços nos últimos 6 meses'[Data]),
+			//     'Preços nos últimos 6 meses'[Ativo] = SELECTEDVALUE(carteira_ativos[Ativo])
+			// )
+			
+			// RETURN CALCULATE(
+			//     SUM('Preços nos últimos 6 meses'[Preço]),
+			//     'Preços nos últimos 6 meses'[Data] = data_maxima
+			// )
+			
+			SUMX(
+			    carteira_ativos,
+			    VAR ativo = carteira_ativos[Ativo]
+			    VAR data_maxima = CALCULATE(
+			        MAX('Preços nos últimos 6 meses'[Data]),
+			        'Preços nos últimos 6 meses'[Ativo] = ativo
+			    )
+			
+			    RETURN CALCULATE(
+			        SUM('Preços nos últimos 6 meses'[Preço]),
+			        'Preços nos últimos 6 meses'[Data] = data_maxima
+			    )
+			)
+		lineageTag: cbdde8a1-9118-4600-959f-68e18b78950c
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Preço Recente da Carteira' =
+			
+			SUMX(
+			    carteira_ativos,
+			    VAR ativo = carteira_ativos[Ativo]
+			    VAR balanco = carteira_ativos[Balanço de Cotas]
+			    VAR data_maxima = CALCULATE(
+			        MAX('Preços nos últimos 6 meses'[Data]),
+			        'Preços nos últimos 6 meses'[Ativo] = ativo
+			    )
+			
+			    RETURN CALCULATE(
+			        SUM('Preços nos últimos 6 meses'[Preço]) * balanco,
+			        'Preços nos últimos 6 meses'[Data] = data_maxima
+			    )
+			)
+		lineageTag: 0ac95b4c-8e36-4e6e-842d-1f3a8709359e
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Preço Médio da Carteira' =
+			
+			SUMX(
+			    carteira_ativos,
+			    VAR ativo = carteira_ativos[Ativo]
+			    VAR balanco = carteira_ativos[Balanço de Cotas]
+			    VAR data_maxima = CALCULATE(
+			        MAX('Aquisições Realizadas'[Data]),
+			        'Aquisições Realizadas'[Dono] = SELECTEDVALUE('Aquisições Realizadas'[Dono]),
+			        'Aquisições Realizadas'[Ativo] = ativo
+			    )
+			
+			    RETURN CALCULATE(
+			        SUM('Aquisições Realizadas'[Preço Médio]) * balanco,
+			        'Aquisições Realizadas'[Data] = data_maxima
+			    )
+			)
+		lineageTag: 5501d652-d26a-4705-bd03-5697a1d64b94
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Diferença de Preço' = [Preço Recente da Carteira] - [Preço Médio da Carteira]
+		lineageTag: 93f78a60-e4aa-49f7-956b-85847452588c
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Value
+		formatString: 0
+		lineageTag: 0ee8fb13-cf21-41ff-b00f-5881b98324b5
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Value]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Medidas = calculated
+		mode: import
+		source = {0}
+
+	annotation PBI_Id = 7dc0d9189dee42c180f517c23f8c01bb
+

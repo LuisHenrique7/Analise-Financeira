@@ -1,0 +1,91 @@
+table carteira_ativos
+	lineageTag: 8ebd0226-0fe0-44fd-8935-5fdeb4f32bd8
+
+	column Tipo
+		dataType: string
+		lineageTag: f7c51d59-fef6-4527-8baf-a1cdca4ed4cd
+		summarizeBy: none
+		sourceColumn: Tipo
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Balanço de Cotas'
+		dataType: int64
+		formatString: 0
+		lineageTag: 489e08a7-4da7-4903-a3f4-dede325fcaac
+		summarizeBy: sum
+		sourceColumn: Balanço de Cotas
+
+		annotation SummarizationSetBy = Automatic
+
+	column Ativo
+		dataType: string
+		lineageTag: 02edd3f2-2da5-4853-adf9-a42d68478ff0
+		summarizeBy: none
+		sourceColumn: Ativo
+
+		annotation SummarizationSetBy = Automatic
+
+	column Setor
+		dataType: string
+		lineageTag: 4d1541ad-c95c-48a4-b539-955bddf926a5
+		summarizeBy: none
+		sourceColumn: Setor
+
+		annotation SummarizationSetBy = Automatic
+
+	column Indústria
+		dataType: string
+		lineageTag: 0a97d01a-0f0b-4917-9b81-5174e60cb8ee
+		summarizeBy: none
+		sourceColumn: Indústria
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Data Recomendação'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 01bbabbb-6dfc-457d-8565-84caa8f91690
+		summarizeBy: none
+		sourceColumn: Data Recomendação
+
+		variation Variation
+			isDefault
+			relationship: ae7db270-9299-46cf-948e-b59f9a46841f
+			defaultHierarchy: LocalDateTable_9cd4b772-aadd-46c6-a818-5f54c17f8bd0.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Recomendação
+		dataType: string
+		lineageTag: f51d71bb-3e46-44e5-bbdd-c0c40ad1a508
+		summarizeBy: none
+		sourceColumn: Recomendação
+
+		annotation SummarizationSetBy = Automatic
+
+	column Carteira
+		dataType: int64
+		formatString: 0
+		lineageTag: 0826a720-4d29-46f4-9035-e8e895d63559
+		summarizeBy: sum
+		sourceColumn: Carteira
+
+		annotation SummarizationSetBy = Automatic
+
+	partition carteira_ativos = m
+		mode: import
+		source =
+				let
+				    Fonte = Csv.Document(File.Contents("C:\Users\luis.nascimento\Documents\Análises Financeiras\Dados Modelados\carteira_ativos.csv"),[Delimiter=",", Columns=8, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"Data Recomendação", type date}, {"Carteira", Int64.Type}, {"Balanço de Cotas", Int64.Type}})
+				in
+				    #"Tipo Alterado"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

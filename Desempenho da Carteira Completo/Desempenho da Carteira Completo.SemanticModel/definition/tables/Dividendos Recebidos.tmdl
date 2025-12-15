@@ -1,0 +1,116 @@
+table 'Dividendos Recebidos'
+	lineageTag: 274d647f-0f60-46c7-875d-5de3ddc15ac9
+
+	column Ativo
+		dataType: string
+		lineageTag: 2f9becb0-84af-4966-8398-fdf0ae6dbe96
+		summarizeBy: none
+		sourceColumn: Ativo
+
+		annotation SummarizationSetBy = Automatic
+
+	column Data
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: aea5a3bc-5624-4fb5-a6e4-c06d4a3ce75d
+		summarizeBy: none
+		sourceColumn: Data
+
+		variation Variation
+			isDefault
+			relationship: 551e1bca-5d01-4c49-9561-78df33cd18ee
+			defaultHierarchy: LocalDateTable_0f02ffa1-a590-4c67-94a6-a42ed3b2653b.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Valor
+		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 5b5c2e85-d961-45a9-8a39-03c308d0713c
+		summarizeBy: sum
+		sourceColumn: Valor
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column 'DATA COM'
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 22113e59-2605-4b55-91f9-d4c8a5c90876
+		summarizeBy: none
+		sourceColumn: DATA COM
+
+		variation Variation
+			isDefault
+			relationship: eae5642e-2162-40a0-a166-b780d738a917
+			defaultHierarchy: LocalDateTable_534954a1-eca8-436c-9a29-70d97f4bee81.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Tipo Receita'
+		dataType: string
+		lineageTag: 5d83bf85-ee19-4eb7-aedf-1b5e8c87b857
+		summarizeBy: none
+		sourceColumn: Tipo Receita
+
+		annotation SummarizationSetBy = Automatic
+
+	column DY
+		dataType: double
+		lineageTag: 79d36f36-bd96-4a0c-b5d0-4c64ea5e3db9
+		summarizeBy: sum
+		sourceColumn: DY
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Dono
+		dataType: string
+		lineageTag: 853f0ffa-4e41-45b0-b45d-03bcd18ab66a
+		summarizeBy: none
+		sourceColumn: Dono
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Cotas Acumuladas'
+		dataType: int64
+		formatString: 0
+		lineageTag: 8691a67f-17c5-4fed-bed5-6601107dad44
+		summarizeBy: sum
+		sourceColumn: Cotas Acumuladas
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Dividendos Totais'
+		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: a3b28b7b-6a21-4cbd-8972-98d3673379f5
+		summarizeBy: sum
+		sourceColumn: Dividendos Totais
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	partition 'Dividendos Recebidos' = m
+		mode: import
+		source =
+				let
+				    Fonte = Csv.Document(File.Contents("C:\Users\luis.nascimento\Documents\Análises Financeiras\Dados Modelados\Dividendos Recebidos.csv"),[Delimiter=",", Columns=9, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
+				    #"Valor Substituído" = Table.ReplaceValue(#"Cabeçalhos Promovidos",".",",",Replacer.ReplaceText,{"Valor", "DY", "Dividendos Totais"}),
+				    #"Tipo Alterado1" = Table.TransformColumnTypes(#"Valor Substituído",{{"Valor", type number}, {"DY", type number}, {"Dividendos Totais", type number}}),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Tipo Alterado1",{{"Ativo", type text}, {"Data", type date}, {"DATA COM", type date}, {"Tipo Receita", type text}, {"Dono", type text}, {"Cotas Acumuladas", Int64.Type}})
+				in
+				    #"Tipo Alterado"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

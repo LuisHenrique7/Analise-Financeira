@@ -1,0 +1,154 @@
+table 'Aquisições Realizadas'
+	lineageTag: df46cf64-abd3-41ad-83aa-a412d0b300de
+
+	column Ativo
+		dataType: string
+		lineageTag: c32bd45d-11c4-4b9d-9e11-2fca1ce2b22d
+		summarizeBy: none
+		sourceColumn: Ativo
+
+		annotation SummarizationSetBy = Automatic
+
+	column Data
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 530dd006-fbdc-4e3f-89ce-d62af2e17fe4
+		summarizeBy: none
+		sourceColumn: Data
+
+		variation Variation
+			isDefault
+			relationship: e2058381-f780-4770-b6a1-c4db2f157506
+			defaultHierarchy: LocalDateTable_f7c0031a-135b-4687-820b-7cadf9b51b97.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Valor
+		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 12d69d40-fb7c-4536-aee6-1f743742575e
+		summarizeBy: sum
+		sourceColumn: Valor
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column 'Número de Cotas'
+		dataType: int64
+		formatString: 0
+		lineageTag: dd9ae44e-23b9-4017-8553-1b07273ae273
+		summarizeBy: sum
+		sourceColumn: Número de Cotas
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Cotas Acumuladas'
+		dataType: int64
+		formatString: 0
+		lineageTag: eaa08b71-caa2-4f6a-82f8-01da2d06263c
+		summarizeBy: sum
+		sourceColumn: Cotas Acumuladas
+
+		annotation SummarizationSetBy = Automatic
+
+	column Dono
+		dataType: string
+		lineageTag: 4382db86-1938-455c-8de7-b69dee4f881c
+		summarizeBy: none
+		sourceColumn: Dono
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Preço Médio'
+		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: f814cdb7-4e2b-4f42-a44e-c4ffcff036a8
+		summarizeBy: sum
+		sourceColumn: Preço Médio
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column 'Valor Investido'
+		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 1aa093ef-2aa2-44d9-924f-0562489a174e
+		summarizeBy: sum
+		sourceColumn: Valor Investido
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column 'Ano Mês'
+		dataType: string
+		lineageTag: 7e64f7c2-65ba-4df3-9553-069e92cf03d8
+		summarizeBy: none
+		sourceColumn: Ano Mês
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Preço de Fechamento'
+		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: b620217d-3fe4-4371-9c4a-1fc3d430c7e6
+		summarizeBy: sum
+		sourceColumn: Preço de Fechamento
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column 'Preço de Fechamento Total'
+		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 9ecb5928-e07f-4a71-9363-9ee05e8c006e
+		summarizeBy: sum
+		sourceColumn: Preço de Fechamento Total
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column Lucro
+		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: eaa45063-bac6-4beb-8f1c-6c5e7b0e6769
+		summarizeBy: sum
+		sourceColumn: Lucro
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column 'Valor Investido Total'
+		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: affcb60b-b50a-4c2b-9487-f91304c7fa60
+		summarizeBy: sum
+		sourceColumn: Valor Investido Total
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	partition 'Aquisições Realizadas' = m
+		mode: import
+		source =
+				let
+				    Fonte = Csv.Document(File.Contents("C:\Users\luis.nascimento\Documents\Análises Financeiras\Dados Modelados\Aquisições Realizadas.csv"),[Delimiter=",", Columns=13, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
+				    #"Valor Substituído" = Table.ReplaceValue(#"Cabeçalhos Promovidos",".",",",Replacer.ReplaceText,{"Valor", "Preço Médio", "Valor Investido", "Valor Investido Total", "Preço de Fechamento", "Preço de Fechamento Total", "Lucro", "Número de Cotas", "Cotas Acumuladas"}),
+				    #"Tipo Alterado1" = Table.TransformColumnTypes(#"Valor Substituído",{{"Valor", type number}, {"Preço Médio", type number}, {"Valor Investido", type number}, {"Valor Investido Total", type number}, {"Preço de Fechamento Total", type number}, {"Preço de Fechamento", type number}, {"Lucro", type number}}),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Tipo Alterado1",{{"Ativo", type text}, {"Data", type date}, {"Número de Cotas", Int64.Type}, {"Cotas Acumuladas", Int64.Type}, {"Dono", type text}, {"Ano Mês", type text}})
+				in
+				    #"Tipo Alterado"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

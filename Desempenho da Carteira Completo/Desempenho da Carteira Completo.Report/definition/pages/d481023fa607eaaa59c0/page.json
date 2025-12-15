@@ -1,0 +1,100 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
+  "name": "d481023fa607eaaa59c0",
+  "displayName": "Comparativo de Carteiras",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "visualInteractions": [
+    {
+      "source": "a50b86237807334ba538",
+      "target": "d08f34006b32565599c1",
+      "type": "DataFilter"
+    },
+    {
+      "source": "a50b86237807334ba538",
+      "target": "9757f5c25804b42b2342",
+      "type": "NoFilter"
+    },
+    {
+      "source": "a50b86237807334ba538",
+      "target": "b811172de009ac607c8b",
+      "type": "NoFilter"
+    },
+    {
+      "source": "d08f34006b32565599c1",
+      "target": "9757f5c25804b42b2342",
+      "type": "NoFilter"
+    },
+    {
+      "source": "d08f34006b32565599c1",
+      "target": "b811172de009ac607c8b",
+      "type": "NoFilter"
+    },
+    {
+      "source": "9757f5c25804b42b2342",
+      "target": "a50b86237807334ba538",
+      "type": "NoFilter"
+    },
+    {
+      "source": "9757f5c25804b42b2342",
+      "target": "d08f34006b32565599c1",
+      "type": "NoFilter"
+    },
+    {
+      "source": "9757f5c25804b42b2342",
+      "target": "b811172de009ac607c8b",
+      "type": "DataFilter"
+    },
+    {
+      "source": "b811172de009ac607c8b",
+      "target": "a50b86237807334ba538",
+      "type": "NoFilter"
+    },
+    {
+      "source": "b811172de009ac607c8b",
+      "target": "d08f34006b32565599c1",
+      "type": "NoFilter"
+    },
+    {
+      "source": "a50b86237807334ba538",
+      "target": "a206ede09ba09e74b5c8",
+      "type": "NoFilter"
+    },
+    {
+      "source": "d08f34006b32565599c1",
+      "target": "a206ede09ba09e74b5c8",
+      "type": "NoFilter"
+    },
+    {
+      "source": "a50b86237807334ba538",
+      "target": "ca30cf06aed3c30bc630",
+      "type": "NoFilter"
+    },
+    {
+      "source": "d08f34006b32565599c1",
+      "target": "ca30cf06aed3c30bc630",
+      "type": "NoFilter"
+    },
+    {
+      "source": "9757f5c25804b42b2342",
+      "target": "9a6e9fa1c28e7b46ec5c",
+      "type": "NoFilter"
+    },
+    {
+      "source": "b811172de009ac607c8b",
+      "target": "9a6e9fa1c28e7b46ec5c",
+      "type": "NoFilter"
+    },
+    {
+      "source": "9757f5c25804b42b2342",
+      "target": "7082886d0ed330298175",
+      "type": "NoFilter"
+    },
+    {
+      "source": "b811172de009ac607c8b",
+      "target": "7082886d0ed330298175",
+      "type": "NoFilter"
+    }
+  ]
+}
