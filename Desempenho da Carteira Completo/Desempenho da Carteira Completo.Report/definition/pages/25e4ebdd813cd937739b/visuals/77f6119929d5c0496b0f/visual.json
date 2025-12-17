@@ -1,11 +1,11 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
-  "name": "bb78046e0f35f28110d3",
+  "name": "77f6119929d5c0496b0f",
   "position": {
     "x": 8.7537993920972657,
-    "y": 8.7537993920972657,
-    "z": 0,
-    "height": 378.35866261398178,
+    "y": 397.81155015197572,
+    "z": 3,
+    "height": 309.30091185410333,
     "width": 891.91489361702133
   },
   "visual": {
@@ -36,11 +36,11 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "Preço Mais Recente"
+                  "Property": "Percentual na carteira"
                 }
               },
-              "queryRef": "Medidas.Preço Mais Recente",
-              "nativeQueryRef": "Preço Mais Recente"
+              "queryRef": "Medidas.Percentual na carteira",
+              "nativeQueryRef": "Percentual na carteira"
             },
             {
               "field": {
@@ -50,54 +50,11 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "Preço Médio"
+                  "Property": "Percentual visado"
                 }
               },
-              "queryRef": "Medidas.Preço Médio",
-              "nativeQueryRef": "Preço Médio"
-            },
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Medidas"
-                    }
-                  },
-                  "Property": "Preço Recente da Carteira"
-                }
-              },
-              "queryRef": "Medidas.Preço Recente da Carteira",
-              "nativeQueryRef": "Preço Recente da Carteira"
-            },
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Medidas"
-                    }
-                  },
-                  "Property": "Preço Médio da Carteira"
-                }
-              },
-              "queryRef": "Medidas.Preço Médio da Carteira",
-              "nativeQueryRef": "Preço Médio da Carteira"
-            },
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Medidas"
-                    }
-                  },
-                  "Property": "Diferença de Preço"
-                }
-              },
-              "queryRef": "Medidas.medida",
-              "nativeQueryRef": "Diferença de Preço",
-              "displayName": "Diferença de Preço"
+              "queryRef": "Medidas.Percentual na visado",
+              "nativeQueryRef": "Percentual visado"
             },
             {
               "field": {
@@ -112,6 +69,54 @@
               },
               "queryRef": "Sum(carteira_ativos.Balanço de Cotas)",
               "nativeQueryRef": "Balanço de Cotas"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Aquisições Realizadas"
+                        }
+                      },
+                      "Property": "Número de Cotas"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(Aquisições Realizadas.Número de Cotas)",
+              "nativeQueryRef": "Nº de Cotas Atual",
+              "displayName": "Nº de Cotas Atual"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "Quantidade de Itens"
+                }
+              },
+              "queryRef": "Medidas.Medida",
+              "nativeQueryRef": "Quantidade de Itens"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "Diferença Itens vs Carteiras"
+                }
+              },
+              "queryRef": "Medidas.Medida1",
+              "nativeQueryRef": "Diferença Itens vs Carteiras"
             }
           ]
         }
@@ -137,74 +142,7 @@
     "objects": {
       "values": [
         {
-          "properties": {
-            "fontColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Conditional": {
-                      "Cases": [
-                        {
-                          "Condition": {
-                            "Comparison": {
-                              "ComparisonKind": 2,
-                              "Left": {
-                                "Measure": {
-                                  "Expression": {
-                                    "SourceRef": {
-                                      "Entity": "Medidas"
-                                    }
-                                  },
-                                  "Property": "Diferença de Preço"
-                                }
-                              },
-                              "Right": {
-                                "Literal": {
-                                  "Value": "0D"
-                                }
-                              }
-                            }
-                          },
-                          "Value": {
-                            "Literal": {
-                              "Value": "'#0A820D'"
-                            }
-                          }
-                        },
-                        {
-                          "Condition": {
-                            "Comparison": {
-                              "ComparisonKind": 3,
-                              "Left": {
-                                "Measure": {
-                                  "Expression": {
-                                    "SourceRef": {
-                                      "Entity": "Medidas"
-                                    }
-                                  },
-                                  "Property": "Diferença de Preço"
-                                }
-                              },
-                              "Right": {
-                                "Literal": {
-                                  "Value": "0D"
-                                }
-                              }
-                            }
-                          },
-                          "Value": {
-                            "Literal": {
-                              "Value": "'#D64550'"
-                            }
-                          }
-                        }
-                      ]
-                    }
-                  }
-                }
-              }
-            }
-          },
+          "properties": {},
           "selector": {
             "data": [
               {
@@ -213,7 +151,50 @@
                 }
               }
             ],
-            "metadata": "Medidas.medida"
+            "metadata": "Medidas.Medida"
+          }
+        }
+      ],
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "170.97512495289703D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Medidas.Medida1"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "62.97264423720249D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "carteira_ativos.Ativo"
+          }
+        }
+      ],
+      "total": [
+        {
+          "properties": {
+            "totals": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
           }
         }
       ]
@@ -246,7 +227,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Variação de Preços'"
+                  "Value": "'Balanceamento dos ativos'"
                 }
               }
             }
@@ -328,7 +309,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "cd0b962ff1b7dba60981",
+        "name": "5637166e6a63c3796c64",
         "field": {
           "Column": {
             "Expression": {
@@ -342,77 +323,7 @@
         "type": "Categorical"
       },
       {
-        "name": "1fa78fc03ad1dec157ed",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Medidas"
-              }
-            },
-            "Property": "Preço Mais Recente"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "a8854f94ca92f22d480b",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Medidas"
-              }
-            },
-            "Property": "Preço Médio"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "81a8e7d7ddad8ceb22eb",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Medidas"
-              }
-            },
-            "Property": "Preço Recente da Carteira"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "c781a56c0000f054588d",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Medidas"
-              }
-            },
-            "Property": "Preço Médio da Carteira"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "1db46de1b2d1901a9364",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Medidas"
-              }
-            },
-            "Property": "Diferença de Preço"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "d32759ad54cb3a0a436e",
+        "name": "9b7aacc876e3133ae1bb",
         "field": {
           "Column": {
             "Expression": {
@@ -421,6 +332,81 @@
               }
             },
             "Property": "Balanço de Cotas"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "bdb7c62e2ffeb5ed75b8",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Aquisições Realizadas"
+                  }
+                },
+                "Property": "Número de Cotas"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "8dfce4f87318fed24d71",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Medidas"
+              }
+            },
+            "Property": "Quantidade de Itens"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "d25296985311062a408d",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Medidas"
+              }
+            },
+            "Property": "Diferença Itens vs Carteiras"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "6f5bcfc6ce396b4bc84f",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Medidas"
+              }
+            },
+            "Property": "Percentual na carteira"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "861b0b688c235cdfb7ad",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Medidas"
+              }
+            },
+            "Property": "Percentual visado"
           }
         },
         "type": "Advanced"

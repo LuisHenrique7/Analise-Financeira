@@ -1,61 +1,56 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
-  "name": "ad1c1933e26e512b8151",
+  "name": "df2edf4272cee790823d",
   "position": {
-    "x": 908.44984802431611,
-    "y": 8.7537993920972657,
-    "z": 9000,
-    "height": 74.8936170212766,
-    "width": 117.68996960486322,
-    "tabOrder": 9000
+    "x": 920.12158054711256,
+    "y": 560.243161094225,
+    "z": 5,
+    "height": 119.63525835866263,
+    "width": 327.78115501519756,
+    "tabOrder": 4
   },
   "visual": {
-    "visualType": "slicer",
+    "visualType": "card",
     "query": {
       "queryState": {
         "Values": {
           "projections": [
             {
               "field": {
-                "Column": {
+                "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "carteira_ativos"
+                      "Entity": "Medidas"
                     }
                   },
-                  "Property": "Carteira"
+                  "Property": "Quantidade de Carteiras"
                 }
               },
-              "queryRef": "carteira_ativos.Carteira",
-              "nativeQueryRef": "Carteira",
-              "active": true
+              "queryRef": "Medidas.Quantidade de Carteiras",
+              "nativeQueryRef": "Quantidade de Carteiras 2",
+              "displayName": "Quantidade de Carteiras 2"
             }
           ]
         }
       },
       "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Medidas"
+                  }
+                },
+                "Property": "Quantidade de Carteiras"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
         "isDefaultSort": true
       }
-    },
-    "objects": {
-      "data": [
-        {
-          "properties": {
-            "mode": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Dropdown'"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "general": [
-        {
-          "properties": {}
-        }
-      ]
     },
     "visualContainerObjects": {
       "title": [
@@ -133,7 +128,7 @@
             "radius": {
               "expr": {
                 "Literal": {
-                  "Value": "12D"
+                  "Value": "30D"
                 }
               }
             },
@@ -153,7 +148,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "b4c3af5d49c5d9d96f6c",
+        "name": "84ea1bf30ebd2a3276df",
         "field": {
           "Column": {
             "Expression": {
@@ -162,6 +157,60 @@
               }
             },
             "Property": "Carteira"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "c",
+              "Entity": "carteira_ativos",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "c"
+                          }
+                        },
+                        "Property": "Carteira"
+                      }
+                    }
+                  ],
+                  "Values": [
+                    [
+                      {
+                        "Literal": {
+                          "Value": "2L"
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User"
+      },
+      {
+        "name": "c1292e3fbdddabd043a9",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Medidas"
+              }
+            },
+            "Property": "Quantidade de Carteiras"
           }
         },
         "type": "Advanced"

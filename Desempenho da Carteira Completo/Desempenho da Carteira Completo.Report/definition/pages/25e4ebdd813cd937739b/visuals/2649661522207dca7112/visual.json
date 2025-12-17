@@ -1,59 +1,48 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
-  "name": "b97d075831c651281951",
+  "name": "2649661522207dca7112",
   "position": {
-    "x": 8.7537993920972657,
-    "y": 102.12765957446808,
-    "z": 4000,
-    "height": 300.54711246200611,
-    "width": 403.64741641337389,
-    "tabOrder": 4000
+    "x": 919.14893617021278,
+    "y": 94.346504559270514,
+    "z": 6,
+    "height": 303.46504559270517,
+    "width": 165.34954407294833,
+    "tabOrder": 5
   },
   "visual": {
-    "visualType": "pieChart",
+    "visualType": "multiRowCard",
     "query": {
       "queryState": {
-        "Y": {
+        "Values": {
           "projections": [
             {
               "field": {
-                "Aggregation": {
+                "Column": {
                   "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "Aquisições Realizadas"
-                        }
-                      },
-                      "Property": "Valor Investido Total"
+                    "SourceRef": {
+                      "Entity": "carteira_ativos"
                     }
                   },
-                  "Function": 0
+                  "Property": "Ativo"
                 }
               },
-              "queryRef": "Sum(Aquisições Realizadas.Valor Investido Total)",
-              "nativeQueryRef": "Valor Investido Total",
-              "displayName": "Valor Investido Total"
+              "queryRef": "carteira_ativos.Ativo",
+              "nativeQueryRef": "Ativo"
             },
             {
               "field": {
-                "Aggregation": {
+                "Measure": {
                   "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "Aquisições Realizadas"
-                        }
-                      },
-                      "Property": "Lucro"
+                    "SourceRef": {
+                      "Entity": "Medidas"
                     }
                   },
-                  "Function": 0
+                  "Property": "Diferença de Preço"
                 }
               },
-              "queryRef": "Sum(Aquisições Realizadas.Lucro)",
-              "nativeQueryRef": "Lucro",
-              "displayName": "Lucro"
+              "queryRef": "Medidas.Diferença de Preço",
+              "nativeQueryRef": "Diferença",
+              "displayName": "Diferença"
             }
           ]
         }
@@ -62,34 +51,33 @@
         "sort": [
           {
             "field": {
-              "Aggregation": {
+              "Column": {
                 "Expression": {
-                  "Column": {
-                    "Expression": {
-                      "SourceRef": {
-                        "Entity": "Aquisições Realizadas"
-                      }
-                    },
-                    "Property": "Valor Investido Total"
+                  "SourceRef": {
+                    "Entity": "carteira_ativos"
                   }
                 },
-                "Function": 0
+                "Property": "Ativo"
               }
             },
-            "direction": "Descending"
+            "direction": "Ascending"
           }
         ],
         "isDefaultSort": true
       }
     },
     "objects": {
-      "labels": [
+      "cardTitle": [
         {
           "properties": {
-            "position": {
-              "expr": {
-                "Literal": {
-                  "Value": "'outside'"
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#0A820D'"
+                    }
+                  }
                 }
               }
             }
@@ -101,6 +89,13 @@
       "title": [
         {
           "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
             "titleWrap": {
               "expr": {
                 "Literal": {
@@ -112,6 +107,13 @@
               "expr": {
                 "Literal": {
                   "Value": "'center'"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Mais caros'"
                 }
               }
             }
@@ -173,7 +175,7 @@
             "radius": {
               "expr": {
                 "Literal": {
-                  "Value": "12D"
+                  "Value": "30D"
                 }
               }
             },
@@ -193,15 +195,15 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "4285df5e0e0a1a0ce9e5",
+        "name": "93e93a3fcb74eb42e0c9",
         "field": {
           "Column": {
             "Expression": {
               "SourceRef": {
-                "Entity": "Aquisições Realizadas"
+                "Entity": "carteira_ativos"
               }
             },
-            "Property": "Data"
+            "Property": "Ativo"
           }
         },
         "type": "TopN",
@@ -216,8 +218,13 @@
                     "Version": 2,
                     "From": [
                       {
-                        "Name": "a",
-                        "Entity": "Aquisições Realizadas",
+                        "Name": "c",
+                        "Entity": "carteira_ativos",
+                        "Type": 0
+                      },
+                      {
+                        "Name": "m",
+                        "Entity": "Medidas",
                         "Type": 0
                       }
                     ],
@@ -226,10 +233,10 @@
                         "Column": {
                           "Expression": {
                             "SourceRef": {
-                              "Source": "a"
+                              "Source": "c"
                             }
                           },
-                          "Property": "Data"
+                          "Property": "Ativo"
                         },
                         "Name": "field"
                       }
@@ -238,31 +245,26 @@
                       {
                         "Direction": 2,
                         "Expression": {
-                          "Aggregation": {
+                          "Measure": {
                             "Expression": {
-                              "Column": {
-                                "Expression": {
-                                  "SourceRef": {
-                                    "Source": "a"
-                                  }
-                                },
-                                "Property": "Data"
+                              "SourceRef": {
+                                "Source": "m"
                               }
                             },
-                            "Function": 3
+                            "Property": "Diferença de Preço"
                           }
                         }
                       }
                     ],
-                    "Top": 1
+                    "Top": 3
                   }
                 }
               },
               "Type": 2
             },
             {
-              "Name": "a",
-              "Entity": "Aquisições Realizadas",
+              "Name": "c",
+              "Entity": "carteira_ativos",
               "Type": 0
             }
           ],
@@ -275,10 +277,10 @@
                       "Column": {
                         "Expression": {
                           "SourceRef": {
-                            "Source": "a"
+                            "Source": "c"
                           }
                         },
-                        "Property": "Data"
+                        "Property": "Ativo"
                       }
                     }
                   ],
@@ -291,43 +293,18 @@
               }
             }
           ]
-        },
-        "howCreated": "User"
+        }
       },
       {
-        "name": "502078f1952e13b1611b",
+        "name": "e24820c8e610d5311e91",
         "field": {
-          "Aggregation": {
+          "Measure": {
             "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Aquisições Realizadas"
-                  }
-                },
-                "Property": "Valor Investido Total"
+              "SourceRef": {
+                "Entity": "Medidas"
               }
             },
-            "Function": 0
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "136dcd3fd987abf54cad",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Aquisições Realizadas"
-                  }
-                },
-                "Property": "Lucro"
-              }
-            },
-            "Function": 0
+            "Property": "Diferença de Preço"
           }
         },
         "type": "Advanced"

@@ -4,5 +4,17 @@
   "displayName": "Carteira",
   "displayOption": "FitToPage",
   "height": 720,
-  "width": 1280
+  "width": 1280,
+  "visualInteractions": [
+    {
+      "source": "dd8f8354db3a23a8ccb5",
+      "target": "b97d075831c651281951",
+      "type": "DataFilter"
+    },
+    {
+      "source": "b6fc7ab5d75e0912194b",
+      "target": "dd8f8354db3a23a8ccb5",
+      "type": "DataFilter"
+    }
+  ]
 }

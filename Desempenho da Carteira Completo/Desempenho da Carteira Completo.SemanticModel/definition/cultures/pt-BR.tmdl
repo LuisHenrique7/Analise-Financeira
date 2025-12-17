@@ -3299,7 +3299,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "medida.medida": {
+			    "medida.diferença_de_preço": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Medidas",
@@ -3309,12 +3309,12 @@ cultureInfo pt-BR
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "medida": {
+			          "diferença de preço": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "Diferença de Preço": {
+			          "Diferença": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -3938,75 +3938,125 @@ cultureInfo pt-BR
 			          }
 			        }
 			      ]
-			    }
-			  },
-			  "Relationships": {
-			    "carteira_ativo_data_recomendação_trimestre_has_carteira_ativo_data_recomendação_mê": {
-			      "Binding": {
-			        "ConceptualEntity": "carteira_ativos"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "carteira_ativo.data_recomendação.trimestre": {
-			          "Target": {
-			            "Entity": "carteira_ativo.data_recomendação.trimestre"
-			          }
-			        },
-			        "carteira_ativo.data_recomendação.mê": {
-			          "Target": {
-			            "Entity": "carteira_ativo.data_recomendação.mê"
-			          }
+			    },
+			    "medida.quantidade_de_itens": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Quantidade de Itens"
 			        }
 			      },
-			      "Phrasings": [
+			      "State": "Generated",
+			      "Terms": [
 			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "carteira_ativo.data_recomendação.trimestre"
-			            },
-			            "Object": {
-			              "Role": "carteira_ativo.data_recomendação.mê"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "trimestres_have_mê"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "carteira_ativo.data_recomendação.mê"
-			            },
-			            "Object": {
-			              "Role": "carteira_ativo.data_recomendação.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "mê_have_trimestres"
-			        },
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "carteira_ativo.data_recomendação.mê"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "carteira_ativo.data_recomendação.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "mê_are_in_trimestres3"
+			          "quantidade de itens": {
+			            "State": "Generated"
+			          }
 			        }
 			      ]
 			    },
+			    "medida.quantidade_de_carteiras": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Quantidade de Carteiras"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "quantidade de carteiras": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Quantidade de Carteiras 1": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Quantidade de Carteiras 2": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "medida.diferença_itens_vs_carteiras": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Diferença Itens vs Carteiras"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "diferença itens vs carteiras": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.percentual_na_carteira": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Percentual na carteira"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "percentual na carteira": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.percentual_visado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Percentual visado"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "percentual visado": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.valor_padrão": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "valor padrão"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "valor padrão": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
 			    "carteira_ativo_data_recomendação_ano_has_carteira_ativo_data_recomendação_trimestre": {
 			      "Binding": {
 			        "ConceptualEntity": "carteira_ativos"
@@ -4333,7 +4383,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_mê1"
+			          "ID": "trimestres_have_mê"
 			        },
 			        {
 			          "Attribute": {
@@ -4346,7 +4396,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "mê_have_trimestres1"
+			          "ID": "mê_have_trimestres"
 			        },
 			        {
 			          "Preposition": {
@@ -4696,7 +4746,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_mê2"
+			          "ID": "trimestres_have_mê1"
 			        },
 			        {
 			          "Attribute": {
@@ -4709,7 +4759,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "mê_have_trimestres2"
+			          "ID": "mê_have_trimestres1"
 			        },
 			        {
 			          "Preposition": {
@@ -5059,7 +5109,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_mê3"
+			          "ID": "trimestres_have_mê2"
 			        },
 			        {
 			          "Attribute": {
@@ -5072,7 +5122,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "mê_have_trimestres3"
+			          "ID": "mê_have_trimestres2"
 			        },
 			        {
 			          "Preposition": {
@@ -5465,6 +5515,369 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
+			    "carteira_ativo_has_medida_valor_padrão": {
+			      "Binding": {
+			        "ConceptualEntity": "carteira_ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "carteira_ativo": {
+			          "Target": {
+			            "Entity": "carteira_ativo"
+			          }
+			        },
+			        "medida.valor_padrão": {
+			          "Target": {
+			            "Entity": "medida.valor_padrão"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "carteira_ativo"
+			            },
+			            "Object": {
+			              "Role": "medida.valor_padrão"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "carteira_ativos_have_valor_padrão"
+			        }
+			      ]
+			    },
+			    "aquisições_realizada_has_medida_valor_padrão": {
+			      "Binding": {
+			        "ConceptualEntity": "Aquisições Realizadas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aquisições_realizada": {
+			          "Target": {
+			            "Entity": "aquisições_realizada"
+			          }
+			        },
+			        "medida.valor_padrão": {
+			          "Target": {
+			            "Entity": "medida.valor_padrão"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aquisições_realizada"
+			            },
+			            "Object": {
+			              "Role": "medida.valor_padrão"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "aquisições_realizadas_have_valor_padrão"
+			        }
+			      ]
+			    },
+			    "carteira_ativo_has_medida_percentual_visado": {
+			      "Binding": {
+			        "ConceptualEntity": "carteira_ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "carteira_ativo": {
+			          "Target": {
+			            "Entity": "carteira_ativo"
+			          }
+			        },
+			        "medida.percentual_visado": {
+			          "Target": {
+			            "Entity": "medida.percentual_visado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "carteira_ativo"
+			            },
+			            "Object": {
+			              "Role": "medida.percentual_visado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "carteira_ativos_have_percentual_visado"
+			        }
+			      ]
+			    },
+			    "aquisições_realizada_has_medida_percentual_visado": {
+			      "Binding": {
+			        "ConceptualEntity": "Aquisições Realizadas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aquisições_realizada": {
+			          "Target": {
+			            "Entity": "aquisições_realizada"
+			          }
+			        },
+			        "medida.percentual_visado": {
+			          "Target": {
+			            "Entity": "medida.percentual_visado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aquisições_realizada"
+			            },
+			            "Object": {
+			              "Role": "medida.percentual_visado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "aquisições_realizadas_have_percentual_visado"
+			        }
+			      ]
+			    },
+			    "aquisições_realizada_has_medida_percentual_na_carteira": {
+			      "Binding": {
+			        "ConceptualEntity": "Aquisições Realizadas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aquisições_realizada": {
+			          "Target": {
+			            "Entity": "aquisições_realizada"
+			          }
+			        },
+			        "medida.percentual_na_carteira": {
+			          "Target": {
+			            "Entity": "medida.percentual_na_carteira"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aquisições_realizada"
+			            },
+			            "Object": {
+			              "Role": "medida.percentual_na_carteira"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "aquisições_realizadas_have_percentual_na_carteira"
+			        }
+			      ]
+			    },
+			    "carteira_ativo_has_medida_diferença_itens_vs_carteiras": {
+			      "Binding": {
+			        "ConceptualEntity": "carteira_ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "carteira_ativo": {
+			          "Target": {
+			            "Entity": "carteira_ativo"
+			          }
+			        },
+			        "medida.diferença_itens_vs_carteiras": {
+			          "Target": {
+			            "Entity": "medida.diferença_itens_vs_carteiras"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "carteira_ativo"
+			            },
+			            "Object": {
+			              "Role": "medida.diferença_itens_vs_carteiras"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "carteira_ativos_have_diferença_itens_vs_carteiras"
+			        }
+			      ]
+			    },
+			    "aquisições_realizada_has_medida_diferença_itens_vs_carteiras": {
+			      "Binding": {
+			        "ConceptualEntity": "Aquisições Realizadas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aquisições_realizada": {
+			          "Target": {
+			            "Entity": "aquisições_realizada"
+			          }
+			        },
+			        "medida.diferença_itens_vs_carteiras": {
+			          "Target": {
+			            "Entity": "medida.diferença_itens_vs_carteiras"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aquisições_realizada"
+			            },
+			            "Object": {
+			              "Role": "medida.diferença_itens_vs_carteiras"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "aquisições_realizadas_have_diferença_itens_vs_carteiras"
+			        }
+			      ]
+			    },
+			    "carteira_ativo_has_medida_quantidade_de_carteiras": {
+			      "Binding": {
+			        "ConceptualEntity": "carteira_ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "carteira_ativo": {
+			          "Target": {
+			            "Entity": "carteira_ativo"
+			          }
+			        },
+			        "medida.quantidade_de_carteiras": {
+			          "Target": {
+			            "Entity": "medida.quantidade_de_carteiras"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "carteira_ativo"
+			            },
+			            "Object": {
+			              "Role": "medida.quantidade_de_carteiras"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "carteira_ativos_have_quantidade_de_carteiras"
+			        }
+			      ]
+			    },
+			    "aquisições_realizada_has_medida_quantidade_de_carteiras": {
+			      "Binding": {
+			        "ConceptualEntity": "Aquisições Realizadas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aquisições_realizada": {
+			          "Target": {
+			            "Entity": "aquisições_realizada"
+			          }
+			        },
+			        "medida.quantidade_de_carteiras": {
+			          "Target": {
+			            "Entity": "medida.quantidade_de_carteiras"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aquisições_realizada"
+			            },
+			            "Object": {
+			              "Role": "medida.quantidade_de_carteiras"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "aquisições_realizadas_have_quantidade_de_carteiras"
+			        }
+			      ]
+			    },
+			    "carteira_ativo_has_medida_quantidade_de_itens": {
+			      "Binding": {
+			        "ConceptualEntity": "carteira_ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "carteira_ativo": {
+			          "Target": {
+			            "Entity": "carteira_ativo"
+			          }
+			        },
+			        "medida.quantidade_de_itens": {
+			          "Target": {
+			            "Entity": "medida.quantidade_de_itens"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "carteira_ativo"
+			            },
+			            "Object": {
+			              "Role": "medida.quantidade_de_itens"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "carteira_ativos_have_quantidade_de_itens"
+			        }
+			      ]
+			    },
+			    "aquisições_realizada_has_medida_quantidade_de_itens": {
+			      "Binding": {
+			        "ConceptualEntity": "Aquisições Realizadas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aquisições_realizada": {
+			          "Target": {
+			            "Entity": "aquisições_realizada"
+			          }
+			        },
+			        "medida.quantidade_de_itens": {
+			          "Target": {
+			            "Entity": "medida.quantidade_de_itens"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aquisições_realizada"
+			            },
+			            "Object": {
+			              "Role": "medida.quantidade_de_itens"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "aquisições_realizadas_have_quantidade_de_itens"
+			        }
+			      ]
+			    },
 			    "preços_nos_últimos_6_mese_has_preço": {
 			      "Binding": {
 			        "ConceptualEntity": "Preços nos últimos 6 meses"
@@ -5495,6 +5908,33 @@ cultureInfo pt-BR
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "preços_nos_últimos_6_meses_have_preços"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "preços_nos_últimos_6_mese"
+			            },
+			            "Adjectives": [
+			              {
+			                "expensive": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "cheap": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "preços_nos_últimos_6_mese.preço"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "preço_indicates_how_expensive_preços_nos_últimos_6_meses_are"
 			        }
 			      ]
 			    },
@@ -5531,7 +5971,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "carteira_ativo_has_medida_medida": {
+			    "carteira_ativo_has_medida_diferença_de_preço": {
 			      "Binding": {
 			        "ConceptualEntity": "carteira_ativos"
 			      },
@@ -5542,9 +5982,9 @@ cultureInfo pt-BR
 			            "Entity": "carteira_ativo"
 			          }
 			        },
-			        "medida.medida": {
+			        "medida.diferença_de_preço": {
 			          "Target": {
-			            "Entity": "medida.medida"
+			            "Entity": "medida.diferença_de_preço"
 			          }
 			        }
 			      },
@@ -5555,16 +5995,16 @@ cultureInfo pt-BR
 			              "Role": "carteira_ativo"
 			            },
 			            "Object": {
-			              "Role": "medida.medida"
+			              "Role": "medida.diferença_de_preço"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "carteira_ativos_have_medida"
+			          "ID": "carteira_ativos_have_diferença_de_preço"
 			        }
 			      ]
 			    },
-			    "preços_nos_últimos_6_mese_has_medida_medida": {
+			    "preços_nos_últimos_6_mese_has_medida_diferença_de_preço": {
 			      "Binding": {
 			        "ConceptualEntity": "Preços nos últimos 6 meses"
 			      },
@@ -5575,9 +6015,9 @@ cultureInfo pt-BR
 			            "Entity": "preços_nos_últimos_6_mese"
 			          }
 			        },
-			        "medida.medida": {
+			        "medida.diferença_de_preço": {
 			          "Target": {
-			            "Entity": "medida.medida"
+			            "Entity": "medida.diferença_de_preço"
 			          }
 			        }
 			      },
@@ -5588,16 +6028,16 @@ cultureInfo pt-BR
 			              "Role": "preços_nos_últimos_6_mese"
 			            },
 			            "Object": {
-			              "Role": "medida.medida"
+			              "Role": "medida.diferença_de_preço"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "preços_nos_últimos_6_meses_have_medida"
+			          "ID": "preços_nos_últimos_6_meses_have_diferença_de_preço"
 			        }
 			      ]
 			    },
-			    "aquisições_realizada_has_medida_medida": {
+			    "aquisições_realizada_has_medida_diferença_de_preço": {
 			      "Binding": {
 			        "ConceptualEntity": "Aquisições Realizadas"
 			      },
@@ -5608,9 +6048,9 @@ cultureInfo pt-BR
 			            "Entity": "aquisições_realizada"
 			          }
 			        },
-			        "medida.medida": {
+			        "medida.diferença_de_preço": {
 			          "Target": {
-			            "Entity": "medida.medida"
+			            "Entity": "medida.diferença_de_preço"
 			          }
 			        }
 			      },
@@ -5621,12 +6061,12 @@ cultureInfo pt-BR
 			              "Role": "aquisições_realizada"
 			            },
 			            "Object": {
-			              "Role": "medida.medida"
+			              "Role": "medida.diferença_de_preço"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "aquisições_realizadas_have_medida"
+			          "ID": "aquisições_realizadas_have_diferença_de_preço"
 			        }
 			      ]
 			    },
@@ -7322,6 +7762,72 @@ cultureInfo pt-BR
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "medidas_have_values"
+			        }
+			      ]
+			    },
+			    "carteira_ativo_data_recomendação_trimestre_has_carteira_ativo_data_recomendação_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "carteira_ativos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "carteira_ativo.data_recomendação.trimestre": {
+			          "Target": {
+			            "Entity": "carteira_ativo.data_recomendação.trimestre"
+			          }
+			        },
+			        "carteira_ativo.data_recomendação.mê": {
+			          "Target": {
+			            "Entity": "carteira_ativo.data_recomendação.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "carteira_ativo.data_recomendação.trimestre"
+			            },
+			            "Object": {
+			              "Role": "carteira_ativo.data_recomendação.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_mê3"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "carteira_ativo.data_recomendação.mê"
+			            },
+			            "Object": {
+			              "Role": "carteira_ativo.data_recomendação.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_trimestres3"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "carteira_ativo.data_recomendação.mê"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "carteira_ativo.data_recomendação.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_are_in_trimestres3"
 			        }
 			      ]
 			    },

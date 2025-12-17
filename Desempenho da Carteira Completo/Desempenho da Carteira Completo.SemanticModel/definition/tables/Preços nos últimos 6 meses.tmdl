@@ -27,13 +27,14 @@ table 'Preços nos últimos 6 meses'
 
 	column Preço
 		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
 		lineageTag: dea96ce9-638b-4d47-b5ea-69b4e676ebf4
 		summarizeBy: sum
 		sourceColumn: Preço
 
 		annotation SummarizationSetBy = Automatic
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
 
 	partition 'Preços nos últimos 6 meses' = m
 		mode: import

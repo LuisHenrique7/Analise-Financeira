@@ -104,8 +104,8 @@ table 'Dividendos Recebidos'
 				let
 				    Fonte = Csv.Document(File.Contents("C:\Users\luis.nascimento\Documents\Análises Financeiras\Dados Modelados\Dividendos Recebidos.csv"),[Delimiter=",", Columns=9, Encoding=1252, QuoteStyle=QuoteStyle.None]),
 				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
-				    #"Valor Substituído" = Table.ReplaceValue(#"Cabeçalhos Promovidos",".",",",Replacer.ReplaceText,{"Valor", "DY", "Dividendos Totais"}),
-				    #"Tipo Alterado1" = Table.TransformColumnTypes(#"Valor Substituído",{{"Valor", type number}, {"DY", type number}, {"Dividendos Totais", type number}}),
+				    #"Valor Substituído" = Table.ReplaceValue(#"Cabeçalhos Promovidos",".",",",Replacer.ReplaceText,{"Valor", "Cotas Acumuladas", "DY", "Dividendos Totais"}),
+				    #"Tipo Alterado1" = Table.TransformColumnTypes(#"Valor Substituído",{{"Valor", type number}, {"Cotas Acumuladas", type number}, {"DY", type number}, {"Dividendos Totais", type number}}),
 				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Tipo Alterado1",{{"Ativo", type text}, {"Data", type date}, {"DATA COM", type date}, {"Tipo Receita", type text}, {"Dono", type text}, {"Cotas Acumuladas", Int64.Type}})
 				in
 				    #"Tipo Alterado"

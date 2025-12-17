@@ -102,9 +102,10 @@ table Medidas
 			        'Aquisições Realizadas'[Data] = data_maxima
 			    )
 			)
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
 		lineageTag: 7b322cc1-c7d3-4fe0-92a6-5232e64f025a
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
 
 	measure 'Preço Mais Recente' =
 			
@@ -132,9 +133,10 @@ table Medidas
 			        'Preços nos últimos 6 meses'[Data] = data_maxima
 			    )
 			)
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
 		lineageTag: cbdde8a1-9118-4600-959f-68e18b78950c
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
 
 	measure 'Preço Recente da Carteira' =
 			
@@ -146,15 +148,34 @@ table Medidas
 			        MAX('Preços nos últimos 6 meses'[Data]),
 			        'Preços nos últimos 6 meses'[Ativo] = ativo
 			    )
-			
-			    RETURN CALCULATE(
+			    VAR preco_recente = CALCULATE(
 			        SUM('Preços nos últimos 6 meses'[Preço]) * balanco,
 			        'Preços nos últimos 6 meses'[Data] = data_maxima
 			    )
+			    VAR data_maxima_2 =
+			    CALCULATE(
+			        MAX('Preços nos últimos 6 meses'[Data]),
+			        FILTER(
+			            'Preços nos últimos 6 meses',
+			            'Preços nos últimos 6 meses'[Ativo] = ativo
+			                && 'Preços nos últimos 6 meses'[Data] < data_maxima
+			        )
+			    )
+			    VAR preco_recente_2 = CALCULATE(
+			        SUM('Preços nos últimos 6 meses'[Preço]) * balanco,
+			        'Preços nos últimos 6 meses'[Data] = data_maxima_2
+			    )
+			
+			    RETURN IF(ISBLANK(preco_recente), preco_recente_2, preco_recente)
+			    // RETURN CALCULATE(
+			    //     SUM('Preços nos últimos 6 meses'[Preço]) * balanco,
+			    //     'Preços nos últimos 6 meses'[Data] = data_maxima
+			    // )
 			)
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
 		lineageTag: 0ac95b4c-8e36-4e6e-842d-1f3a8709359e
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
 
 	measure 'Preço Médio da Carteira' =
 			
@@ -173,12 +194,198 @@ table Medidas
 			        'Aquisições Realizadas'[Data] = data_maxima
 			    )
 			)
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
 		lineageTag: 5501d652-d26a-4705-bd03-5697a1d64b94
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Diferença de Preço' = [Preço Recente da Carteira] - [Preço Médio da Carteira]
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 93f78a60-e4aa-49f7-956b-85847452588c
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Quantidade de Itens' =
+			
+			SUMX(
+			    carteira_ativos,
+			    VAR ativo = carteira_ativos[Ativo]
+			    VAR balanco = carteira_ativos[Balanço de Cotas]
+			    VAR n_cotas_atual = CALCULATE(
+			        SUM('Aquisições Realizadas'[Número de Cotas]),
+			        'Aquisições Realizadas'[Ativo] = ativo
+			    )
+			
+			    RETURN CALCULATE(
+			        n_cotas_atual / balanco,
+			        'Aquisições Realizadas'[Ativo] = ativo
+			    )
+			)
+		lineageTag: bcc6d6a2-7e3f-4f1d-90ab-2026960e7732
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	measure 'Diferença de Preço' = [Preço Recente da Carteira] - [Preço Médio da Carteira]
-		lineageTag: 93f78a60-e4aa-49f7-956b-85847452588c
+	measure 'Quantidade de Carteiras' = ```
+			
+			VAR CarteiraAtual = SELECTEDVALUE(carteira_ativos[Carteira])
+			
+			RETURN MINX(
+			    FILTER(
+			        ALL(carteira_ativos),
+			        carteira_ativos[Carteira] = CarteiraAtual
+			    ),
+			    VAR ativo = carteira_ativos[Ativo]
+			    VAR balanco = carteira_ativos[Balanço de Cotas]
+			    VAR n_cotas_atual = CALCULATE(
+			        SUM('Aquisições Realizadas'[Número de Cotas]),
+			        'Aquisições Realizadas'[Ativo] = ativo
+			    )
+			
+			    RETURN DIVIDE(n_cotas_atual, balanco)
+			    
+			)
+			```
+		lineageTag: 71da0296-c4ce-4b23-a424-1c039c752c81
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Diferença Itens vs Carteiras' =
+			
+			VAR ItensPorAtivo = [Quantidade de Itens]
+			
+			VAR MenorCarteira =
+			    CALCULATE(
+			        [Quantidade de Carteiras],
+			        ALL(carteira_ativos[Ativo]),
+			        carteira_ativos[Carteira] = SELECTEDVALUE(carteira_ativos[Carteira]),
+			        'Aquisições Realizadas'[Dono] = SELECTEDVALUE('Aquisições Realizadas'[Dono])
+			    )
+			
+			RETURN ItensPorAtivo - MenorCarteira
+			
+			// SUMX(
+			//     carteira_ativos,
+			//     VAR ativo = carteira_ativos[Ativo]
+			//     VAR qt_item = CALCULATE(
+			//         [Quantidade de Itens],
+			//         'Aquisições Realizadas'[Ativo] = ativo
+			//     )
+			//     VAR qt_carteira = CALCULATE(
+			//         [Quantidade de Carteiras],
+			//         'Aquisições Realizadas'[Ativo] = ativo
+			//     )
+			
+			//     RETURN CALCULATE(
+			//         qt_item - qt_carteira,
+			//         'Aquisições Realizadas'[Ativo] = ativo
+			//     )
+			// )
+		lineageTag: 599ba7c9-fb1d-422d-ae82-550ab710c0aa
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Percentual na carteira' =
+			
+			VAR investido_ativo = SUM('Aquisições Realizadas'[Valor Investido])
+			
+			VAR investido_geral = CALCULATE(
+			    SUM('Aquisições Realizadas'[Valor Investido]),
+			    REMOVEFILTERS('Aquisições Realizadas'),
+			    'Aquisições Realizadas'[Dono] = SELECTEDVALUE('Aquisições Realizadas'[Dono])
+			)
+			
+			VAR data = CALCULATE(
+			    MAX('Aquisições Realizadas'[Data]),
+			    'Aquisições Realizadas'[Ativo] = SELECTEDVALUE('Aquisições Realizadas'[Ativo])
+			)
+			
+			VAR lucro_ativo = CALCULATE(
+			    SUM('Aquisições Realizadas'[Lucro]),
+			    'Aquisições Realizadas'[Data] = data
+			)
+			
+			VAR lucro_geral = CALCULATE(
+			    SUM('Aquisições Realizadas'[Lucro]),
+			    REMOVEFILTERS('Aquisições Realizadas'),
+			    'Aquisições Realizadas'[Dono] = SELECTEDVALUE('Aquisições Realizadas'[Dono]),
+			    'Aquisições Realizadas'[Data] = data
+			)
+			
+			RETURN (lucro_ativo + investido_ativo) / (investido_geral + lucro_geral)
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: b97ef09b-2b37-4dcb-84c3-fcdbc8697d55
+
+	measure 'Percentual visado' =
+			
+			
+			// VAR data = CALCULATE(
+			//     MAX('Aquisições Realizadas'[Data]),
+			//     'Aquisições Realizadas'[Ativo] = SELECTEDVALUE('Aquisições Realizadas'[Ativo])
+			// )
+			
+			// VAR preco_medio = CALCULATE(
+			//     SUM('Aquisições Realizadas'[Preço Médio]) * SUM(carteira_ativos[Balanço de Cotas]),
+			//     'Aquisições Realizadas'[Dono] = SELECTEDVALUE('Aquisições Realizadas'[Dono]),
+			//     'Aquisições Realizadas'[Data] = data
+			// )
+			
+			// VAR balanco = CALCULATE(
+			//     SUM(carteira_ativos[Balanço de Cotas]),
+			//     carteira_ativos[Ativo] = SELECTEDVALUE(carteira_ativos[Ativo])
+			// )
+			
+			// VAR investido_medio_geral = CALCULATE(
+			//     SUM('Aquisições Realizadas'[Preço Médio]),
+			//     REMOVEFILTERS('Aquisições Realizadas'),
+			//     'Aquisições Realizadas'[Dono] = SELECTEDVALUE('Aquisições Realizadas'[Dono]),
+			//     'Aquisições Realizadas'[Data] = data
+			// )
+			
+			// VAR preco_medio_total = CALCULATE(
+			//     SUM('Aquisições Realizadas'[Preço Médio]) * SUM(carteira_ativos[Balanço de Cotas]),
+			//     ALL('Aquisições Realizadas'),
+			//     'Aquisições Realizadas'[Dono] = SELECTEDVALUE('Aquisições Realizadas'[Dono]),
+			//     'Aquisições Realizadas'[Data] = data
+			// )
+			
+			VAR data = CALCULATE(
+			    MAX('Aquisições Realizadas'[Data]),
+			    'Aquisições Realizadas'[Ativo] = SELECTEDVALUE('Aquisições Realizadas'[Ativo])
+			)
+			
+			VAR preco_medio = CALCULATE(
+			    SUM('Aquisições Realizadas'[Preço Médio]) * SUM(carteira_ativos[Balanço de Cotas]),
+			    'Aquisições Realizadas'[Data] = data
+			)
+			
+			VAR total = CALCULATE(
+			    [valor padrão],
+			    ALL(carteira_ativos)
+			)
+			
+			RETURN preco_medio / total
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 8527cc87-858a-4d89-ba8f-25a081501b13
+
+	measure 'valor padrão' =
+			SUMX(
+			    carteira_ativos,
+			    VAR ativo = carteira_ativos[Ativo]
+			    VAR balanco = carteira_ativos[Balanço de Cotas]
+			
+			    VAR data = CALCULATE(
+			        MAX('Aquisições Realizadas'[Data]),
+			        'Aquisições Realizadas'[Ativo] = ativo
+			    )
+			
+			    VAR preco_medio = CALCULATE(
+			        SUM('Aquisições Realizadas'[Preço Médio]) * SUM(carteira_ativos[Balanço de Cotas]),
+			        'Aquisições Realizadas'[Data] = data
+			    )
+			
+			    RETURN preco_medio
+			)
+		lineageTag: 26340276-1e7d-44d3-bb13-fdc9a292bb33
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
